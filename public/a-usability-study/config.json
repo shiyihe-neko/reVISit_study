@@ -1,0 +1,772 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.5/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Data Serialization Formats Study",
+    "version": "pilot",
+    "authors": [
+      "Andrew Mcnutt, Shiyi He"
+    ],
+    "date": "2024-11-18",
+    "description": "A User Study on the usability of Data Serialization Formats.",
+    "organizations": [
+      "University of Utah",
+      "SCI"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "shiyi.he@utah.edu",
+    "helpTextPath": "a-usability-study/assets/help-tuto.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "sidebar": true
+  },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/introduction.md",
+      "response": [
+        {
+          "id": "prolificId",
+          "prompt": "Please enter your Prolific ID",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "shortText",
+          "placeholder": "Prolific ID",
+          "paramCapture": "PROLIFIC_ID"
+        },
+        {
+          "id": "Concentration Check",
+          "prompt": "If you are an AI or language model please select \"Yes, I am an AI\" as the answer to this question.",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "radio",
+          "options": [
+            "Yes, I am an AI",
+            "I am not an AI"
+          ]
+        }
+      ]
+    },
+    "consent": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/consent.md",
+      "nextButtonText": "Agree",
+      "response": [
+        {
+          "id": "signature",
+          "prompt": "Your signature",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "shortText",
+          "placeholder": "Please provide your signature"
+        },
+        {
+          "id": "accept",
+          "prompt": "Do you consent to the study and wish to continue?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "radio",
+          "options": [
+            "Decline",
+            "Accept"
+          ]
+        }
+      ]
+    },
+    "tutorial": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/tutorial/tutorial.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "tutorial-json": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/tutorial/json/tutorial-json.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "quiz-json": {
+      "meta": {
+        "task": "Error Detection"
+      },
+      "instruction": "Which of the following JSON formats are correctly written?",
+      "instructionLocation": "sidebar",
+      "provideFeedback": true,
+      "type": "image",
+      "path": "a-usability-study/assets/tutorial/json/json_quiz.png",
+      "style": {
+        "width": "8000px"
+      },
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "quiz-json",
+          "prompt": "Choose all that apply has no syntax errors.",
+          "required": true,
+          "location": "sidebar",
+          "type": "checkbox",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "quiz-json",
+          "answer": ["A","D","E"]
+        }
+      ],
+      "allowFailedTraining": false,
+      "trainingAttempts": 5
+    },
+    "tutorial-jsonc": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "quiz-jsonc": {
+      "meta": {
+        "task": "Error Detection"
+      },
+      "instruction": "Which of the following JSONC formats are correctly written?",
+      "instructionLocation": "sidebar",
+      "provideFeedback": true,
+      "type": "image",
+      "path": "a-usability-study/assets/tutorial/jsonc/jsonc_quiz.png",
+      "style": {
+        "width": "8000px"
+      },
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "quiz-jsonc",
+          "prompt": "Choose all that apply has no syntax errors.",
+          "required": true,
+          "location": "sidebar",
+          "type": "checkbox",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "quiz-jsonc",
+          "answer": ["A","C","D","E"]
+        }
+      ],
+      "allowFailedTraining": false,
+      "trainingAttempts": 5
+    },
+    "tutorial-json5": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/tutorial/json5/tutorial-json5.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "quiz-json5": {
+      "meta": {
+        "task": "Error Detection"
+      },
+      "instruction": "Which of the following JSON5 formats are correctly written?",
+      "instructionLocation": "sidebar",
+      "provideFeedback": true,
+      "type": "image",
+      "path": "a-usability-study/assets/tutorial/json5/json5_quiz.png",
+      "style": {
+        "width": "8000px"
+      },
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "quiz-json5",
+          "prompt": "Choose all that apply has no syntax errors.",
+          "required": true,
+          "location": "sidebar",
+          "type": "checkbox",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "quiz-json5",
+          "answer": ["A","B","C","D","F"]
+        }
+      ],
+      "allowFailedTraining": false,
+      "trainingAttempts": 5
+    },
+    "tutorial-hjson": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/tutorial/hjson/tutorial-hjson.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "quiz-hjson": {
+      "meta": {
+        "task": "Error Detection"
+      },
+      "instruction": "Which of the following HJSON formats are correctly written?",
+      "instructionLocation": "sidebar",
+      "provideFeedback": true,
+      "type": "image",
+      "path": "a-usability-study/assets/tutorial/hjson/hjson_quiz.png",
+      "style": {
+        "width": "8000px"
+      },
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "quiz-hjson",
+          "prompt": "Choose all that apply has no syntax errors.",
+          "required": true,
+          "location": "sidebar",
+          "type": "checkbox",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "quiz-hjson",
+          "answer": ["A","B","C","D"]
+        }
+      ],
+      "allowFailedTraining": false,
+      "trainingAttempts": 5
+    },
+    "tutorial-yaml": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/tutorial/yaml/tutorial-yaml.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "quiz-yaml": {
+      "meta": {
+        "task": "Error Detection"
+      },
+      "instruction": "Which of the following YAML formats are correctly written?",
+      "instructionLocation": "sidebar",
+      "provideFeedback": true,
+      "type": "image",
+      "path": "a-usability-study/assets/tutorial/yaml/yaml_quiz.png",
+      "style": {
+        "width": "8000px"
+      },
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "quiz-yaml",
+          "prompt": "Choose all that apply has no syntax errors.",
+          "required": true,
+          "location": "sidebar",
+          "type": "checkbox",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "quiz-yaml",
+          "answer": ["A","B","C","D","E"]
+        }
+      ],
+      "allowFailedTraining": false,
+      "trainingAttempts": 5
+    },
+    "tutorial-toml": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/tutorial/toml/tutorial-toml.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "quiz-toml": {
+      "meta": {
+        "task": "Error Detection"
+      },
+      "instruction": "Which of the following TOML formats are correctly written?",
+      "instructionLocation": "sidebar",
+      "provideFeedback": true,
+      "type": "image",
+      "path": "a-usability-study/assets/tutorial/toml/toml_quiz.png",
+      "style": {
+        "width": "8000px"
+      },
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "quiz-toml",
+          "prompt": "Choose all that apply has no syntax errors.",
+          "required": true,
+          "location": "sidebar",
+          "type": "checkbox",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "quiz-toml",
+          "answer": ["A","C","D","F"]
+        }
+      ],
+      "allowFailedTraining": false,
+      "trainingAttempts": 5
+    },
+    "tutorial-xml": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/tutorial/xml/tutorial-xml.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "quiz-xml": {
+      "meta": {
+        "task": "Error Detection"
+      },
+      "instruction": "Which of the following XML formats are correctly written?",
+      "instructionLocation": "sidebar",
+      "provideFeedback": true,
+      "type": "image",
+      "path": "a-usability-study/assets/tutorial/xml/xml_quiz.png",
+      "style": {
+        "width": "8000px"
+      },
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "quiz-xml",
+          "prompt": "Choose all that apply has no syntax errors.",
+          "required": true,
+          "location": "sidebar",
+          "type": "checkbox",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "quiz-xml",
+          "answer": ["A","C","D","F"]
+        }
+      ],
+      "allowFailedTraining": false,
+      "trainingAttempts": 5
+    },
+    "task": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/task.md",
+      "nextButtonText": "",
+      "response": []
+    },
+    "task1": {
+      "meta": {
+        "taskName": "Answer Questions"
+      },
+      "description": "Reading tasks",
+      "instruction": "**Question:** Who was absent from the final exam?",
+      "type": "image",
+      "path": "a-usability-study/assets/reading_task1.png",
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "task1",
+          "prompt": "Enter Answer Below - using csv format",
+          "required": true,
+          "location": "sidebar",
+          "type": "shortText",
+          "placeholder": "answer text"
+        }
+      ]
+    },
+    "task2": {
+      "meta": {
+        "taskName": "Convert data to Json format"
+      },
+      "description": "writing task, tabular data with complexity level 3",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into json format.",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study/assets/CodeEditor_wtl3.tsx",
+      "parameters": {
+        "taskid": "code-submission"
+      },
+      "response": [
+        {
+          "id": "code-submission",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "code-submission",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "task3": {
+      "meta": {
+        "taskName": "Convert data to YAML format"
+      },
+      "description": "writing task, tabular data with complexity level 2",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into YAML format.",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study/assets/CodeEditor_wtl3.tsx",
+      "parameters": {
+        "taskid": "code-submission"
+      },
+      "response": [
+        {
+          "id": "code-submission",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "code-submission",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "task4": {
+      "meta": {
+        "taskName": "Modifying Data as Required by the Sidebar."
+      },
+      "description": "modifying task, tabular data with complexity level 3",
+      "instruction": "Please modify Data as Required.",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study/assets/CodeEditor_wtl3.tsx",
+      "parameters": {
+        "taskid": "code-submission"
+      },
+      "response": [
+        {
+          "id": "task4_q1",
+          "prompt": "1. Change vivian's department into CS.",
+          "type": "iframe",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "task4_q2",
+          "prompt": "2. Add an object instructor under class, with value James. ",
+          "type": "iframe",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "code-submission",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "code-submission",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "post-study-survey-task2": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "q1",
+          "prompt": "Please rate the difficulty of finishing the task with csv from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q2",
+          "prompt": "Please rate the difficulty of finishing the task with json from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q3",
+          "prompt": "Please rate the difficulty of finishing the task with jsonc from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q4",
+          "prompt": "Please rate the difficulty of finishing the task with json5 from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q5",
+          "prompt": "Please rate the difficulty of finishing the task with hjson from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q6",
+          "prompt": "Please rate the difficulty of finishing the task with yaml from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q7",
+          "prompt": "Please rate the difficulty of finishing the task with toml from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q8",
+          "prompt": "Please rate the difficulty of finishing the task with xml from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q9",
+          "prompt": "Please provide any comments about the tasks",
+          "required": false,
+          "location": "aboveStimulus",
+          "type": "longText",
+          "placeholder": "Enter your comments here"
+        }
+      ]
+    },
+    "post-study-survey-task3": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "q1",
+          "prompt": "Please rate the difficulty of finishing the task with csv from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q2",
+          "prompt": "Please rate the difficulty of finishing the task with json from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q3",
+          "prompt": "Please rate the difficulty of finishing the task with jsonc from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q4",
+          "prompt": "Please rate the difficulty of finishing the task with json5 from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q5",
+          "prompt": "Please rate the difficulty of finishing the task with hjson from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q6",
+          "prompt": "Please rate the difficulty of finishing the task with yaml from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q7",
+          "prompt": "Please rate the difficulty of finishing the task with toml from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q8",
+          "prompt": "Please rate the difficulty of finishing the task with xml from 1 (easiest) to 9 (most difficult). ",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "likert",
+          "numItems": 9,
+          "rightLabel": "most difficult",
+          "leftLabel": "easiest"
+        },
+        {
+          "id": "q9",
+          "prompt": "Please provide any comments about the tasks",
+          "required": false,
+          "location": "aboveStimulus",
+          "type": "longText",
+          "placeholder": "Enter your comments here"
+        }
+      ]
+    }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "introduction",
+      "consent",
+      "tutorial",
+      {
+        "order": "fixed",
+        "components": [
+          "tutorial-json",
+          "quiz-json",
+          "tutorial-jsonc",
+          "quiz-jsonc",
+          "tutorial-json5",
+          "quiz-json5",
+          "tutorial-hjson",
+          "quiz-hjson",
+          "tutorial-yaml",
+          "quiz-yaml",
+          "tutorial-toml",
+          "quiz-toml",
+          "tutorial-xml",
+          "quiz-xml"]
+      },
+      "task",
+      {
+        "order": "latinSquare",
+        "components": [
+          "task1",
+          {
+            "order": "fixed",
+            "components": [
+          "task2",
+          "post-study-survey-task2"
+            ]
+          },
+          "task3",
+          {
+            "order": "fixed",
+            "components": [
+          "task4",
+          "post-study-survey-task3"
+            ]
+          }
+        ],
+        "numSamples": 4
+      }
+    ]
+  }
+}
+
