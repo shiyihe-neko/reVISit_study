@@ -29,7 +29,7 @@ Empty elements have no content and can use self-closing tags.
 <br>
 
 ### 5. Comments
-Comments in XML are enclosed in <strong style="color:green;"><!-- --></strong>.
+Comments in XML are enclosed in <strong style="color:green;"> &lt;!-- --&gt; </strong>.
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/xml/xml_comments.png" width="450px" height="auto">
 <br>

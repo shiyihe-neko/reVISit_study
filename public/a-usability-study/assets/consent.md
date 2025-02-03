@@ -14,7 +14,7 @@ Before we begin, please read the following consent form carefully and thereafter
 the study investigators and, under certain circumstances, the Institutional Review Board will be able to inspect and 
 have access to this data. Any publication or presentation of the data will not identify you.
 
-**Reward:** $25.
+**Reward:** $15.
 
 For more information about this research or about the rights of research participants, or in case of research-related 
 injury, contact: shiyi.he@utah.edu. In addition, you may contact the IRB department, Tel. (801) 581-3655, Email: IRB@hsc.utah.edu.

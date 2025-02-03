@@ -120,7 +120,7 @@
       "correctAnswer": [
         {
           "id": "quiz-json",
-          "answer": ["A","D","E"]
+          "answer": ["A","D","F"]
         }
       ],
       "allowFailedTraining": false,
@@ -210,7 +210,7 @@
       "correctAnswer": [
         {
           "id": "quiz-json5",
-          "answer": ["A","B","C","D","F"]
+          "answer": ["A","B","C","D","E","F"]
         }
       ],
       "allowFailedTraining": false,
@@ -247,15 +247,14 @@
             "B",
             "C",
             "D",
-            "E",
-            "F"
+            "E"
           ]
         }
       ],
       "correctAnswer": [
         {
           "id": "quiz-hjson",
-          "answer": ["A","B","C","D"]
+          "answer": ["A","B","C","D","E"]
         }
       ],
       "allowFailedTraining": false,
@@ -491,7 +490,7 @@
       "response": [
         {
           "id": "reading-task-tabular-json_q1",
-          "prompt": "1. What is the grade for Eva's final exam? ",
+          "prompt": "1. What is the grade for Eve's final exam? ",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -505,7 +504,7 @@
         },
         {
           "id": "reading-task-tabular-json_q3",
-          "prompt": "3. Which quiz did Eva get the highest grade on? ",
+          "prompt": "3. Which quiz did Eve get the highest grade on? ",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -861,7 +860,7 @@
   "response": [
     {
       "id": "reading-task-tabular-yaml_q1",
-      "prompt": "1. What is the grade for Eva's final exam? ",
+      "prompt": "1. What is the grade for Eve's final exam? ",
       "type": "shortText",
       "location": "sidebar",
       "required": true
@@ -875,7 +874,7 @@
     },
     {
       "id": "reading-task-tabular-yaml_q3",
-      "prompt": "3. Which quiz did Eva get the highest grade on? ",
+      "prompt": "3. Which quiz did Eve get the highest grade on? ",
       "type": "shortText",
       "location": "sidebar",
       "required": true
@@ -1009,7 +1008,7 @@
   "response": [
     {
       "id": "reading-task-tabular-toml_q1",
-      "prompt": "1. What is the grade for Eva's final exam? ",
+      "prompt": "1. What is the grade for Eve's final exam? ",
       "type": "shortText",
       "location": "sidebar",
       "required": true
@@ -1023,7 +1022,7 @@
     },
     {
       "id": "reading-task-tabular-toml_q3",
-      "prompt": "3. Which quiz did Eva get the highest grade on? ",
+      "prompt": "3. Which quiz did Eve get the highest grade on? ",
       "type": "shortText",
       "location": "sidebar",
       "required": true
@@ -1157,7 +1156,7 @@
   "response": [
     {
       "id": "reading-task-tabular-xml_q1",
-      "prompt": "1. What is the grade for Eva's final exam? ",
+      "prompt": "1. What is the grade for Eve's final exam? ",
       "type": "shortText",
       "location": "sidebar",
       "required": true
@@ -1171,7 +1170,7 @@
     },
     {
       "id": "reading-task-tabular-xml_q3",
-      "prompt": "3. Which quiz did Eva get the highest grade on? ",
+      "prompt": "3. Which quiz did Eve get the highest grade on? ",
       "type": "shortText",
       "location": "sidebar",
       "required": true
@@ -1790,7 +1789,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-json_q1",
-          "prompt": "1. Change the final grade for Eva to 80.",
+          "prompt": "1. Change the final grade for Eve to 80.",
           "type": "iframe",
           "location": "sidebar",
           "required": false
@@ -1949,7 +1948,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-toml_q1",
-          "prompt": "1. Change the final grade for Eva to 80.",
+          "prompt": "1. Change the final grade for Eve to 80.",
           "type": "iframe",
           "location": "sidebar",
           "required": false
@@ -2055,7 +2054,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-yaml_q1",
-          "prompt": "1. Change the final grade for Eva to 80.",
+          "prompt": "1. Change the final grade for Eve to 80.",
           "type": "iframe",
           "location": "sidebar",
           "required": false
@@ -2161,7 +2160,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-xml_q1",
-          "prompt": "1. Change the final grade for Eva to 80.",
+          "prompt": "1. Change the final grade for Eve to 80.",
           "type": "iframe",
           "location": "sidebar",
           "required": false
@@ -2199,65 +2198,57 @@
       ],
       "allowFailedTraining": false
     },
-    "post-task-survey": {
+    "after-task-survey":{
       "type": "questionnaire",
       "response": [
         {
           "id": "q1",
-          "prompt": "Please rate the difficulty of learning the syntax rules of the following formats.",
+          "prompt": "1. Please rate the difficulty of learning the syntax rules of the format.",
           "required": true,
           "location": "aboveStimulus",
-          "type": "matrix-radio",
-          "answerOptions": [
-            "Not Encountered",
+          "type": "radio",
+          "options": [
             "Very Easy",
             "Easy",
             "Neutral",
             "Difficult",
             "Very Difficult"
           ],
-          "questionOptions": [
-            "JSON",
-            "JSONC",
-            "JSON5",
-            "HJSON",
-            "YAML",
-            "TOML",
-            "XML"
-          ]
+          "withOther": true
         },
         {
-          "id": "q2",
-          "prompt": "Please rate the difficulty of completing tasks with the following formats you encountered.",
+        "id": "q2",
+        "prompt": "2. Please rate the difficulty of completing the following tasks",
+        "required": true,
+        "location": "aboveStimulus",
+        "type": "matrix-radio",
+        "answerOptions": [
+          "Very Easy",
+          "Easy",
+          "Neutral",
+          "Difficult",
+          "Very Difficult"
+        ],
+        "questionOptions": [
+          "Reading",
+          "Writing",
+          "Modifying"
+        ]
+      },
+        {
+        "id": "q3",
+        "prompt": "Do you want to explain your answer? If yes, please provide your explanation.",
+        "required": false,
+        "location": "aboveStimulus",
+        "type": "longText"
+      },
+        {
+          "id": "q4",
+          "prompt": "3. Please rate the experience of completing the following tasks",
           "required": true,
           "location": "aboveStimulus",
           "type": "matrix-radio",
           "answerOptions": [
-            "Not Encountered",
-            "Very Easy",
-            "Easy",
-            "Neutral",
-            "Difficult",
-            "Very Difficult"
-          ],
-          "questionOptions": [
-            "JSON",
-            "JSONC",
-            "JSON5",
-            "HJSON",
-            "YAML",
-            "TOML",
-            "XML"
-          ]
-        },
-        {
-          "id": "q3",
-          "prompt": "Please rate the experience of completing tasks with the following formats.",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "matrix-radio",
-          "answerOptions": [
-            "Not Encountered",
             "Very Smooth",
             "Smooth",
             "Neutral",
@@ -2265,27 +2256,132 @@
             "Very Rough"
           ],
           "questionOptions": [
-            "JSON",
-            "JSONC",
-            "JSON5",
-            "HJSON",
-            "YAML",
-            "TOML",
-            "XML"
+            "Reading",
+            "Writing",
+            "Modifying"
           ]
         },
         {
-        "id": "q4",
-        "prompt": "Compared to the format you encountered in the reading task, if you had a choice, which format would you prefer to use for this task? Please consider factors such as user-friendliness, efficiency, and error prevention. Check all that apply, and indicate why you agree with each selected format.",
+          "id": "q5",
+          "prompt": "Do you want to explain your answer? If yes, please provide your explanation.",
+          "required": false,
+          "location": "aboveStimulus",
+          "type": "longText"
+        },
+        {
+          "id": "q6",
+          "prompt": "4. Please rate how much you agree that the format you are using possesses the following positive features.",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "matrix-radio",
+          "answerOptions": [
+            "0(Not agree at all)",
+            "1(A little agree)",
+            "2(Moderately agree)",
+            "3(Agree)",
+            "4(Very much agree)"
+          ],
+          "questionOptions": [
+            "Easy to learn",
+            "Easy to use",
+            "Efficient",
+            "Flexible",
+            "Intuitive",
+            "User-friendly",
+            "Easy to debug"
+          ]
+        },
+        {
+          "id": "q7",
+          "prompt": "5. Please rate how much you agree that the format you are using possesses the following negative features.",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "matrix-radio",
+          "answerOptions": [
+            "0(Not agree at all)",
+            "1(A little agree)",
+            "2(Moderately agree)",
+            "3(Agree)",
+            "4(Very much agree)"
+          ],
+          "questionOptions": [
+            "Hard to learn",
+            "Hard to use",
+            "Annoying due to strict syntax rules",
+            "Frustrating due to loose syntax rules",
+            "Bad readability",
+            "Requires a lot of labor",
+            "Requires a lot of mental effort",
+            "Not user-friendly",
+            "Difficult to debugg"
+          ]
+        },
+        {
+          "id":"q8",
+          "prompt": "6. Is there anything you’d like to tell us?",
+          "required": false,
+          "location": "aboveStimulus",
+          "type": "longText"
+        }
+      ]
+    },
+    "post-task-survey": {
+      "type": "questionnaire",
+      "response": [
+        {
+          "id": "q1",
+          "prompt": "What is your age?",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "shortText"
+        },
+        {
+          "id": "q2",
+          "prompt": "What is your highest level of education? (High School, Bachelor's, Master's, PhD, etc.)",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "High School",
+            "Bachelor's",
+            "Master's",
+            "PhD"
+          ],
+          "withOther": true
+        },
+      {
+        "id": "q3",
+        "prompt": "How would you describe your computer skill level?",
         "required": true,
         "location": "aboveStimulus",
-        "type": "matrix-checkbox",
+        "type": "radio",
+        "options": [
+          "Beginner",
+          "Intermediate",
+          "Advanced",
+          "Expert"
+        ],
+        "withOther": true
+      },
+      {
+        "id": "q4",
+        "prompt": "How many years of programming experience do you have (including taking programming-related classes or receiving related training)?",
+        "required": true,
+        "location": "aboveStimulus",
+        "type": "shortText"
+      },
+      {
+        "id": "q5",
+        "prompt": "Can you specify your familarity with the following data formats?",
+        "required": true,
+        "location": "aboveStimulus",
+        "type": "matrix-radio",
         "answerOptions": [
-          "Not a better choice",
-          "I am not sure",
-          "More user-friendly",
-          "More efficient",
-          "Btter error prevention"
+          "Expert",
+          "Comfortable using it",
+          "Used it a few times",
+          "Heard of it but never used",
+          "Not familiar at all"
         ],
         "questionOptions": [
           "JSON",
@@ -2298,29 +2394,31 @@
         ]
       },
       {
-        "id": "q5",
+        "id": "q6",
         "prompt": "Do you have any vision conditions that might affect how you perceive visual information?",
         "required": true,
         "location": "aboveStimulus",
         "type": "checkbox",
         "options": [
-          "No, I do not have any related conditions.",
-          "Color vision deficiency (CVD) (e.g., difficulty distinguishing colors like red and green).",
-          "Low vision (e.g., difficulty seeing clearly, even with corrective lenses).",
-          "Blindness (e.g., unable to see or severe visual impairment)."
+          "Prefer not to say.",
+          "No, I do not have any cognitive-related conditions.",
+          "Dyslexia (e.g., difficulty reading or distinguishing symbols, such as \"b\" and \"d\").",
+          "Dysgraphia (e.g., difficulty with handwriting or written expression)."
         ],
         "withOther": true
       },
       {
-        "id": "q6",
+        "id": "q7",
         "prompt": "Do you experience any cognitive conditions that may affect your ability to interpret text or symbols?",
         "required": true,
         "location": "aboveStimulus",
         "type": "checkbox",
         "options": [
-          "No, I do not have any cognitive-related conditions.",
-          "Dyslexia (e.g., difficulty reading or distinguishing symbols, such as \"b\" and \"d\").",
-          "Dysgraphia (e.g., difficulty with handwriting or written expression)."
+          "Prefer not to say.",
+          "No, I do not have any related conditions.",
+          "Color vision deficiency (CVD) (e.g., difficulty distinguishing colors like red and green).",
+          "Low vision (e.g., difficulty seeing clearly, even with corrective lenses).",
+          "Blindness (e.g., unable to see or severe visual impairment)."
         ],
         "withOther": true
       }
@@ -2332,97 +2430,56 @@
     "components": [
       "introduction",
       "consent",
-      "tutorial",
-      "tutorial-json",
-      "quiz-json",
-      "tutorial-jsonc",
-      "quiz-jsonc",
-      "tutorial-json5",
-      "quiz-json5",
-      "tutorial-hjson",
-      "quiz-hjson",
-      "tutorial-yaml",
-      "quiz-yaml",
-      "tutorial-toml",
-      "quiz-toml",
-      "tutorial-xml",
-      "quiz-xml",
       "task",
-      {
-        "order": "latinSquare",
+      {"order":"fixed",
+      "components": [
+        {"order":"fixed",
+        "components": [
+          "tutorial-json",
+          "quiz-json",
+          "reading-task-config-json",
+          "writing-task-config-json",
+          "modifying-task-config-json",
+          "after-task-survey"
+        ]
+        },
+        {"order":"latinSquare",
         "numSamples": 1,
         "components": [
-      "reading-task-config-json",
-      "reading-task-config-yaml",
-      "reading-task-config-toml",
-      "reading-task-config-xml"]},
-      "reading-task-config-json",
-      "reading-task-config-yaml",
-      "reading-task-config-toml",
-      "reading-task-config-xml",
-      {
-        "order": "latinSquare",
-        "numSamples": 1,
-        "components": [
-      "reading-task-tabular-json",
-      "reading-task-tabular-yaml",
-      "reading-task-tabular-toml",
-      "reading-task-tabular-xml"]},
-      "reading-task-tabular-json",
-      "reading-task-tabular-toml",
-      "reading-task-tabular-yaml",
-      "reading-task-tabular-xml",
-      {
-        "order": "latinSquare",
-        "numSamples": 1,
-        "components": [
-      "writing-task-config-json",
-      "writing-task-config-yaml",
-      "writing-task-config-toml",
-      "writing-task-config-xml"]},
-      "writing-task-config-json",
-      "writing-task-config-yaml",
-      "writing-task-config-toml",
-      "writing-task-config-xml",
-      {
-        "order": "latinSquare",
-        "numSamples": 1,
-        "components": [
-      "writing-task-tabular-json",
-      "writing-task-tabular-yaml",
-      "writing-task-tabular-toml",
-      "writing-task-tabular-xml"]},
-      "writing-task-tabular-json",
-      "writing-task-tabular-yaml",
-      "writing-task-tabular-toml",
-      "writing-task-tabular-xml",
-      {
-        "order": "latinSquare",
-        "numSamples": 1,
-        "components": [
-      "modifying-task-config-json",
-      "modifying-task-config-toml",
-      "modifying-task-config-yaml",
-      "modifying-task-config-xml"]},
-      "modifying-task-config-json",
-      "modifying-task-config-toml",
-      "modifying-task-config-yaml",
-      "modifying-task-config-xml",
-      {
-        "order": "latinSquare",
-        "numSamples": 1,
-        "components": [
-      "modifying-task-tabular-json",
-      "modifying-task-tabular-toml",
-      "modifying-task-tabular-yaml",
-      "modifying-task-tabular-xml"]},
-      "modifying-task-tabular-json",
-      "modifying-task-tabular-toml",
-      "modifying-task-tabular-yaml",
-      "modifying-task-tabular-xml",
-
+          {"order":"fixed",
+          "components": [
+            "tutorial-yaml",
+            "quiz-yaml",
+            "reading-task-tabular-yaml",
+            "writing-task-tabular-yaml",
+            "modifying-task-tabular-yaml",
+            "after-task-survey"
+          ]
+          },
+          {"order":"fixed",
+          "components": [
+            "tutorial-yaml",
+            "quiz-yaml",
+            "reading-task-tabular-toml",
+            "writing-task-tabular-toml",
+            "modifying-task-tabular-toml",
+            "after-task-survey"
+          ]
+          },
+          {"order":"fixed",
+          "components": [
+            "tutorial-yaml",
+            "quiz-yaml",
+            "reading-task-tabular-xml",
+            "writing-task-tabular-xml",
+            "modifying-task-tabular-xml",
+            "after-task-survey"
+          ]
+          }]},     
       "post-task-survey"
     ]
   }
+]
+}
 }
 

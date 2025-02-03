@@ -300,32 +300,16 @@ function CodeEditorTest({ setAnswer }: StimulusParamsTyped): React.ReactElement 
       padding: '20px',
     }}
     >
-      {/* fig and code editor */}
-      <div style={{ display: 'flex', width: '100%', gap: '20px' }}>
-        <div style={{ flex: '0 0 60%' }}>
-          <img
-            src="./assets/tasks/fig/config_write.png"
-            alt="Example"
-            style={{
-              width: '100%',
-              height: 'auto',
-              objectFit: 'contain',
-            }}
-          />
-        </div>
-
-        <Box
-          style={{
-            flex: '0 0 40%',
-            height: '500px',
-            border: '1px solid #ccc',
-            borderRadius: '8px',
-          }}
-          ref={containerRef}
-        />
-      </div>
-
-      {/* validation */}
+      {/* 代码编辑器部分 */}
+      <Box
+        style={{
+          height: '500px',
+          border: '1px solid #ccc',
+          borderRadius: '8px',
+        }}
+        ref={containerRef}
+      />
+      {/* 验证状态显示 */}
       <Box
         style={{
           background: '#f5f5f5',
