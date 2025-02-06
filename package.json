@@ -108,7 +108,6 @@
     "typedoc": "^0.27.6",
     "typedoc-plugin-frontmatter": "^1.1.2",
     "typedoc-plugin-markdown": "^4.4.1",
-    "typescript": "^4.9.5",
     "use-deep-compare-effect": "^1.8.1",
     "uuid": "^11.0.5",
     "vega": "^5.30.0",
