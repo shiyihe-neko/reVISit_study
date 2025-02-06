@@ -1,105 +1,29 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import * as monaco from 'monaco-editor';
+import React, {
+  useState, useCallback,
+} from 'react';
 import { Box } from '@mantine/core';
+
+import AceEditor from 'react-ace';
 import { StimulusParams } from '../../../../store/types';
 
-function useJsonEditor(initialCode: string) {
-  const [code, setCode] = useState(initialCode);
-  const [currentErrors, setCurrentErrors] = useState<string[]>([]);
-  const [editorInstance, setEditorInstance] = useState<monaco.editor.IStandaloneCodeEditor | null>(null);
-
-  // JSON
-  const validateJson = useCallback(() => {
-    if (!editorInstance) return;
-
-    try {
-      JSON.parse(code);
-      setCurrentErrors(['No errors found. JSON is valid!']);
-      monaco.editor.setModelMarkers(editorInstance.getModel()!, 'json', []);
-    } catch (e) {
-      if (e instanceof Error) {
-        const errorMsg = e.message;
-        const lineMatch = code.substring(0, e.message.indexOf('"')).split('\n');
-        const lineNumber = lineMatch.length;
-
-        setCurrentErrors([errorMsg]);
-
-        monaco.editor.setModelMarkers(editorInstance.getModel()!, 'json', [{
-          startLineNumber: lineNumber,
-          startColumn: 1,
-          endLineNumber: lineNumber,
-          endColumn: Number.MAX_VALUE,
-          message: errorMsg,
-          severity: monaco.MarkerSeverity.Error,
-        }]);
-      }
-    }
-  }, [code, editorInstance]);
-
-  //
-  useEffect(() => {
-    if (code.trim()) {
-      validateJson();
-    } else {
-      setCurrentErrors([]);
-      if (editorInstance) {
-        monaco.editor.setModelMarkers(editorInstance.getModel()!, 'json', []);
-      }
-    }
-  }, [code, validateJson, editorInstance]);
-
-  return {
-    code,
-    setCode,
-    currentErrors,
-    setEditorInstance,
-  };
-}
-
+import 'ace-builds/src-noconflict/mode-hjson';
+import 'ace-builds/src-noconflict/theme-github_dark';
+import 'ace-builds/src-noconflict/ext-language_tools';
+// adding worker
 function CodeEditorTest({ setAnswer }: StimulusParams<unknown, Record<string, never>>): React.ReactElement {
-  const {
-    code,
-    setCode,
-    currentErrors,
-    setEditorInstance,
-  } = useJsonEditor('');
+  const [code, setCode] = useState<string>('');
 
-  const containerRef = useCallback((node: HTMLDivElement) => {
-    if (node) {
-      const editor = monaco.editor.create(node, {
-        value: code,
-        language: 'json',
-        theme: 'hc-black',
-        automaticLayout: true,
-        minimap: { enabled: false },
-        formatOnPaste: true,
-        formatOnType: true,
-        scrollBeyondLastLine: false,
-      });
+  const editorOnChange = useCallback((rawCode: string) => {
+    setAnswer({
+      status: true,
+      answers: {
+        code: rawCode,
+        error: rawCode,
+      },
+    });
 
-      setEditorInstance(editor);
-
-      editor.onDidChangeModelContent(() => {
-        const rawCode = editor.getValue();
-
-        setAnswer({
-          status: true,
-          answers: {
-            code: rawCode,
-            error: rawCode,
-          },
-        });
-
-        setCode(rawCode);
-      });
-
-      return () => {
-        editor.dispose();
-      };
-    }
-    return undefined;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [setCode, setEditorInstance]); // 移除 code 依赖，添加 eslint-disable 注释
+    setCode(rawCode);
+  }, [setAnswer]);
 
   return (
     <div style={{
@@ -111,7 +35,7 @@ function CodeEditorTest({ setAnswer }: StimulusParams<unknown, Record<string, ne
     >
       {/* 图片与代码编辑器部分 */}
       <div style={{ display: 'flex', width: '100%', gap: '20px' }}>
-        <div style={{ flex: '0 0 60%' }}>
+        {/* <div style={{ flex: '0 0 60%' }}>
           <img
             src="/a-usability-study/assets/tasks/fig/config_write.png"
             alt="Example"
@@ -121,17 +45,18 @@ function CodeEditorTest({ setAnswer }: StimulusParams<unknown, Record<string, ne
               objectFit: 'contain',
             }}
           />
-        </div>
+        </div> */}
 
-        <Box
-          style={{
-            flex: '0 0 40%',
-            height: '500px',
-            border: '1px solid #ccc',
-            borderRadius: '8px',
-          }}
-          ref={containerRef}
+        <AceEditor
+          mode="hjson"
+          width="100%"
+          value={code}
+          theme="github_dark"
+          onChange={editorOnChange}
+          name="UNIQUE_ID_OF_DIV"
+          editorProps={{ $blockScrolling: true }}
         />
+
       </div>
 
       {/* 验证状态显示 */}
@@ -147,11 +72,11 @@ function CodeEditorTest({ setAnswer }: StimulusParams<unknown, Record<string, ne
       >
         <h3>Validation Status:</h3>
         <ul>
-          {currentErrors.map((error, index) => (
+          {/* {currentErrors.map((error, index) => (
             <li key={index} style={{ color: error.includes('valid') ? 'green' : 'red' }}>
               {error}
             </li>
-          ))}
+          ))} */}
         </ul>
       </Box>
     </div>
