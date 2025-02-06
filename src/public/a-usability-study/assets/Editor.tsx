@@ -15,6 +15,7 @@ import 'ace-builds/src-noconflict/mode-json5';
 import 'ace-builds/src-noconflict/theme-github_dark';
 import 'ace-builds/src-noconflict/ext-language_tools';
 import { StimulusParams } from '../../../store/types';
+import { PREFIX } from '../../../utils/Prefix';
 // adding worker
 function CodeEditorTest({ setAnswer, parameters }: StimulusParams<{language: string, imagePath: string | null, type: 'modifying' | 'writing' | 'reading', tabular: boolean}, Record<string, never>>): React.ReactElement {
   const [code, setCode] = useState<string>(startingStringsMap[parameters.type + (parameters.tabular ? 'tabular' : 'config') + parameters.language]);
@@ -38,7 +39,7 @@ function CodeEditorTest({ setAnswer, parameters }: StimulusParams<{language: str
         {parameters.imagePath ? (
           <div style={{ flex: '0 0 50%' }}>
             <img
-              src={parameters.imagePath}
+              src={PREFIX + parameters.imagePath}
               alt="Example"
               style={{
                 width: '100%',
