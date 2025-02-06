@@ -51,7 +51,7 @@ function CodeEditorTest({ setAnswer, parameters }: StimulusParams<{language: str
         ) : null }
 
         <AceEditor
-          mode={parameters.language}
+          mode={parameters.language !== 'jsonc' ? parameters.language : 'json'}
           width="100%"
           height="1000px"
           value={code}
