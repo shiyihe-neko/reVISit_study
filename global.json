@@ -1,12 +1,7 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.0-rc5/src/parser/GlobalConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/2.0.0-rc7/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "a-usability-study",
-    "tutorial-simple-study",
-    "tutorial-react-and-randomization",
-    "tutorial-advanced-react",
-    "example-brush-interactions",
-    "example-cleveland",
     "example-mvnv",
     "example-fairness-jnd",
     "demo-html",
@@ -16,7 +11,6 @@
     "example-VLAT-full-randomized",
     "example-VLAT-mini-randomized",
     "demo-html-trrack",
-    "demo-click-accuracy-test",
     "demo-image",
     "test-audio",
     "test-library",
@@ -37,7 +31,7 @@
   "configs": {
     "a-usability-study": {
       "path": "a-usability-study/config.json"
-    },  
+    },
     "tutorial-simple-study": {
       "path": "tutorial/simple-study/config.json"
     },
