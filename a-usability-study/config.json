@@ -1355,7 +1355,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "json", "imagePath": "/a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "json", "imagePath": "a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1447,7 +1447,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "jsonc", "imagePath": "/a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "jsonc", "imagePath": "a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1493,7 +1493,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "jsonc", "imagePath": "/a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
+        "language": "jsonc", "imagePath": "a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
       },
       "response": [
         {
@@ -1539,7 +1539,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "json5", "imagePath": "/a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "json5", "imagePath": "a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1585,7 +1585,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "json5", "imagePath": "/a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
+        "language": "json5", "imagePath": "a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
       },
       "response": [
         {
@@ -1631,7 +1631,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": "/a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "hjson", "imagePath": "a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1677,7 +1677,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": "/a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
+        "language": "hjson", "imagePath": "a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
       },
       "response": [
         {
@@ -1723,7 +1723,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "yaml", "imagePath": "/a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "yaml", "imagePath": "a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1769,7 +1769,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "yaml", "imagePath": "/a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
+        "language": "yaml", "imagePath": "a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
       },
       "response": [
         {
@@ -1815,7 +1815,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "toml", "imagePath": "/a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "toml", "imagePath": "a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1861,7 +1861,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "toml", "imagePath": "/a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
+        "language": "toml", "imagePath": "a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
       },
       "response": [
         {
@@ -1907,7 +1907,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "xml", "imagePath": "/a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "xml", "imagePath": "a-usability-study/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1953,7 +1953,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "xml", "imagePath": "/a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
+        "language": "xml", "imagePath": "a-usability-study/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": true
       },
       "response": [
         {
