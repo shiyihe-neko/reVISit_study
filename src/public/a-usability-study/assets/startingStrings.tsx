@@ -1788,7 +1788,7 @@ students:
       rollup: '2',
       'rollup-plugin-terser': '7',
     },
-    comments: 'd3-random is a peer dependency.',
+    // 'd3-random is a peer dependency.'
     scripts: {
       test: "mocha 'test/**/*-test.js' && eslint src test",
       prepublishOnly: 'rm -rf dist && yarn test && rollup -c',
@@ -1845,7 +1845,7 @@ students:
       rollup: '2',
       'rollup-plugin-terser': '7',
     },
-    comments: 'd3-random is a peer dependency.',
+    // 'd3-random is a peer dependency.'
     scripts: {
       test: "mocha 'test/**/*-test.js' && eslint src test",
       prepublishOnly: 'rm -rf dist && yarn test && rollup -c',
@@ -1950,7 +1950,7 @@ students:
               { quiz: 1, grade: 9, weight: 0.15 },
               { quiz: 2, grade: 10, weight: 0.15 },
             ],
-            comments: 'Student data including grades and extracurricular activities. AB stands for absent.',
+            // 'Student data including grades and extracurricular activities. AB stands for absent.'
             midterm: {
               grade: 'AB',
               weight: 0.3,
@@ -2110,7 +2110,7 @@ students:
               { quiz: 1, grade: 9, weight: 0.15 },
               { quiz: 2, grade: 10, weight: 0.15 },
             ],
-            comments: 'Student data including grades and extracurricular activities. AB stands for absent.',
+            // 'Student data including grades and extracurricular activities. AB stands for absent.'
             midterm: {
               grade: 'AB',
               weight: 0.3,
