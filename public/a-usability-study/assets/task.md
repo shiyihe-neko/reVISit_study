@@ -1,2 +1,4 @@
-You will now learn some basic syntax rules for two different data serialization formats and complete several related tasks. These tasks include reading data in these formats and answering questions, converting data into specific formats, and modifying data as needed
+You will now learn some basic syntax rules for two different data serialization formats and complete several related tasks. These tasks include reading data in these formats and answering questions, converting data into specific formats, and modifying data as needed.
+
+Notice: Multi-cursor and "Cmd+F" will be disabled during the tasks.
 
