@@ -65,11 +65,18 @@
           "id": "accept",
           "prompt": "Do you consent to the study and wish to continue?",
           "required": true,
+          "requiredValue": "yes",
           "location": "belowStimulus",
           "type": "radio",
           "options": [
-            "Decline",
-            "Accept"
+            {
+              "label": "Decline",
+              "value": "no"
+            },
+            {
+              "label": "Accept",
+              "value": "yes"
+            }
           ]
         }
       ]
