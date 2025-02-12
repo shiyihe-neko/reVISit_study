@@ -423,35 +423,35 @@
       "response": [
         {
           "id": "reading-task-config-json_q1",
-          "prompt": "1. What is the value of \"version\"? ",
+          "prompt": "1. What is the value of the \"version\" key in the JSON file?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-json_q2",
-          "prompt": "2. What is the value of \"node\"? ",
+          "prompt": "2. What is the value of the \"node\" key?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-json_q3",
-          "prompt": "3. How many values does \"keywords\" have? ",
+          "prompt": "3. How many values does the \"keywords\" key contain? ",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-json_q4",
-          "prompt": "4. Which top-level keys(or tags, such as 'keywords') in the file have a nested structure (contain other key-value pairs or elements within them)? ",
+          "prompt": "4. Which keys in the JSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-json_q5",
-          "prompt": "5. Which devDependency is considered a peer dependency?",
+          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -490,35 +490,35 @@
       "response": [
         {
           "id": "reading-task-tabular-json_q1",
-          "prompt": "1. What is the grade for Eve's final exam? ",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-json_q2",
-          "prompt": "2. How many quizzes did Bob take? ",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-json_q3",
-          "prompt": "3. Which quiz did Eve get the highest grade on? ",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-json_q4",
-          "prompt": "4. Within the <students> tag, which direct child tags of <student> (e.g., <name>, <age>, <contact>, etc.) contain nested elements? Please list all applicable tags.",
+          "prompt": "4. List all students who participate in two different sports.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-json_q5",
-          "prompt": "5. Who is absent from the final exam?",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -557,35 +557,35 @@
       "response": [
         {
           "id": "reading-task-config-jsonc_q1",
-          "prompt": "1. What is the value of \"version\"? ",
+          "prompt": "1. What is the value of the \"version\" key in the JSONC file?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-jsonc_q2",
-          "prompt": "2. What is the value of \"node\"? ",
+          "prompt": "2. What is the value of the \"node\" key?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-jsonc_q3",
-          "prompt": "3. How many values does \"keywords\" have? ",
+          "prompt": "3. How many values does the \"keywords\" key contain?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-jsonc_q4",
-          "prompt": "4. Which top-level keys(or tags, such as 'keywords') in the file have a nested structure (contain other key-value pairs or elements within them)? ",
+          "prompt": "4. Which keys in the JSONC file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-jsonc_q5",
-          "prompt": "5. Which devDependency is considered a peer dependency?",
+          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -624,35 +624,35 @@
       "response": [
         {
           "id": "reading-task-tabular-jsonc_q1",
-          "prompt": "1. What is the grade for Eve's final exam? ",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-jsonc_q2",
-          "prompt": "2. How many quizzes did Bob take? ",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-jsonc_q3",
-          "prompt": "3. Which quiz did Eve get the highest grade on? ",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-jsonc_q4",
-          "prompt": "4. Within the 'students' key (or tag), which second-level keys (or tags) contain nested structures (i.e., other elements or key-value pairs)? Please list all that apply.",
+          "prompt": "4. List all students who participate in two different sports.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-jsonc_q5",
-          "prompt": "5. Who is absent from the final exam?",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -691,35 +691,35 @@
       "response": [
         {
           "id": "reading-task-config-json5_q1",
-          "prompt": "1. What is the value of \"version\"? ",
+          "prompt": "1. What is the value of the \"version\" key in the JSON5 file?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-json5_q2",
-          "prompt": "2. What is the value of \"node\"? ",
+          "prompt": "2. What is the value of the \"node\" key?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-json5_q3",
-          "prompt": "3. How many values does \"keywords\" have? ",
+          "prompt": "3. How many values does the \"keywords\" key contain?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-json5_q4",
-          "prompt": "4. Which top-level keys(or tags, such as 'keywords') in the file have a nested structure (contain other key-value pairs or elements within them)? ",
+          "prompt": "4. Which keys in the JSON5 file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-json5_q5",
-          "prompt": "5. Which devDependency is considered a peer dependency?",
+          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -758,35 +758,35 @@
       "response": [
         {
           "id": "reading-task-tabular-json5_q1",
-          "prompt": "1. What is the grade for Eve's final exam? ",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-json5_q2",
-          "prompt": "2. How many quizzes did Bob take? ",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-json5_q3",
-          "prompt": "3. Which quiz did Eve get the highest grade on? ",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-json5_q4",
-          "prompt": "4. Within the 'students' key (or tag), which second-level keys (or tags) contain nested structures (i.e., other elements or key-value pairs)? Please list all that apply.",
+          "prompt": "4. List all students who participate in two different sports.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-json5_q5",
-          "prompt": "5. Who is absent from the final exam?",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -825,35 +825,35 @@
       "response": [
         {
           "id": "reading-task-config-hjson_q1",
-          "prompt": "1. What is the value of \"version\"? ",
+          "prompt": "1. What is the value of the \"version\" key in the HJSON file? ",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-hjson_q2",
-          "prompt": "2. What is the value of \"node\"? ",
+          "prompt": "2. What is the value of the \"node\" key?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-hjson_q3",
-          "prompt": "3. How many values does \"keywords\" have? ",
+          "prompt": "3. How many values does the \"keywords\" key contain?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-hjson_q4",
-          "prompt": "4. Which top-level keys(or tags, such as 'keywords') in the file have a nested structure (contain other key-value pairs or elements within them)? ",
+          "prompt": "4. Which keys in the HJSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-hjson_q5",
-          "prompt": "5. Which devDependency is considered a peer dependency?",
+          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -892,35 +892,35 @@
       "response": [
         {
           "id": "reading-task-tabular-hjson_q1",
-          "prompt": "1. What is the grade for Eve's final exam? ",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-hjson_q2",
-          "prompt": "2. How many quizzes did Bob take? ",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-hjson_q3",
-          "prompt": "3. Which quiz did Eve get the highest grade on? ",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-hjson_q4",
-          "prompt": "4. Within the 'students' key (or tag), which second-level keys (or tags) contain nested structures (i.e., other elements or key-value pairs)? Please list all that apply.",
+          "prompt": "4. List all students who participate in two different sports.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-hjson_q5",
-          "prompt": "5. Who is absent from the final exam?",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -959,35 +959,35 @@
       "response": [
         {
           "id": "reading-task-config-yaml_q1",
-          "prompt": "1. What is the value of \"version\"? ",
+          "prompt": "1. What is the value of the \"version\" key in the YAML file?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-yaml_q2",
-          "prompt": "2. What is the value of \"node\"? ",
+          "prompt": "2. What is the value of the \"node\" key?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-yaml_q3",
-          "prompt": "3. How many values does \"keywords\" have? ",
+          "prompt": "3. How many values does the \"keywords\" key contain? ",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-yaml_q4",
-          "prompt": "4. Which top-level keys(or tags, such as 'keywords') in the file have a nested structure (contain other key-value pairs or elements within them)? ",
+          "prompt": "4. Which keys in the YAML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-yaml_q5",
-          "prompt": "5. Which devDependency is considered a peer dependency?",
+          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1026,35 +1026,35 @@
       "response": [
         {
           "id": "reading-task-tabular-yaml_q1",
-          "prompt": "1. What is the grade for Eve's final exam? ",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-yaml_q2",
-          "prompt": "2. How many quizzes did Bob take? ",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-yaml_q3",
-          "prompt": "3. Which quiz did Eve get the highest grade on? ",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-yaml_q4",
-          "prompt": "4. Within the 'students' key (or tag), which second-level keys (or tags) contain nested structures (i.e., other elements or key-value pairs)? Please list all that apply.",
+          "prompt": "4. List all students who participate in two different sports.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-yaml_q5",
-          "prompt": "5. Who is absent from the final exam?",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1093,35 +1093,35 @@
       "response": [
         {
           "id": "reading-task-config-toml_q1",
-          "prompt": "1. What is the value of \"version\"? ",
+          "prompt": "1. What is the value of the \"version\" key in the TOML file?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-toml_q2",
-          "prompt": "2. What is the value of \"node\"? ",
+          "prompt": "2. What is the value of the \"node\" key?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-toml_q3",
-          "prompt": "3. How many values does \"keywords\" have? ",
+          "prompt": "3. How many values does the \"keywords\" key contain?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-toml_q4",
-          "prompt": "4. Which top-level keys(or tags, such as 'keywords') in the file have a nested structure (contain other key-value pairs or elements within them)? ",
+          "prompt": "4. Which keys in the TOML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-toml_q5",
-          "prompt": "5. Which devDependency is considered a peer dependency?",
+          "prompt": "5. In the [dependencies] section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1160,35 +1160,35 @@
       "response": [
         {
           "id": "reading-task-tabular-toml_q1",
-          "prompt": "1. What is the grade for Eve's final exam? ",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-toml_q2",
-          "prompt": "2. How many quizzes did Bob take? ",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-toml_q3",
-          "prompt": "3. Which quiz did Eve get the highest grade on? ",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-toml_q4",
-          "prompt": "4. Within the 'students' key (or tag), which second-level keys (or tags) contain nested structures (i.e., other elements or key-value pairs)? Please list all that apply.",
+          "prompt": "4. List all students who participate in two different sports.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-toml_q5",
-          "prompt": "5. Who is absent from the final exam?",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1227,35 +1227,35 @@
       "response": [
         {
           "id": "reading-task-config-xml_q1",
-          "prompt": "1. What is the value of \"version\"? ",
+          "prompt": "1. What is the value of the \"version\" tag in the XML file? ",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-xml_q2",
-          "prompt": "2. What is the value of \"node\"? ",
+          "prompt": "2. What is the value of the \"node\" tag?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-xml_q3",
-          "prompt": "3. How many values does \"keywords\" have? ",
+          "prompt": "3. How many child elements does the \"keywords\" tag contain?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-xml_q4",
-          "prompt": "4. Which top-level keys(or tags, such as 'keywords') in the file have a nested structure (contain other key-value pairs or elements within them)? ",
+          "prompt": "4. Which tags in the XML file contain nested structures, meaning they have child elements inside them? List all such tags. (For example, \"repository\" is a valid answer because it contains \"type\" and \"url\" as child elements.)",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-config-xml_q5",
-          "prompt": "5. Which devDependency is considered a peer dependency?",
+          "prompt": "5. In the \"dependencies\" section, if a \"dependency\" has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1294,35 +1294,35 @@
       "response": [
         {
           "id": "reading-task-tabular-xml_q1",
-          "prompt": "1. What is the grade for Eve's final exam? ",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-xml_q2",
-          "prompt": "2. How many quizzes did Bob take? ",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-xml_q3",
-          "prompt": "3. Which quiz did Eve get the highest grade on? ",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-xml_q4",
-          "prompt": "4. Within the <students> tag, which direct child tags of <student> (e.g., <name>, <age>, <contact>, etc.) contain nested elements? Please list all applicable tags.",
+          "prompt": "4. List all students who participate in two different sports.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
         },
         {
           "id": "reading-task-tabular-xml_q5",
-          "prompt": "5. Who is absent from the final exam?",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -2005,21 +2005,28 @@
       "response": [
         {
           "id": "modifying-task-config-json_q1",
-          "prompt": "1. Change the value of benchmark to 7.",
+          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-json_q2",
-          "prompt": "2. Move the authors' information below the repository. ",
+          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-json_q3",
-          "prompt": "3. Remove the peer dependency. ",
+          "prompt": "3. Iterate through the JSON data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-config-json_q4",
+          "prompt": "4. Modify the JSON structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2058,21 +2065,28 @@
       "response": [
         {
           "id": "modifying-task-tabular-json_q1",
-          "prompt": "1. Change the final grade for Eve to 80.",
+          "prompt": "1. Iterate through each movie entry in the JSON data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-json_q2",
-          "prompt": "2. Please add the following quiz information for Bob - Quiz 3 grade 10 weight 0.1.",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-json_q3",
-          "prompt": "3. Remove all information regarding the final grade for students who are absent. ",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-tabular-json_q4",
+          "prompt": "4. For each movie object in the JSON file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2111,21 +2125,28 @@
       "response": [
         {
           "id": "modifying-task-config-jsonc_q1",
-          "prompt": "1. Change the value of benchmark to 7.",
+          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-jsonc_q2",
-          "prompt": "2. Move the authors' information below the repository. ",
+          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-jsonc_q3",
-          "prompt": "3. Remove the peer dependency. ",
+          "prompt": "3. Iterate through the JSONC data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-config-jsonc_q4",
+          "prompt": "4. Modify the JSONC structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2164,21 +2185,28 @@
       "response": [
         {
           "id": "modifying-task-tabular-jsonc_q1",
-          "prompt": "1. Change the final grade for Eve to 80.",
+          "prompt": "1. Iterate through each movie entry in the JSONC data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-jsonc_q2",
-          "prompt": "2. Please add the following quiz information for Bob - Quiz 3 grade 10 weight 0.1. ",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-jsonc_q3",
-          "prompt": "3. Remove all information regarding the final grade for students who are absent. ",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-tabular-jsonc_q4",
+          "prompt": "4. For each movie object in the JSONC file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2217,21 +2245,28 @@
       "response": [
         {
           "id": "modifying-task-config-json5_q1",
-          "prompt": "1. Change the value of benchmark to 7.",
+          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-json5_q2",
-          "prompt": "2. Move the authors' information below the repository. ",
+          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-json5_q3",
-          "prompt": "3. Remove the peer dependency. ",
+          "prompt": "3. Iterate through the JSON5 data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-config-json5_q4",
+          "prompt": "4. Modify the JSON5 structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2270,21 +2305,28 @@
       "response": [
         {
           "id": "modifying-task-tabular-json5_q1",
-          "prompt": "1. Change the final grade for Eve to 80.",
+          "prompt": "1. Iterate through each movie entry in the JSON5 data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-json5_q2",
-          "prompt": "2. Please add the following quiz information for Bob - Quiz 3 grade 10 weight 0.1. ",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-json5_q3",
-          "prompt": "3. Remove all information regarding the final grade for students who are absent. ",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-tabular-json5_q4",
+          "prompt": "4. For each movie object in the JSON5 file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2323,21 +2365,28 @@
       "response": [
         {
           "id": "modifying-task-config-hjson_q1",
-          "prompt": "1. Change the value of benchmark to 7.",
+          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-hjson_q2",
-          "prompt": "2. Move the authors' information below the repository. ",
+          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-hjson_q3",
-          "prompt": "3. Remove the peer dependency. ",
+          "prompt": "3. Iterate through the HJSON data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-config-hjson_q4",
+          "prompt": "4. Modify the HJSON structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2376,21 +2425,28 @@
       "response": [
         {
           "id": "modifying-task-tabular-hjson_q1",
-          "prompt": "1. Change the final grade for Eve to 80.",
+          "prompt": "1. Iterate through each movie entry in the HJSON data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-tabular-jhjson_q2",
-          "prompt": "2. Please add the following quiz information for Bob - Quiz 3 grade 10 weight 0.1. ",
+          "id": "modifying-task-tabular-hjson_q2",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-hjson_q3",
-          "prompt": "3. Remove all information regarding the final grade for students who are absent. ",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-tabular-hjson_q4",
+          "prompt": "4. For each movie object in the HJSON file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2429,21 +2485,28 @@
       "response": [
         {
           "id": "modifying-task-config-toml_q1",
-          "prompt": "1. Change the value of benchmark to 7.",
+          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-toml_q2",
-          "prompt": "2. Move the authors' information below the repository. ",
+          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-toml_q3",
-          "prompt": "3. Remove the peer dependency. ",
+          "prompt": "3. Iterate through the TOML data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-config-toml_q4",
+          "prompt": "4. Modify the TOML structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2482,21 +2545,28 @@
       "response": [
         {
           "id": "modifying-task-tabular-toml_q1",
-          "prompt": "1. Change the final grade for Eve to 80.",
+          "prompt": "1. Iterate through each movie entry in the TOML data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-toml_q2",
-          "prompt": "2. Please add the following quiz information for Bob - Quiz 3 grade 10 weight 0.1. ",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-toml_q3",
-          "prompt": "3. Remove all information regarding the final grade for students who are absent. ",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-tabular-toml_q4",
+          "prompt": "4. For each movie object in the TOML file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2535,21 +2605,28 @@
       "response": [
         {
           "id": "modifying-task-config-yaml_q1",
-          "prompt": "1. Change the value of benchmark to 7.",
+          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-yaml_q2",
-          "prompt": "2. Move the authors' information below the repository. ",
+          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-yaml_q3",
-          "prompt": "3. Remove the peer dependency. ",
+          "prompt": "3. Iterate through the YAML data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-config-yaml_q4",
+          "prompt": "4. Modify the YAML structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2588,21 +2665,28 @@
       "response": [
         {
           "id": "modifying-task-tabular-yaml_q1",
-          "prompt": "1. Change the final grade for Eve to 80.",
+          "prompt": "1. Iterate through each movie entry in the YAML data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-yaml_q2",
-          "prompt": "2. Please add the following quiz information for Bob - Quiz 3 grade 10 weight 0.1. ",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-yaml_q3",
-          "prompt": "3. Remove all information regarding the final grade for students who are absent. ",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-tabular-yaml_q4",
+          "prompt": "4. For each movie object in the YAML file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2641,21 +2725,28 @@
       "response": [
         {
           "id": "modifying-task-config-xml_q1",
-          "prompt": "1. Change the value of benchmark to 7.",
+          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-xml_q2",
-          "prompt": "2. Move the authors' information below the repository. ",
+          "prompt": "2. Add the elements d3-hierarchy with value ^3.1.2, d3-interpolate with value ^3.0.1, and d3-path with value ^3.1.0 under the \"dependencies\" section.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-config-xml_q3",
-          "prompt": "3. Remove the peer dependency. ",
+          "prompt": "3. Iterate through the XML data and delete all \"url\" elements.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-config-xml_q4",
+          "prompt": "4. Modify the XML structure to wrap all existing \"collaborators\" elements inside a single parent \"collaborators\" tag. Rename each individual \"collaborators\" element to \"collaborator\", ensuring that the original content remains unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2694,21 +2785,28 @@
       "response": [
         {
           "id": "modifying-task-tabular-xml_q1",
-          "prompt": "1. Change the final grade for Eve to 80.",
+          "prompt": "1.  Iterate through each movie entry in the XML data and update the \"writer\" element's text content to match the corresponding \"director\" element, ensuring consistency between the two.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-xml_q2",
-          "prompt": "2. Please add the following quiz information for Bob - Quiz 3 grade 10 weight 0.1. ",
+          "prompt": "2. Check if each movie entry has at least one \"genres\" element containing the value \"Silent\". If it is missing, add it; otherwise, leave it unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
           "id": "modifying-task-tabular-xml_q3",
-          "prompt": "3. Remove all information regarding the final grade for students who are absent. ",
+          "prompt": "3. Remove only movie entries where the \"year\" element doesn't have a value of 1900.",
+          "type": "reactive",
+          "location": "sidebar",
+          "required": false
+        },
+        {
+          "id": "modifying-task-tabular-xml_q4",
+          "prompt": "4.  Introduce a new \"information\" element inside each movie entry. Move all existing child elements under \"information\", except for \"title\".",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2751,17 +2849,7 @@
             "7",
             "8",
             "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "Very High(20)"
+            "Very High(10)"
           ],
           "questionOptions": [
             "Reading",
@@ -2785,17 +2873,7 @@
             "7",
             "8",
             "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "Very High(20)"
+            "Very High(10)"
           ],
           "questionOptions": [
             "Reading",
@@ -2819,17 +2897,7 @@
             "7",
             "8",
             "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "Very High(20)"
+            "Very High(10)"
           ],
           "questionOptions": [
             "Reading",
@@ -2853,17 +2921,7 @@
             "7",
             "8",
             "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "Failure(20)"
+            "Failure(10)"
           ],
           "questionOptions": [
             "Reading",
@@ -2887,17 +2945,7 @@
             "7",
             "8",
             "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "Very High(20)"
+            "Very High(10)"
           ],
           "questionOptions": [
             "Reading",
@@ -2921,17 +2969,7 @@
             "7",
             "8",
             "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "Very High(20)"
+            "Very High(10)"
           ],
           "questionOptions": [
             "Reading",
@@ -2940,24 +2978,14 @@
           ]
         },    
         {
-          "id": "q7",
-          "prompt": "7. How difficult did you learn the syntax rules of the format?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "likert",
-          "leftLabel": "Very Difficult",
-          "rightLabel": "Very Easy",
-          "numItems": 20
-        },
-        {
-        "id": "q8",
+        "id": "q7",
         "prompt": "Do you want to explain your answers? If yes, please provide your explanation.",
         "required": false,
         "location": "aboveStimulus",
         "type": "longText"
        },
         {
-          "id":"q9",
+          "id":"q8",
           "prompt": "Is there anything you’d like to tell us?",
           "required": false,
           "location": "aboveStimulus",
@@ -2984,13 +3012,13 @@
         },
       {
         "id": "q2",
-        "prompt": "How would you describe your computer skill level?",
+        "prompt": "How would you assess your programming proficiency, considering factors such as coursework, formal training, and hands-on experience?",
         "required": true,
         "location": "aboveStimulus",
         "type": "radio",
         "options": [
-          "Beginner(<1 year of experience)",
-          "Intermediate(1-3 years of experience)",
+          "Beginner(<6 months of experience)",
+          "Intermediate(6 months -3 years of experience)",
           "Advanced(3-5 years of experience)",
           "Expert(>5 years of experience)"
         ],
@@ -2998,13 +3026,6 @@
       },
       {
         "id": "q3",
-        "prompt": "How many years of programming experience do you have (including taking programming-related classes or receiving related training)?",
-        "required": true,
-        "location": "aboveStimulus",
-        "type": "shortText"
-      },
-      {
-        "id": "q4",
         "prompt": "Can you specify your familarity with the following data formats?",
         "required": true,
         "location": "aboveStimulus",
@@ -3027,8 +3048,8 @@
         ]
       },
       {
-        "id": "q5",
-        "prompt": "Do you have any vision conditions that might affect how you perceive visual information?",
+        "id": "q4",
+        "prompt": "Do you have any cognitive conditions that might affect how you perceive visual information?",
         "required": true,
         "location": "aboveStimulus",
         "type": "checkbox",
@@ -3041,8 +3062,8 @@
         "withOther": true
       },
       {
-        "id": "q6",
-        "prompt": "Do you experience any cognitive conditions that may affect your ability to interpret text or symbols?",
+        "id": "q5",
+        "prompt": "Do you experience any vision conditions that may affect your ability to interpret text or symbols?",
         "required": true,
         "location": "aboveStimulus",
         "type": "checkbox",
