@@ -508,7 +508,7 @@ Supports integers, floating-point numbers, and booleans.
 <br>
 
 ### 4. Arrays
-Arrays are defined using square brackets <strong style="color:green;">[]</strong>, with items separated by commas <strong style="color:green;">,</strong>. 
+Arrays are defined using square brackets <strong style="color:green;">[]</strong>, with items separated by commas <strong style="color:green;">,</strong>. A terminating comma (also called trailing comma) is not permitted after the last key/value pair in an inline table.
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/toml/toml_arrays.png" width="450px" height="auto">
 <br>
@@ -550,6 +550,7 @@ TOML explicitly supports time and date formats based on the **RFC 3339** standar
 ### Full TOML Example
    <img src="./assets/tutorial/toml/toml_example.png" width="450px" height="auto">
 <br>
+Tips: In TOML, indentation is primarily used to enhance readability, but it does not affect the parsing logic since TOML does not rely on indentation to define hierarchical structures.
 
 ## XML Basic Syntax Tutorial
 XML (**eXtensible Markup Language**) is a markup language used to store and transport data. It is a structured text format similar to HTML but more flexible because it allows for custom tags.
@@ -588,8 +589,8 @@ Comments in XML are enclosed in <strong style="color:green;">`<!-- comment -->`<
    <img src="./assets/tutorial/xml/xml_comments.png" width="450px" height="auto">
 <br>
 
-### 6. Text Content
-The content between elements can be plain text.
+### 6.Plain Text Format
+XML is fundamentally a plain text format, where all data is treated as a string by default.
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/xml/xml_text.png" width="450px" height="auto">
 <br>

@@ -204,7 +204,7 @@
       "correctAnswer": [
         {
           "id": "quiz-json5",
-          "answer": ["A","B","C","D","E","F"]
+          "answer": ["B","C","D","F"]
         }
       ],
       "allowFailedTraining": false,
@@ -241,14 +241,15 @@
             "B",
             "C",
             "D",
-            "E"
+            "E",
+            "F"
           ]
         }
       ],
       "correctAnswer": [
         {
           "id": "quiz-hjson",
-          "answer": ["A","B","C","D","E"]
+          "answer": ["A","B","D","E"]
         }
       ],
       "allowFailedTraining": false,
