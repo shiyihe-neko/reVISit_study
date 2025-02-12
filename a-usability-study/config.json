@@ -510,7 +510,7 @@
         },
         {
           "id": "reading-task-tabular-json_q4",
-          "prompt": "4. Within the 'students' key (or tag), which second-level keys (or tags) contain nested structures (i.e., other elements or key-value pairs)? Please list all that apply.",
+          "prompt": "4. Within the <students> tag, which direct child tags of <student> (e.g., <name>, <age>, <contact>, etc.) contain nested elements? Please list all applicable tags.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1314,7 +1314,7 @@
         },
         {
           "id": "reading-task-tabular-xml_q4",
-          "prompt": "4. Within the 'students' key (or tag), which second-level keys (or tags) contain nested structures (i.e., other elements or key-value pairs)? Please list all that apply.",
+          "prompt": "4. Within the <students> tag, which direct child tags of <student> (e.g., <name>, <age>, <contact>, etc.) contain nested elements? Please list all applicable tags.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
