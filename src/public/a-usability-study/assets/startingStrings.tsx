@@ -1312,10 +1312,10 @@ role = "Secretary"`,
     name: 'd3',
     version: '7.9.0',
     description: 'Data-Driven Documents',
-    homepage: 'https://d3js.org',
+    homepage: 'd3js.org',
     repository: {
       type: 'git',
-      url: 'https://github.com/d3/d3.git',
+      url: 'github.com/d3/d3.git',
     },
     keywords: [
       'd3',
@@ -1327,8 +1327,8 @@ role = "Secretary"`,
     ],
     license: 'ISC',
     author: {
-      name: 'Mike Bostock',
-      url: 'https://bost.ocks.org/mike',
+      firstname: 'Mike',
+      lastname: 'Bostock',
     },
     type: 'module',
     files: [
@@ -1404,10 +1404,10 @@ role = "Secretary"`,
   <name>d3</name>
   <version>7.9.0</version>
   <description>Data-Driven Documents</description>
-  <homepage>https://d3js.org</homepage>
+  <homepage>d3js.org</homepage>
   <repository>
     <type>git</type>
-    <url>https://github.com/d3/d3.git</url>
+    <url>github.com/d3/d3.git</url>
   </repository>
   <keywords>d3</keywords>
   <keywords>dom</keywords>
@@ -1417,8 +1417,8 @@ role = "Secretary"`,
   <keywords>canvas</keywords>
   <license>ISC</license>
   <author>
-    <name>Mike Bostock</name>
-    <url>https://bost.ocks.org/mike</url>
+    <firstname>Mike</firstname>
+    <lastname>Bostock</lastname>
   </author>
   <type>module</type>
   <files>dist/d3.js</files>
@@ -1490,7 +1490,7 @@ role = "Secretary"`,
   readingconfigtoml: `name = "d3"
 version = "7.9.0"
 description = "Data-Driven Documents"
-homepage = "https://d3js.org"
+homepage = "d3js.org"
 keywords = ["d3", "dom", "visualization", "svg", "animation", "canvas"]
 license = "ISC"
 type = "module"
@@ -1502,11 +1502,11 @@ unpkg = "dist/d3.min.js"
 
 [repository]
 type = "git"
-url = "https://github.com/d3/d3.git"
+url = "github.com/d3/d3.git"
 
 [author]
-name = "Mike Bostock"
-url = "https://bost.ocks.org/mike"
+firstname = "Mike"
+lastname = "Bostock"
 
 [exports]
 umd = "./dist/d3.min.js"
@@ -1569,10 +1569,10 @@ node = ">=12"`,
   name: d3
   version: 7.9.0
   description: 'Data-Driven Documents'
-  homepage: https://d3js.org
+  homepage: d3js.org
   repository:
     type: git
-    url: https://github.com/d3/d3.git
+    url: github.com/d3/d3.git
   keywords:
     - d3
     - dom
@@ -1582,8 +1582,8 @@ node = ">=12"`,
     - canvas
   license: ISC
   author:
-    name: Mike Bostock
-    url: https://bost.ocks.org/mike
+    firstname: Mike
+    lastname:  Bostock
   type: module
   files:
     - dist/d3.js
@@ -1650,10 +1650,10 @@ node = ">=12"`,
     name: 'd3',
     version: '7.9.0',
     description: 'Data-Driven Documents',
-    homepage: 'https://d3js.org',
+    homepage: 'd3js.org',
     repository: {
       type: 'git',
-      url: 'https://github.com/d3/d3.git',
+      url: 'github.com/d3/d3.git',
     },
     keywords: [
       'd3',
@@ -1665,8 +1665,8 @@ node = ">=12"`,
     ],
     license: 'ISC',
     author: {
-      name: 'Mike Bostock',
-      url: 'https://bost.ocks.org/mike',
+      firstname: 'Mike',
+      lastname: 'Bostock',
     },
     type: 'module',
     files: [
@@ -1741,10 +1741,10 @@ node = ">=12"`,
     name: 'd3',
     version: '7.9.0',
     description: 'Data-Driven Documents',
-    homepage: 'https://d3js.org',
+    homepage: 'd3js.org',
     repository: {
         type: 'git',
-        url: 'https://github.com/d3/d3.git'
+        url: 'github.com/d3/d3.git'
     },
     keywords: [
         'd3',
@@ -1756,8 +1756,8 @@ node = ">=12"`,
     ],
     license: 'ISC',
     author: {
-        name: 'Mike Bostock',
-        url: 'https://bost.ocks.org/mike'
+        firstname: 'Mike',
+        lastname: 'Bostock'
     },
     type: 'module',
     files: [
@@ -1832,11 +1832,11 @@ node = ">=12"`,
     name: d3
     version: 7.9.0
     description: Data-Driven Documents
-    homepage: https://d3js.org
+    homepage: d3js.org
     repository:
     {
       type: git
-      url: https://github.com/d3/d3.git
+      url: github.com/d3/d3.git
     }
     keywords:
     [
@@ -1850,8 +1850,8 @@ node = ">=12"`,
     license: ISC
     author:
     {
-      name: Mike Bostock
-      url: https://bost.ocks.org/mike
+      firstname: Mike
+      lastname:  Bostock
     }
     type: module
     files:
@@ -1933,12 +1933,12 @@ node = ">=12"`,
     author: 'Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer',
     version: '5.23.0',
     collaborators: [
-      'Kanit Wongsuphasawat (http://kanitw.yellowpigz.com)',
-      'Dominik Moritz (https://www.domoritz.de)',
-      'Arvind Satyanarayan (https://arvindsatya.com)',
-      'Jeffrey Heer (https://jheer.org)',
+      'Kanit Wongsuphasawat',
+      'Dominik Moritz',
+      'Arvind Satyanarayan',
+      'Jeffrey Heer',
     ],
-    homepage: 'https://vega.github.io/vega-lite/',
+    homepage: 'ega.github.io/vega-lite/',
     description: 'Vega-Lite is a concise high-level language for interactive visualization.',
     keywords: [
       'vega',
@@ -1980,11 +1980,11 @@ node = ">=12"`,
     },
     repository: {
       type: 'git',
-      url: 'https://github.com/vega/vega-lite.git',
+      url: 'github.com/vega/vega-lite.git',
     },
     license: 'BSD-3-Clause',
     bugs: {
-      url: 'https://github.com/vega/vega-lite/issues',
+      url: 'github.com/vega/vega-lite/issues',
     },
     devDependencies: {
       ajv: '^8.17.1',
@@ -2040,12 +2040,12 @@ node = ">=12"`,
     author: 'Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer',
     version: '5.23.0',
     collaborators: [
-      'Kanit Wongsuphasawat (http://kanitw.yellowpigz.com)',
-      'Dominik Moritz (https://www.domoritz.de)',
-      'Arvind Satyanarayan (https://arvindsatya.com)',
-      'Jeffrey Heer (https://jheer.org)',
+      'Kanit Wongsuphasawat',
+      'Dominik Moritz',
+      'Arvind Satyanarayan',
+      'Jeffrey Heer',
     ],
-    homepage: 'https://vega.github.io/vega-lite/',
+    homepage: 'vega.github.io/vega-lite/',
     description: 'Vega-Lite is a concise high-level language for interactive visualization.',
     keywords: [
       'vega',
@@ -2087,11 +2087,11 @@ node = ">=12"`,
     },
     repository: {
       type: 'git',
-      url: 'https://github.com/vega/vega-lite.git',
+      url: 'github.com/vega/vega-lite.git',
     },
     license: 'BSD-3-Clause',
     bugs: {
-      url: 'https://github.com/vega/vega-lite/issues',
+      url: 'github.com/vega/vega-lite/issues',
     },
     devDependencies: {
       ajv: '^8.17.1',
@@ -2147,11 +2147,11 @@ node = ">=12"`,
   <name>vega-lite</name>
   <author>Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer</author>
   <version>5.23.0</version>
-  <collaborators>Kanit Wongsuphasawat (http://kanitw.yellowpigz.com)</collaborators>
-  <collaborators>Dominik Moritz (https://www.domoritz.de)</collaborators>
-  <collaborators>Arvind Satyanarayan (https://arvindsatya.com)</collaborators>
-  <collaborators>Jeffrey Heer (https://jheer.org)</collaborators>
-  <homepage>https://vega.github.io/vega-lite/</homepage>
+  <collaborators>Kanit Wongsuphasawat</collaborators>
+  <collaborators>Dominik Moritz</collaborators>
+  <collaborators>Arvind Satyanarayan</collaborators>
+  <collaborators>Jeffrey Heer</collaborators>
+  <homepage>vega.github.io/vega-lite/</homepage>
   <description>Vega-Lite is a concise high-level language for interactive visualization.</description>
   <keywords>vega</keywords>
   <keywords>chart</keywords>
@@ -2189,11 +2189,11 @@ node = ">=12"`,
   </scripts>
   <repository>
     <type>git</type>
-    <url>https://github.com/vega/vega-lite.git</url>
+    <url>github.com/vega/vega-lite.git</url>
   </repository>
   <license>BSD-3-Clause</license>
   <bugs>
-    <url>https://github.com/vega/vega-lite/issues</url>
+    <url>github.com/vega/vega-lite/issues</url>
   </bugs>
   <devDependencies>
     <ajv>^8.17.1</ajv>
@@ -2247,8 +2247,8 @@ node = ">=12"`,
   modifyingconfigtoml: `name = "vega-lite"
 author = "Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer"
 version = "5.23.0"
-collaborators = ["Kanit Wongsuphasawat (http://kanitw.yellowpigz.com)", "Dominik Moritz (https://www.domoritz.de)", "Arvind Satyanarayan (https://arvindsatya.com)", "Jeffrey Heer (https://jheer.org)"]
-homepage = "https://vega.github.io/vega-lite/"
+collaborators = ["Kanit Wongsuphasawat", "Dominik Moritz", "Arvind Satyanarayan", "Jeffrey Heer"]
+homepage = "vega.github.io/vega-lite/"
 description = "Vega-Lite is a concise high-level language for interactive visualization."
 keywords = ["vega", "chart", "visualization"]
 main = "build/vega-lite.js"
@@ -2283,10 +2283,10 @@ release = "release-it"
 
 [repository]
 type = "git"
-url = "https://github.com/vega/vega-lite.git"
+url = "github.com/vega/vega-lite.git"
 
 [bugs]
-url = "https://github.com/vega/vega-lite/issues"
+url = "github.com/vega/vega-lite/issues"
 
 [devDependencies]
 ajv = "^8.17.1"
@@ -2338,11 +2338,11 @@ node = ">=18"`,
 author: Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer
 version: 5.23.0
 collaborators:
-  - Kanit Wongsuphasawat (http://kanitw.yellowpigz.com)
-  - Dominik Moritz (https://www.domoritz.de)
-  - Arvind Satyanarayan (https://arvindsatya.com)
-  - Jeffrey Heer (https://jheer.org)
-homepage: https://vega.github.io/vega-lite/
+  - Kanit Wongsuphasawat
+  - Dominik Moritz
+  - Arvind Satyanarayan
+  - Jeffrey Heer
+homepage: vega.github.io/vega-lite/
 description: Vega-Lite is a concise high-level language for interactive visualization.
 keywords:
   - vega
@@ -2384,10 +2384,10 @@ scripts:
   release: release-it
 repository:
   type: git
-  url: https://github.com/vega/vega-lite.git
+  url: github.com/vega/vega-lite.git
 license: BSD-3-Clause
 bugs:
-  url: https://github.com/vega/vega-lite/issues
+  url: github.com/vega/vega-lite/issues
 devDependencies:
   ajv: ^8.17.1
   ajv-formats: ^3.0.1
@@ -2437,12 +2437,12 @@ packageManager: yarn@1.22.22`,
     author: 'Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer',
     version: '5.23.0',
     collaborators: [
-        'Kanit Wongsuphasawat (http://kanitw.yellowpigz.com)',
-        'Dominik Moritz (https://www.domoritz.de)',
-        'Arvind Satyanarayan (https://arvindsatya.com)',
-        'Jeffrey Heer (https://jheer.org)'
+        'Kanit Wongsuphasawat',
+        'Dominik Moritz',
+        'Arvind Satyanarayan',
+        'Jeffrey Heer'
     ],
-    homepage: 'https://vega.github.io/vega-lite/',
+    homepage: 'vega.github.io/vega-lite/',
     description: 'Vega-Lite is a concise high-level language for interactive visualization.',
     keywords: [
         'vega',
@@ -2484,11 +2484,11 @@ packageManager: yarn@1.22.22`,
     },
     repository: {
         type: 'git',
-        url: 'https://github.com/vega/vega-lite.git'
+        url: 'github.com/vega/vega-lite.git'
     },
     license: 'BSD-3-Clause',
     bugs: {
-        url: 'https://github.com/vega/vega-lite/issues'
+        url: 'github.com/vega/vega-lite/issues'
     },
     devDependencies: {
         ajv: '^8.17.1',
@@ -2545,12 +2545,12 @@ packageManager: yarn@1.22.22`,
   version: 5.23.0
   collaborators:
   [
-    Kanit Wongsuphasawat (http://kanitw.yellowpigz.com)
-    Dominik Moritz (https://www.domoritz.de)
-    Arvind Satyanarayan (https://arvindsatya.com)
-    Jeffrey Heer (https://jheer.org)
+    Kanit Wongsuphasawat
+    Dominik Moritz
+    Arvind Satyanarayan
+    Jeffrey Heer
   ]
-  homepage: https://vega.github.io/vega-lite/
+  homepage: vega.github.io/vega-lite/
   description: Vega-Lite is a concise high-level language for interactive visualization.
   keywords:
   [
@@ -2597,12 +2597,12 @@ packageManager: yarn@1.22.22`,
   repository:
   {
     type: git
-    url: https://github.com/vega/vega-lite.git
+    url: github.com/vega/vega-lite.git
   }
   license: BSD-3-Clause
   bugs:
   {
-    url: https://github.com/vega/vega-lite/issues
+    url: github.com/vega/vega-lite/issues
   }
   devDependencies:
   {
