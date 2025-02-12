@@ -35,8 +35,8 @@ Comments in XML are enclosed in <strong style="color:green;">`<!-- comment -->`<
    <img src="./assets/tutorial/xml/xml_comments.png" width="450px" height="auto">
 <br>
 
-### 6. Text Content
-The content between elements can be plain text.
+### 6.Plain Text Format
+XML is fundamentally a plain text format, where all data is treated as a string by default.
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/xml/xml_text.png" width="450px" height="auto">
 <br>
