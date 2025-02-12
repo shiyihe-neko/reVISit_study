@@ -285,7 +285,7 @@ export const startingStringsMap: Record<string, string> = {
           </quiz>
         </quizzes>
         <midterm>
-          <grade>AB(absent)</grade>
+          <grade>AB(absent)</grade> <!--The student was absent for the midterm exam.-->
           <weight>0.3</weight>
         </midterm>
         <final>
@@ -380,7 +380,7 @@ export const startingStringsMap: Record<string, string> = {
 
 [[students.student]]
 name = "Bob"
-age = 12.0
+age = 12
 
 [students.student.contact]
 email = "bob@example.com"
@@ -396,12 +396,12 @@ total_score = 82.3
 [students.student.courses.course.quizzes]
 
 [[students.student.courses.course.quizzes.quiz]]
-id = 1.0
+id = 1
 grade = 8.0
 weight = 0.1
 
 [[students.student.courses.course.quizzes.quiz]]
-id = 2.0
+id = 2
 grade = 9.0
 weight = 0.1
 
@@ -414,9 +414,9 @@ grade = 87.0
 weight = 0.5
 
 [students.student.courses.course.attendance]
-total_classes = 30.0
-attended_classes = 28.0
-absent_classes = 2.0
+total_classes = 30
+attended_classes = 28
+absent_classes = 2
 
 [students.student.extra_curricular]
 
@@ -444,7 +444,7 @@ role = "Member"
 
 [[students.student]]
 name = "Eve"
-age = 13.0
+age = 13
 
 [students.student.contact]
 email = "eve@example.com"
@@ -460,17 +460,17 @@ total_score = 78.3
 [students.student.courses.course.quizzes]
 
 [[students.student.courses.course.quizzes.quiz]]
-id = 1.0
+id = 1
 grade = 9.0
 weight = 0.15
 
 [[students.student.courses.course.quizzes.quiz]]
-id = 2.0
+id = 2
 grade = 10.0
 weight = 0.15
 
 [students.student.courses.course.midterm]
-grade = "AB(absent)"
+grade = "AB(absent)"   # The student was absent for the midterm exam.
 weight = 0.3
 
 [students.student.courses.course.final]
@@ -478,9 +478,9 @@ grade = 77.0
 weight = 0.4
 
 [students.student.courses.course.attendance]
-total_classes = 30.0
-attended_classes = 27.0
-absent_classes = 3.0
+total_classes = 30
+attended_classes = 27
+absent_classes = 3
 
 [students.student.extra_curricular]
 
@@ -499,7 +499,7 @@ role = "Vice President"
 
 [[students.student]]
 name = "Alice"
-age = 14.0
+age = 14
 
 [students.student.contact]
 email = "alice@example.com"
@@ -515,12 +515,12 @@ total_score = 84.7
 [students.student.courses.course.quizzes]
 
 [[students.student.courses.course.quizzes.quiz]]
-id = 1.0
+id = 1
 grade = 7.0
 weight = 0.2
 
 [[students.student.courses.course.quizzes.quiz]]
-id = 2.0
+id = 2
 grade = 8.0
 weight = 0.2
 
@@ -533,9 +533,9 @@ grade = 90.0
 weight = 0.5
 
 [students.student.courses.course.attendance]
-total_classes = 30.0
-attended_classes = 29.0
-absent_classes = 1.0
+total_classes = 30
+attended_classes = 29
+absent_classes = 1
 
 [students.student.extra_curricular]
 
@@ -618,7 +618,7 @@ role = "Secretary"`,
                 grade: 10
                 weight: 0.15
           midterm:
-            grade: AB(absent)
+            grade: AB(absent)  # The student was absent for the midterm exam.
             weight: 0.3
           final:
             grade: 77
@@ -777,8 +777,7 @@ role = "Secretary"`,
                 ],
               },
               midterm: {
-                // AB indicates that the student was absent from the quiz.
-                grade: 'AB(absent)',
+                grade: 'AB(absent)', // The student was absent for the midterm exam.
                 weight: 0.3,
               },
               final: {
@@ -995,7 +994,7 @@ role = "Secretary"`,
             }
             midterm:
             {
-              grade: AB(absent)
+              grade: AB(absent) // The student was absent for the midterm exam.
               weight: 0.3
             }
             final:
@@ -1211,7 +1210,7 @@ role = "Secretary"`,
                             ]
                         },
                         midterm: {
-                            grade: 'AB(absent)',
+                            grade: 'AB(absent)',  // The student was absent for the midterm exam.
                             weight: 0.3
                         },
                         final: {
@@ -1402,7 +1401,7 @@ role = "Secretary"`,
   readingconfigxml: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root>
   <name>d3</name>
-  <version>7.9.0</version>
+  <version>7.9.0</version> 
   <description>Data-Driven Documents</description>
   <homepage>d3js.org</homepage>
   <repository>
@@ -1439,7 +1438,7 @@ role = "Secretary"`,
     <d3-chord>^3.0.1</d3-chord>
     <d3-color>^3.1.0</d3-color>
     <d3-contour>^4.0.2</d3-contour>
-    <d3-delaunay>^6.0.4</d3-delaunay>
+    <d3-delaunay>^6.0.4</d3-delaunay>  <!--this version might have compatibility issues-->
     <d3-dispatch>^3.0.1</d3-dispatch>
     <d3-drag>^3.0.0</d3-drag>
     <d3-dsv>^3.0.1</d3-dsv>
@@ -1519,7 +1518,7 @@ d3-brush = "^3.0.0"
 d3-chord = "^3.0.1"
 d3-color = "^3.1.0"
 d3-contour = "^4.0.2"
-d3-delaunay = "^6.0.4"
+d3-delaunay = "^6.0.4" # this version might have compatibility issues
 d3-dispatch = "^3.0.1"
 d3-drag = "^3.0.0"
 d3-dsv = "^3.0.1"
@@ -1603,7 +1602,7 @@ node = ">=12"`,
     d3-chord: ^3.0.1
     d3-color: ^3.1.0
     d3-contour: ^4.0.2
-    d3-delaunay: ^6.0.4
+    d3-delaunay: ^6.0.4 # this version might have compatibility issues
     d3-dispatch: ^3.0.1
     d3-drag: ^3.0.0
     d3-dsv: ^3.0.1
@@ -1689,7 +1688,7 @@ node = ">=12"`,
       'd3-chord': '^3.0.1',
       'd3-color': '^3.1.0',
       'd3-contour': '^4.0.2',
-      'd3-delaunay': '^6.0.4',
+      'd3-delaunay': '^6.0.4', // this version might have compatibility issues
       'd3-dispatch': '^3.0.1',
       'd3-drag': '^3.0.0',
       'd3-dsv': '^3.0.1',
@@ -1780,7 +1779,7 @@ node = ">=12"`,
         'd3-chord': '^3.0.1',
         'd3-color': '^3.1.0',
         'd3-contour': '^4.0.2',
-        'd3-delaunay': '^6.0.4',
+        'd3-delaunay': '^6.0.4', // this version might have compatibility issues
         'd3-dispatch': '^3.0.1',
         'd3-drag': '^3.0.0',
         'd3-dsv': '^3.0.1',
@@ -1877,7 +1876,7 @@ node = ">=12"`,
       d3-chord: ^3.0.1
       d3-color: ^3.1.0
       d3-contour: ^4.0.2
-      d3-delaunay: ^6.0.4
+      d3-delaunay: ^6.0.4 // this version might have compatibility issues
       d3-dispatch: ^3.0.1
       d3-drag: ^3.0.0
       d3-dsv: ^3.0.1
@@ -2038,7 +2037,7 @@ node = ">=12"`,
   modifyingconfigjsonc: JSON.stringify({
     name: 'vega-lite',
     author: 'Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer',
-    version: '5.23.0',
+    version: '5.23.0', // make sure that the vega version specified in peerDependencies matches this value.
     collaborators: [
       'Kanit Wongsuphasawat',
       'Dominik Moritz',
@@ -2135,7 +2134,7 @@ node = ">=12"`,
       yargs: '~17.7.2',
     },
     peerDependencies: {
-      vega: '^5.31.0',
+      vega: '^5.31.0', // make sure this value matches the value of the version at the beginning.
     },
     engines: {
       node: '>=18',
@@ -2146,7 +2145,7 @@ node = ">=12"`,
 <root>
   <name>vega-lite</name>
   <author>Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer</author>
-  <version>5.23.0</version>
+  <version>5.23.0</version>   <!--make sure that the vega version specified in peerDependencies matches this value. -->
   <collaborators>Kanit Wongsuphasawat</collaborators>
   <collaborators>Dominik Moritz</collaborators>
   <collaborators>Arvind Satyanarayan</collaborators>
@@ -2237,7 +2236,7 @@ node = ">=12"`,
     <yargs>~17.7.2</yargs>
   </dependencies>
   <peerDependencies>
-    <vega>^5.31.0</vega>
+    <vega>^5.31.0</vega>  <!--make sure this value matches the value of the version at the beginning. -->
   </peerDependencies>
   <engines>
     <node>>=18</node>
@@ -2246,7 +2245,7 @@ node = ">=12"`,
 </root>`,
   modifyingconfigtoml: `name = "vega-lite"
 author = "Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer"
-version = "5.23.0"
+version = "5.23.0"   # make sure that the vega version specified in peerDependencies matches this value.
 collaborators = ["Kanit Wongsuphasawat", "Dominik Moritz", "Arvind Satyanarayan", "Jeffrey Heer"]
 homepage = "vega.github.io/vega-lite/"
 description = "Vega-Lite is a concise high-level language for interactive visualization."
@@ -2330,13 +2329,13 @@ vega-util = "~1.17.3"
 yargs = "~17.7.2"
 
 [peerDependencies]
-vega = "^5.31.0"
+vega = "^5.31.0"   # make sure this value matches the value of the version at the beginning.
 
 [engines]
 node = ">=18"`,
   modifyingconfigyaml: `name: vega-lite
 author: Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer
-version: 5.23.0
+version: 5.23.0  # make sure that the vega version specified in peerDependencies matches this value.
 collaborators:
   - Kanit Wongsuphasawat
   - Dominik Moritz
@@ -2428,14 +2427,14 @@ dependencies:
   vega-util: ~1.17.3
   yargs: ~17.7.2
 peerDependencies:
-  vega: ^5.31.0
+  vega: ^5.31.0  # make sure this value matches the value of the version at the beginning.
 engines:
   node: ">=18"
 packageManager: yarn@1.22.22`,
   modifyingconfigjson5: `{
     name: 'vega-lite',
     author: 'Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer',
-    version: '5.23.0',
+    version: '5.23.0',  // make sure that the vega version specified in peerDependencies matches this value.
     collaborators: [
         'Kanit Wongsuphasawat',
         'Dominik Moritz',
@@ -2532,7 +2531,7 @@ packageManager: yarn@1.22.22`,
         yargs: '~17.7.2'
     },
     peerDependencies: {
-        vega: '^5.31.0'
+        vega: '^5.31.0' //make sure this value matches the value of the version at the beginning.
     },
     engines: {
         node: '>=18'
@@ -2542,7 +2541,7 @@ packageManager: yarn@1.22.22`,
   modifyingconfighjson: `{
   name: vega-lite
   author: Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer
-  version: 5.23.0
+  version: 5.23.0   // make sure that the vega version specified in peerDependencies matches this value.
   collaborators:
   [
     Kanit Wongsuphasawat
@@ -2649,7 +2648,7 @@ packageManager: yarn@1.22.22`,
   }
   peerDependencies:
   {
-    vega: ^5.31.0
+    vega: ^5.31.0  //make sure this value matches the value of the version at the beginning.
   }
   engines:
   {
@@ -2758,7 +2757,6 @@ packageManager: yarn@1.22.22`,
           genres: ['Silent', 'Animation'],
           href: 'The_Enchanted_Drawing',
           extract: 'The Enchanted Drawing is a 1900 silent film directed by J. Stuart Blackton. It is best known for containing the first animated sequences recorded on standard picture film, which has led Blackton to be considered the father of American animation.',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Enchanted_Drawing.ogv/320px--The_Enchanted_Drawing.ogv.jpg',
           thumbnail_width: 320,
           thumbnail_height: 240,
           country: 'United States',
@@ -2799,7 +2797,6 @@ packageManager: yarn@1.22.22`,
           genres: ['Sci-Fi', 'Adventure'],
           href: 'A_Trip_to_the_Moon',
           extract: 'A Trip to the Moon (French: Le Voyage dans la Lune) is a 1902 French silent film directed by Georges Méliès. It is widely regarded as the first science fiction film ever made.',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Le_Voyage_dans_la_lune.jpg/320px-Le_Voyage_dans_la_lune.jpg',
           thumbnail_width: 320,
           thumbnail_height: 240,
           country: 'France',
@@ -2821,7 +2818,6 @@ packageManager: yarn@1.22.22`,
           genres: ['Western', 'Action'],
           href: 'The_Great_Train_Robbery',
           extract: 'The Great Train Robbery is a 1903 American silent short film directed by Edwin S. Porter. It is considered one of the earliest narrative films.',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Great_train_robbery_still.jpg/320px-Great_train_robbery_still.jpg',
           thumbnail_width: 320,
           thumbnail_height: 240,
           country: 'United States',
@@ -2940,7 +2936,6 @@ packageManager: yarn@1.22.22`,
           genres: ['Silent', 'Animation'],
           href: 'The_Enchanted_Drawing',
           extract: 'The Enchanted Drawing is a 1900 silent film directed by J. Stuart Blackton. It is best known for containing the first animated sequences recorded on standard picture film, which has led Blackton to be considered the father of American animation.',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Enchanted_Drawing.ogv/320px--The_Enchanted_Drawing.ogv.jpg',
           thumbnail_width: 320,
           thumbnail_height: 240,
           country: 'United States',
@@ -2976,12 +2971,11 @@ packageManager: yarn@1.22.22`,
         },
         {
           title: 'A Trip to the Moon',
-          year: 1902,
+          year: 1902, // This movie was released after 1900.
           cast: ['Georges Méliès'],
           genres: ['Sci-Fi', 'Adventure'],
           href: 'A_Trip_to_the_Moon',
           extract: 'A Trip to the Moon (French: Le Voyage dans la Lune) is a 1902 French silent film directed by Georges Méliès. It is widely regarded as the first science fiction film ever made.',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Le_Voyage_dans_la_lune.jpg/320px-Le_Voyage_dans_la_lune.jpg',
           thumbnail_width: 320,
           thumbnail_height: 240,
           country: 'France',
@@ -2998,12 +2992,11 @@ packageManager: yarn@1.22.22`,
         },
         {
           title: 'The Great Train Robbery',
-          year: 1903,
+          year: 1903, // This movie was released after 1900.
           cast: ['Gilbert M. Anderson', 'A. C. Abadie'],
           genres: ['Western', 'Action'],
           href: 'The_Great_Train_Robbery',
           extract: 'The Great Train Robbery is a 1903 American silent short film directed by Edwin S. Porter. It is considered one of the earliest narrative films.',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Great_train_robbery_still.jpg/320px-Great_train_robbery_still.jpg',
           thumbnail_width: 320,
           thumbnail_height: 240,
           country: 'United States',
@@ -3125,7 +3118,6 @@ packageManager: yarn@1.22.22`,
     <genres>Animation</genres>
     <href>The_Enchanted_Drawing</href>
     <extract>The Enchanted Drawing is a 1900 silent film directed by J. Stuart Blackton. It is best known for containing the first animated sequences recorded on standard picture film, which has led Blackton to be considered the father of American animation.</extract>
-    <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Enchanted_Drawing.ogv/320px--The_Enchanted_Drawing.ogv.jpg</thumbnail>
     <thumbnail_width>320</thumbnail_width>
     <thumbnail_height>240</thumbnail_height>
     <country>United States</country>
@@ -3162,13 +3154,12 @@ packageManager: yarn@1.22.22`,
   </movie>
   <movie>
     <title>A Trip to the Moon</title>
-    <year>1902</year>
+    <year>1902</year>   <!-- This movie was released after 1900. -->
     <cast>Georges Méliès</cast>
     <genres>Sci-Fi</genres>
     <genres>Adventure</genres>
     <href>A_Trip_to_the_Moon</href>
     <extract>A Trip to the Moon (French: Le Voyage dans la Lune) is a 1902 French silent film directed by Georges Méliès. It is widely regarded as the first science fiction film ever made.</extract>
-    <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Le_Voyage_dans_la_lune.jpg/320px-Le_Voyage_dans_la_lune.jpg</thumbnail>
     <thumbnail_width>320</thumbnail_width>
     <thumbnail_height>240</thumbnail_height>
     <country>France</country>
@@ -3185,14 +3176,13 @@ packageManager: yarn@1.22.22`,
   </movie>
   <movie>
     <title>The Great Train Robbery</title>
-    <year>1903</year>
+    <year>1903</year>   <!-- This movie was released after 1900. -->
     <cast>Gilbert M. Anderson</cast>
     <cast>A. C. Abadie</cast>
     <genres>Western</genres>
     <genres>Action</genres>
     <href>The_Great_Train_Robbery</href>
     <extract>The Great Train Robbery is a 1903 American silent short film directed by Edwin S. Porter. It is considered one of the earliest narrative films.</extract>
-    <thumbnail>https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Great_train_robbery_still.jpg/320px-Great_train_robbery_still.jpg</thumbnail>
     <thumbnail_width>320</thumbnail_width>
     <thumbnail_height>240</thumbnail_height>
     <country>United States</country>
@@ -3212,167 +3202,164 @@ packageManager: yarn@1.22.22`,
 
 [[movies.movie]]
 title = "After Dark in Central Park"
-year = 1900.0
+year = 1900
 cast = []
 genres = ["Silent", "Short"]
 country = "United States"
-runtime = 3.0
+runtime = 3
 language = "Silent"
 release_date = "1900-03-15"
 production_company = "Edison Manufacturing Company"
 director = "James H. White"
 writer = "Unknown"
 cinematography = "Unknown"
-budget = 500.0
+budget = 500
 awards = []
 
 [[movies.movie]]
 title = "Boarding School Girls' Pajama Parade"
-year = 1900.0
+year = 1900
 cast = []
 genres = ["Silent", "Short"]
 country = "United States"
-runtime = 2.0
+runtime = 2
 language = "Silent"
 release_date = "1900-05-10"
 production_company = "Edison Manufacturing Company"
 director = "James H. White"
 writer = "Unknown"
 cinematography = "Unknown"
-budget = 450.0
+budget = 450
 awards = []
 
 [[movies.movie]]
 title = "Buffalo Bill's Wild West Parade"
-year = 1900.0
+year = 1900
 cast = ["Buffalo Bill (William F. Cody)"]
 genres = ["Documentary"]
 country = "United States"
-runtime = 5.0
+runtime = 5
 language = "Silent"
 release_date = "1900-07-04"
 production_company = "Edison Manufacturing Company"
 director = "Unknown"
 writer = "Unknown"
 cinematography = "Unknown"
-budget = 600.0
+budget = 600
 awards = []
 
 [[movies.movie]]
 title = "Caught"
-year = 1900.0
+year = 1900
 cast = []
 genres = ["Drama"]
 country = "United States"
-runtime = 2.0
+runtime = 2
 language = "Silent"
 release_date = "1900-02-20"
 production_company = "Biograph Company"
 director = "William Heise"
 writer = "Unknown"
 cinematography = "Unknown"
-budget = 400.0
+budget = 400
 awards = []
 
 [[movies.movie]]
 title = "Clowns Spinning Hats"
-year = 1900.0
+year = 1900
 cast = ["Unknown Clowns"]
 genres = ["Silent", "Comedy"]
 href = "Clowns_Spinning_Hats"
 extract = "Clowns Spinning Hats is a black-and-white silent film featuring clowns throwing hats back and forth to each other. It was written and produced by Lubin Films and released April 7, 1900."
 country = "United States"
-runtime = 3.0
+runtime = 3
 language = "Silent"
 release_date = "1900-04-07"
 production_company = "Lubin Films"
 director = "Unknown"
 writer = "Unknown"
 cinematography = "Unknown"
-budget = 500.0
+budget = 500
 awards = []
 
 [[movies.movie]]
 title = "The Enchanted Drawing"
-year = 1900.0
+year = 1900
 cast = ["J. Stuart Blackton"]
 genres = ["Silent", "Animation"]
 href = "The_Enchanted_Drawing"
 extract = "The Enchanted Drawing is a 1900 silent film directed by J. Stuart Blackton. It is best known for containing the first animated sequences recorded on standard picture film, which has led Blackton to be considered the father of American animation."
-thumbnail = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Enchanted_Drawing.ogv/320px--The_Enchanted_Drawing.ogv.jpg"
-thumbnail_width = 320.0
-thumbnail_height = 240.0
+thumbnail_width = 320
+thumbnail_height = 240
 country = "United States"
-runtime = 2.0
+runtime = 2
 language = "Silent"
 release_date = "1900-11-16"
 production_company = "Vitagraph Studios"
 director = "J. Stuart Blackton"
 writer = "J. Stuart Blackton"
 cinematography = "Unknown"
-budget = 700.0
+budget = 700
 awards = []
 
 [[movies.movie]]
 title = "Feeding Sea Lions"
-year = 1900.0
+year = 1900
 cast = ["Paul Boyton"]
 genres = ["Short", "Silent"]
 href = "Feeding_Sea_Lions"
 extract = "Feeding Sea Lions is a short silent film featuring Paul Boyton feeding sea lions at his Sea Lion Park at Coney Island. Boyton is shown feeding the trained sea lions, twelve in number. The sea lions follow Boyton up the steps of the pool and then follow him back into the water. One of them steals food out of the basket. The film was made by Lubin Studios on March 10, 1900."
 country = "United States"
-runtime = 3.0
+runtime = 3
 language = "Silent"
 release_date = "1900-03-10"
 production_company = "Lubin Studios"
 director = "Unknown"
 writer = "Unknown"
 cinematography = "Unknown"
-budget = 450.0
+budget = 450
 awards = []
 
 [[movies.movie]]
 title = "A Trip to the Moon"
-year = 1902.0
+year = 1902   # This movie was released after 1900.
 cast = ["Georges Méliès"]
 genres = ["Sci-Fi", "Adventure"]
 href = "A_Trip_to_the_Moon"
 extract = "A Trip to the Moon (French: Le Voyage dans la Lune) is a 1902 French silent film directed by Georges Méliès. It is widely regarded as the first science fiction film ever made."
-thumbnail = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Le_Voyage_dans_la_lune.jpg/320px-Le_Voyage_dans_la_lune.jpg"
-thumbnail_width = 320.0
-thumbnail_height = 240.0
+thumbnail_width = 320
+thumbnail_height = 240
 country = "France"
-runtime = 14.0
+runtime = 14
 language = "Silent"
 release_date = "1902-09-01"
 production_company = "Star Film Company"
 director = "Georges Méliès"
 writer = "Georges Méliès"
 cinematography = "Georges Méliès"
-budget = 10000.0
-box_office = 20000.0
+budget = 10000
+box_office = 20000
 awards = ["Considered a milestone in cinema history"]
 
 [[movies.movie]]
 title = "The Great Train Robbery"
-year = 1903.0
+year = 1903  # This movie was released after 1900.
 cast = ["Gilbert M. Anderson", "A. C. Abadie"]
 genres = ["Western", "Action"]
 href = "The_Great_Train_Robbery"
 extract = "The Great Train Robbery is a 1903 American silent short film directed by Edwin S. Porter. It is considered one of the earliest narrative films."
-thumbnail = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Great_train_robbery_still.jpg/320px-Great_train_robbery_still.jpg"
-thumbnail_width = 320.0
-thumbnail_height = 240.0
+thumbnail_width = 320
+thumbnail_height = 240
 country = "United States"
-runtime = 12.0
+runtime = 12
 language = "Silent"
 release_date = "1903-12-01"
 production_company = "Edison Manufacturing Company"
 director = "Edwin S. Porter"
 writer = "Scott Marble"
 cinematography = "Edwin S. Porter"
-budget = 150.0
-box_office = 5000.0
+budget = 150
+box_office = 5000
 awards = ["One of the earliest crime films"]`,
   modifyingtabularyaml: `movies:
   movie:
@@ -3483,8 +3470,6 @@ awards = ["One of the earliest crime films"]`,
         Blackton. It is best known for containing the first animated sequences
         recorded on standard picture film, which has led Blackton to be
         considered the father of American animation.
-      thumbnail: >-
-        https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Enchanted_Drawing.ogv/320px--The_Enchanted_Drawing.ogv.jpg
       thumbnail_width: 320
       thumbnail_height: 240
       country: United States
@@ -3525,7 +3510,7 @@ awards = ["One of the earliest crime films"]`,
       box_office: null
       awards: []
     - title: A Trip to the Moon
-      year: 1902
+      year: 1902    # This movie was released after 1900.
       cast:
         - Georges Méliès
       genres:
@@ -3536,8 +3521,6 @@ awards = ["One of the earliest crime films"]`,
         A Trip to the Moon (French: Le Voyage dans la Lune) is a 1902 French
         silent film directed by Georges Méliès. It is widely regarded as the
         first science fiction film ever made.
-      thumbnail: >-
-        https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Le_Voyage_dans_la_lune.jpg/320px-Le_Voyage_dans_la_lune.jpg
       thumbnail_width: 320
       thumbnail_height: 240
       country: France
@@ -3553,7 +3536,7 @@ awards = ["One of the earliest crime films"]`,
       awards:
         - Considered a milestone in cinema history
     - title: The Great Train Robbery
-      year: 1903
+      year: 1903   # This movie was released after 1900.
       cast:
         - Gilbert M. Anderson
         - A. C. Abadie
@@ -3564,8 +3547,6 @@ awards = ["One of the earliest crime films"]`,
       extract: >-
         The Great Train Robbery is a 1903 American silent short film directed by
         Edwin S. Porter. It is considered one of the earliest narrative films.
-      thumbnail: >-
-        https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Great_train_robbery_still.jpg/320px-Great_train_robbery_still.jpg
       thumbnail_width: 320
       thumbnail_height: 240
       country: United States
@@ -3703,7 +3684,6 @@ awards = ["One of the earliest crime films"]`,
                 ],
                 href: 'The_Enchanted_Drawing',
                 extract: 'The Enchanted Drawing is a 1900 silent film directed by J. Stuart Blackton. It is best known for containing the first animated sequences recorded on standard picture film, which has led Blackton to be considered the father of American animation.',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Enchanted_Drawing.ogv/320px--The_Enchanted_Drawing.ogv.jpg',
                 thumbnail_width: 320,
                 thumbnail_height: 240,
                 country: 'United States',
@@ -3744,7 +3724,7 @@ awards = ["One of the earliest crime films"]`,
             },
             {
                 title: 'A Trip to the Moon',
-                year: 1902,
+                year: 1902,    // This movie was released after 1900.
                 cast: [
                     'Georges Méliès'
                 ],
@@ -3754,7 +3734,6 @@ awards = ["One of the earliest crime films"]`,
                 ],
                 href: 'A_Trip_to_the_Moon',
                 extract: 'A Trip to the Moon (French: Le Voyage dans la Lune) is a 1902 French silent film directed by Georges Méliès. It is widely regarded as the first science fiction film ever made.',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Le_Voyage_dans_la_lune.jpg/320px-Le_Voyage_dans_la_lune.jpg',
                 thumbnail_width: 320,
                 thumbnail_height: 240,
                 country: 'France',
@@ -3773,7 +3752,7 @@ awards = ["One of the earliest crime films"]`,
             },
             {
                 title: 'The Great Train Robbery',
-                year: 1903,
+                year: 1903,    // This movie was released after 1900.
                 cast: [
                     'Gilbert M. Anderson',
                     'A. C. Abadie'
@@ -3784,7 +3763,6 @@ awards = ["One of the earliest crime films"]`,
                 ],
                 href: 'The_Great_Train_Robbery',
                 extract: 'The Great Train Robbery is a 1903 American silent short film directed by Edwin S. Porter. It is considered one of the earliest narrative films.',
-                thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Great_train_robbery_still.jpg/320px-Great_train_robbery_still.jpg',
                 thumbnail_width: 320,
                 thumbnail_height: 240,
                 country: 'United States',
@@ -3938,7 +3916,6 @@ awards = ["One of the earliest crime films"]`,
         ]
         href: The_Enchanted_Drawing
         extract: The Enchanted Drawing is a 1900 silent film directed by J. Stuart Blackton. It is best known for containing the first animated sequences recorded on standard picture film, which has led Blackton to be considered the father of American animation.
-        thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/The_Enchanted_Drawing.ogv/320px--The_Enchanted_Drawing.ogv.jpg
         thumbnail_width: 320
         thumbnail_height: 240
         country: United States
@@ -3981,7 +3958,7 @@ awards = ["One of the earliest crime films"]`,
       }
       {
         title: A Trip to the Moon
-        year: 1902
+        year: 1902    // This movie was released after 1900.
         cast:
         [
           Georges Méliès
@@ -3993,7 +3970,6 @@ awards = ["One of the earliest crime films"]`,
         ]
         href: A_Trip_to_the_Moon
         extract: A Trip to the Moon (French: Le Voyage dans la Lune) is a 1902 French silent film directed by Georges Méliès. It is widely regarded as the first science fiction film ever made.
-        thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Le_Voyage_dans_la_lune.jpg/320px-Le_Voyage_dans_la_lune.jpg
         thumbnail_width: 320
         thumbnail_height: 240
         country: France
@@ -4013,7 +3989,7 @@ awards = ["One of the earliest crime films"]`,
       }
       {
         title: The Great Train Robbery
-        year: 1903
+        year: 1903    // This movie was released after 1900.
         cast:
         [
           Gilbert M. Anderson
@@ -4026,7 +4002,6 @@ awards = ["One of the earliest crime films"]`,
         ]
         href: The_Great_Train_Robbery
         extract: The Great Train Robbery is a 1903 American silent short film directed by Edwin S. Porter. It is considered one of the earliest narrative films.
-        thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Great_train_robbery_still.jpg/320px-Great_train_robbery_still.jpg
         thumbnail_width: 320
         thumbnail_height: 240
         country: United States
