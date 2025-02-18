@@ -20,7 +20,9 @@ import {
   IconChartHistogram,
   IconDotsVertical,
   IconMail,
+  IconMoonStars,
   IconSchema,
+  IconSun,
   IconUserPlus,
 } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
@@ -105,7 +107,14 @@ export function AppHeader({ studyNavigatorEnabled, dataCollectionEnabled }: { st
               </Group>
             ) : null}
             {!dataCollectionEnabled && <Tooltip multiline withArrow arrowSize={6} w={300} label="This is a demo version of the study, we’re not collecting any data."><Badge size="lg" color="orange">Demo Mode</Badge></Tooltip>}
-            <Switch checked={colorScheme === 'dark'} onChange={(e) => setColorScheme(e.currentTarget.checked ? 'dark' : 'light')} />
+            <Switch
+              color="dark.4"
+              size="md"
+              checked={colorScheme === 'dark'}
+              onLabel={<IconSun size={16} stroke={2.5} color="var(--mantine-color-yellow-4)" />}
+              offLabel={<IconMoonStars size={16} stroke={2.5} color="var(--mantine-color-blue-6)" />}
+              onChange={(e) => setColorScheme(e.currentTarget.checked ? 'dark' : 'light')}
+            />
             {studyConfig?.uiConfig.helpTextPath !== undefined && (
               <Button
                 variant="outline"
