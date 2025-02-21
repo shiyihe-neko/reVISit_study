@@ -37,11 +37,10 @@
         },
         {
           "id": "experience",
-          "prompt": "How many years of programming experience do you have, including professional training, formal education, and self-learning?",
+          "prompt": "How many months of programming experience do you have, including professional training, formal education, and self-learning?",
           "required": true,
           "location": "belowStimulus",
-          "type": "radio",
-          "options": ["<= 6 months", "> 6 months - 1 year", "1-2 years", ">= 2 years"]
+          "type": "numerical"
         },
         {
           "id": "packageJsonFamiliarity",
@@ -70,19 +69,17 @@
       "correctAnswer": [
         {
           "id": "Concentration Check",
-          "answer": ["I am not an AI"]
-        },
-        {
-          "id": "experience",
-          "answer": ["<= 6 months"]
+          "answer": "Yes, I am an AI"
         },
         {
           "id": "packageJsonFamiliarity",
-          "answer": ["Not familiar at all","mildly familiar"]
+          "answer": "Very familiar"
+        },
+        {
+          "id": "experience",
+          "acceptableLow": 6
         }
-      ],
-      "allowFailedTraining": false,
-      "trainingAttempts": 0
+      ]
     },
 
     "consent": {
