@@ -62,7 +62,7 @@ JSON supports nested objects and arrays, enabling the construction of complex da
 
 <br><br>
 
-**JSON5** extends standard JSON with the following unique features:
+## JSON5 extends standard JSON with the following unique features:
 <br><br>
 
 ### 1. Support for Comments

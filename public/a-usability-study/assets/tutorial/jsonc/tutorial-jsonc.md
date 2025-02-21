@@ -61,7 +61,7 @@ JSON supports nested objects and arrays, enabling the construction of complex da
 
 <br><br>
 
-JSONC extends standard JSON with the following unique features:
+## JSONC extends standard JSON with the following unique features:
 <br><br>
 
 ### 1. Support for Trailing Commas
