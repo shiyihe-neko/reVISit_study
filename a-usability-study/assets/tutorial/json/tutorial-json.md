@@ -59,20 +59,6 @@ JSON consists of **key-value** pairs and **data types**, and it primarily has tw
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/json/json_quot_C.png" width="450px" height="auto">
 
-**Escape Characters**: JSON supports the following escape characters: 
-- <span style="color:green;">`\"`</span> (Double quote)
-- <span style="color:green;">`\\`</span> (Backslash)
-- <span style="color:green;">`\/`</span> (Forward slash)
-- <span style="color:green;">`\b`</span> (Backspace)
-- <span style="color:green;">`\f`</span> (Form feed)
-- <span style="color:green;">`\n`</span> (New line)
-- <span style="color:green;">`\r`</span> (Carriage return)
-- <span style="color:green;">`\t`</span> (Tab)
-
-###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_Escape.png" width="450px" height="auto">
-<br>
-
 ### 5. Nested Structures
 JSON supports nested objects and arrays, enabling the construction of complex data structures.
 
