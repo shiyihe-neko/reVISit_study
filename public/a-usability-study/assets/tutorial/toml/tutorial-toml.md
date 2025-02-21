@@ -23,15 +23,21 @@ Supports integers, floating-point numbers, and booleans.
 <br>
 
 ### 4. Arrays
-Arrays are defined using square brackets <strong style="color:green;">[]</strong>, with items separated by commas <strong style="color:green;">,</strong>.
+Arrays are defined using square brackets <strong style="color:green;">[]</strong>, with items separated by commas <strong style="color:green;">,</strong>. A terminating comma (also called trailing comma) is not permitted after the last key/value pair in an inline table.
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/toml/toml_arrays.png" width="450px" height="auto">
 <br>
+
 
 ### 5. Tables
 Tables are defined using square brackets <strong style="color:green;">[]</strong> and create hierarchical structures.
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/toml/toml_table.png" width="450px" height="auto">
+<br>
+
+Array of tables <strong style="color:green;">[[array]]</strong> is used to define a list of objects (tables). Each [[array]] entry represents a separate table inside an array.
+###### <u>Correct Example</u> 
+   <img src="./assets/tutorial/toml/toml_arrays2.png" width="450px" height="auto">
 <br>
 
 ### 6. Inline Tables
@@ -59,3 +65,4 @@ TOML explicitly supports time and date formats based on the **RFC 3339** standar
 ### Full TOML Example
    <img src="./assets/tutorial/toml/toml_example.png" width="450px" height="auto">
 <br>
+Tips: In TOML, indentation is primarily used to enhance readability, but it does not affect the parsing logic since TOML does not rely on indentation to define hierarchical structures.
