@@ -4,16 +4,18 @@
     "a-usability-study",
     "example-mvnv",
     "example-fairness-jnd",
+    "example-VLAT-full-randomized",
+    "example-VLAT-mini-randomized",
     "demo-html",
     "demo-html-input",
     "demo-survey",
     "demo-training",
-    "example-VLAT-full-randomized",
-    "example-VLAT-mini-randomized",
     "demo-html-trrack",
     "demo-image",
-    "test-audio",
-    "test-library",
+    "demo-upset",
+    "demo-vega",
+    "demo-video-slider",
+    "demo-video",
     "library-beauvis",
     "library-color-blindness",
     "library-demographics",
@@ -22,24 +24,16 @@
     "library-previs",
     "library-sus",
     "library-vlat",
+    "test-audio",
+    "test-library",
     "test-likert-matrix",
     "test-parser-errors",
-    "demo-vega",
     "test-randomization",
     "test-skip-logic"
   ],
   "configs": {
     "a-usability-study": {
       "path": "a-usability-study/config.json"
-    },
-    "tutorial-simple-study": {
-      "path": "tutorial/simple-study/config.json"
-    },
-    "tutorial-react-and-randomization": {
-      "path": "tutorial/react-and-randomization/config.json"
-    },
-    "tutorial-advanced-react": {
-      "path": "tutorial/advanced-react-component/config.json"
     },
     "example-brush-interactions": {
       "path": "example-brush-interactions/config.json"
@@ -53,6 +47,9 @@
     "example-fairness-jnd": {
       "path": "example-fairness-jnd/config.json"
     },
+    "demo-video-slider": {
+      "path": "demo-video-slider/config.json"
+    },
     "demo-html": {
       "path": "demo-html/config.json"
     },
@@ -64,6 +61,12 @@
     },
     "demo-training": {
       "path": "demo-training/config.json"
+    },
+    "demo-upset": {
+      "path": "demo-upset/config.json"
+    },
+    "demo-video": {
+      "path": "demo-video/config.json"
     },
     "example-VLAT-full-randomized": {
       "path": "example-VLAT-full-randomized/config.json"

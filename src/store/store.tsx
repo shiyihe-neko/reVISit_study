@@ -31,13 +31,20 @@ export async function studyStoreCreator(
     ]));
   const emptyValidation: TrialValidation = Object.assign(
     {},
-    ...flatSequence.map((id, idx) => ({ [`${id}_${idx}`]: { aboveStimulus: { valid: false, values: {} }, belowStimulus: { valid: false, values: {} }, sidebar: { valid: false, values: {} } } })),
+    ...flatSequence.map((id, idx) => ({
+      [`${id}_${idx}`]: {
+        aboveStimulus: { valid: false, values: {} },
+        belowStimulus: { valid: false, values: {} },
+        sidebar: { valid: false, values: {} },
+        stimulus: { valid: false, values: {} },
+      },
+    })),
   );
   const allValid = Object.assign(
     {},
     ...flatSequence.map((id, idx) => ({
       [`${id}_${idx}`]: {
-        aboveStimulus: true, belowStimulus: true, sidebar: true, values: {},
+        aboveStimulus: true, belowStimulus: true, sidebar: true, stimulus: true, values: {},
       },
     })),
   );
@@ -160,7 +167,7 @@ export async function studyStoreCreator(
         {
           payload,
         }: PayloadAction<{
-          location: ResponseBlockLocation;
+          location: ResponseBlockLocation | 'stimulus';
           identifier: string;
           status: boolean;
           values: object;
@@ -172,10 +179,16 @@ export async function studyStoreCreator(
             aboveStimulus: { valid: false, values: {} },
             belowStimulus: { valid: false, values: {} },
             sidebar: { valid: false, values: {} },
+            stimulus: { valid: false, values: {} },
             provenanceGraph: undefined,
           };
         }
-        state.trialValidation[payload.identifier][payload.location] = { valid: payload.status, values: payload.values };
+        if (Object.keys(payload.values).length > 0) {
+          const currentValues = state.trialValidation[payload.identifier][payload.location].values;
+          state.trialValidation[payload.identifier][payload.location] = { valid: payload.status, values: { ...currentValues, ...payload.values } };
+        } else {
+          state.trialValidation[payload.identifier][payload.location] = { valid: payload.status, values: {} };
+        }
 
         if (payload.provenanceGraph) {
           state.trialValidation[payload.identifier].provenanceGraph = payload.provenanceGraph;
