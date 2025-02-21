@@ -38,7 +38,13 @@ function checkAllAnswersCorrect(answers: Record<string, Answer>, componentId: st
   }
 
   // Check that the response is matches the correct answer
-  return foundConfigComponentConfig.correctAnswer.every((correctAnswerEntry) => answers[correctAnswerEntry.id] === correctAnswerEntry.answer);
+  return foundConfigComponentConfig.correctAnswer.every((correctAnswerEntry) => {
+    if (correctAnswerEntry.acceptableHigh !== undefined && correctAnswerEntry.acceptableLow !== undefined) {
+      return +answers[correctAnswerEntry.id] >= correctAnswerEntry.acceptableLow && +answers[correctAnswerEntry.id] <= correctAnswerEntry.acceptableHigh;
+    }
+
+    return answers[correctAnswerEntry.id] === correctAnswerEntry.answer;
+  });
 }
 
 export function useNextStep() {
