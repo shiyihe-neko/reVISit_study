@@ -678,202 +678,203 @@ role = "Secretary"`,
               role: Member
             - club_name: Literature Club
               role: Secretary`,
-  readingtabularjsonc: JSON.stringify({
-    students: {
-      student: [
+  readingtabularjsonc: `{
+    "students": {
+      "student": [
         {
-          name: 'Bob',
-          age: 12,
-          contact: {
-            email: 'bob@example.com',
-            phone: '+123456789',
-            address: '123 Bob St, Some City',
+          // comments
+          "name": "Bob",
+          "age": 12,
+          "contact": {
+            "email": "bob@example.com",
+            "phone": "+123456789",
+            "address": "123 Bob St, Some City"
           },
-          courses: {
-            course: {
-              course_name: 'Math 101',
-              quizzes: {
-                quiz: [
+          "courses": {
+            "course": {
+              "course_name": "Math 101",
+              "quizzes": {
+                "quiz": [
                   {
-                    id: 1,
-                    grade: 8,
-                    weight: 0.1,
+                    "id": 1,
+                    "grade": 8,
+                    "weight": 0.1
                   },
                   {
-                    id: 2,
-                    grade: 9,
-                    weight: 0.1,
-                  },
-                ],
+                    "id": 2,
+                    "grade": 9,
+                    "weight": 0.1
+                  }
+                ]
               },
-              midterm: {
-                grade: 77,
-                weight: 0.3,
+              "midterm": {
+                "grade": 77,
+                "weight": 0.3
               },
-              final: {
-                grade: 87,
-                weight: 0.5,
+              "final": {
+                "grade": 87,
+                "weight": 0.5
               },
-              total_score: 82.3,
-              attendance: {
-                total_classes: 30,
-                attended_classes: 28,
-                absent_classes: 2,
-              },
-            },
+              "total_score": 82.3,
+              "attendance": {
+                "total_classes": 30,
+                "attended_classes": 28,
+                "absent_classes": 2
+              }
+            }
           },
-          extra_curricular: {
-            sports: {
-              sport: [
+          "extra_curricular": {
+            "sports": {
+              "sport": [
                 {
-                  sport_name: 'Soccer',
-                  position: 'Forward',
-                  team: 'The Tigers',
+                  "sport_name": "Soccer",
+                  "position": "Forward",
+                  "team": "The Tigers"
                 },
                 {
-                  sport_name: 'Basketball',
-                  position: 'Guard',
-                  team: 'The Eagles',
-                },
-              ],
+                  "sport_name": "Basketball",
+                  "position": "Guard",
+                  "team": "The Eagles"
+                }
+              ]
             },
-            clubs: {
-              club: [
+            "clubs": {
+              "club": [
                 {
-                  club_name: 'Science Club',
-                  role: 'President',
+                  "club_name": "Science Club",
+                  "role": "President"
                 },
                 {
-                  club_name: 'Drama Club',
-                  role: 'Member',
-                },
-              ],
-            },
-          },
+                  "club_name": "Drama Club",
+                  "role": "Member"
+                }
+              ]
+            }
+          }
         },
         {
-          name: 'Eve',
-          age: 13,
-          contact: {
-            email: 'eve@example.com',
-            phone: '+987654321',
-            address: '456 Eve St, Other City',
+          "name": "Eve",
+          "age": 13,
+          "contact": {
+            "email": "eve@example.com",
+            "phone": "+987654321",
+            "address": "456 Eve St, Other City"
           },
-          courses: {
-            course: {
-              course_name: 'Math 101',
-              quizzes: {
-                quiz: [
+          "courses": {
+            "course": {
+              "course_name": "Math 101",
+              "quizzes": {
+                "quiz": [
                   {
-                    id: 1,
-                    grade: 9,
-                    weight: 0.15,
+                    "id": 1,
+                    "grade": 9,
+                    "weight": 0.15
                   },
                   {
-                    id: 2,
-                    grade: 10,
-                    weight: 0.15,
-                  },
-                ],
+                    "id": 2,
+                    "grade": 10,
+                    "weight": 0.15
+                  }
+                ]
               },
-              midterm: {
-                grade: 'AB(absent)', // The student was absent for the midterm exam.
-                weight: 0.3,
+              "midterm": {
+                "grade": "AB(absent)",
+                "weight": 0.3
               },
-              final: {
-                grade: 77,
-                weight: 0.4,
+              "final": {
+                "grade": 77,
+                "weight": 0.4
               },
-              total_score: 78.3,
-              attendance: {
-                total_classes: 30,
-                attended_classes: 27,
-                absent_classes: 3,
-              },
-            },
+              "total_score": 78.3,
+              "attendance": {
+                "total_classes": 30,
+                "attended_classes": 27,
+                "absent_classes": 3
+              }
+            }
           },
-          extra_curricular: {
-            sports: {
-              sport: {
-                sport_name: 'Tennis',
-                position: 'Singles',
-                team: 'The Champions',
-              },
+          "extra_curricular": {
+            "sports": {
+              "sport": {
+                "sport_name": "Tennis",
+                "position": "Singles",
+                "team": "The Champions"
+              }
             },
-            clubs: {
-              club: {
-                club_name: 'Art Club',
-                role: 'Vice President',
-              },
-            },
-          },
+            "clubs": {
+              "club": {
+                "club_name": "Art Club",
+                "role": "Vice President"
+              }
+            }
+          }
         },
         {
-          name: 'Alice',
-          age: 14,
-          contact: {
-            email: 'alice@example.com',
-            phone: '+111222333',
-            address: '789 Alice St, Another City',
+          "name": "Alice",
+          "age": 14,
+          "contact": {
+            "email": "alice@example.com",
+            "phone": "+111222333",
+            "address": "789 Alice St, Another City"
           },
-          courses: {
-            course: {
-              course_name: 'Science 101',
-              quizzes: {
-                quiz: [
+          "courses": {
+            "course": {
+              "course_name": "Science 101",
+              "quizzes": {
+                "quiz": [
                   {
-                    id: 1,
-                    grade: 7,
-                    weight: 0.2,
+                    "id": 1,
+                    "grade": 7,
+                    "weight": 0.2
                   },
                   {
-                    id: 2,
-                    grade: 8,
-                    weight: 0.2,
-                  },
-                ],
+                    "id": 2,
+                    "grade": 8,
+                    "weight": 0.2
+                  }
+                ]
               },
-              midterm: {
-                grade: 85,
-                weight: 0.3,
+              "midterm": {
+                "grade": 85,
+                "weight": 0.3
               },
-              final: {
-                grade: 90,
-                weight: 0.5,
+              "final": {
+                "grade": 90,
+                "weight": 0.5
               },
-              total_score: 84.7,
-              attendance: {
-                total_classes: 30,
-                attended_classes: 29,
-                absent_classes: 1,
-              },
-            },
+              "total_score": 84.7,
+              "attendance": {
+                "total_classes": 30,
+                "attended_classes": 29,
+                "absent_classes": 1
+              }
+            }
           },
-          extra_curricular: {
-            sports: {
-              sport: {
-                sport_name: 'Swimming',
-                position: 'Freestyle',
-                team: 'Blue Sharks',
-              },
+          "extra_curricular": {
+            "sports": {
+              "sport": {
+                "sport_name": "Swimming",
+                "position": "Freestyle",
+                "team": "Blue Sharks"
+              }
             },
-            clubs: {
-              club: [
+            "clubs": {
+              "club": [
                 {
-                  club_name: 'Chess Club',
-                  role: 'Member',
+                  "club_name": "Chess Club",
+                  "role": "Member"
                 },
                 {
-                  club_name: 'Literature Club',
-                  role: 'Secretary',
-                },
-              ],
-            },
-          },
-        },
-      ],
-    },
-  }, null, 2),
+                  "club_name": "Literature Club",
+                  "role": "Secretary"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }`,
   readingtabularhjson: `{
   students:
   {
