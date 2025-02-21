@@ -63,7 +63,7 @@ JSON supports nested objects and arrays, enabling the construction of complex da
 
 <br><br>
 
-**HJSON** extends standard JSON with the following unique features:
+##  HJSON extends standard JSON with the following unique features:
 <br><br>
 
 ### 1. Support for Missing & Trailing Commas

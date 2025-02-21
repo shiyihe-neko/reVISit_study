@@ -65,4 +65,4 @@ TOML explicitly supports time and date formats based on the **RFC 3339** standar
 ### Full TOML Example
    <img src="./assets/tutorial/toml/toml_example.png" width="450px" height="auto">
 <br>
-Tips: In TOML, indentation is primarily used to enhance readability, but it does not affect the parsing logic since TOML does not rely on indentation to define hierarchical structures.
+Tip: In TOML, indentation is primarily used to enhance readability, but it does not affect the parsing logic since TOML does not rely on indentation to define hierarchical structures.

@@ -440,12 +440,6 @@
       "nextButtonText": "",
       "response": []
     },
-    "quiz": {
-      "type": "markdown",
-      "path": "a-usability-study/assets/quiz.md",
-      "nextButtonText": "",
-      "response": []
-    },
     "reading-task-config-json": {
       "meta": {
         "taskName": "reading-task-config-json"
@@ -482,7 +476,7 @@
         },
         {
           "id": "reading-task-config-json_q4",
-          "prompt": "4. Which keys in the JSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Which top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -616,7 +610,7 @@
         },
         {
           "id": "reading-task-config-jsonc_q4",
-          "prompt": "4. Which keys in the JSONC file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Which top-level keys in the JSONC file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -750,7 +744,7 @@
         },
         {
           "id": "reading-task-config-json5_q4",
-          "prompt": "4. Which keys in the JSON5 file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Which top-level keys in the JSON5 file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -884,7 +878,7 @@
         },
         {
           "id": "reading-task-config-hjson_q4",
-          "prompt": "4. Which keys in the HJSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Which top-level keys in the HJSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1018,7 +1012,7 @@
         },
         {
           "id": "reading-task-config-yaml_q4",
-          "prompt": "4. Which keys in the YAML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Which top-level keys in the YAML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1152,7 +1146,7 @@
         },
         {
           "id": "reading-task-config-toml_q4",
-          "prompt": "4. Which keys in the TOML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Which top-level keys in the TOML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -1286,7 +1280,7 @@
         },
         {
           "id": "reading-task-config-xml_q4",
-          "prompt": "4. Which tags in the XML file contain nested structures, meaning they have child elements inside them? List all such tags. (For example, \"repository\" is a valid answer because it contains \"type\" and \"url\" as child elements.)",
+          "prompt": "4. Which top-level tags in the XML file contain nested structures, meaning they have child elements inside them? List all such tags. (For example, \"repository\" is a valid answer because it contains \"type\" and \"url\" as child elements.)",
           "type": "shortText",
           "location": "sidebar",
           "required": true
@@ -2057,7 +2051,7 @@
         },
         {
           "id": "modifying-task-config-json_q3",
-          "prompt": "3. Iterate through the JSON data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "prompt": "3. Go through the JSON data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2103,7 +2097,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-json_q1",
-          "prompt": "1. Iterate through each movie entry in the JSON data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
+          "prompt": "1. Go through each movie entry in the JSON data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2177,7 +2171,7 @@
         },
         {
           "id": "modifying-task-config-jsonc_q3",
-          "prompt": "3. Iterate through the JSONC data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "prompt": "3. Go through the JSON data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2223,7 +2217,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-jsonc_q1",
-          "prompt": "1. Iterate through each movie entry in the JSONC data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
+          "prompt": "1. Go through each movie entry in the JSONC data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2297,7 +2291,7 @@
         },
         {
           "id": "modifying-task-config-json5_q3",
-          "prompt": "3. Iterate through the JSON5 data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "prompt": "3. Go through the JSON5 data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2343,7 +2337,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-json5_q1",
-          "prompt": "1. Iterate through each movie entry in the JSON5 data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
+          "prompt": "1. Go through each movie entry in the JSON5 data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2417,7 +2411,7 @@
         },
         {
           "id": "modifying-task-config-hjson_q3",
-          "prompt": "3. Iterate through the HJSON data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "prompt": "3. Go through the HJSON data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2463,7 +2457,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-hjson_q1",
-          "prompt": "1. Iterate through each movie entry in the HJSON data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
+          "prompt": "1. Go through each movie entry in the HJSOM data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2537,7 +2531,7 @@
         },
         {
           "id": "modifying-task-config-toml_q3",
-          "prompt": "3. Iterate through the TOML data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "prompt": "3. Go through the TOML data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2583,7 +2577,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-toml_q1",
-          "prompt": "1. Iterate through each movie entry in the TOML data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
+          "prompt": "1. Go through each movie entry in the TOML data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2657,7 +2651,7 @@
         },
         {
           "id": "modifying-task-config-yaml_q3",
-          "prompt": "3. Iterate through the YAML data and remove all \"url\" key-value pairs from objects, regardless of their location.",
+          "prompt": "3. Go through the YAML data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2703,7 +2697,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-yaml_q1",
-          "prompt": "1. Iterate through each movie entry in the YAML data and update the writer field to match the corresponding director field, ensuring consistency between the two.",
+          "prompt": "1. Go through each movie entry in the YAML data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2777,7 +2771,7 @@
         },
         {
           "id": "modifying-task-config-xml_q3",
-          "prompt": "3. Iterate through the XML data and delete all \"url\" elements.",
+          "prompt": "3.Go through the XML data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -2823,7 +2817,7 @@
       "response": [
         {
           "id": "modifying-task-tabular-xml_q1",
-          "prompt": "1.  Iterate through each movie entry in the XML data and update the \"writer\" element's text content to match the corresponding \"director\" element, ensuring consistency between the two.",
+          "prompt": "1. Go through each movie entry in the XML data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
@@ -3144,7 +3138,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-json",
-            "quiz",
             "quiz-json",
             "reading-task-config-json",
             "writing-task-config-json",
@@ -3158,7 +3151,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-tabular-jsonc",
                 "writing-task-tabular-jsonc",
@@ -3169,7 +3161,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-tabular-json5",
                 "writing-task-tabular-json5",
@@ -3180,7 +3171,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-hjson",
-                "quiz",
                 "quiz-hjson",
                 "reading-task-tabular-hjson",
                 "writing-task-tabular-hjson",
@@ -3191,7 +3181,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-tabular-yaml",
               "writing-task-tabular-yaml",
@@ -3202,7 +3191,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-tabular-toml",
               "writing-task-tabular-toml",
@@ -3213,7 +3201,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-tabular-xml",
               "writing-task-tabular-xml",
@@ -3228,7 +3215,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-json",
-            "quiz",
             "quiz-json",
             "reading-task-tabular-json",
             "writing-task-tabular-json",
@@ -3242,7 +3228,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-config-jsonc",
                 "writing-task-config-jsonc",
@@ -3253,7 +3238,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-config-json5",
                 "writing-task-config-json5",
@@ -3264,7 +3248,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-hjson",
-                "quiz",
                 "quiz-hjson",
                 "reading-task-config-hjson",
                 "writing-task-config-hjson",
@@ -3275,7 +3258,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-config-yaml",
               "writing-task-config-yaml",
@@ -3286,7 +3268,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-config-toml",
               "writing-task-config-toml",
@@ -3297,7 +3278,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-config-xml",
               "writing-task-config-xml",
@@ -3312,7 +3292,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-jsonc",
-            "quiz",
             "quiz-jsonc",
             "reading-task-config-jsonc",
             "writing-task-config-jsonc",
@@ -3326,7 +3305,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-tabular-json",
                 "writing-task-tabular-json",
@@ -3337,7 +3315,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-tabular-json5",
                 "writing-task-tabular-json5",
@@ -3348,7 +3325,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-hjson",
-                "quiz",
                 "quiz-yaml",
                 "reading-task-tabular-hjson",
                 "writing-task-tabular-hjson",
@@ -3359,7 +3335,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-tabular-yaml",
               "writing-task-tabular-yaml",
@@ -3370,7 +3345,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-tabular-toml",
               "writing-task-tabular-toml",
@@ -3381,7 +3355,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-tabular-xml",
               "writing-task-tabular-xml",
@@ -3396,7 +3369,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-jsonc",
-            "quiz",
             "quiz-jsonc",
             "reading-task-tabular-jsonc",
             "writing-task-tabular-jsonc",
@@ -3410,7 +3382,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-config-json",
                 "writing-task-config-json",
@@ -3421,7 +3392,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-config-json5",
                 "writing-task-config-json5",
@@ -3432,7 +3402,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-hjson",
-                "quiz",
                 "quiz-hjson",
                 "reading-task-config-hjson",
                 "writing-task-config-hjson",
@@ -3443,7 +3412,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-config-yaml",
               "writing-task-config-yaml",
@@ -3454,7 +3422,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-config-toml",
               "writing-task-config-toml",
@@ -3465,7 +3432,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-config-xml",
               "writing-task-config-xml",
@@ -3480,7 +3446,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-json5",
-            "quiz",
             "quiz-json5",
             "reading-task-config-json5",
             "writing-task-config-json5",
@@ -3494,7 +3459,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-tabular-json",
                 "writing-task-tabular-json",
@@ -3505,7 +3469,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-tabular-jsonc",
                 "writing-task-tabular-jsonc",
@@ -3516,7 +3479,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-hjson",
-                "quiz",
                 "quiz-yaml",
                 "reading-task-tabular-hjson",
                 "writing-task-tabular-hjson",
@@ -3527,7 +3489,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-tabular-yaml",
               "writing-task-tabular-yaml",
@@ -3538,7 +3499,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-tabular-toml",
               "writing-task-tabular-toml",
@@ -3549,7 +3509,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-tabular-xml",
               "writing-task-tabular-xml",
@@ -3564,7 +3523,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-json5",
-            "quiz",
             "quiz-json5",
             "reading-task-tabular-json5",
             "writing-task-tabular-json5",
@@ -3578,7 +3536,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-config-json",
                 "writing-task-config-json",
@@ -3589,7 +3546,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-config-jsonc",
                 "writing-task-config-jsonc",
@@ -3600,7 +3556,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-hjson",
-                "quiz",
                 "quiz-hjson",
                 "reading-task-config-hjson",
                 "writing-task-config-hjson",
@@ -3611,7 +3566,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-config-yaml",
               "writing-task-config-yaml",
@@ -3622,7 +3576,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-config-toml",
               "writing-task-config-toml",
@@ -3633,7 +3586,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-config-xml",
               "writing-task-config-xml",
@@ -3648,7 +3600,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-hjson",
-            "quiz",
             "quiz-hjson",
             "reading-task-config-hjson",
             "writing-task-config-hjson",
@@ -3662,7 +3613,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-tabular-json",
                 "writing-task-tabular-json",
@@ -3673,7 +3623,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-tabular-jsonc",
                 "writing-task-tabular-jsonc",
@@ -3684,7 +3633,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-tabular-json5",
                 "writing-task-tabular-json5",
@@ -3695,7 +3643,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-tabular-yaml",
               "writing-task-tabular-yaml",
@@ -3706,7 +3653,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-tabular-toml",
               "writing-task-tabular-toml",
@@ -3717,7 +3663,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-tabular-xml",
               "writing-task-tabular-xml",
@@ -3732,7 +3677,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-hjson",
-            "quiz",
             "quiz-hjson",
             "reading-task-tabular-hjson",
             "writing-task-tabular-hjson",
@@ -3746,7 +3690,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-config-json",
                 "writing-task-config-json",
@@ -3757,7 +3700,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-config-jsonc",
                 "writing-task-config-jsonc",
@@ -3768,7 +3710,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-config-json5",
                 "writing-task-config-json5",
@@ -3779,7 +3720,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-config-yaml",
               "writing-task-config-yaml",
@@ -3790,7 +3730,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-config-toml",
               "writing-task-config-toml",
@@ -3801,7 +3740,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-config-xml",
               "writing-task-config-xml",
@@ -3816,7 +3754,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-yaml",
-            "quiz",
             "quiz-yaml",
             "reading-task-config-yaml",
             "writing-task-config-yaml",
@@ -3830,7 +3767,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-tabular-json",
                 "writing-task-tabular-json",
@@ -3841,7 +3777,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-tabular-jsonc",
                 "writing-task-tabular-jsonc",
@@ -3852,7 +3787,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-tabular-json5",
                 "writing-task-tabular-json5",
@@ -3863,7 +3797,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-hjson",
-              "quiz",
               "quiz-hjson",
               "reading-task-tabular-hjson",
               "writing-task-tabular-hjson",
@@ -3874,7 +3807,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-tabular-toml",
               "writing-task-tabular-toml",
@@ -3885,7 +3817,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-tabular-xml",
               "writing-task-tabular-xml",
@@ -3900,7 +3831,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-yaml",
-            "quiz",
             "quiz-yaml",
             "reading-task-tabular-yaml",
             "writing-task-tabular-yaml",
@@ -3914,7 +3844,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-config-json",
                 "writing-task-config-json",
@@ -3925,7 +3854,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-config-jsonc",
                 "writing-task-config-jsonc",
@@ -3936,7 +3864,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-config-json5",
                 "writing-task-config-json5",
@@ -3947,7 +3874,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-hjson",
-              "quiz",
               "quiz-hjson",
               "reading-task-config-hjson",
               "writing-task-config-hjson",
@@ -3958,7 +3884,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-config-toml",
               "writing-task-config-toml",
@@ -3969,7 +3894,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-config-xml",
               "writing-task-config-xml",
@@ -3984,7 +3908,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-toml",
-            "quiz",
             "quiz-toml",
             "reading-task-config-toml",
             "writing-task-config-toml",
@@ -3998,7 +3921,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-tabular-json",
                 "writing-task-tabular-json",
@@ -4009,7 +3931,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-tabular-jsonc",
                 "writing-task-tabular-jsonc",
@@ -4020,7 +3941,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-tabular-json5",
                 "writing-task-tabular-json5",
@@ -4031,7 +3951,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-hjson",
-              "quiz",
               "quiz-hjson",
               "reading-task-tabular-hjson",
               "writing-task-tabular-hjson",
@@ -4042,7 +3961,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-tabular-yaml",
               "writing-task-tabular-yaml",
@@ -4053,7 +3971,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-tabular-xml",
               "writing-task-tabular-xml",
@@ -4068,7 +3985,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-toml",
-            "quiz",
             "quiz-toml",
             "reading-task-tabular-toml",
             "writing-task-tabular-toml",
@@ -4082,7 +3998,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-config-json",
                 "writing-task-config-json",
@@ -4093,7 +4008,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-config-jsonc",
                 "writing-task-config-jsonc",
@@ -4104,7 +4018,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-config-json5",
                 "writing-task-config-json5",
@@ -4115,7 +4028,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-hjson",
-              "quiz",
               "quiz-hjson",
               "reading-task-config-hjson",
               "writing-task-config-hjson",
@@ -4126,7 +4038,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-config-yaml",
               "writing-task-config-yaml",
@@ -4137,7 +4048,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-xml",
-              "quiz",
               "quiz-xml",
               "reading-task-config-xml",
               "writing-task-config-xml",
@@ -4152,7 +4062,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-xml",
-            "quiz",
             "quiz-xml",
             "reading-task-config-xml",
             "writing-task-config-xml",
@@ -4166,7 +4075,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-tabular-json",
                 "writing-task-tabular-json",
@@ -4177,7 +4085,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-tabular-jsonc",
                 "writing-task-tabular-jsonc",
@@ -4188,7 +4095,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-tabular-json5",
                 "writing-task-tabular-json5",
@@ -4199,7 +4105,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-hjson",
-              "quiz",
               "quiz-hjson",
               "reading-task-tabular-hjson",
               "writing-task-tabular-hjson",
@@ -4210,7 +4115,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-tabular-yaml",
               "writing-task-tabular-yaml",
@@ -4221,7 +4125,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-tabular-toml",
               "writing-task-tabular-toml",
@@ -4236,7 +4139,6 @@
           {"order":"fixed",
           "components": [
             "tutorial-xml",
-            "quiz",
             "quiz-xml",
             "reading-task-tabular-xml",
             "writing-task-tabular-xml",
@@ -4250,7 +4152,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json",
-                "quiz",
                 "quiz-json",
                 "reading-task-config-json",
                 "writing-task-config-json",
@@ -4261,7 +4162,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-jsonc",
-                "quiz",
                 "quiz-jsonc",
                 "reading-task-config-jsonc",
                 "writing-task-config-jsonc",
@@ -4272,7 +4172,6 @@
             {"order":"fixed",
               "components": [
                 "tutorial-json5",
-                "quiz",
                 "quiz-json5",
                 "reading-task-config-json5",
                 "writing-task-config-json5",
@@ -4283,7 +4182,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-hjson",
-              "quiz",
               "quiz-hjson",
               "reading-task-config-hjson",
               "writing-task-config-hjson",
@@ -4294,7 +4192,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-yaml",
-              "quiz",
               "quiz-yaml",
               "reading-task-config-yaml",
               "writing-task-config-yaml",
@@ -4305,7 +4202,6 @@
             {"order":"fixed",
             "components": [
               "tutorial-toml",
-              "quiz",
               "quiz-toml",
               "reading-task-config-toml",
               "writing-task-config-toml",
