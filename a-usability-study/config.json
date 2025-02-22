@@ -156,7 +156,7 @@
           "answer": ["A","D","F"]
         }
       ],
-      "allowFailedTraining": false,
+      "allowFailedTraining": true,
       "trainingAttempts": 5
     },
     "tutorial-jsonc": {
@@ -246,7 +246,7 @@
           "answer": ["B","C","D","F"]
         }
       ],
-      "allowFailedTraining": false,
+      "allowFailedTraining": true,
       "trainingAttempts": 5
     },
     "tutorial-hjson": {
@@ -291,7 +291,7 @@
           "answer": ["A","B","D","E"]
         }
       ],
-      "allowFailedTraining": false,
+      "allowFailedTraining": true,
       "trainingAttempts": 5
     },
     "tutorial-yaml": {
@@ -381,7 +381,7 @@
           "answer": ["A","C","D","F"]
         }
       ],
-      "allowFailedTraining": false,
+      "allowFailedTraining": true,
       "trainingAttempts": 5
     },
     "tutorial-xml": {
@@ -426,7 +426,7 @@
           "answer": ["A","C","D","F"]
         }
       ],
-      "allowFailedTraining": false,
+      "allowFailedTraining": true,
       "trainingAttempts": 5
     },
     "task": {
@@ -2857,6 +2857,52 @@
       ],
       "allowFailedTraining": false
     },
+    "writing-task-NL":{
+      "meta": {
+        "taskName": "writing-task-NL"
+      },
+      "description": "writing task with natural language data",
+      "instruction": "Please look at the image and type out the text as it appears.",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": "a-usability-study/assets/tasks/fig/nl_write.png", "type": "writing", "tabular": false
+      },
+      "response": [
+        {
+          "id": "code",
+          "prompt": "",
+          "hidden": true,
+          "type": "reactive",
+          "required": true
+        },
+        {
+          "id": "error",
+          "prompt": "",
+          "hidden": true,
+          "type": "reactive",
+          "required": true
+        },
+        {
+          "id": "writing-task-NL",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "writing-task-config-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
     "post-task-survey":{
       "type": "questionnaire",
       "response": [
@@ -4233,6 +4279,7 @@
             }]
           }]
         }]},   
+      "writing-task-NL",
       "post-study-survey"
     ]
   }
