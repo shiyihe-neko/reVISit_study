@@ -27,6 +27,15 @@ function CodeEditorTest({ setAnswer, parameters }: StimulusParams<{language: str
 
   const isDarkMode = useIsDarkMode();
 
+  let mode;
+  if (parameters.language === 'plain_text') {
+    mode = 'text';
+  } else if (parameters.language === 'jsonc') {
+    mode = 'json';
+  } else {
+    mode = parameters.language;
+  }
+
   const editorOnChange = useCallback((rawCode: string) => {
     setAnswer({
       status: true,
@@ -69,7 +78,7 @@ function CodeEditorTest({ setAnswer, parameters }: StimulusParams<{language: str
 
         <AceEditor
           ref={editorRef}
-          mode={parameters.language !== 'jsonc' ? parameters.language : 'json'}
+          mode={mode}
           width="100%"
           height="1000px"
           value={code}

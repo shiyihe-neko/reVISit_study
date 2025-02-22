@@ -2916,7 +2916,7 @@
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": "a-usability-study/assets/tasks/fig/nl_write.png", "type": "writing", "tabular": false
+        "language": "plain_text", "imagePath": "a-usability-study/assets/tasks/fig/nl_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
