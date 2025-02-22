@@ -59,20 +59,6 @@ JSON consists of **key-value** pairs and **data types**, and it primarily has tw
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/json/json_quot_C.png" width="450px" height="auto">
 
-**Escape Characters**: JSON supports the following escape characters: 
-- <span style="color:green;">`\"`</span> (Double quote)
-- <span style="color:green;">`\\`</span> (Backslash)
-- <span style="color:green;">`\/`</span> (Forward slash)
-- <span style="color:green;">`\b`</span> (Backspace)
-- <span style="color:green;">`\f`</span> (Form feed)
-- <span style="color:green;">`\n`</span> (New line)
-- <span style="color:green;">`\r`</span> (Carriage return)
-- <span style="color:green;">`\t`</span> (Tab)
-
-###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_Escape.png" width="450px" height="auto">
-<br>
-
 ### 5. Nested Structures
 JSON supports nested objects and arrays, enabling the construction of complex data structures.
 
@@ -141,22 +127,6 @@ JSON consists of **key-value** pairs and **data types**, and it primarily has tw
 ###### <strong style="color:red;"><u>Incorrect Example</u></strong>
    <img src="./assets/tutorial/json/json_quot_IC.png" width="450px" height="auto">
 
-###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_quot_C.png" width="450px" height="auto">
-
-**Escape Characters**: JSON supports the following escape characters: 
-- <span style="color:green;">`\"`</span> (Double quote)
-- <span style="color:green;">`\\`</span> (Backslash)
-- <span style="color:green;">`\/`</span> (Forward slash)
-- <span style="color:green;">`\b`</span> (Backspace)
-- <span style="color:green;">`\f`</span> (Form feed)
-- <span style="color:green;">`\n`</span> (New line)
-- <span style="color:green;">`\r`</span> (Carriage return)
-- <span style="color:green;">`\t`</span> (Tab)
-
-###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_Escape.png" width="450px" height="auto">
-<br>
 
 ### 5. Nested Structures
 JSON supports nested objects and arrays, enabling the construction of complex data structures.
@@ -167,7 +137,7 @@ JSON supports nested objects and arrays, enabling the construction of complex da
 
 <br><br>
 
-JSONC extends standard JSON with the following unique features:
+## JSONC extends standard JSON with the following unique features:
 <br><br>
 
 ### 1. Support for Trailing Commas
@@ -249,20 +219,6 @@ JSON consists of **key-value** pairs and **data types**, and it primarily has tw
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/json/json_quot_C.png" width="450px" height="auto">
 
-**Escape Characters**: JSON supports the following escape characters: 
-- <span style="color:green;">`\"`</span> (Double quote)
-- <span style="color:green;">`\\`</span> (Backslash)
-- <span style="color:green;">`\/`</span> (Forward slash)
-- <span style="color:green;">`\b`</span> (Backspace)
-- <span style="color:green;">`\f`</span> (Form feed)
-- <span style="color:green;">`\n`</span> (New line)
-- <span style="color:green;">`\r`</span> (Carriage return)
-- <span style="color:green;">`\t`</span> (Tab)
-
-###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_Escape.png" width="450px" height="auto">
-<br>
-
 ### 5. Nested Structures
 JSON supports nested objects and arrays, enabling the construction of complex data structures.
 
@@ -272,7 +228,7 @@ JSON supports nested objects and arrays, enabling the construction of complex da
 
 <br><br>
 
-**JSON5** extends standard JSON with the following unique features:
+## JSON5 extends standard JSON with the following unique features:
 <br><br>
 
 ### 1. Support for Comments
@@ -372,20 +328,6 @@ JSON consists of **key-value** pairs and **data types**, and it primarily has tw
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/json/json_quot_C.png" width="450px" height="auto">
 
-**Escape Characters**: JSON supports the following escape characters: 
-- <span style="color:green;">`\"`</span> (Double quote)
-- <span style="color:green;">`\\`</span> (Backslash)
-- <span style="color:green;">`\/`</span> (Forward slash)
-- <span style="color:green;">`\b`</span> (Backspace)
-- <span style="color:green;">`\f`</span> (Form feed)
-- <span style="color:green;">`\n`</span> (New line)
-- <span style="color:green;">`\r`</span> (Carriage return)
-- <span style="color:green;">`\t`</span> (Tab)
-
-###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_Escape.png" width="450px" height="auto">
-<br>
-
 ### 5. Nested Structures
 JSON supports nested objects and arrays, enabling the construction of complex data structures.
 
@@ -395,7 +337,7 @@ JSON supports nested objects and arrays, enabling the construction of complex da
 
 <br><br>
 
-**HJSON** extends standard JSON with the following unique features:
+##  HJSON extends standard JSON with the following unique features:
 <br><br>
 
 ### 1. Support for Missing & Trailing Commas
@@ -483,6 +425,7 @@ Null values are represented using <strong style="color:green;">null</strong> or 
    <img src="./assets/tutorial/yaml/yaml_example.png" width="450px" height="auto">
 <br>
 
+
 ## TOML Basic Syntax Tutorial
 TOML (**Tom's Obvious, Minimal Language**) is a simple, easy-to-read, and easy-to-write configuration file format. It is designed to be human-friendly and easy to parse, making it ideal for configuration files.
 <br><br>
@@ -550,7 +493,8 @@ TOML explicitly supports time and date formats based on the **RFC 3339** standar
 ### Full TOML Example
    <img src="./assets/tutorial/toml/toml_example.png" width="450px" height="auto">
 <br>
-Tips: In TOML, indentation is primarily used to enhance readability, but it does not affect the parsing logic since TOML does not rely on indentation to define hierarchical structures.
+Tip: In TOML, indentation is primarily used to enhance readability, but it does not affect the parsing logic since TOML does not rely on indentation to define hierarchical structures.
+
 
 ## XML Basic Syntax Tutorial
 XML (**eXtensible Markup Language**) is a markup language used to store and transport data. It is a structured text format similar to HTML but more flexible because it allows for custom tags.
