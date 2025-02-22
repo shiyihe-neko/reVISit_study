@@ -120,6 +120,7 @@
       "response": []
     },
     "quiz-json": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "task": "Error Detection"
       },
@@ -166,6 +167,7 @@
       "response": []
     },
     "quiz-jsonc": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "task": "Error Detection"
       },
@@ -211,6 +213,7 @@
       "response": []
     },
     "quiz-json5": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "task": "Error Detection"
       },
@@ -256,6 +259,7 @@
       "response": []
     },
     "quiz-hjson": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "task": "Error Detection"
       },
@@ -301,6 +305,7 @@
       "response": []
     },
     "quiz-yaml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "task": "Error Detection"
       },
@@ -346,6 +351,7 @@
       "response": []
     },
     "quiz-toml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "task": "Error Detection"
       },
@@ -391,6 +397,7 @@
       "response": []
     },
     "quiz-xml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "task": "Error Detection"
       },
@@ -436,6 +443,7 @@
       "response": []
     },
     "reading-task-config-json": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-config-json"
       },
@@ -503,6 +511,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-tabular-json"
       },
@@ -570,6 +579,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-jsonc": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-config-jsonc"
       },
@@ -637,6 +647,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-jsonc": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-tabular-jsonc"
       },
@@ -704,6 +715,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json5": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-config-json5"
       },
@@ -771,6 +783,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json5": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-tabular-json5"
       },
@@ -838,6 +851,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-hjson": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-config-hjson"
       },
@@ -905,6 +919,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-hjson": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-tabular-hjson"
       },
@@ -972,6 +987,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-yaml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-config-yaml"
       },
@@ -1039,6 +1055,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-yaml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-tabular-yaml"
       },
@@ -1106,6 +1123,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-toml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-config-toml"
       },
@@ -1173,6 +1191,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-toml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-tabular-toml"
       },
@@ -1240,6 +1259,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-xml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-config-xml"
       },
@@ -1307,6 +1327,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-xml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-tabular-xml"
       },
@@ -1374,6 +1395,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-json": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "writing-task-config-json"
       },
@@ -1420,6 +1442,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-json": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "writing-task-tabular-json"
       },
@@ -1466,6 +1489,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-jsonc": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "writing-task-config-jsonc"
       },
@@ -1512,6 +1536,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-jsonc": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "writing-task-tabular-jsonc"
       },
@@ -1558,6 +1583,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-json5": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "writing-task-config-json5"
       },
@@ -1604,6 +1630,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-json5": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "writing-task-tabular-json5"
       },
@@ -1650,6 +1677,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-hjson": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "writing-task-config-hjson"
       },
@@ -1696,6 +1724,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-hjson": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "writing-task-tabular-hjson"
       },
@@ -1742,6 +1771,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-yaml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "writing-task-config-yaml"
       },
@@ -1788,6 +1818,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-yaml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "writing-task-tabular-yaml"
       },
@@ -1834,8 +1865,9 @@
       "allowFailedTraining": false
     },
     "writing-task-config-toml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "writing-task-config-json"
+        "taskName": "writing-task-config-toml"
       },
       "description": "writing task with configuration data",
       "instruction": "Please refer to the data structure shown in the figure and convert it(including comments) into TOML format. (If needed, click the top-right help button to review syntax rules.)",
@@ -1880,8 +1912,9 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-toml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "writing-task-tabular-json"
+        "taskName": "writing-task-tabular-toml"
       },
       "description": "writing task with tabular data",
       "instruction": "Please refer to the data structure shown in the figure and convert it(including comments) into TOML format. (If needed, click the top-right help button to review syntax rules.)",
@@ -1926,6 +1959,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-xml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "writing-task-config-xml"
       },
@@ -1972,6 +2006,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-xml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "writing-task-tabular-xml"
       },
@@ -2018,6 +2053,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-config-json"
       },
@@ -2078,6 +2114,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-tabular-json"
       },
@@ -2138,6 +2175,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-jsonc": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-config-jsonc"
       },
@@ -2198,6 +2236,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-jsonc": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -2258,6 +2297,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json5": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-config-json5"
       },
@@ -2318,6 +2358,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json5": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-tabular-json5"
       },
@@ -2378,6 +2419,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-hjson": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-config-hjson"
       },
@@ -2438,6 +2480,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-hjson": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-tabular-hjson"
       },
@@ -2498,6 +2541,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-toml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-config-toml"
       },
@@ -2558,6 +2602,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-toml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-tabular-toml"
       },
@@ -2618,6 +2663,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-yaml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-config-yaml"
       },
@@ -2678,6 +2724,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-yaml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-tabular-yaml"
       },
@@ -2738,6 +2785,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-xml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-config-xml"
       },
@@ -2798,6 +2846,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-xml": {
+      "helpTextPathOverride": "a-usability-study/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-tabular-xml"
       },
@@ -2897,7 +2946,7 @@
       ],
       "correctAnswer": [
         {
-          "id": "writing-task-config-hjson",
+          "id": "writing-task-NL",
           "answer": "Yes"
         }
       ],
@@ -3393,7 +3442,7 @@
             {"order":"fixed",
               "components": [
                 "tutorial-hjson",
-                "quiz-yaml",
+                "quiz-hjson",
                 "reading-task-tabular-hjson",
                 "writing-task-tabular-hjson",
                 "modifying-task-tabular-hjson",
@@ -3547,7 +3596,7 @@
             {"order":"fixed",
               "components": [
                 "tutorial-hjson",
-                "quiz-yaml",
+                "quiz-hjson",
                 "reading-task-tabular-hjson",
                 "writing-task-tabular-hjson",
                 "modifying-task-tabular-hjson",
