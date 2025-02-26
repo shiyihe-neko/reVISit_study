@@ -2,6 +2,7 @@ import React, {
   useState, useCallback,
   useRef,
   useEffect,
+  useMemo,
 } from 'react';
 
 import AceEditor from 'react-ace';
@@ -9,6 +10,7 @@ import { Box, Group } from '@mantine/core';
 import githubLight from 'ace-builds/src-noconflict/theme-github';
 import githubDark from 'ace-builds/src-noconflict/theme-github_dark';
 
+import { Registry, initializeTrrack } from '@trrack/core';
 import { startingStringsMap } from './startingStrings';
 
 import 'ace-builds/src-noconflict/mode-hjson';
@@ -22,10 +24,40 @@ import { StimulusParams } from '../../../store/types';
 import { PREFIX } from '../../../utils/Prefix';
 import { useIsDarkMode } from '../../../store/hooks/useIsDarkMode';
 // adding worker
-function CodeEditorTest({ setAnswer, parameters }: StimulusParams<{language: string, imagePath: string | null, type: 'modifying' | 'writing' | 'reading', tabular: boolean}, Record<string, never>>): React.ReactElement {
+function CodeEditorTest({ setAnswer, parameters, provenanceState }: StimulusParams<{language: string, imagePath: string | null, type: 'modifying' | 'writing' | 'reading', tabular: boolean}, Record<string, never>>): React.ReactElement {
   const [code, setCode] = useState<string>(startingStringsMap[parameters.type + (parameters.tabular ? 'tabular' : 'config') + parameters.language]);
 
   const isDarkMode = useIsDarkMode();
+
+  useEffect(() => {
+    if (provenanceState && provenanceState.text !== null) {
+      setCode(provenanceState.text);
+    }
+  }, [provenanceState]);
+
+  // creating provenance tracking
+  const { actions, trrack } = useMemo(() => {
+    const reg = Registry.create();
+
+    const typeAction = reg.register('type', (state, payload: string) => {
+      state.text = payload;
+      return state;
+    });
+
+    const trrackInst = initializeTrrack({
+      registry: reg,
+      initialState: {
+        text: null,
+      },
+    });
+
+    return {
+      actions: {
+        typeAction,
+      },
+      trrack: trrackInst,
+    };
+  }, []);
 
   let mode;
   if (parameters.language === 'plain_text') {
@@ -37,16 +69,18 @@ function CodeEditorTest({ setAnswer, parameters }: StimulusParams<{language: str
   }
 
   const editorOnChange = useCallback((rawCode: string) => {
+    trrack.apply('Typing', actions.typeAction(rawCode));
     setAnswer({
       status: true,
       answers: {
         code: rawCode,
         error: rawCode,
       },
+      provenanceGraph: trrack.graph.backend,
     });
 
     setCode(rawCode);
-  }, [setAnswer]);
+  }, [actions, setAnswer, trrack]);
 
   const editorRef = useRef<AceEditor>(null);
 
