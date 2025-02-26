@@ -2924,14 +2924,14 @@
           "prompt": "",
           "hidden": true,
           "type": "reactive",
-          "required": true
+          "required": false
         },
         {
           "id": "error",
           "prompt": "",
           "hidden": true,
           "type": "reactive",
-          "required": true
+          "required": false
         },
         {
           "id": "writing-task-NL",
