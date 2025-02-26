@@ -3132,21 +3132,8 @@
           ],
           "withOther": true
         },
-        {
-          "id": "q2",
-          "prompt": "How would you describe your level of familiarity with package.json files?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "radio",
-          "options": [
-            "Not familiar at all",
-            "mildly familiar",
-            "Very familiar"
-          ],
-          "withOther": true
-        },
       {
-        "id": "q3",
+        "id": "q2",
         "prompt": "How would you assess your programming proficiency, considering factors such as coursework, formal training, and hands-on experience?",
         "required": true,
         "location": "aboveStimulus",
@@ -3160,7 +3147,7 @@
         "withOther": true
       },
       {
-        "id": "q4",
+        "id": "q3",
         "prompt": "Can you specify your familarity with the following data formats?",
         "required": true,
         "location": "aboveStimulus",
@@ -3183,7 +3170,7 @@
         ]
       },
       {
-        "id": "q5",
+        "id": "q4",
         "prompt": "Do you have any cognitive conditions that might affect how you perceive visual information?",
         "required": true,
         "location": "aboveStimulus",
@@ -3197,7 +3184,7 @@
         "withOther": true
       },
       {
-        "id": "q6",
+        "id": "q5",
         "prompt": "Do you experience any vision conditions that may affect your ability to interpret text or symbols?",
         "required": true,
         "location": "aboveStimulus",
