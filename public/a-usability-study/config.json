@@ -113,6 +113,11 @@
         }
       ]
     },
+    "unqualified": {
+      "type": "markdown",
+      "path": "a-usability-study/assets/unqualified.md",
+      "response": []
+    },
     "tutorial-json": {
       "type": "markdown",
       "path": "a-usability-study/assets/tutorial/json/tutorial-json.md",
@@ -3213,13 +3218,13 @@
         "skip": [{
           "name": "qualifications",
           "check": "responses",
-          "to": "end"
+          "to": "unqualified"
         },
         {
           "name": "qualifications",
           "check": "response",
           "responseId": "packageJsonFamiliarity",
-          "to": "end",
+          "to": "unqualified",
           "comparison": "equal",
           "value": "Very familiar"
         },
@@ -3227,7 +3232,7 @@
           "name": "qualifications",
           "check": "response",
           "responseId": "concentrationCheck",
-          "to": "end",
+          "to": "unqualified",
           "comparison": "equal",
           "value": "Yes, I am an AI"
         }]
@@ -4316,7 +4321,21 @@
           }]
         }]},   
       "writing-task-NL",
-      "post-study-survey"
+      {
+        "components": [
+            "post-study-survey"
+        ],
+        "order": "fixed",
+        "skip": [        {
+          "name": "post-study-survey",
+          "check": "response",
+          "responseId": "q1",
+          "to": "end",
+          "comparison": "notEqual",
+          "value": "___impossibleAnswer"
+        }]
+      },
+      "unqualified"
     ]
   }
 }
