@@ -42,7 +42,7 @@
       "response": [
         {
           "id": "experience",
-          "prompt": "How many months of programming experience do you have, including professional training, formal education, and self-learning?",
+          "prompt": "How many months of programming experience do you have, including professional training, formal education, and self-learning? (Please enter a number in months.)",
           "required": true,
           "location": "belowStimulus",
           "type": "numerical"
