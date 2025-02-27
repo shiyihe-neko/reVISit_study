@@ -6,7 +6,7 @@ Before we begin, please read the following consent form carefully and thereafter
 
 **Procedure:** In this experiment, you will be asked to complete a tutorial, take a quiz, and perform a series of tasks related to reading and writing using different data serialization formats.
 
-**Duration:** The estimated completion time for the experiment is 40 minutes.
+**Duration:** The estimated completion time for the experiment is 30 minutes.
 
 **Privacy:** Your participation is anonymous and your responses cannot be used to identify you.
 
@@ -14,7 +14,7 @@ Before we begin, please read the following consent form carefully and thereafter
 the study investigators and, under certain circumstances, the Institutional Review Board will be able to inspect and 
 have access to this data. Any publication or presentation of the data will not identify you.
 
-**Reward:** $25.
+**Reward:** $8.
 
 For more information about this research or about the rights of research participants, or in case of research-related 
 injury, contact: shiyi.he@utah.edu. In addition, you may contact the IRB department, Tel. (801) 581-3655, Email: IRB@hsc.utah.edu.
