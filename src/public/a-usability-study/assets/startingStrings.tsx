@@ -875,7 +875,7 @@ role = "Secretary"`,
       ]
     }
   }`,
-  readingtabularhjson: `{
+  readingtabularhjson: `
   students:
   {
     student:
@@ -1110,8 +1110,7 @@ role = "Secretary"`,
         }
       }
     ]
-  }
-}`,
+  }`,
   readingtabularjson5: `{
     students: {
         student: [
@@ -2539,7 +2538,7 @@ packageManager: yarn@1.22.22`,
     },
     packageManager: 'yarn@1.22.22'
 }`,
-  modifyingconfighjson: `{
+  modifyingconfighjson: `
   name: vega-lite
   author: Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Jeffrey Heer
   version: 5.23.0   // make sure that the vega version specified in peerDependencies matches this value.
@@ -2655,8 +2654,7 @@ packageManager: yarn@1.22.22`,
   {
     node: >=18
   }
-  packageManager: yarn@1.22.22
-}`,
+  packageManager: yarn@1.22.22`,
   modifyingtabularjson: JSON.stringify({
     movies: {
       movie: [
