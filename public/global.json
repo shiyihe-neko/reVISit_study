@@ -1,6 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/2.0.0-rc7/src/parser/GlobalConfigSchema.json",
   "configsList": [
+    "a-usability-study-config",
+    "a-usability-study-tabular",
     "a-usability-study",
     "example-mvnv",
     "example-fairness-jnd",
@@ -32,6 +34,12 @@
     "test-skip-logic"
   ],
   "configs": {
+    "a-usability-study-config": {
+      "path": "a-usability-study-config/config.json"
+    },
+    "a-usability-study-tabular": {
+      "path": "a-usability-study-tabular/config.json"
+    },
     "a-usability-study": {
       "path": "a-usability-study/config.json"
     },
