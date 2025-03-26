@@ -4284,7 +4284,7 @@
       "task",
       "writing-task-NL",
       {"order":"latinSquare",
-        "numSamples": 7,
+        "numSamples": 1,
         "components": [
         {"order":"fixed",
         "components": [
