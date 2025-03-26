@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.5/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Data Serialization Formats Study - Conifg Version",
+    "title": "Data Serialization Formats Study - Tabular Version",
     "version": "pilot",
     "authors": [
       "Andrew Mcnutt, Shiyi He"
@@ -15,7 +15,7 @@
   },
   "uiConfig": {
     "contactEmail": "shiyi.he@utah.edu",
-    "helpTextPath": "a-usability-study-config/assets/help.md",
+    "helpTextPath": "a-usability-study-tabular/assets/help.md",
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
@@ -24,7 +24,7 @@
   "components": {
     "introduction": {
       "type": "markdown",
-      "path": "a-usability-study-config/assets/introduction.md",
+      "path": "a-usability-study-tabular/assets/introduction.md",
       "response": [
         {
           "id": "prolificId",
@@ -34,9 +34,7 @@
           "type": "shortText",
           "placeholder": "Prolific ID",
           "paramCapture": "PROLIFIC_ID"
-        }
-      ]
-    },
+        }]},
     "qualifications": {
       "type": "questionnaire",
       "response": [
@@ -82,7 +80,7 @@
     },
     "consent": {
       "type": "markdown",
-      "path": "a-usability-study-config/assets/consent.md",
+      "path": "a-usability-study-tabular/assets/consent.md",
       "nextButtonText": "Agree",
       "response": [
         {
@@ -115,7 +113,7 @@
     },
     "unqualified": {
       "type": "markdown",
-      "path": "a-usability-study-config/assets/unqualified.md",
+      "path": "a-usability-study-tabular/assets/unqualified.md",
       "response": []
     },
     "tutorial-json-part1": {
@@ -124,7 +122,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/json/tutorial-json-part1.md",
+      "path": "a-usability-study-tabular/assets/tutorial/json/tutorial-json-part1.md",
       "nextButtonText": "",
       "response": [
         {
@@ -154,7 +152,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/json/tutorial-json-part2.md",
+      "path": "a-usability-study-tabular/assets/tutorial/json/tutorial-json-part2.md",
       "nextButtonText": "",
       "response": [
         {
@@ -184,7 +182,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc-part1.md",
+      "path": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc-part1.md",
       "nextButtonText": "",
       "response": [
         {
@@ -214,7 +212,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc-part2.md",
+      "path": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc-part2.md",
       "nextButtonText": "",
       "response": [
         {
@@ -244,7 +242,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/json5/tutorial-json5-part1.md",
+      "path": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5-part1.md",
       "nextButtonText": "",
       "response": [
         {
@@ -274,7 +272,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/jsonc/tutorial-json5-part2.md",
+      "path": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-json5-part2.md",
       "nextButtonText": "",
       "response": [
         {
@@ -304,7 +302,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson-part1.md",
+      "path": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson-part1.md",
       "nextButtonText": "",
       "response": [
         {
@@ -334,7 +332,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson-part2.md",
+      "path": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson-part2.md",
       "nextButtonText": "",
       "response": [
         {
@@ -364,7 +362,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml-part1.md",
+      "path": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml-part1.md",
       "nextButtonText": "",
       "response": [
         {
@@ -394,7 +392,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml-part2.md",
+      "path": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml-part2.md",
       "nextButtonText": "",
       "response": [
         {
@@ -424,7 +422,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/toml/tutorial-toml-part1.md",
+      "path": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml-part1.md",
       "nextButtonText": "",
       "response": [
         {
@@ -454,7 +452,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/toml/tutorial-toml-part2.md",
+      "path": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml-part2.md",
       "nextButtonText": "",
       "response": [
         {
@@ -484,7 +482,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/xml/tutorial-xml-part1.md",
+      "path": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml-part1.md",
       "nextButtonText": "",
       "response": [
         {
@@ -514,7 +512,7 @@
       "instructionLocation": "sidebar",
       "nextButtonLocation": "sidebar",
       "provideFeedback": true,
-      "path": "a-usability-study-config/assets/tutorial/xml/tutorial-xml-part2.md",
+      "path": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml-part2.md",
       "nextButtonText": "",
       "response": [
         {
@@ -540,30 +538,30 @@
     },
     "task": {
       "type": "markdown",
-      "path": "a-usability-study-config/assets/task.md",
+      "path": "a-usability-study-tabular/assets/task.md",
       "nextButtonText": "",
       "response": []
     },
-    "reading-task-config-json": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+    "reading-task-tabular-json": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
-        "taskName": "reading-task-config-json"
+        "taskName": "reading-task-tabular-json"
       },
-      "description": "reading task with configuration data",
+      "description": "reading task with tabular data",
       "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json", "imagePath": null, "type": "reading", "tabular": false
+        "language": "json", "imagePath": null, "type": "reading", "tabular": true
       },
       "response": [
         {
-          "id": "reading-task-config-json_q1",
-          "prompt": "1. What is the value of the \"version\" key in the JSON file?",
+          "id": "reading-task-tabular-json_q1",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["^3.2.4", "git", "7.9.0", "keywords"],
+          "options": ["8", "9", "87", "77"],
           "location": "sidebar",
           "required": true
         },
@@ -572,13 +570,13 @@
           "prompt": "How difficult was this question?",
           "type": "likert",
           "numItems":7,
-          "rightLabel": "Very difficult(7)(7)",
+          "rightLabel": "Very difficult(7)",
           "leftLabel": "Very easy(1)",          
           "location": "sidebar",
           "required": true
         },
         {
-          "id": "reading-task-config-json_c1",
+          "id": "reading-task-tabular-json_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -588,11 +586,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json_q2",
-          "prompt": "2. What is the value of the \"node\" key?",
+          "id": "reading-task-tabular-json_q2",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["12", ">=12", "7.9.0", "d3"],
+          "options": ["quiz1", "quiz2"],
           "location": "sidebar",
           "required": true
         },
@@ -607,7 +605,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json_c2",
+          "id": "reading-task-tabular-json_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -617,11 +615,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "id": "reading-task-tabular-json_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
+          "options": ["2", "3", "4", "5"],
           "location": "sidebar",
           "required": true
         },
@@ -630,13 +628,13 @@
           "prompt": "How difficult was this question?",
           "type": "likert",
           "numItems":7,
-          "rightLabel": "Very difficult(7)(7)",
+          "rightLabel": "Very difficult(7)",
           "leftLabel": "Very easy(1)",          
           "location": "sidebar",
           "required": true
         },
         {
-          "id": "reading-task-config-json_c3",
+          "id": "reading-task-tabular-json_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -646,11 +644,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json_q4",
-          "prompt": "4. Which top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "id": "reading-task-tabular-json_q4",
+          "prompt": "4. Choose all students who participate in two different sports.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -659,13 +657,13 @@
           "prompt": "How difficult was this question?",
           "type": "likert",
           "numItems":7,
-          "rightLabel": "Very difficult(7)(7)",
+          "rightLabel": "Very difficult(7)",
           "leftLabel": "Very easy(1)",          
           "location": "sidebar",
           "required": true
         },
         {
-          "id": "reading-task-config-json_c4",
+          "id": "reading-task-tabular-json_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -675,11 +673,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "id": "reading-task-tabular-json_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -688,13 +686,13 @@
           "prompt": "How difficult was this question?",
           "type": "likert",
           "numItems":7,
-          "rightLabel": "Very difficult(7)(7)",
+          "rightLabel": "Very difficult(7)",
           "leftLabel": "Very easy(1)",          
           "location": "sidebar",
           "required": true
         },
         {
-          "id": "reading-task-config-json_c5",
+          "id": "reading-task-tabular-json_c5",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -704,7 +702,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json",
+          "id": "reading-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -716,32 +714,32 @@
       ],
       "correctAnswer": [
         {
-          "id": "reading-task-config-json",
+          "id": "reading-task-tabular-json",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-jsonc": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+    "reading-task-tabular-jsonc": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
-        "taskName": "reading-task-config-jsonc"
+        "taskName": "reading-task-tabular-jsonc"
       },
-      "description": "reading task with configuration data",
+      "description": "reading task with tabular data",
       "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": false
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": true
       },
       "response": [
         {
-          "id": "reading-task-config-jsonc_q1",
-          "prompt": "1. What is the value of the \"version\" key in the JSONC file?",
+          "id": "reading-task-tabular-jsonc_q1",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["^3.2.4", "git", "7.9.0", "keywords"],
+          "options": ["8", "9", "87", "77"],
           "location": "sidebar",
           "required": true
         },
@@ -756,7 +754,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_c1",
+          "id": "reading-task-tabular-jsonc_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -766,16 +764,16 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_q2",
-          "prompt": "2. What is the value of the \"node\" key?",
+          "id": "reading-task-tabular-jsonc_q2",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["12", ">=12", "7.9.0", "d3"],
+          "options": ["quiz1", "quiz2"],
           "location": "sidebar",
           "required": true
         },
         {
-          "id": "reading-task-config-jsoncc_d2",
+          "id": "reading-task-config-jsonc_d2",
           "prompt": "How difficult was this question?",
           "type": "likert",
           "numItems":7,
@@ -785,7 +783,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_c2",
+          "id": "reading-task-tabular-jsonc_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -795,11 +793,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "id": "reading-task-tabular-jsonc_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
+          "options": ["2", "3", "4", "5"],
           "location": "sidebar",
           "required": true
         },
@@ -814,7 +812,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_c3",
+          "id": "reading-task-tabular-jsonc_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -824,11 +822,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_q4",
-          "prompt": "4. Which top-level keys in the JSONC file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "id": "reading-task-tabular-jsonc_q4",
+          "prompt": "4. Choose all students who participate in two different sports.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -843,7 +841,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_c4",
+          "id": "reading-task-tabular-jsonc_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -853,11 +851,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "id": "reading-task-tabular-jsonc_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -872,7 +870,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_c5",
+          "id": "reading-task-tabular-jsonc_c5",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -882,7 +880,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc",
+          "id": "reading-task-tabular-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -894,32 +892,32 @@
       ],
       "correctAnswer": [
         {
-          "id": "reading-task-config-jsonc",
+          "id": "reading-task-tabular-jsonc",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-json5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+    "reading-task-tabular-json5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
-        "taskName": "reading-task-config-json5"
+        "taskName": "reading-task-tabular-json5"
       },
-      "description": "reading task with configuration data",
+      "description": "reading task with tabular data",
       "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json5", "imagePath": null, "type": "reading", "tabular": false
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": true
       },
       "response": [
         {
-          "id": "reading-task-config-json5_q1",
-          "prompt": "1. What is the value of the \"version\" key in the JSON5 file?",
+          "id": "reading-task-tabular-json5_q1",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["^3.2.4", "git", "7.9.0", "keywords"],
+          "options": ["8", "9", "87", "77"],
           "location": "sidebar",
           "required": true
         },
@@ -934,7 +932,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_c1",
+          "id": "reading-task-tabular-json5_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -944,11 +942,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_q2",
-          "prompt": "2. What is the value of the \"node\" key?",
+          "id": "reading-task-tabular-json5_q2",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["12", ">=12", "7.9.0", "d3"],
+          "options": ["quiz1", "quiz2"],
           "location": "sidebar",
           "required": true
         },
@@ -963,7 +961,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_c2",
+          "id": "reading-task-tabular-json5_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -973,11 +971,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "id": "reading-task-tabular-json5_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
+          "options": ["2", "3", "4", "5"],
           "location": "sidebar",
           "required": true
         },
@@ -992,7 +990,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_c3",
+          "id": "reading-task-tabular-json5_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1002,11 +1000,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_q4",
-          "prompt": "4. Which top-level keys in the JSON5 file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "id": "reading-task-tabular-json5_q4",
+          "prompt": "4. Choose all students who participate in two different sports.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1021,7 +1019,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_c4",
+          "id": "reading-task-tabular-json5_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1031,11 +1029,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "id": "reading-task-tabular-json5_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1050,7 +1048,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_c5",
+          "id": "reading-task-tabular-json5_c5",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1060,7 +1058,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5",
+          "id": "reading-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -1072,32 +1070,32 @@
       ],
       "correctAnswer": [
         {
-          "id": "reading-task-config-json5",
+          "id": "reading-task-tabular-json5",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-hjson": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+    "reading-task-tabular-hjson": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
-        "taskName": "reading-task-config-hjson"
+        "taskName": "reading-task-tabular-hjson"
       },
-      "description": "reading task with configuration data",
+      "description": "reading task with tabular data",
       "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": null, "type": "reading", "tabular": false
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": true
       },
       "response": [
         {
-          "id": "reading-task-config-hjson_q1",
-          "prompt": "1. What is the value of the \"version\" key in the HJSON file?",
+          "id": "reading-task-tabular-hjson_q1",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["^3.2.4", "git", "7.9.0", "keywords"],
+          "options": ["8", "9", "87", "77"],
           "location": "sidebar",
           "required": true
         },
@@ -1112,7 +1110,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_c1",
+          "id": "reading-task-tabular-hjson_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1122,11 +1120,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_q2",
-          "prompt": "2. What is the value of the \"node\" key?",
+          "id": "reading-task-tabular-hjson_q2",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["12", ">=12", "7.9.0", "d3"],
+          "options": ["quiz1", "quiz2"],
           "location": "sidebar",
           "required": true
         },
@@ -1141,7 +1139,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_c2",
+          "id": "reading-task-tabular-hjson_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1151,11 +1149,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "id": "reading-task-tabular-hjson_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
+          "options": ["2", "3", "4", "5"],
           "location": "sidebar",
           "required": true
         },
@@ -1170,7 +1168,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_c3",
+          "id": "reading-task-tabular-hjson_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1180,11 +1178,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_q4",
-          "prompt": "4. Which top-level keys in the HJSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "id": "reading-task-tabular-hjson_q4",
+          "prompt": "4. Choose all students who participate in two different sports.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1199,7 +1197,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_c4",
+          "id": "reading-task-tabular-hjson_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1209,11 +1207,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "id": "reading-task-tabular-hjson_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1228,7 +1226,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_c5",
+          "id": "reading-task-tabular-hjson_c5",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1238,7 +1236,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson",
+          "id": "reading-task-tabular-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -1250,32 +1248,32 @@
       ],
       "correctAnswer": [
         {
-          "id": "reading-task-config-hjson",
+          "id": "reading-task-tabular-hjson",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-yaml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+    "reading-task-tabular-yaml": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
-        "taskName": "reading-task-config-yaml"
+        "taskName": "reading-task-tabular-yaml"
       },
-      "description": "reading task with configuration data",
+      "description": "reading task with tabular data",
       "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "yaml", "imagePath": null, "type": "reading", "tabular": false
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": true
       },
       "response": [
         {
-          "id": "reading-task-config-yaml_q1",
-          "prompt": "1. What is the value of the \"version\" key in the YAML file?",
+          "id": "reading-task-tabular-yaml_q1",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["^3.2.4", "git", "7.9.0", "keywords"],
+          "options": ["8", "9", "87", "77"],
           "location": "sidebar",
           "required": true
         },
@@ -1290,7 +1288,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_c1",
+          "id": "reading-task-tabular-yaml_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1300,11 +1298,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_q2",
-          "prompt": "2. What is the value of the \"node\" key?",
+          "id": "reading-task-tabular-yaml_q2",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["12", ">=12", "7.9.0", "d3"],
+          "options": ["quiz1", "quiz2"],
           "location": "sidebar",
           "required": true
         },
@@ -1319,7 +1317,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_c2",
+          "id": "reading-task-tabular-yaml_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1329,11 +1327,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "id": "reading-task-tabular-yaml_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
+          "options": ["2", "3", "4", "5"],
           "location": "sidebar",
           "required": true
         },
@@ -1348,7 +1346,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_c3",
+          "id": "reading-task-tabular-yaml_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1358,11 +1356,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_q4",
-          "prompt": "4. Which top-level keys in the YAML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "id": "reading-task-tabular-yaml_q4",
+          "prompt": "4. Choose all students who participate in two different sports.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1377,7 +1375,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_c4",
+          "id": "reading-task-tabular-yaml_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1387,11 +1385,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "id": "reading-task-tabular-yaml_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1406,7 +1404,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_c5",
+          "id": "reading-task-tabular-yaml_c5",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1416,7 +1414,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml",
+          "id": "reading-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -1428,32 +1426,32 @@
       ],
       "correctAnswer": [
         {
-          "id": "reading-task-config-yaml",
+          "id": "reading-task-tabular-yaml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-toml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+    "reading-task-tabular-toml": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "reading-task-config-toml"
+        "taskName": "reading-task-tabular-toml"
       },
-      "description": "reading task with configuration data",
+      "description": "reading task with tabular data",
       "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "toml", "imagePath": null, "type": "reading", "tabular": false
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": true
       },
       "response": [
         {
-          "id": "reading-task-config-toml_q1",
-          "prompt": "1. What is the value of the \"version\" key in the TOML file?",
+          "id": "reading-task-tabular-toml_q1",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["^3.2.4", "git", "7.9.0", "keywords"],
+          "options": ["8", "9", "87", "77"],
           "location": "sidebar",
           "required": true
         },
@@ -1468,7 +1466,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_c1",
+          "id": "reading-task-tabular-toml_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1478,11 +1476,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_q2",
-          "prompt": "2. What is the value of the \"node\" key?",
+          "id": "reading-task-tabular-toml_q2",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["12", ">=12", "7.9.0", "d3"],
+          "options": ["quiz1", "quiz2"],
           "location": "sidebar",
           "required": true
         },
@@ -1497,7 +1495,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_c2",
+          "id": "reading-task-tabular-toml_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1507,11 +1505,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "id": "reading-task-tabular-toml_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
+          "options": ["2", "3", "4", "5"],
           "location": "sidebar",
           "required": true
         },
@@ -1526,7 +1524,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_c3",
+          "id": "reading-task-tabular-toml_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1536,11 +1534,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_q4",
-          "prompt": "4. Which top-level keys in the TOML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "id": "reading-task-tabular-toml_q4",
+          "prompt": "4. Choose all students who participate in two different sports.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1555,7 +1553,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_c4",
+          "id": "reading-task-tabular-toml_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1565,11 +1563,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "id": "reading-task-tabular-toml_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1584,7 +1582,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_c5",
+          "id": "reading-task-tabular-toml_c5",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1594,7 +1592,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml",
+          "id": "reading-task-tabular-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -1606,32 +1604,32 @@
       ],
       "correctAnswer": [
         {
-          "id": "reading-task-config-toml",
+          "id": "reading-task-tabular-toml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-xml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+    "reading-task-tabular-xml": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
-        "taskName": "reading-task-config-xml"
+        "taskName": "reading-task-tabular-xml"
       },
-      "description": "reading task with configuration data",
+      "description": "reading task with tabular data",
       "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "xml", "imagePath": null, "type": "reading", "tabular": false
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": true
       },
       "response": [
         {
-          "id": "reading-task-config-xml",
-          "prompt": "1. What is the value of the \"version\" key in the XML file?",
+          "id": "reading-task-tabular-xml_q1",
+          "prompt": "1. What is the final exam grade for Bob?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["^3.2.4", "git", "7.9.0", "keywords"],
+          "options": ["8", "9", "87", "77"],
           "location": "sidebar",
           "required": true
         },
@@ -1646,7 +1644,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_c1",
+          "id": "reading-task-tabular-xml_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1656,11 +1654,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_q2",
-          "prompt": "2. What is the value of the \"node\" key?",
+          "id": "reading-task-tabular-xml_q2",
+          "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["12", ">=12", "7.9.0", "d3"],
+          "options": ["quiz1", "quiz2"],
           "location": "sidebar",
           "required": true
         },
@@ -1675,7 +1673,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_c2",
+          "id": "reading-task-tabular-xml_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1685,11 +1683,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "id": "reading-task-tabular-xml_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
+          "options": ["2", "3", "4", "5"],
           "location": "sidebar",
           "required": true
         },
@@ -1704,7 +1702,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_c3",
+          "id": "reading-task-tabular-xml_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1714,11 +1712,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_q4",
-          "prompt": "4. Which top-level keys in the TOML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "id": "reading-task-tabular-xml_q4",
+          "prompt": "4. Choose all students who participate in two different sports.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1733,7 +1731,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_c4",
+          "id": "reading-task-tabular-xml_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1743,11 +1741,11 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "id": "reading-task-tabular-xml_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
         },
@@ -1762,7 +1760,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_c5",
+          "id": "reading-task-tabular-xml_c5",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1772,7 +1770,7 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml",
+          "id": "reading-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -1784,24 +1782,24 @@
       ],
       "correctAnswer": [
         {
-          "id": "reading-task-config-xml",
+          "id": "reading-task-tabular-xml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "writing-task-config-json": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+    "writing-task-tabular-json": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
-        "taskName": "writing-task-config-json"
+        "taskName": "writing-task-tabular-json"
       },
-      "description": "writing task with configuration data",
+      "description": "writing task with tabular data",
       "instruction": "Please refer to the data structure shown in the figure and convert it into JSON format. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json", "imagePath": "a-usability-study-config/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "json", "imagePath": "a-usability-study-tabular/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1819,7 +1817,7 @@
           "required": false
         },
         {
-          "id": "writing-task-config-json_d",
+          "id": "writing-task-tabular-json_d",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -1829,7 +1827,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-json_c",
+          "id": "writing-task-tabular-json_c",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1839,7 +1837,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-json",
+          "id": "writing-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -1851,24 +1849,24 @@
       ],
       "correctAnswer": [
         {
-          "id": "writing-task-config-json",
+          "id": "writing-task-tabular-json",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "writing-task-config-jsonc": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+    "writing-task-tabular-jsonc": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
-        "taskName": "writing-task-config-jsonc"
+        "taskName": "writing-task-tabular-jsonc"
       },
-      "description": "writing task with configuration data",
+      "description": "writing task with tabular data",
       "instruction": "Please refer to the data structure shown in the figure and convert it into JSONC format. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "jsonc", "imagePath": "a-usability-study-config/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "jsonc", "imagePath": "a-usability-study-tabular/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1886,7 +1884,7 @@
           "required": false
         },
         {
-          "id": "writing-task-config-jsonc_d",
+          "id": "writing-task-tabular-jsonc_d",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -1896,7 +1894,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-jsonc_c",
+          "id": "writing-task-tabular-jsonc_c",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1906,7 +1904,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-jsonc",
+          "id": "writing-task-tabular-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -1918,24 +1916,24 @@
       ],
       "correctAnswer": [
         {
-          "id": "writing-task-config-jsonc",
+          "id": "writing-task-tabular-jsonc",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "writing-task-config-json5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+    "writing-task-tabular-json5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-tabular-json5"
       },
-      "description": "writing task with configuration data",
+      "description": "writing task with tabular data",
       "instruction": "Please refer to the data structure shown in the figure and convert it into JSON5 format. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json5", "imagePath": "a-usability-study-config/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "json5", "imagePath": "a-usability-study-tabular/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -1953,7 +1951,7 @@
           "required": false
         },
         {
-          "id": "writing-task-config-json5_d",
+          "id": "writing-task-tabular-json5_d",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -1963,7 +1961,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-json5_c",
+          "id": "writing-task-tabular-json5_c",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -1973,7 +1971,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-json5",
+          "id": "writing-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -1985,24 +1983,24 @@
       ],
       "correctAnswer": [
         {
-          "id": "writing-task-config-json5",
+          "id": "writing-task-tabular-json5",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "writing-task-config-hjson": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+    "writing-task-tabular-hjson": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-tabular-hjson"
       },
-      "description": "writing task with configuration data",
+      "description": "writing task with tabular data",
       "instruction": "Please refer to the data structure shown in the figure and convert it into HJSON format. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": "a-usability-study-config/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "hjson", "imagePath": "a-usability-study-tabular/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -2020,7 +2018,7 @@
           "required": false
         },
         {
-          "id": "writing-task-config-hjson_d",
+          "id": "writing-task-tabular-hjson_d",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2030,7 +2028,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-hjson_c",
+          "id": "writing-task-tabular-hjson_c",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2040,7 +2038,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-hjson",
+          "id": "writing-task-tabular-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2052,24 +2050,24 @@
       ],
       "correctAnswer": [
         {
-          "id": "writing-task-config-hjson",
+          "id": "writing-task-tabular-hjson",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "writing-task-config-yaml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+    "writing-task-tabular-yaml": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-tabular-yaml"
       },
-      "description": "writing task with configuration data",
+      "description": "writing task with tabular data",
       "instruction": "Please refer to the data structure shown in the figure and convert it into YAML format. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "yaml", "imagePath": "a-usability-study-config/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "yaml", "imagePath": "a-usability-study-tabular/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -2087,7 +2085,7 @@
           "required": false
         },
         {
-          "id": "writing-task-config-yaml_d",
+          "id": "writing-task-tabular-yaml_d",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2097,7 +2095,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-yaml_c",
+          "id": "writing-task-tabular-yaml_c",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2107,7 +2105,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-yaml",
+          "id": "writing-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2119,24 +2117,24 @@
       ],
       "correctAnswer": [
         {
-          "id": "writing-task-config-yaml",
+          "id": "writing-task-tabular-yaml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "writing-task-config-toml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+    "writing-task-tabular-toml": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-tabular-toml"
       },
-      "description": "writing task with configuration data",
+      "description": "writing task with tabular data",
       "instruction": "Please refer to the data structure shown in the figure and convert it into TOML format. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "toml", "imagePath": "a-usability-study-config/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "toml", "imagePath": "a-usability-study-tabular/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -2154,7 +2152,7 @@
           "required": false
         },
         {
-          "id": "writing-task-config-toml_d",
+          "id": "writing-task-tabular-toml_d",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2164,7 +2162,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-toml_c",
+          "id": "writing-task-tabular-toml_c",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2174,7 +2172,7 @@
           "required": true
         },
         {
-          "id": "writing-task-config-toml",
+          "id": "writing-task-tabular-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2186,24 +2184,24 @@
       ],
       "correctAnswer": [
         {
-          "id": "writing-task-config-toml",
+          "id": "writing-task-tabular-toml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "writing-task-config-xml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+    "writing-task-tabular-xml": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-tabular-xml"
       },
-      "description": "writing task with configuration data",
+      "description": "writing task with tabular data",
       "instruction": "Please refer to the data structure shown in the figure and convert it into XML format. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "xml", "imagePath": "a-usability-study-config/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
+        "language": "xml", "imagePath": "a-usability-study-tabular/assets/tasks/fig/tabular_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -2221,7 +2219,7 @@
           "required": false
         },
         {
-          "id": "writing-task-config-xml_d",
+          "id": "writing-task-tabular-xml_d",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2231,17 +2229,17 @@
           "required": true
         },
         {
-          "id": "writing-task-config-xml_c",
+          "id": "writing-task-tabular-xml_c",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
           "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
+          "leftLabel": "Very unsure(7)",          
           "location": "sidebar",
           "required": true
         },
         {
-          "id": "writing-task-config-xml",
+          "id": "writing-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2253,35 +2251,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "writing-task-config-xml",
+          "id": "writing-task-tabular-xml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-json-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+    "modifying-task-tabular-json-1": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
-        "taskName": "modifying-task-config-json"
+        "taskName": "modifying-task-tabular-json"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSON data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "json", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-json_q1",
-          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
+          "id": "modifying-task-tabular-json_q1",
+          "prompt": "1. Go through each movie entry in the JSON data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-json_d1",
+          "id": "modifying-task-tabular-json_d1",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2291,7 +2289,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json_c1",
+          "id": "modifying-task-tabular-json_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2301,7 +2299,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json",
+          "id": "modifying-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2313,35 +2311,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-json",
+          "id": "modifying-task-tabular-json",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-json-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+    "modifying-task-tabular-json-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
-        "taskName": "modifying-task-config-json"
+        "taskName": "modifying-task-tabular-json"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSON data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "json", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-json_q2",
-          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
+          "id": "modifying-task-tabular-json_q2",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-json_d2",
+          "id": "modifying-task-tabular-json_d2",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2351,7 +2349,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json_c2",
+          "id": "modifying-task-tabular-json_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2361,7 +2359,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json",
+          "id": "modifying-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2373,35 +2371,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-json",
+          "id": "modifying-task-tabular-json",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-json-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+    "modifying-task-tabular-json-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
-        "taskName": "modifying-task-config-json"
+        "taskName": "modifying-task-tabular-json"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSON data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "json", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-json_q3",
-          "prompt": "3. Go through the JSON data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
+          "id": "modifying-task-tabular-json_q3",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-json_d3",
+          "id": "modifying-task-tabular-json_d3",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2411,7 +2409,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json_c3",
+          "id": "modifying-task-tabular-json_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2421,7 +2419,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json",
+          "id": "modifying-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2433,35 +2431,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-json",
+          "id": "modifying-task-tabular-json",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-json-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+    "modifying-task-tabular-json-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
-        "taskName": "modifying-task-config-json"
+        "taskName": "modifying-task-tabular-json"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSON data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "json", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-json_q4",
-          "prompt": "4. Modify the JSON structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
+          "id": "modifying-task-tabular-json_q4",
+          "prompt": "4. For each movie object in the JSON file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-json_d4",
+          "id": "modifying-task-tabular-json_d4",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2471,7 +2469,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json_c4",
+          "id": "modifying-task-tabular-json_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2481,7 +2479,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json",
+          "id": "modifying-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2493,35 +2491,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-json",
+          "id": "modifying-task-tabular-json",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-jsonc-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+    "modifying-task-tabular-jsonc-1": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
-        "taskName": "modifying-task-config-jsonc"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSONC data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "jsonc", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "jsonc", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-jsonc_q1",
-          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
+          "id": "modifying-task-tabular-jsonc_q1",
+          "prompt": "1. Go through each movie entry in the JSONC data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-jsonc_d1",
+          "id": "modifying-task-tabular-jsonc_d1",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2531,7 +2529,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-jsonc_c1",
+          "id": "modifying-task-tabular-jsonc_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2541,7 +2539,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-jsonc",
+          "id": "modifying-task-tabular-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2553,35 +2551,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-jsonc",
+          "id": "modifying-task-tabular-jsonc",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-jsonc-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+    "modifying-task-tabular-jsonc-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
-        "taskName": "modifying-task-config-jsonc"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSONC data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "jsonc", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "jsonc", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-jsonc_q2",
-          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
+          "id": "modifying-task-tabular-jsonc_q2",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-jsonc_d2",
+          "id": "modifying-task-tabular-jsonc_d2",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2591,7 +2589,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-jsonc_c2",
+          "id": "modifying-task-tabular-jsonc_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2601,7 +2599,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-jsonc",
+          "id": "modifying-task-tabular-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2613,35 +2611,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-jsonc",
+          "id": "modifying-task-tabular-jsonc",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-jsonc-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+    "modifying-task-tabular-jsonc-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
-        "taskName": "modifying-task-config-jsonc"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSONC data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "jsonc", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "jsonc", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-jsonc_q3",
-          "prompt": "3. Go through the JSONC data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
+          "id": "modifying-task-tabular-jsonc_q3",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-jsonc_d3",
+          "id": "modifying-task-tabular-jsonc_d3",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2651,7 +2649,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-jsonc_c3",
+          "id": "modifying-task-tabular-jsonc_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2661,7 +2659,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-jsonc",
+          "id": "modifying-task-tabular-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2673,35 +2671,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-jsonc",
+          "id": "modifying-task-tabular-jsonc",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-jsonc-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+    "modifying-task-tabular-jsonc-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
-        "taskName": "modifying-task-config-jsonc"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSONC data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "jsonc", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "jsonc", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-jsonc_q4",
-          "prompt": "4. Modify the JSONC structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
+          "id": "modifying-task-tabular-jsonc_q4",
+          "prompt": "4. For each movie object in the JSONC file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-jsonc_d4",
+          "id": "modifying-task-tabular-jsonc_d4",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2711,7 +2709,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-jsonc_c4",
+          "id": "modifying-task-tabular-jsonc_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2721,7 +2719,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-jsonc",
+          "id": "modifying-task-tabular-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2733,35 +2731,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-jsonc",
+          "id": "modifying-task-tabular-jsonc",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-json5-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+    "modifying-task-tabular-json5-1": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
-        "taskName": "modifying-task-config-json5"
+        "taskName": "modifying-task-tabular-json5"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSON5 data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json5", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "json5", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-json5_q1",
-          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
+          "id": "modifying-task-tabular-json5_q1",
+          "prompt": "1. Go through each movie entry in the JSON5 data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-json5_d1",
+          "id": "modifying-task-tabular-json5_d1",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2771,7 +2769,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json5_c1",
+          "id": "modifying-task-tabular-json5_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2781,7 +2779,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json5",
+          "id": "modifying-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2793,35 +2791,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-json5",
+          "id": "modifying-task-tabular-json5",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-json5-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+    "modifying-task-tabular-json5-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
-        "taskName": "modifying-task-config-json5"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSON5 data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json5", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "json5", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-json5_q2",
-          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
+          "id": "modifying-task-tabular-json5_q2",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-json5_d2",
+          "id": "modifying-task-tabular-json5_d2",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2831,7 +2829,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json5_c2",
+          "id": "modifying-task-tabular-json5_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2841,7 +2839,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json5",
+          "id": "modifying-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2853,35 +2851,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-json5",
+          "id": "modifying-task-tabular-json5",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-json5-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+    "modifying-task-tabular-json5-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
-        "taskName": "modifying-task-config-json5"
+        "taskName": "modifying-task-tabular-json5"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSON5 data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json5", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "json5", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-json5_q3",
-          "prompt": "3. Go through the JSON5 data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
+          "id": "modifying-task-tabular-json5_q3",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-json5_d3",
+          "id": "modifying-task-tabular-json5_d3",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2891,7 +2889,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json5_c3",
+          "id": "modifying-task-tabular-json5_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2901,7 +2899,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json5",
+          "id": "modifying-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2913,35 +2911,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-json5",
+          "id": "modifying-task-tabular-json5",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-json5-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+    "modifying-task-tabular-json5-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
-        "taskName": "modifying-task-config-json5"
+        "taskName": "modifying-task-tabular-json5"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the JSON5 data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "json5", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "json5", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-json5_q4",
-          "prompt": "4. Modify the JSON5 structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
+          "id": "modifying-task-tabular-json5_q4",
+          "prompt": "4. For each movie object in the JSON5 file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-json5_d4",
+          "id": "modifying-task-tabular-json5_d4",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -2951,7 +2949,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json5_c4",
+          "id": "modifying-task-tabular-json5_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -2961,7 +2959,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-json5",
+          "id": "modifying-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -2973,35 +2971,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-json5",
+          "id": "modifying-task-tabular-json5",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-hjson-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+    "modifying-task-tabular-hjson-1": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
-        "taskName": "modifying-task-config-hjson"
+        "taskName": "modifying-task-tabular-hjson"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the HJSON data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "hjson", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-hjson_q1",
-          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
+          "id": "modifying-task-tabular-hjson_q1",
+          "prompt": "1. Go through each movie entry in the HJSON data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-hjson_d1",
+          "id": "modifying-task-tabular-hjson_d1",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3011,7 +3009,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-hjson_c1",
+          "id": "modifying-task-tabular-hjson_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3021,7 +3019,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-hjson",
+          "id": "modifying-task-tabular-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3033,35 +3031,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-hjson",
+          "id": "modifying-task-tabular-hjson",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-hjson-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+    "modifying-task-tabular-hjson-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
-        "taskName": "modifying-task-config-hjson"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the HJSON data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "hjson", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-hjson_q2",
-          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
+          "id": "modifying-task-tabular-hjson_q2",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-hjson_d2",
+          "id": "modifying-task-tabular-hjson_d2",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3071,7 +3069,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-hjson_c2",
+          "id": "modifying-task-tabular-hjson_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3081,7 +3079,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-hjson",
+          "id": "modifying-task-tabular-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3093,35 +3091,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-hjson",
+          "id": "modifying-task-tabular-hjson",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-hjson-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+    "modifying-task-tabular-hjson-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
-        "taskName": "modifying-task-config-hjson"
+        "taskName": "modifying-task-tabular-hjson"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the HJSON data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "hjson", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-hjson_q3",
-          "prompt": "3. Go through the HJSON data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
+          "id": "modifying-task-tabular-hjson_q3",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-hjson_d3",
+          "id": "modifying-task-tabular-hjson_d3",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3131,7 +3129,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-hjson_c3",
+          "id": "modifying-task-tabular-hjson_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3141,7 +3139,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-hjson",
+          "id": "modifying-task-tabular-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3153,35 +3151,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-hjson",
+          "id": "modifying-task-tabular-hjson",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-hjson-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+    "modifying-task-tabular-hjson-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
-        "taskName": "modifying-task-config-hjson"
+        "taskName": "modifying-task-tabular-hjson"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the HJSON data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "hjson", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "hjson", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-hjson_q4",
-          "prompt": "4. Modify the HJSON structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
+          "id": "modifying-task-tabular-hjson_q4",
+          "prompt": "4. For each movie object in the HJSON file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-hjson_d4",
+          "id": "modifying-task-tabular-hjson_d4",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3191,7 +3189,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-hjson_c4",
+          "id": "modifying-task-tabular-hjson_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3201,7 +3199,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-hjson",
+          "id": "modifying-task-tabular-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3213,35 +3211,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-hjson",
+          "id": "modifying-task-tabular-hjson",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-toml-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+    "modifying-task-tabular-toml-1": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "modifying-task-config-toml"
+        "taskName": "modifying-task-tabular-toml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the TOML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "toml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "toml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-toml_q1",
-          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
+          "id": "modifying-task-tabular-toml_q1",
+          "prompt": "1. Go through each movie entry in the TOML data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-toml_d1",
+          "id": "modifying-task-tabular-toml_d1",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3251,7 +3249,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-toml_c1",
+          "id": "modifying-task-tabular-toml_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3261,7 +3259,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-toml",
+          "id": "modifying-task-tabular-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3273,35 +3271,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-toml",
+          "id": "modifying-task-tabular-toml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-toml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+    "modifying-task-tabular-toml-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "modifying-task-config-toml"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the TOML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "toml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "toml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-toml_q2",
-          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
+          "id": "modifying-task-tabular-toml_q2",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-toml_d2",
+          "id": "modifying-task-tabular-toml_d2",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3311,7 +3309,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-toml_c2",
+          "id": "modifying-task-tabular-toml_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3321,7 +3319,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-toml",
+          "id": "modifying-task-tabular-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3333,35 +3331,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-toml",
+          "id": "modifying-task-tabular-toml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-toml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+    "modifying-task-tabular-toml-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "modifying-task-config-toml"
+        "taskName": "modifying-task-tabular-toml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the TOML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "toml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "toml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-toml_q3",
-          "prompt": "3. Go through the TOML data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
+          "id": "modifying-task-tabular-toml_q3",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-toml_d3",
+          "id": "modifying-task-tabular-toml_d3",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3371,7 +3369,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-toml_c3",
+          "id": "modifying-task-tabular-toml_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3381,7 +3379,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-toml",
+          "id": "modifying-task-tabular-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3393,35 +3391,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-toml",
+          "id": "modifying-task-tabular-toml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-toml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+    "modifying-task-tabular-toml-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "modifying-task-config-toml"
+        "taskName": "modifying-task-tabular-toml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the TOML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "toml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "toml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-toml_q4",
-          "prompt": "4. Modify the TOML structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
+          "id": "modifying-task-tabular-toml_q4",
+          "prompt": "4. For each movie object in the TOML file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-toml_d4",
+          "id": "modifying-task-tabular-toml_d4",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3431,7 +3429,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-toml_c4",
+          "id": "modifying-task-tabular-toml_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3441,7 +3439,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-toml",
+          "id": "modifying-task-tabular-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3453,35 +3451,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-toml",
+          "id": "modifying-task-tabular-toml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-yaml-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+    "modifying-task-tabular-yaml-1": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
-        "taskName": "modifying-task-config-yaml"
+        "taskName": "modifying-task-tabular-yaml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the YAML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "yaml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "yaml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-yaml_q1",
-          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
+          "id": "modifying-task-tabular-yaml_q1",
+          "prompt": "1. Go through each movie entry in the YAML data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-yaml_d1",
+          "id": "modifying-task-tabular-yaml_d1",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3491,7 +3489,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-yaml_c1",
+          "id": "modifying-task-tabular-yaml_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3501,7 +3499,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-yaml",
+          "id": "modifying-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3513,35 +3511,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-yaml",
+          "id": "modifying-task-tabular-yaml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-yaml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+    "modifying-task-tabular-yaml-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
-        "taskName": "modifying-task-config-yaml"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the YAML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "yaml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "yaml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-yaml_q2",
-          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
+          "id": "modifying-task-tabular-yaml_q2",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-yaml_d2",
+          "id": "modifying-task-tabular-yaml_d2",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3551,7 +3549,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-yaml_c2",
+          "id": "modifying-task-tabular-yaml_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3561,7 +3559,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-yaml",
+          "id": "modifying-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3573,35 +3571,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-yaml",
+          "id": "modifying-task-tabular-yaml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-yaml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+    "modifying-task-tabular-yaml-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
-        "taskName": "modifying-task-config-yaml"
+        "taskName": "modifying-task-tabular-yaml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the YAML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "yaml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "yaml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-yaml_q3",
-          "prompt": "3. Go through the YAML data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
+          "id": "modifying-task-tabular-yaml_q3",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-yaml_d3",
+          "id": "modifying-task-tabular-yaml_d3",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3611,7 +3609,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-yaml_c3",
+          "id": "modifying-task-tabular-yaml_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3621,7 +3619,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-yaml",
+          "id": "modifying-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3633,35 +3631,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-yaml",
+          "id": "modifying-task-tabular-yaml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-yaml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+    "modifying-task-tabular-yaml-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
-        "taskName": "modifying-task-config-yaml"
+        "taskName": "modifying-task-tabular-yaml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the YAML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "yaml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "yaml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-yaml_q4",
-          "prompt": "4. Modify the YAML structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
+          "id": "modifying-task-tabular-yaml_q4",
+          "prompt": "4. For each movie object in the YAML file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-yaml_d4",
+          "id": "modifying-task-tabular-yaml_d4",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3671,7 +3669,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-yaml_c4",
+          "id": "modifying-task-tabular-yaml_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3681,7 +3679,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-yaml",
+          "id": "modifying-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3693,35 +3691,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-yaml",
+          "id": "modifying-task-tabular-yaml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-xml-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+    "modifying-task-tabular-xml-1": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
-        "taskName": "modifying-task-config-xml"
+        "taskName": "modifying-task-tabular-xml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the XML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "xml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "xml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-xml_q1",
-          "prompt": "1. Ensure that the \"vega\" value in \"peerDependencies\" always matches the \"version\" value while preserving the caret (^) prefix.",
+          "id": "modifying-task-tabular-xml_q1",
+          "prompt": "1. Go through each movie entry in the XML data and update the \"writer\" element to match the \"director\" element, keeping them consistent.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-xml_d1",
+          "id": "modifying-task-tabular-xml_d1",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3731,7 +3729,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-xml_c1",
+          "id": "modifying-task-tabular-xml_c1",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3741,7 +3739,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-xml",
+          "id": "modifying-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3753,35 +3751,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-xml",
+          "id": "modifying-task-tabular-xml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-xml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+    "modifying-task-tabular-xml-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
-        "taskName": "modifying-task-config-xml"
+        "taskName": "modifying-task-tabular-jsonc"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the XML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "xml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "xml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-xml_q2",
-          "prompt": "2. Add the keys \"d3-hierarchy\" with value \"^3.1.2\", \"d3-interpolate\" with value \"^3.0.1\", and \"d3-path\" with value \"^3.1.0\" under the \"dependencies\" section.",
+          "id": "modifying-task-tabular-xml_q2",
+          "prompt": "2. Check the genres list in each movie entry. If \"Silent\" is not already present, add it; otherwise, leave the list unchanged.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-xml_d2",
+          "id": "modifying-task-tabular-xml_d2",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3791,7 +3789,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-xml_c2",
+          "id": "modifying-task-tabular-xml_c2",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3801,7 +3799,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-xml",
+          "id": "modifying-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3813,35 +3811,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-xml",
+          "id": "modifying-task-tabular-xml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-xml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+    "modifying-task-tabular-xml-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
-        "taskName": "modifying-task-config-xml"
+        "taskName": "modifying-task-tabular-xml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the XML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "xml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "xml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-xml_q3",
-          "prompt": "3. Go through the XML data and remove all \"url\" key-value pairs from the objects, no matter where they are.",
+          "id": "modifying-task-tabular-xml_q3",
+          "prompt": "3. Remove movie objects where the release_date is not from the year 1900.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-xml_d3",
+          "id": "modifying-task-tabular-xml_d3",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3851,7 +3849,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-xml_c3",
+          "id": "modifying-task-tabular-xml_c3",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3861,7 +3859,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-xml",
+          "id": "modifying-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3873,35 +3871,35 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-xml",
+          "id": "modifying-task-tabular-xml",
           "answer": "Yes"
         }
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-config-xml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+    "modifying-task-tabular-xml-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
-        "taskName": "modifying-task-config-xml"
+        "taskName": "modifying-task-tabular-xml"
       },
-      "description": "modifying task with configuration data",
+      "description": "modifying task with tabular data",
       "instruction": "Please modify the XML data in the code editor according to the requirements listed in the sidebar. (If needed, click the top-right help button to review syntax rules.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "xml", "imagePath": null, "type": "modifying", "tabular": false
+        "language": "xml", "imagePath": null, "type": "modifying", "tabular": true
       },
       "response": [
         {
-          "id": "modifying-task-config-xml_q4",
-          "prompt": "4. Modify the XML structure by transforming the \"collaborators\" list into an array of objects, where each collaborator is represented as an object with a \"name\" key. Each original collaborator string should become the value of a \"name\" key within its respective object.",
+          "id": "modifying-task-tabular-xml_q4",
+          "prompt": "4. For each movie object in the XML file, create a new key called information. Move all existing key-value pairs under this key, except for the title key.",
           "type": "reactive",
           "location": "sidebar",
           "required": false
         },
         {
-          "id": "modifying-task-config-xml_d4",
+          "id": "modifying-task-tabular-xml_d4",
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
@@ -3911,7 +3909,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-txml_c4",
+          "id": "modifying-task-tabular-xml_c4",
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
@@ -3921,7 +3919,7 @@
           "required": true
         },
         {
-          "id": "modifying-task-config-xml",
+          "id": "modifying-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
           "location": "sidebar",
@@ -3933,7 +3931,7 @@
       ],
       "correctAnswer": [
         {
-          "id": "modifying-task-config-xml",
+          "id": "modifying-task-tabular-xml",
           "answer": "Yes"
         }
       ],
@@ -3947,9 +3945,9 @@
       "instruction": "Before learning the syntax rules of data serialization formats and completing the related tasks, please look at the image and type out the text as it appears.",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
       "parameters": {
-        "language": "plain_text", "imagePath": "a-usability-study-config/assets/tasks/fig/nl_write.png", "type": "writing", "tabular": false
+        "language": "plain_text", "imagePath": "a-usability-study-tabular/assets/tasks/fig/nl_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
@@ -3971,8 +3969,8 @@
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "rightLabel": "Very difficult",
+          "leftLabel": "Very easy",          
           "location": "sidebar",
           "required": true
         },
@@ -3981,8 +3979,8 @@
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
+          "rightLabel": "Very confident",
+          "leftLabel": "Very unsure",          
           "location": "sidebar",
           "required": true
         },
@@ -4290,78 +4288,78 @@
         "components": [
           "tutorial-json-part1",
           "tutorial-json-part2",
-          "reading-task-config-json",
-          "writing-task-config-json",
-          "modifying-task-config-json-1",
-          "modifying-task-config-json-2",
-          "modifying-task-config-json-3",
-          "modifying-task-config-json-4"
+          "reading-task-tabular-json",
+          "writing-task-tabular-json",
+          "modifying-task-tabular-json-1",
+          "modifying-task-tabular-json-2",
+          "modifying-task-tabular-json-3",
+          "modifying-task-tabular-json-4"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-jsonc-part1",
           "tutorial-jsonc-part2",
-          "reading-task-config-jsonc",
-          "writing-task-config-jsonc",
-          "modifying-task-config-jsonc-1",
-          "modifying-task-config-jsonc-2",
-          "modifying-task-config-jsonc-3",
-          "modifying-task-config-jsonc-4"
+          "reading-task-tabular-jsonc",
+          "writing-task-tabular-jsonc",
+          "modifying-task-tabular-jsonc-1",
+          "modifying-task-tabular-jsonc-2",
+          "modifying-task-tabular-jsonc-3",
+          "modifying-task-tabular-jsonc-4"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-json5-part1",
           "tutorial-json5-part2",
-          "reading-task-config-json5",
-          "writing-task-config-json5",
-          "modifying-task-config-json5-1",
-          "modifying-task-config-json5-2",
-          "modifying-task-config-json5-3",
-          "modifying-task-config-json5-4"
+          "reading-task-tabular-json5",
+          "writing-task-tabular-json5",
+          "modifying-task-tabular-json5-1",
+          "modifying-task-tabular-json5-2",
+          "modifying-task-tabular-json5-3",
+          "modifying-task-tabular-json5-4"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-hjson-part1",
           "tutorial-hjson-part2",
-          "reading-task-config-hjson",
-          "writing-task-config-hjson",
-          "modifying-task-config-hjson-1",
-          "modifying-task-config-hjson-2",
-          "modifying-task-config-hjson-3",
-          "modifying-task-config-hjson-4"
+          "reading-task-tabular-hjson",
+          "writing-task-tabular-hjson",
+          "modifying-task-tabular-hjson-1",
+          "modifying-task-tabular-hjson-2",
+          "modifying-task-tabular-hjson-3",
+          "modifying-task-tabular-hjson-4"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-yaml-part1",
           "tutorial-yaml-part2",
-          "reading-task-config-yaml",
-          "writing-task-config-yaml",
-          "modifying-task-config-yaml-1",
-          "modifying-task-config-yaml-2",
-          "modifying-task-config-yaml-3",
-          "modifying-task-config-yaml-4"
+          "reading-task-tabular-yaml",
+          "writing-task-tabular-yaml",
+          "modifying-task-tabular-yaml-1",
+          "modifying-task-tabular-yaml-2",
+          "modifying-task-tabular-yaml-3",
+          "modifying-task-tabular-yaml-4"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-toml-part1",
           "tutorial-toml-part2",
-          "reading-task-config-toml",
-          "writing-task-config-toml",
-          "modifying-task-config-toml-1",
-          "modifying-task-config-toml-2",
-          "modifying-task-config-toml-3",
-          "modifying-task-config-toml-4"
+          "reading-task-tabular-toml",
+          "writing-task-tabular-toml",
+          "modifying-task-tabular-toml-1",
+          "modifying-task-tabular-toml-2",
+          "modifying-task-tabular-toml-3",
+          "modifying-task-tabular-toml-4"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-xml-part1",
           "tutorial-xml-part2",
-          "reading-task-config-xml",
-          "writing-task-config-xml",
-          "modifying-task-config-xml-1",
-          "modifying-task-config-xml-2",
-          "modifying-task-config-xml-3",
-          "modifying-task-config-xml-4"
+          "reading-task-tabular-xml",
+          "writing-task-tabular-xml",
+          "modifying-task-tabular-xml-1",
+          "modifying-task-tabular-xml-2",
+          "modifying-task-tabular-xml-3",
+          "modifying-task-tabular-xml-4"
           ]}
         ]},         
       {
