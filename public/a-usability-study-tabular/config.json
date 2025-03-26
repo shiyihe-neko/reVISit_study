@@ -2234,7 +2234,7 @@
           "type": "likert",
           "numItems":7,
           "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(7)",          
+          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -3969,8 +3969,8 @@
           "prompt": "How difficult was this task?",
           "type": "likert",
           "numItems":7,
-          "rightLabel": "Very difficult",
-          "leftLabel": "Very easy",          
+          "rightLabel": "Very difficult(7)",
+          "leftLabel": "Very easy(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -3979,8 +3979,8 @@
           "prompt": "How confident are you in your answer?",
           "type": "likert",
           "numItems":7,
-          "rightLabel": "Very confident",
-          "leftLabel": "Very unsure",          
+          "rightLabel": "Very confident(7)",
+          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
