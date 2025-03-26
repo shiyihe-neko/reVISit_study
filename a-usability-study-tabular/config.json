@@ -645,7 +645,7 @@
         },
         {
           "id": "reading-task-tabular-json_q4",
-          "prompt": "4. Choose all students who participate in two different sports.",
+          "prompt": "4. Which student participates in two different sports?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["Bob", "Alice", "Eve"],
@@ -675,8 +675,7 @@
         {
           "id": "reading-task-tabular-json_q5",
           "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
+          "type": "checkbox",
           "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
@@ -823,7 +822,7 @@
         },
         {
           "id": "reading-task-tabular-jsonc_q4",
-          "prompt": "4. Choose all students who participate in two different sports.",
+          "prompt": "4. Which student participates in two different sports?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["Bob", "Alice", "Eve"],
@@ -853,8 +852,7 @@
         {
           "id": "reading-task-tabular-jsonc_q5",
           "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
+          "type": "checkbox",
           "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
@@ -1001,7 +999,7 @@
         },
         {
           "id": "reading-task-tabular-json5_q4",
-          "prompt": "4. Choose all students who participate in two different sports.",
+          "prompt": "4. Which student participates in two different sports?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["Bob", "Alice", "Eve"],
@@ -1031,8 +1029,7 @@
         {
           "id": "reading-task-tabular-json5_q5",
           "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
+          "type": "checkbox",
           "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
@@ -1179,7 +1176,7 @@
         },
         {
           "id": "reading-task-tabular-hjson_q4",
-          "prompt": "4. Choose all students who participate in two different sports.",
+          "prompt": "4. Which student participates in two different sports?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["Bob", "Alice", "Eve"],
@@ -1209,8 +1206,7 @@
         {
           "id": "reading-task-tabular-hjson_q5",
           "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
+          "type": "checkbox",
           "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
@@ -1357,7 +1353,7 @@
         },
         {
           "id": "reading-task-tabular-yaml_q4",
-          "prompt": "4. Choose all students who participate in two different sports.",
+          "prompt": "4. Which student participates in two different sports?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["Bob", "Alice", "Eve"],
@@ -1387,8 +1383,7 @@
         {
           "id": "reading-task-tabular-yaml_q5",
           "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
+          "type": "checkbox",
           "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
@@ -1535,7 +1530,7 @@
         },
         {
           "id": "reading-task-tabular-toml_q4",
-          "prompt": "4. Choose all students who participate in two different sports.",
+          "prompt": "4. Which student participates in two different sports?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["Bob", "Alice", "Eve"],
@@ -1565,8 +1560,7 @@
         {
           "id": "reading-task-tabular-toml_q5",
           "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
+          "type": "checkbox",
           "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true
@@ -1713,7 +1707,7 @@
         },
         {
           "id": "reading-task-tabular-xml_q4",
-          "prompt": "4. Choose all students who participate in two different sports.",
+          "prompt": "4. Which student participates in two different sports?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["Bob", "Alice", "Eve"],
@@ -1743,8 +1737,7 @@
         {
           "id": "reading-task-tabular-xml_q5",
           "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
+          "type": "checkbox",
           "options": ["Bob", "Alice", "Eve"],
           "location": "sidebar",
           "required": true

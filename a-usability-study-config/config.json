@@ -647,10 +647,10 @@
         },
         {
           "id": "reading-task-config-json_q4",
-          "prompt": "4. Which top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
           "location": "sidebar",
           "required": true
         },
@@ -676,7 +676,7 @@
         },
         {
           "id": "reading-task-config-json_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
@@ -825,10 +825,10 @@
         },
         {
           "id": "reading-task-config-jsonc_q4",
-          "prompt": "4. Which top-level keys in the JSONC file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
           "location": "sidebar",
           "required": true
         },
@@ -854,7 +854,7 @@
         },
         {
           "id": "reading-task-config-jsonc_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
@@ -1003,10 +1003,10 @@
         },
         {
           "id": "reading-task-config-json5_q4",
-          "prompt": "4. Which top-level keys in the JSON5 file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
           "location": "sidebar",
           "required": true
         },
@@ -1032,7 +1032,7 @@
         },
         {
           "id": "reading-task-config-json5_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
@@ -1181,10 +1181,10 @@
         },
         {
           "id": "reading-task-config-hjson_q4",
-          "prompt": "4. Which top-level keys in the HJSON file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
           "location": "sidebar",
           "required": true
         },
@@ -1210,7 +1210,7 @@
         },
         {
           "id": "reading-task-config-hjson_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
@@ -1359,10 +1359,10 @@
         },
         {
           "id": "reading-task-config-yaml_q4",
-          "prompt": "4. Which top-level keys in the YAML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
           "location": "sidebar",
           "required": true
         },
@@ -1388,7 +1388,7 @@
         },
         {
           "id": "reading-task-config-yaml_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
@@ -1537,10 +1537,10 @@
         },
         {
           "id": "reading-task-config-toml_q4",
-          "prompt": "4. Which top-level keys in the TOML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
           "location": "sidebar",
           "required": true
         },
@@ -1566,7 +1566,7 @@
         },
         {
           "id": "reading-task-config-toml_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
@@ -1715,10 +1715,10 @@
         },
         {
           "id": "reading-task-config-xml_q4",
-          "prompt": "4. Which top-level keys in the TOML file contain nested structures, meaning they have child key-value pairs? List all such keys. For example, \"repository\" is a valid answer because it contains both \"type\" and \"url\" as nested keys.",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
-          "options": ["repository", "keywords", "author", "files","exports","dependencies","devDependencies","scripts","engines"],
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
           "location": "sidebar",
           "required": true
         },
@@ -1744,7 +1744,7 @@
         },
         {
           "id": "reading-task-config-xml_q5",
-          "prompt": "5. In the \"dependencies\" section, if a dependency has a version number of 5.0.0 or higher, it may potentially lead to compatibility issues. Identify and list all such dependencies.",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
