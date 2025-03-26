@@ -5,7 +5,7 @@ Welcome to our study!
 The purpose of this study is to gain a better understanding of the usability of data serialization formats. Here is what you can expect during your participation:
 
 1. You will begin with a brief tutorial covering the basics of a data serialization format.
-2. After completing the tutorial, you will then be assigned tasks involving reading, writing and modifying data using these formats.
+2. After completing the tutorial, you will then be assigned tasks involving reading, writing and modifying data using the format.
 3. Once you have completed the tasks, you will be asked to fill out a post-task survey.
 
 After successfully completing and submitting the study, you will receive compensation, and we sincerely appreciate your participation and contribution. Thank you for taking part!
