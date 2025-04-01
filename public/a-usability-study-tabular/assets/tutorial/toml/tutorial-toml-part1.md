@@ -9,7 +9,7 @@ Let’s begin with the basics of its syntax!
 **Key-Value Pairs**
 Key-value pairs are separated by an equals sign =; keys are on the left, and values are on the right.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_KVPairs.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_KVPairs.png" width="600px" height="auto">
 <br>
 
 
@@ -17,17 +17,17 @@ Key-value pairs are separated by an equals sign =; keys are on the left, and val
 - **Basic strings**: are enclosed in double quotes <strong style="color:green;">""</strong>.
 - **Multi-line strings** use triple double quotes <strong style="color:green;">"""</strong> for multiple lines.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_strings.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_strings.png" width="600px" height="auto">
 <br>
 
 - **Numbers and Booleans**: supports integers, floating-point numbers, and booleans.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_numbers.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_numbers.png" width="600px" height="auto">
 <br>
 
 - **Arrays**: Arrays are defined using square brackets <strong style="color:green;">[]</strong>, with items separated by commas <strong style="color:green;">,</strong>. A terminating comma (also called trailing comma) is not permitted after the last key/value pair in an inline table.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_arrays.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_arrays.png" width="600px" height="auto">
 <br>
 
 - **Dates and Times**: TOML explicitly supports time and date formats based on the **RFC 3339** standard.
@@ -42,7 +42,7 @@ Key-value pairs are separated by an equals sign =; keys are on the left, and val
 - Time Only (Local Time)
    Format: <strong style="color:green;">HH:MM:SS</strong>
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_date.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_date.png" width="600px" height="auto">
 <br>
 
 

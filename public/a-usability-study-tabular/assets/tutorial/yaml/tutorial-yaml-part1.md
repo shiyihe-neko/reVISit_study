@@ -8,7 +8,7 @@ Let’s begin with the basics of its syntax!
 **Key-Value Pairs**
 Each key-value pair is separated by a colon <strong style="color:green;">:</strong>, with a space after the colon.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/yaml/yaml_KVPairs.png" width="450px" height="auto">
+   <img src="./assets/tutorial/yaml/yaml_KVPairs.png" width="600px" height="auto">
 <br>
 
 ### Data Type
@@ -16,26 +16,26 @@ Each key-value pair is separated by a colon <strong style="color:green;">:</stro
 Strings can be written directly without quotes.
 Use quotes(Single or double) if the string contains special characters, colons, or newlines. Or use quotes if you want to ensure the number is interpreted as a string.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/yaml/yaml_Strings.png" width="450px" height="auto">
+   <img src="./assets/tutorial/yaml/yaml_Strings.png" width="600px" height="auto">
 <br>
 
 **Arrays**
 Array items are prefixed with <strong style="color:green;">-</strong>, one item per line.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/yaml/yaml_Arrays.png" width="450px" height="auto">
+   <img src="./assets/tutorial/yaml/yaml_Arrays.png" width="600px" height="auto">
 <br>
 
 **Objects**
 Use indentation to represent nested objects.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/yaml/yaml_Objects.png" width="450px" height="auto">
+   <img src="./assets/tutorial/yaml/yaml_Objects.png" width="600px" height="auto">
 <br>
 
 **Booleans and Null**
 Booleans are represented using <strong style="color:green;">true</strong>/<strong style="color:green;">false</strong> or <strong style="color:green;">yes</strong>/<strong style="color:green;">no</strong>.
 Null values are represented using <strong style="color:green;">null</strong> or <strong style="color:green;">~</strong>.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/yaml/yaml_Booleans.png" width="450px" height="auto">
+   <img src="./assets/tutorial/yaml/yaml_Booleans.png" width="600px" height="auto">
 <br>
 
 -------------------------------
