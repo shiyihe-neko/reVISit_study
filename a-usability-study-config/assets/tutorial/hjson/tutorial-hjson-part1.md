@@ -12,7 +12,7 @@ HJSON consists of **key-value** pairs and **data types**, and it primarily has t
 HJSON supports nested objects and arrays, enabling the construction of complex data structures.
 
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/hjson/hjson_example.png" width="450px" height="auto">
+   <img src="./assets/tutorial/hjson/hjson_example.png" width="600px" height="auto">
 <br>
 
 **Key-Value Pairs**
@@ -21,7 +21,7 @@ HJSON supports nested objects and arrays, enabling the construction of complex d
 - In HJSON, object names can be specified without quotes.keys do not require quotes. Also, you can specify strings without quotes.(In this case only one value per line and no commas are allowed.)
 
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/hjson/hjson_KVPairs.png" width="450px" height="auto">
+   <img src="./assets/tutorial/hjson/hjson_KVPairs.png" width="600px" height="auto">
 <br>
 
 **Data Types**
@@ -29,20 +29,20 @@ HJSON supports nested objects and arrays, enabling the construction of complex d
 Strings can **omit quotes** unless they contain special characters.
 **Multi-line strings** are written with indentation, avoiding escape characters.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/hjson/hjson_Flexible.png" width="450px" height="auto">
+   <img src="./assets/tutorial/hjson/hjson_Flexible.png" width="600px" height="auto">
 <br>
 
 **Number**: Includes **integers** and **floating-point numbers**, but leading zeros and hexadecimal formats are not supported unless they are enclosed in quotes.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_number.png" width="450px" height="auto">
+   <img src="./assets/tutorial/json/json_number.png" width="600px" height="auto">
 
 **Boolean**: The values can be <strong style="color:green;">true</strong> or <strong style="color:green;">false</strong>.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_boolean.png" width="450px" height="auto">
+   <img src="./assets/tutorial/json/json_boolean.png" width="600px" height="auto">
 
 **Null**: Represented by <strong style="color:green;">null</strong> for empty or unknown values.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_null.png" width="450px" height="auto">
+   <img src="./assets/tutorial/json/json_null.png" width="600px" height="auto">
 
 
 -------------------------------

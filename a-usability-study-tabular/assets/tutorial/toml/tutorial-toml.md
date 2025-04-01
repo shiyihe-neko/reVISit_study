@@ -9,7 +9,7 @@ Let’s begin with the basics of its syntax!
 **Key-Value Pairs**
 Key-value pairs are separated by an equals sign =; keys are on the left, and values are on the right.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_KVPairs.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_KVPairs.png" width="600px" height="auto">
 <br>
 
 
@@ -17,17 +17,17 @@ Key-value pairs are separated by an equals sign =; keys are on the left, and val
 - **Basic strings**: are enclosed in double quotes <strong style="color:green;">""</strong>.
 - **Multi-line strings** use triple double quotes <strong style="color:green;">"""</strong> for multiple lines.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_strings.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_strings.png" width="600px" height="auto">
 <br>
 
 - **Numbers and Booleans**: supports integers, floating-point numbers, and booleans.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_numbers.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_numbers.png" width="600px" height="auto">
 <br>
 
 - **Arrays**: Arrays are defined using square brackets <strong style="color:green;">[]</strong>, with items separated by commas <strong style="color:green;">,</strong>. A terminating comma (also called trailing comma) is not permitted after the last key/value pair in an inline table.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_arrays.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_arrays.png" width="600px" height="auto">
 <br>
 
 - **Dates and Times**: TOML explicitly supports time and date formats based on the **RFC 3339** standard.
@@ -42,7 +42,7 @@ Key-value pairs are separated by an equals sign =; keys are on the left, and val
 - Time Only (Local Time)
    Format: <strong style="color:green;">HH:MM:SS</strong>
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_date.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_date.png" width="600px" height="auto">
 <br>
 
 
@@ -51,25 +51,25 @@ Key-value pairs are separated by an equals sign =; keys are on the left, and val
 **Tables**
 Tables are defined using square brackets <strong style="color:green;">[]</strong> and create hierarchical structures. In TOML, two identical table names are not allowed.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_table.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_table.png" width="600px" height="auto">
 <br>
 
 Array of tables <strong style="color:green;">[[array]]</strong> is used to define a list of objects (tables). Each [[array]] entry represents a separate table inside an array.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_arrays2.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_arrays2.png" width="600px" height="auto">
 <br>
 
 **Inline Tables**
 Inline tables use <strong style="color:green;">{}</strong> and are suitable for simple objects.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/toml/toml_intable.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_intable.png" width="600px" height="auto">
 <br>
 
 ### Support Comments
 In TOML, comments start with <strong style="color:green;">#</strong>.
 
 ### Full TOML Example
-   <img src="./assets/tutorial/toml/toml_example.png" width="450px" height="auto">
+   <img src="./assets/tutorial/toml/toml_example.png" width="600px" height="auto">
 <br>
 
 Tip: In TOML, indentation is primarily used to enhance readability, but it does not affect the parsing logic since TOML does not rely on indentation to define hierarchical structures.
