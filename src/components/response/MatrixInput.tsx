@@ -10,6 +10,7 @@ import { MatrixResponse, StringOption } from '../../parser/types';
 import { ReactMarkdownWrapper } from '../ReactMarkdownWrapper';
 import { useStoreDispatch, useStoreActions } from '../../store/store';
 import { useIsDarkMode } from '../../store/hooks/useIsDarkMode';
+import checkboxClasses from './css/Checkbox.module.css';
 
 function CheckboxComponent({
   _choices,
@@ -44,6 +45,7 @@ function CheckboxComponent({
           checked={answer.value[question.label].split('|').includes(checkbox.value)}
           onChange={(event) => onChange(event, question.label, checkbox)}
           value={checkbox.value}
+          classNames={{ input: checkboxClasses.fixDisabled, icon: checkboxClasses.fixDisabledIcon }}
         />
       ))}
     </div>
@@ -245,7 +247,7 @@ export function MatrixInput({
                 height: '80px',
                 width: '100%',
                 display: 'flex',
-                alignItems: 'center',
+                alignItems: 'safe center',
                 justifyContent: 'end',
                 borderRight: '1px solid var(--mantine-color-dark-0)',
                 backgroundColor: isDarkMode ? '' : `${(idx + 1) % 2 === 0 ? 'var(--mantine-color-gray-2)' : 'white'}`,
@@ -254,6 +256,7 @@ export function MatrixInput({
               ta="right"
               p="sm"
               miw={140}
+              maw={400}
             >
               {entry.label}
             </Text>

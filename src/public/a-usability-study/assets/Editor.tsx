@@ -20,8 +20,8 @@ import 'ace-builds/src-noconflict/mode-yaml';
 import 'ace-builds/src-noconflict/mode-toml';
 import 'ace-builds/src-noconflict/mode-json5';
 import 'ace-builds/src-noconflict/ext-language_tools';
-
 import 'ace-builds/src-noconflict/ext-searchbox';
+
 import { StimulusParams } from '../../../store/types';
 import { PREFIX } from '../../../utils/Prefix';
 import { useIsDarkMode } from '../../../store/hooks/useIsDarkMode';
@@ -97,7 +97,7 @@ function CodeEditorTest({ setAnswer, parameters, provenanceState }: StimulusPara
   return (
     <Box>
       {/*  */}
-      <Group gap={20} wrap="nowrap">
+      <Group gap={20} wrap="nowrap" style={{ height: 'calc(100vh - var(--app-shell-header-height, 0px) - var(--app-shell-footer-height, 0px) - 30px)' }}>
         {parameters.imagePath ? (
           <div style={{ flex: '0 0 50%' }}>
             <img
@@ -116,7 +116,7 @@ function CodeEditorTest({ setAnswer, parameters, provenanceState }: StimulusPara
           ref={editorRef}
           mode={mode}
           width="100%"
-          height="1000px"
+          height="calc(100vh - var(--app-shell-header-height, 0px) - var(--app-shell-footer-height, 0px) - 30px)"
           value={code}
           wrapEnabled
           onChange={editorOnChange}

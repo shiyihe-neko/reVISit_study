@@ -84,13 +84,9 @@
     "lodash.debounce": "^4.0.8",
     "lodash.merge": "^4.6.2",
     "lowlight": "^2.9.0",
-    "monaco-editor": "^0.52.2",
-    "monaco-editor-textmate": "^4.0.0",
-    "monaco-textmate": "^3.0.1",
-    "monaco-vscode-textmate-theme-converter": "^0.1.7",
     "node-fetch": "2.6.1",
-    "onigasm": "^2.2.5",
     "papaparse": "^5.4.1",
+    "lodash.throttle": "^4.1.1",
     "plyr-react": "^5.3.0",
     "prism-react-renderer": "^2.4.0",
     "react": "^18.3.1",
@@ -112,7 +108,7 @@
     "typedoc-plugin-markdown": "^4.4.1",
     "use-deep-compare-effect": "^1.8.1",
     "uuid": "^11.0.5",
-    "vega": "^5.30.0",
+    "vega": "^5.32.0",
     "vega-lite": "^5.23.0",
     "vite-plugin-wasm": "^3.4.1",
     "vscode": "npm:@codingame/monaco-vscode-api",
@@ -165,6 +161,6 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.4.1",
     "typescript": "^5.7.3",
-    "vite": "^6.0.9"
+    "vite": "^6.0.12"
   }
 }

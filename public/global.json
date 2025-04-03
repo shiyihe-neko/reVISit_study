@@ -1,11 +1,10 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/2.0.0-rc7/src/parser/GlobalConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "a-usability-study-config",
     "a-usability-study-tabular",
     "a-usability-study",
     "example-mvnv",
-    "example-fairness-jnd",
     "example-VLAT-full-randomized",
     "example-VLAT-mini-randomized",
     "demo-html",
@@ -23,6 +22,7 @@
     "library-demographics",
     "library-mic-check",
     "library-mini-vlat",
+    "library-nasa-tlx",
     "library-previs",
     "library-sus",
     "library-vlat",
@@ -31,7 +31,9 @@
     "test-likert-matrix",
     "test-parser-errors",
     "test-randomization",
-    "test-skip-logic"
+    "test-skip-logic",
+    "test-step-logic"
+
   ],
   "configs": {
     "a-usability-study-config": {
@@ -51,9 +53,6 @@
     },
     "example-mvnv": {
       "path": "example-mvnv/config.json"
-    },
-    "example-fairness-jnd": {
-      "path": "example-fairness-jnd/config.json"
     },
     "demo-video-slider": {
       "path": "demo-video-slider/config.json"
@@ -119,6 +118,10 @@
       "path": "library-mini-vlat/config.json",
       "test": true
     },
+    "library-nasa-tlx": {
+      "path": "library-nasa-tlx/config.json",
+      "test": true
+    },
     "library-previs": {
       "path": "library-previs/config.json",
       "test": true
@@ -147,6 +150,10 @@
     },
     "test-skip-logic": {
       "path": "test-skip-logic/config.json",
+      "test": true
+    },
+    "test-step-logic": {
+      "path": "test-step-logic/config.json",
       "test": true
     }
   }

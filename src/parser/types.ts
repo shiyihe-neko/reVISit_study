@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-cycle
 export type { ParticipantData } from '../storage/types';
 export type { StoredAnswer, ParticipantMetadata } from '../store/types';
 
@@ -136,7 +135,7 @@ export interface NumberOption {
 }
 
 /**
- * The StringOption interface is used to define the options for a dropdown, radio, or checkbox response.
+ * The StringOption interface is used to define the options for a dropdown, radio, buttons, or checkbox response.
  * The label is the text that is displayed to the user, and the value is the value that is stored in the data file.
  */
 export interface StringOption {
@@ -151,15 +150,8 @@ export interface StringOption {
 /**
  * @ignore
  */
-export const responseBlockLocations = [
-  'sidebar',
-  'aboveStimulus',
-  'belowStimulus',
-] as const;
-/**
- * @ignore
- */
-export type ResponseBlockLocation = (typeof responseBlockLocations)[number];
+export type ResponseBlockLocation = 'sidebar' | 'aboveStimulus' | 'belowStimulus' | 'stimulus';
+export type ConfigResponseBlockLocation = Exclude<ResponseBlockLocation, 'stimulus'>;
 
 /**
  * The BaseResponse interface is used to define the required fields for all responses.
@@ -176,7 +168,7 @@ export interface BaseResponse {
   /** Controls whether the response is required to be answered. Defaults to true. */
   required?: boolean;
   /** Controls the response location. These might be the same for all responses, or differ across responses. Defaults to `belowStimulus` */
-  location?: ResponseBlockLocation;
+  location?: ConfigResponseBlockLocation;
   /** You can provide a required value, which makes it so a participant has to answer with that value. */
   requiredValue?: unknown;
   /** You can provide a required label, which makes it so a participant has to answer with a response that matches label. */
@@ -406,6 +398,12 @@ export interface SliderResponse extends BaseResponse {
   startingValue?: number;
   /** Whether the slider should snap between values. Defaults to false. Slider snapping disables the label above the handle. */
   snap?: boolean;
+  /** The step value of the slider. If not provided (and snap not enabled), the step value is calculated as the range of the slider divided by 100. */
+  step?: number;
+  /** Whether to render the slider with a bar to the left. Defaults to true. */
+  withBar?: boolean;
+  /** Whether to render the slider with a NASA-tlx style. Defaults to false. */
+  tlxStyle?: boolean;
 }
 
 /**
@@ -483,7 +481,33 @@ export interface ReactiveResponse extends BaseResponse {
   type: 'reactive';
 }
 
-export type Response = NumericalResponse | ShortTextResponse | LongTextResponse | LikertResponse | DropdownResponse | SliderResponse | RadioResponse | CheckboxResponse | ReactiveResponse | MatrixResponse;
+/**
+ * The ButtonsResponse interface is used to define the properties of a buttons response.
+ * ButtonsResponses render as a list of buttons that the participant can click. When a button is clicked, the value of the button is stored in the data file.
+ * Participants can cycle through the options using the arrow keys.
+ *
+ * Example:
+ * ```js
+ * {
+ *   "id": "buttonsResponse",
+ *   "type": "buttons",
+ *   "prompt": "Click a button",
+ *   "location": "belowStimulus",
+ *   "options": [
+ *     "Option 1",
+ *     "Option 2",
+ *     "Option 3"
+ *   ]
+ * }
+ * ```
+ * In this example, the participant can click one of the buttons labeled "Option 1", "Option 2", or "Option 3".
+ */
+export interface ButtonsResponse extends BaseResponse {
+  type: 'buttons';
+  options: (StringOption | string)[];
+}
+
+export type Response = NumericalResponse | ShortTextResponse | LongTextResponse | LikertResponse | DropdownResponse | SliderResponse | RadioResponse | CheckboxResponse | ReactiveResponse | MatrixResponse | ButtonsResponse;
 
 /**
  * The Answer interface is used to define the properties of an answer. Answers are used to define the correct answer for a task. These are generally used in training tasks or if skip logic is required based on the answer.
@@ -541,9 +565,9 @@ export interface BaseIndividualComponent {
   /** The text that is displayed on the next button. */
   nextButtonText?: string;
   /** The location of the next button. */
-  nextButtonLocation?: ResponseBlockLocation;
+  nextButtonLocation?: ConfigResponseBlockLocation;
   /** The location of the instructions. */
-  instructionLocation?: ResponseBlockLocation;
+  instructionLocation?: ConfigResponseBlockLocation;
   /** The correct answer to the component. This is used for training trials where the user is shown the correct answer after a guess. */
   correctAnswer?: Answer[];
   /** Controls whether the component should provide feedback to the participant, such as in a training trial. If not provided, the default is false. */
@@ -627,8 +651,8 @@ export default function CoolComponent({ parameters, setAnswer }: StimulusParams<
 ```
  *
  * For in depth examples, see the following studies, and their associated codebases.
- * https://revisit.dev/study/demo-click-accuracy-test (https://github.com/revisit-studies/study/tree/v2.0.2/src/public/demo-click-accuracy-test/assets)
- * https://revisit.dev/study/example-brush-interactions (https://github.com/revisit-studies/study/tree/v2.0.2/src/public/example-brush-interactions/assets)
+ * https://revisit.dev/study/demo-click-accuracy-test (https://github.com/revisit-studies/study/tree/v2.1.1/src/public/demo-click-accuracy-test/assets)
+ * https://revisit.dev/study/example-brush-interactions (https://github.com/revisit-studies/study/tree/v2.1.1/src/public/example-brush-interactions/assets)
  */
 export interface ReactComponent extends BaseIndividualComponent {
   type: 'react-component';
@@ -1116,6 +1140,36 @@ export interface RepeatedComponentBlockCondition {
 */
 export type SkipConditions = (IndividualComponentSingleResponseCondition | IndividualComponentAllResponsesCondition | ComponentBlockCondition | RepeatedComponentBlockCondition)[];
 
+/**
+ * The DynamicBlock interface is used to define a block where displayed components are controlled by a function. This is useful when you want to generate the sequence based on answers to previous questions or other factors.
+ *
+ * The functionPath property is a path to the function that generates the components. This should be a relative path from the src/public folder.
+ *
+ * Here's an example of how to use the DynamicBlock:
+ *
+ * ```js
+ * {
+ *   "id": "funcBlock",
+ *   "order": "dynamic",
+ *   "functionPath": "<study-name>/assets/function.js",
+ *   "parameters": {
+ *     "param1": "value1",
+ *     "param2": "value2"
+ *   }
+ * }
+ * ```
+ */
+export interface DynamicBlock {
+  /** The id of the block. This is used to identify the block in the SkipConditions and is only required if you want to refer to the whole block in the condition.to property. */
+  id: string
+  /** The type of order. This can be random (pure random), latinSquare (random with some guarantees), or fixed. */
+  order: 'dynamic';
+  /** The path to the function that generates the components. This should be a relative path from the src/public folder. */
+  functionPath: string;
+  /** The parameters that are passed to the function. These can be used within your function to render different things. */
+  parameters?: Record<string, unknown>;
+}
+
 /** The ComponentBlock interface is used to define order properties within the sequence. This is used to define the order of components in a study and the skip logic. It supports random assignment of trials using a pure random assignment and a [latin square](https://en.wikipedia.org/wiki/Latin_square).
  *
  * The pure random assignment is a random assignment with no guarantees. For example, one component _could_ show up in the first position 10 times in a row. However, this situation is unlikely.
@@ -1226,7 +1280,7 @@ export interface ComponentBlock {
   /** The type of order. This can be random (pure random), latinSquare (random with some guarantees), or fixed. */
   order: 'random' | 'latinSquare' | 'fixed';
   /** The components that are included in the order. */
-  components: (string | ComponentBlock)[];
+  components: (string | ComponentBlock | DynamicBlock)[];
   /** The number of samples to use for the random assignments. This means you can randomize across 3 components while only showing a participant 2 at a time. */
   numSamples?: number;
   /** The interruptions property specifies an array of interruptions. These can be used for breaks or attention checks.  */
@@ -1288,7 +1342,7 @@ export type BaseComponents = Record<string, Partial<IndividualComponent>>;
 
 ```js
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.2/src/parser/StudyConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
     ...
   },
@@ -1325,7 +1379,7 @@ export interface StudyConfig {
   /** The components that are used in the study. They must be fully defined here with all properties. Some properties may be inherited from baseComponents. */
   components: Record<string, IndividualComponent | InheritedComponent>
   /** The order of the components in the study. This might include some randomness. */
-  sequence: ComponentBlock;
+  sequence: ComponentBlock | DynamicBlock;
 }
 
 /**  LibraryConfig is used to define the properties of a library configuration. This is a JSON object with three main components: baseComponents, components, and the sequences. Libraries are useful for defining components and sequences of these components that are to be reused across multiple studies. We (the reVISit team) provide several libraries that can be used in your study configurations. Check the public/libraries folder in the reVISit-studies repository for available libraries. We also plan to accept community contributions for libraries. If you have a library that you think would be useful for others, please reach out to us. We would love to include it in our repository.
@@ -1334,7 +1388,7 @@ export interface StudyConfig {
  *
  * ```js
  * {
- *   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.2/src/parser/LibraryConfigSchema.json",
+ *   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.1/src/parser/LibraryConfigSchema.json",
  *   "baseComponents": {
  *     // BaseComponents here are defined exactly as is in the StudyConfig
  *   },
@@ -1363,7 +1417,7 @@ export interface LibraryConfig {
   /** The components that are used in the study. They must be fully defined here with all properties. Some properties may be inherited from baseComponents. */
   components: Record<string, IndividualComponent | InheritedComponent>
   /** The order of the components in the study. This might include some randomness. */
-  sequences: Record<string, ComponentBlock>;
+  sequences: Record<string, StudyConfig['sequence']>;
 }
 
 /**
@@ -1390,6 +1444,12 @@ export type ParsedConfig<T> = T & {
  * Helper type to avoid writing Type | undefined | null
  */
 export type Nullable<T> = T | undefined | null;
+
+/**
+ * @ignore
+ * Helper type to get the value of a type
+ */
+export type ValueOf<T> = T[keyof T];
 
 /**
  * @ignore
