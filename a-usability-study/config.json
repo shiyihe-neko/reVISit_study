@@ -21,6 +21,9 @@
     "autoDownloadStudy": false,
     "sidebar": true
   },
+  "importedLibraries": [
+    "nasa-tlx"
+  ],
   "components": {
     "introduction": {
       "type": "markdown",
@@ -4320,7 +4323,7 @@
             }]
           }]
         }]},   
-      "writing-task-NL",
+      "$nasa-tlx.co.nasa-tlx",
       {
         "components": [
             "post-study-survey"
