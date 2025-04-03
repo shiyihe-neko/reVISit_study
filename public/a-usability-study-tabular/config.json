@@ -515,7 +515,27 @@
       "nextButtonText": "",
       "response": []
     },
-    "reading-task-tabular-json": {
+    "post-task-question": {
+      "type": "questionnaire",
+      "response": [
+      {"id": "difficulty",
+        "prompt": "How difficult was this question?",
+        "type": "likert",
+        "numItems":7,
+        "rightLabel": "Very difficult(7)",
+        "leftLabel": "Very easy(1)",          
+        "required": true
+      }, 
+      {"id": "confidence",
+      "prompt": "How difficult was this question?",
+      "type": "likert",
+      "numItems":7,
+      "rightLabel": "Very difficult(7)",
+      "leftLabel": "Very easy(1)",          
+      "required": true
+     }]
+    }, 
+    "reading-task-tabular-json-1": {
       "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-tabular-json"
@@ -539,137 +559,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-json",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-json_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-json",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-json-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "meta": {
+        "taskName": "reading-task-tabular-json"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "json", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-json_q2",
           "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["quiz1", "quiz2"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json_q3",
-          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["2", "3", "4", "5"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json_q4",
-          "prompt": "4. Which student participates in two different sports?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json_q5",
-          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "checkbox",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -692,7 +619,132 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-tabular-jsonc": {
+    "reading-task-tabular-json-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "meta": {
+        "taskName": "reading-task-tabular-json"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "json", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-json_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["2", "3", "4", "5"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-json",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-json",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-json-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "meta": {
+        "taskName": "reading-task-tabular-json"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "json", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-json_q4",
+          "prompt": "4. Which student participates in two different sports?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-json",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-json",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-json-5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "meta": {
+        "taskName": "reading-task-tabular-json"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "json", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-json_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
+          "type": "checkbox",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-json",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-json",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-jsonc-1": {
       "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-tabular-jsonc"
@@ -716,137 +768,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-jsonc",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-jsonc_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-jsonc",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-jsonc-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "meta": {
+        "taskName": "reading-task-tabular-jsonc"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-jsonc_q2",
           "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["quiz1", "quiz2"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-jsonc_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-jsonc_q3",
-          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["2", "3", "4", "5"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-jsonc_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-jsonc_q4",
-          "prompt": "4. Which student participates in two different sports?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-jsonc_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-jsonc_q5",
-          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "checkbox",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-jsonc_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -869,7 +828,132 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-tabular-json5": {
+    "reading-task-tabular-jsonc-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "meta": {
+        "taskName": "reading-task-tabular-jsonc"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-jsonc_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["2", "3", "4", "5"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-jsonc",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-jsonc",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-jsonc-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "meta": {
+        "taskName": "reading-task-tabular-jsonc"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-jsonc_q4",
+          "prompt": "4. Which student participates in two different sports?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-jsonc",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-jsonc",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-jsonc-5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "meta": {
+        "taskName": "reading-task-tabular-jsonc"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-jsonc_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
+          "type": "checkbox",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-jsonc",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-jsonc",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-json5-1": {
       "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-tabular-json5"
@@ -893,137 +977,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-json5",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-json5_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-json5",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-json5-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "meta": {
+        "taskName": "reading-task-tabular-json5"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-json5_q2",
           "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["quiz1", "quiz2"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json5_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json5_q3",
-          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["2", "3", "4", "5"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json5_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json5_q4",
-          "prompt": "4. Which student participates in two different sports?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json5_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json5_q5",
-          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "checkbox",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-json5_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1046,7 +1037,132 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-tabular-hjson": {
+    "reading-task-tabular-json5-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "meta": {
+        "taskName": "reading-task-tabular-json5"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-json5_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["2", "3", "4", "5"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-json5",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-json5",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-json5-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "meta": {
+        "taskName": "reading-task-tabular-json5"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-json5_q4",
+          "prompt": "4. Which student participates in two different sports?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-json5",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-json5",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-json5-5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "meta": {
+        "taskName": "reading-task-tabular-json5"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-json5_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
+          "type": "checkbox",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-json5",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-json5",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-hjson-1": {
       "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-tabular-hjson"
@@ -1070,137 +1186,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-hjson",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-hjson_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-hjson-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "meta": {
+        "taskName": "reading-task-tabular-hjson"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-hjson_q2",
           "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["quiz1", "quiz2"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-hjson_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-hjson_q3",
-          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["2", "3", "4", "5"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-hjson_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-hjson_q4",
-          "prompt": "4. Which student participates in two different sports?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-hjson_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-hjson_q5",
-          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "checkbox",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-hjson_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1223,7 +1246,132 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-tabular-yaml": {
+    "reading-task-tabular-hjson-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "meta": {
+        "taskName": "reading-task-tabular-hjson"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-hjson_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["2", "3", "4", "5"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-hjson",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-hjson-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "meta": {
+        "taskName": "reading-task-tabular-hjson"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-hjson_q4",
+          "prompt": "4. Which student participates in two different sports?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-hjson",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-hjson-5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "meta": {
+        "taskName": "reading-task-tabular-hjson"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-hjson_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
+          "type": "checkbox",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-hjson",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-yaml-1": {
       "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-tabular-yaml"
@@ -1247,137 +1395,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-yaml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-yaml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-yaml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-yaml-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-yaml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-yaml_q2",
           "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["quiz1", "quiz2"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-yaml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-yaml_q3",
-          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["2", "3", "4", "5"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-yaml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-yaml_q4",
-          "prompt": "4. Which student participates in two different sports?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-yaml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-yaml_q5",
-          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "checkbox",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-yaml_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1400,7 +1455,132 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-tabular-toml": {
+    "reading-task-tabular-yaml-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-yaml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-yaml_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["2", "3", "4", "5"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-yaml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-yaml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-yaml-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-yaml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-yaml_q4",
+          "prompt": "4. Which student participates in two different sports?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-yaml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-yaml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-yaml-5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-yaml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-yaml_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
+          "type": "checkbox",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-yaml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-yaml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-toml-1": {
       "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-tabular-toml"
@@ -1424,137 +1604,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-toml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-toml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-toml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-toml-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-toml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-toml_q2",
           "prompt": "2. Which quiz did Alice achieve the highest grade on?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["quiz1", "quiz2"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-toml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-toml_q3",
-          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["2", "3", "4", "5"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-toml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-toml_q4",
-          "prompt": "4. Which student participates in two different sports?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-toml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-toml_q5",
-          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
-          "type": "checkbox",
-          "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-toml_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1577,7 +1664,132 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-tabular-xml": {
+    "reading-task-tabular-toml-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-toml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-toml_q3",
+          "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["2", "3", "4", "5"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-toml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-toml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-toml-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-toml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-toml_q4",
+          "prompt": "4. Which student participates in two different sports?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-toml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-toml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-toml-5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-toml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
+        {
+          "id": "reading-task-tabular-toml_q5",
+          "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
+          "type": "checkbox",
+          "options": ["Bob", "Alice", "Eve"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-tabular-toml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-tabular-toml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-xml-1": {
       "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-tabular-xml"
@@ -1601,25 +1813,38 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-xml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-xml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-xml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-xml-2": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-xml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-xml_q2",
           "prompt": "2. Which quiz did Alice achieve the highest grade on?",
@@ -1630,25 +1855,38 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-xml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-xml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-xml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-xml-3": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-xml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-xml_q3",
           "prompt": "3. How many quizzes has Bob taken in total, including the midterm and final exam?",
@@ -1659,25 +1897,38 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-xml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-xml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-xml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-xml-4": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-xml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-xml_q4",
           "prompt": "4. Which student participates in two different sports?",
@@ -1688,50 +1939,43 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-tabular-xml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-tabular-xml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-tabular-xml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-tabular-xml-5": {
+      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "meta": {
+        "taskName": "reading-task-tabular-xml"
+      },
+      "description": "reading task with tabular data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-tabular/assets/Editor.tsx",
+      "parameters": {
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": true
+      },
+      "response": [
         {
           "id": "reading-task-tabular-xml_q5",
           "prompt": "5. Which students have not been absent from any quizzes, including the midterm and final exams? List all that apply.",
           "type": "checkbox",
           "options": ["Bob", "Alice", "Eve"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-xml_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-tabular-xml_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1783,26 +2027,6 @@
           "required": false
         },
         {
-          "id": "writing-task-tabular-json_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-tabular-json_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "writing-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -1848,26 +2072,6 @@
           "hidden": true,
           "type": "reactive",
           "required": false
-        },
-        {
-          "id": "writing-task-tabular-jsonc_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-tabular-jsonc_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "writing-task-tabular-jsonc",
@@ -1917,26 +2121,6 @@
           "required": false
         },
         {
-          "id": "writing-task-tabular-json5_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-tabular-json5_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "writing-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -1982,26 +2166,6 @@
           "hidden": true,
           "type": "reactive",
           "required": false
-        },
-        {
-          "id": "writing-task-tabular-hjson_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-tabular-hjson_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "writing-task-tabular-hjson",
@@ -2051,26 +2215,6 @@
           "required": false
         },
         {
-          "id": "writing-task-tabular-yaml_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-tabular-yaml_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "writing-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2116,26 +2260,6 @@
           "hidden": true,
           "type": "reactive",
           "required": false
-        },
-        {
-          "id": "writing-task-tabular-toml_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-tabular-toml_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "writing-task-tabular-toml",
@@ -2185,26 +2309,6 @@
           "required": false
         },
         {
-          "id": "writing-task-tabular-xml_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-tabular-xml_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "writing-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2223,7 +2327,7 @@
       ],
       "allowFailedTraining": false
     },
-    "modifying-task-tabular-json-1": {
+    "modifying-task-tabular-json-1": { 
       "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-tabular-json"
@@ -2243,26 +2347,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-json_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-json_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-json",
@@ -2305,26 +2389,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-json_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-json_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2363,26 +2427,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-json_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-json_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-json",
@@ -2425,26 +2469,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-json_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-json_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2483,26 +2507,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-jsonc_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-jsonc_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-jsonc",
@@ -2545,26 +2549,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-jsonc_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-jsonc_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2603,26 +2587,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-jsonc_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-jsonc_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-jsonc",
@@ -2665,26 +2629,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-jsonc_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-jsonc_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2723,26 +2667,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-json5_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-json5_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-json5",
@@ -2785,26 +2709,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-json5_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-json5_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2843,26 +2747,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-json5_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-json5_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-json5",
@@ -2905,26 +2789,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-json5_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-json5_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2963,26 +2827,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-hjson_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-hjson_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-hjson",
@@ -3025,26 +2869,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-hjson_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-hjson_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3083,26 +2907,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-hjson_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-hjson_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-hjson",
@@ -3145,26 +2949,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-hjson_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-hjson_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3203,26 +2987,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-toml_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-toml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-toml",
@@ -3265,26 +3029,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-toml_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-toml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3323,26 +3067,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-toml_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-toml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-toml",
@@ -3385,26 +3109,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-toml_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-toml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3443,26 +3147,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-yaml_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-yaml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-yaml",
@@ -3505,26 +3189,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-yaml_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-yaml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3563,26 +3227,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-yaml_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-yaml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-yaml",
@@ -3625,26 +3269,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-yaml_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-yaml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3683,26 +3307,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-xml_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-xml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-xml",
@@ -3745,26 +3349,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-xml_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-xml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3805,26 +3389,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-tabular-xml_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-xml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-tabular-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3863,26 +3427,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-tabular-xml_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-tabular-xml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-tabular-xml",
@@ -3929,26 +3473,6 @@
           "hidden": true,
           "type": "reactive",
           "required": false
-        },
-        {
-          "id": "writing-task-nlp_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-nlp_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "writing-task-NL",
@@ -4244,6 +3768,7 @@
       "consent",
       "task",
       "writing-task-NL",
+      "post-task-question",
       {"order":"latinSquare",
         "numSamples": 1,
         "components": [
@@ -4251,78 +3776,176 @@
         "components": [
           "tutorial-json-part1",
           "tutorial-json-part2",
-          "reading-task-tabular-json",
+          "reading-task-tabular-json-1",
+          "post-task-question",
+          "reading-task-tabular-json-2",
+          "post-task-question",
+          "reading-task-tabular-json-3",
+          "post-task-question",
+          "reading-task-tabular-json-4",
+          "post-task-question",
+          "reading-task-tabular-json-5",
+          "post-task-question",
           "writing-task-tabular-json",
+          "post-task-question",
           "modifying-task-tabular-json-1",
+          "post-task-question",
           "modifying-task-tabular-json-2",
+          "post-task-question",
           "modifying-task-tabular-json-3",
-          "modifying-task-tabular-json-4"
+          "post-task-question",
+          "modifying-task-tabular-json-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-jsonc-part1",
           "tutorial-jsonc-part2",
-          "reading-task-tabular-jsonc",
+          "reading-task-tabular-jsonc-1",
+          "post-task-question",
+          "reading-task-tabular-jsonc-2",
+          "post-task-question",
+          "reading-task-tabular-jsonc-3",
+          "post-task-question",
+          "reading-task-tabular-jsonc-4",
+          "post-task-question",
+          "reading-task-tabular-jsonc-5",
+          "post-task-question",
           "writing-task-tabular-jsonc",
+          "post-task-question",
           "modifying-task-tabular-jsonc-1",
+          "post-task-question",
           "modifying-task-tabular-jsonc-2",
+          "post-task-question",
           "modifying-task-tabular-jsonc-3",
-          "modifying-task-tabular-jsonc-4"
+          "post-task-question",
+          "modifying-task-tabular-jsonc-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-json5-part1",
           "tutorial-json5-part2",
-          "reading-task-tabular-json5",
+          "reading-task-tabular-json5-1",
+          "post-task-question",
+          "reading-task-tabular-json5-2",
+          "post-task-question",
+          "reading-task-tabular-json5-3",
+          "post-task-question",
+          "reading-task-tabular-json5-4",
+          "post-task-question",
+          "reading-task-tabular-json5-5",
+          "post-task-question",
           "writing-task-tabular-json5",
+          "post-task-question",
           "modifying-task-tabular-json5-1",
+          "post-task-question",
           "modifying-task-tabular-json5-2",
+          "post-task-question",
           "modifying-task-tabular-json5-3",
-          "modifying-task-tabular-json5-4"
+          "post-task-question",
+          "modifying-task-tabular-json5-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-hjson-part1",
           "tutorial-hjson-part2",
-          "reading-task-tabular-hjson",
+          "reading-task-tabular-hjson-1",
+          "post-task-question",
+          "reading-task-tabular-hjson-2",
+          "post-task-question",
+          "reading-task-tabular-hjson-3",
+          "post-task-question",
+          "reading-task-tabular-hjson-4",
+          "post-task-question",
+          "reading-task-tabular-hjson-5",
+          "post-task-question",
           "writing-task-tabular-hjson",
+          "post-task-question",
           "modifying-task-tabular-hjson-1",
+          "post-task-question",
           "modifying-task-tabular-hjson-2",
+          "post-task-question",
           "modifying-task-tabular-hjson-3",
-          "modifying-task-tabular-hjson-4"
+          "post-task-question",
+          "modifying-task-tabular-hjson-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-yaml-part1",
           "tutorial-yaml-part2",
-          "reading-task-tabular-yaml",
+          "reading-task-tabular-yaml-1",
+          "post-task-question",
+          "reading-task-tabular-yaml-2",
+          "post-task-question",
+          "reading-task-tabular-yaml-3",
+          "post-task-question",
+          "reading-task-tabular-yaml-4",
+          "post-task-question",
+          "reading-task-tabular-yaml-5",
+          "post-task-question",
           "writing-task-tabular-yaml",
+          "post-task-question",
           "modifying-task-tabular-yaml-1",
+          "post-task-question",
           "modifying-task-tabular-yaml-2",
+          "post-task-question",
           "modifying-task-tabular-yaml-3",
-          "modifying-task-tabular-yaml-4"
+          "post-task-question",
+          "modifying-task-tabular-yaml-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-toml-part1",
           "tutorial-toml-part2",
-          "reading-task-tabular-toml",
+          "reading-task-tabular-toml-1",
+          "post-task-question",
+          "reading-task-tabular-toml-2",
+          "post-task-question",
+          "reading-task-tabular-toml-3",
+          "post-task-question",
+          "reading-task-tabular-toml-4",
+          "post-task-question",
+          "reading-task-tabular-toml-5",
+          "post-task-question",
           "writing-task-tabular-toml",
+          "post-task-question",
           "modifying-task-tabular-toml-1",
+          "post-task-question",
           "modifying-task-tabular-toml-2",
+          "post-task-question",
           "modifying-task-tabular-toml-3",
-          "modifying-task-tabular-toml-4"
+          "post-task-question",
+          "modifying-task-tabular-toml-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-xml-part1",
           "tutorial-xml-part2",
-          "reading-task-tabular-xml",
+          "reading-task-tabular-xml-1",
+          "post-task-question",
+          "reading-task-tabular-xml-2",
+          "post-task-question",
+          "reading-task-tabular-xml-3",
+          "post-task-question",
+          "reading-task-tabular-xml-4",
+          "post-task-question",
+          "reading-task-tabular-xml-5",
+          "post-task-question",
           "writing-task-tabular-xml",
+          "post-task-question",
           "modifying-task-tabular-xml-1",
+          "post-task-question",
           "modifying-task-tabular-xml-2",
+          "post-task-question",
           "modifying-task-tabular-xml-3",
-          "modifying-task-tabular-xml-4"
+          "post-task-question",
+          "modifying-task-tabular-xml-4",
+          "post-task-question"
           ]}
         ]},         
       {

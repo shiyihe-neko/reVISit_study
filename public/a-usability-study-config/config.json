@@ -517,7 +517,27 @@
       "nextButtonText": "",
       "response": []
     },
-    "reading-task-config-json": {
+    "post-task-question": {
+      "type": "questionnaire",
+      "response": [
+      {"id": "difficulty",
+        "prompt": "How difficult was this question?",
+        "type": "likert",
+        "numItems":7,
+        "rightLabel": "Very difficult(7)",
+        "leftLabel": "Very easy(1)",          
+        "required": true
+      }, 
+      {"id": "confidence",
+      "prompt": "How difficult was this question?",
+      "type": "likert",
+      "numItems":7,
+      "rightLabel": "Very difficult(7)",
+      "leftLabel": "Very easy(1)",          
+      "required": true
+     }]
+    }, 
+    "reading-task-config-json-1": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-config-json"
@@ -541,138 +561,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-json",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-json_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-json",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-json-2": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "meta": {
+        "taskName": "reading-task-config-json"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study/assets/Editor.tsx",
+      "parameters": {
+        "language": "json", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-json_q2",
           "prompt": "2. What is the value of the \"node\" key?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["12", ">=12", "7.9.0", "d3"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_q4",
-          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_q5",
-          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -695,7 +621,133 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-jsonc": {
+    "reading-task-config-json-3": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "meta": {
+        "taskName": "reading-task-config-json"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study/assets/Editor.tsx",
+      "parameters": {
+        "language": "json", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-json_q3",
+          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["4", "5", "6", "7"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-json",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-json",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-json-4": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "meta": {
+        "taskName": "reading-task-config-json"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study/assets/Editor.tsx",
+      "parameters": {
+        "language": "json", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-json_q4",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-json",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-json",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-json-5": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "meta": {
+        "taskName": "reading-task-config-json"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study/assets/Editor.tsx",
+      "parameters": {
+        "language": "json", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-json_q5",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-json",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-json",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-jsonc-1": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-config-jsonc"
@@ -719,138 +771,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-jsonc_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-jsonc",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-jsonc_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-jsonc",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-jsonc-2": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "meta": {
+        "taskName": "reading-task-config-jsonc"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-jsonc_q2",
           "prompt": "2. What is the value of the \"node\" key?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["12", ">=12", "7.9.0", "d3"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsoncc_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_q4",
-          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_q5",
-          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-jsonc_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -873,7 +831,133 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-json5": {
+    "reading-task-config-jsonc-3": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "meta": {
+        "taskName": "reading-task-config-jsonc"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-jsonc_q3",
+          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["4", "5", "6", "7"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-jsonc",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-jsonc",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-jsonc-4": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "meta": {
+        "taskName": "reading-task-config-jsonc"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-jsonc_q4",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-jsonc",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-jsonc",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-jsonc-5": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "meta": {
+        "taskName": "reading-task-config-jsonc"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "jsonc", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-jsonc_q5",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-jsonc",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-jsonc",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-json5-1": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-config-json5"
@@ -897,138 +981,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-json5_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-json5",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-json5_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-json5",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-json5-2": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "meta": {
+        "taskName": "reading-task-config-json5"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-json5_q2",
           "prompt": "2. What is the value of the \"node\" key?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["12", ">=12", "7.9.0", "d3"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_q4",
-          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_q5",
-          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-json5_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1051,7 +1041,133 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-hjson": {
+    "reading-task-config-json5-3": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "meta": {
+        "taskName": "reading-task-config-json5"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-json5_q3",
+          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["4", "5", "6", "7"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-json5",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-json5",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-json5-4": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "meta": {
+        "taskName": "reading-task-config-json5"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-json5_q4",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-json5",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-json5",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-json5-5": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "meta": {
+        "taskName": "reading-task-config-json5"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "json5", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-json5_q5",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-json5",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-json5",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-hjson-1": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-config-hjson"
@@ -1075,138 +1191,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-hjson_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-hjson",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-hjson_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-hjson-2": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "meta": {
+        "taskName": "reading-task-config-hjson"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-hjson_q2",
           "prompt": "2. What is the value of the \"node\" key?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["12", ">=12", "7.9.0", "d3"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_q4",
-          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_q5",
-          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-hjson_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1229,7 +1251,133 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-yaml": {
+    "reading-task-config-hjson-3": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "meta": {
+        "taskName": "reading-task-config-hjson"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-hjson_q3",
+          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["4", "5", "6", "7"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-hjson",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-hjson-4": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "meta": {
+        "taskName": "reading-task-config-hjson"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-hjson_q4",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-hjson",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-hjson-5": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "meta": {
+        "taskName": "reading-task-config-hjson"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "hjson", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-hjson_q5",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-hjson",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-hjson",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-yaml-1": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-config-yaml"
@@ -1253,138 +1401,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-yaml_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-yaml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-yaml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-yaml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-yaml-2": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "meta": {
+        "taskName": "reading-task-config-yaml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-yaml_q2",
           "prompt": "2. What is the value of the \"node\" key?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["12", ">=12", "7.9.0", "d3"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_q4",
-          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_q5",
-          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-yaml_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1407,7 +1461,133 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-toml": {
+    "reading-task-config-yaml-3": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "meta": {
+        "taskName": "reading-task-config-yaml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-yaml_q3",
+          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["4", "5", "6", "7"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-yaml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-yaml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-yaml-4": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "meta": {
+        "taskName": "reading-task-config-yaml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-yaml_q4",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-yaml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-yaml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-yaml-5": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "meta": {
+        "taskName": "reading-task-config-yaml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "yaml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-yaml_q5",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-yaml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-yaml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-toml-1": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-config-toml"
@@ -1431,138 +1611,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-toml_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-toml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-toml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-toml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-toml-2": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "meta": {
+        "taskName": "reading-task-config-toml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-toml_q2",
           "prompt": "2. What is the value of the \"node\" key?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["12", ">=12", "7.9.0", "d3"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_q3",
-          "prompt": "3. How many values does the \"keywords\" key contain? ",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["4", "5", "6", "7"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_q4",
-          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_q5",
-          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
-          "type": "dropdown",
-          "placeholder": "Please choose the correct answer",
-          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-toml_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1585,7 +1671,133 @@
       ],
       "allowFailedTraining": false
     },
-    "reading-task-config-xml": {
+    "reading-task-config-toml-3": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "meta": {
+        "taskName": "reading-task-config-toml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-toml_q3",
+          "prompt": "3. How many values does the \"keywords\" key contain? ",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["4", "5", "6", "7"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-toml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-toml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-toml-4": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "meta": {
+        "taskName": "reading-task-config-toml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-toml_q4",
+          "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["repository", "author", "keywords","exports","dependencies","devDependencies","scripts","engines"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-toml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-toml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-toml-5": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "meta": {
+        "taskName": "reading-task-config-toml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "toml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
+        {
+          "id": "reading-task-config-toml_q5",
+          "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
+          "type": "dropdown",
+          "placeholder": "Please choose the correct answer",
+          "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
+          "location": "sidebar",
+          "required": true
+        },
+        {
+          "id": "reading-task-config-toml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
+          "location": "sidebar",
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
+        {
+          "id": "reading-task-config-toml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-xml-1": { 
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-config-xml"
@@ -1609,25 +1821,38 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_d1",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-xml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-xml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-xml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-xml-2": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "meta": {
+        "taskName": "reading-task-config-xml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-xml_q2",
           "prompt": "2. What is the value of the \"node\" key?",
@@ -1638,25 +1863,38 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_d2",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-xml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-xml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-xml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-xml-3": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "meta": {
+        "taskName": "reading-task-config-xml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-xml_q3",
           "prompt": "3. How many values does the \"keywords\" key contain? ",
@@ -1667,25 +1905,38 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_d3",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-xml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-xml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-xml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-xml-4": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "meta": {
+        "taskName": "reading-task-config-xml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-xml_q4",
           "prompt": "4. Some top-level keys in the JSON file contain nested structures, meaning they have child key-value pairs. For example, 'repository' is a valid answer because it includes both 'type' and 'url' as nested keys. Which of the following keys do not have this kind of nested structure?",
@@ -1696,51 +1947,44 @@
           "required": true
         },
         {
-          "id": "reading-task-config-xml_d4",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
+          "id": "reading-task-config-xml",
+          "prompt": "Are you sure to submit your answer?",
+          "type": "radio",
           "location": "sidebar",
-          "required": true
-        },
+          "required": true,
+          "options": [
+            "Yes"
+          ]
+        }
+      ],
+      "correctAnswer": [
         {
-          "id": "reading-task-config-xml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
+          "id": "reading-task-config-xml",
+          "answer": "Yes"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "reading-task-config-xml-5": {
+      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "meta": {
+        "taskName": "reading-task-config-xml"
+      },
+      "description": "reading task with configuration data",
+      "instruction": "Please read the data in code editor and answer the following questions. (If needed, click the top-right help button to review syntax rules.)",
+      "type": "react-component",
+      "nextButtonLocation": "sidebar",
+      "path": "a-usability-study-config/assets/Editor.tsx",
+      "parameters": {
+        "language": "xml", "imagePath": null, "type": "reading", "tabular": false
+      },
+      "response": [
         {
           "id": "reading-task-config-xml_q5",
           "prompt": "5. In the 'dependencies' section, any dependency with a version number of 5.0.0 or higher may potentially cause compatibility issues. Which of the following dependencies meet this criterion?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
           "options": ["d3-array", "d3-contour", "d3-delaunay", "d3-scale","d3-time-format","@rollup/plugin-json","eslint"],
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-xml_d5",
-          "prompt": "How difficult was this question?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "reading-task-config-xml_c5",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
           "location": "sidebar",
           "required": true
         },
@@ -1792,26 +2036,6 @@
           "required": false
         },
         {
-          "id": "writing-task-config-json_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-config-json_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "writing-task-config-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -1857,26 +2081,6 @@
           "hidden": true,
           "type": "reactive",
           "required": false
-        },
-        {
-          "id": "writing-task-config-jsonc_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-config-jsonc_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "writing-task-config-jsonc",
@@ -1926,26 +2130,6 @@
           "required": false
         },
         {
-          "id": "writing-task-config-json5_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-config-json5_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "writing-task-config-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -1991,26 +2175,6 @@
           "hidden": true,
           "type": "reactive",
           "required": false
-        },
-        {
-          "id": "writing-task-config-hjson_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-config-hjson_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "writing-task-config-hjson",
@@ -2060,26 +2224,6 @@
           "required": false
         },
         {
-          "id": "writing-task-config-yaml_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-config-yaml_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "writing-task-config-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2125,26 +2269,6 @@
           "hidden": true,
           "type": "reactive",
           "required": false
-        },
-        {
-          "id": "writing-task-config-toml_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-config-toml_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "writing-task-config-toml",
@@ -2194,26 +2318,6 @@
           "required": false
         },
         {
-          "id": "writing-task-config-xml_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-config-xml_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "writing-task-config-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2252,26 +2356,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-json_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-json_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-json",
@@ -2314,26 +2398,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-json_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-json_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2372,26 +2436,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-json_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-json_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-json",
@@ -2434,26 +2478,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-json_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-json_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-json",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2492,26 +2516,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-jsonc_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-jsonc_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-jsonc",
@@ -2554,26 +2558,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-jsonc_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-jsonc_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2612,26 +2596,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-jsonc_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-jsonc_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-jsonc",
@@ -2674,26 +2638,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-jsonc_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-jsonc_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-jsonc",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2732,26 +2676,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-json5_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-json5_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-json5",
@@ -2794,26 +2718,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-json5_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-json5_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2852,26 +2756,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-json5_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-json5_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-json5",
@@ -2914,26 +2798,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-json5_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-json5_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-json5",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -2972,26 +2836,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-hjson_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-hjson_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-hjson",
@@ -3034,26 +2878,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-hjson_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-hjson_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3092,26 +2916,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-hjson_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-hjson_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-hjson",
@@ -3154,26 +2958,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-hjson_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-hjson_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-hjson",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3212,26 +2996,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-toml_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-toml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-toml",
@@ -3274,26 +3038,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-toml_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-toml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3332,26 +3076,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-toml_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-toml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-toml",
@@ -3394,26 +3118,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-toml_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-toml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-toml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3452,26 +3156,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-yaml_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-yaml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-yaml",
@@ -3514,26 +3198,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-yaml_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-yaml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3572,26 +3236,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-yaml_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-yaml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-yaml",
@@ -3634,26 +3278,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-yaml_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-yaml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-yaml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3692,26 +3316,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-xml_d1",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-xml_c1",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-xml",
@@ -3754,26 +3358,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-xml_d2",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-xml_c2",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3814,26 +3398,6 @@
           "required": false
         },
         {
-          "id": "modifying-task-config-xml_d3",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-xml_c3",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
           "id": "modifying-task-config-xml",
           "prompt": "Are you sure to submit your answer?",
           "type": "radio",
@@ -3872,26 +3436,6 @@
           "type": "reactive",
           "location": "sidebar",
           "required": false
-        },
-        {
-          "id": "modifying-task-config-xml_d4",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "modifying-task-config-txml_c4",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "modifying-task-config-xml",
@@ -3938,26 +3482,6 @@
           "hidden": true,
           "type": "reactive",
           "required": false
-        },
-        {
-          "id": "writing-task-nlp_d",
-          "prompt": "How difficult was this task?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very difficult(7)",
-          "leftLabel": "Very easy(1)",          
-          "location": "sidebar",
-          "required": true
-        },
-        {
-          "id": "writing-task-nlp_c",
-          "prompt": "How confident are you in your answer?",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Very confident(7)",
-          "leftLabel": "Very unsure(1)",          
-          "location": "sidebar",
-          "required": true
         },
         {
           "id": "writing-task-NL",
@@ -4253,6 +3777,7 @@
       "consent",
       "task",
       "writing-task-NL",
+      "post-task-question",
       {"order":"latinSquare",
         "numSamples": 1,
         "components": [
@@ -4260,78 +3785,176 @@
         "components": [
           "tutorial-json-part1",
           "tutorial-json-part2",
-          "reading-task-config-json",
+          "reading-task-config-json-1",
+          "post-task-question",
+          "reading-task-config-json-2",
+          "post-task-question",
+          "reading-task-config-json-3",
+          "post-task-question",
+          "reading-task-config-json-4",
+          "post-task-question",
+          "reading-task-config-json-5",
+          "post-task-question",
           "writing-task-config-json",
+          "post-task-question",
           "modifying-task-config-json-1",
+          "post-task-question",
           "modifying-task-config-json-2",
+          "post-task-question",
           "modifying-task-config-json-3",
-          "modifying-task-config-json-4"
+          "post-task-question",
+          "modifying-task-config-json-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-jsonc-part1",
           "tutorial-jsonc-part2",
-          "reading-task-config-jsonc",
+          "reading-task-config-jsonc-1",
+          "post-task-question",
+          "reading-task-config-jsonc-2",
+          "post-task-question",
+          "reading-task-config-jsonc-3",
+          "post-task-question",
+          "reading-task-config-jsonc-4",
+          "post-task-question",
+          "reading-task-config-jsonc-5",
+          "post-task-question",
           "writing-task-config-jsonc",
+          "post-task-question",
           "modifying-task-config-jsonc-1",
+          "post-task-question",
           "modifying-task-config-jsonc-2",
+          "post-task-question",
           "modifying-task-config-jsonc-3",
-          "modifying-task-config-jsonc-4"
+          "post-task-question",
+          "modifying-task-config-jsonc-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-json5-part1",
           "tutorial-json5-part2",
-          "reading-task-config-json5",
+          "reading-task-config-json5-1",
+          "post-task-question",
+          "reading-task-config-json5-2",
+          "post-task-question",
+          "reading-task-config-json5-3",
+          "post-task-question",
+          "reading-task-config-json5-4",
+          "post-task-question",
+          "reading-task-config-json5-5",
+          "post-task-question",
           "writing-task-config-json5",
+          "post-task-question",
           "modifying-task-config-json5-1",
+          "post-task-question",
           "modifying-task-config-json5-2",
+          "post-task-question",
           "modifying-task-config-json5-3",
-          "modifying-task-config-json5-4"
+          "post-task-question",
+          "modifying-task-config-json5-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-hjson-part1",
           "tutorial-hjson-part2",
-          "reading-task-config-hjson",
+          "reading-task-config-hjson-1",
+          "post-task-question",
+          "reading-task-config-hjson-2",
+          "post-task-question",
+          "reading-task-config-hjson-3",
+          "post-task-question",
+          "reading-task-config-hjson-4",
+          "post-task-question",
+          "reading-task-config-hjson-5",
+          "post-task-question",
           "writing-task-config-hjson",
+          "post-task-question",
           "modifying-task-config-hjson-1",
+          "post-task-question",
           "modifying-task-config-hjson-2",
+          "post-task-question",
           "modifying-task-config-hjson-3",
-          "modifying-task-config-hjson-4"
+          "post-task-question",
+          "modifying-task-config-hjson-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-yaml-part1",
           "tutorial-yaml-part2",
-          "reading-task-config-yaml",
+          "reading-task-config-yaml-1",
+          "post-task-question",
+          "reading-task-config-yaml-2",
+          "post-task-question",
+          "reading-task-config-yaml-3",
+          "post-task-question",
+          "reading-task-config-yaml-4",
+          "post-task-question",
+          "reading-task-config-yaml-5",
+          "post-task-question",
           "writing-task-config-yaml",
+          "post-task-question",
           "modifying-task-config-yaml-1",
+          "post-task-question",
           "modifying-task-config-yaml-2",
+          "post-task-question",
           "modifying-task-config-yaml-3",
-          "modifying-task-config-yaml-4"
+          "post-task-question",
+          "modifying-task-config-yaml-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-toml-part1",
           "tutorial-toml-part2",
-          "reading-task-config-toml",
+          "reading-task-config-toml-1",
+          "post-task-question",
+          "reading-task-config-toml-2",
+          "post-task-question",
+          "reading-task-config-toml-3",
+          "post-task-question",
+          "reading-task-config-toml-4",
+          "post-task-question",
+          "reading-task-config-toml-5",
+          "post-task-question",
           "writing-task-config-toml",
+          "post-task-question",
           "modifying-task-config-toml-1",
+          "post-task-question",
           "modifying-task-config-toml-2",
+          "post-task-question",
           "modifying-task-config-toml-3",
-          "modifying-task-config-toml-4"
+          "post-task-question",
+          "modifying-task-config-toml-4",
+          "post-task-question"
           ]},
         {"order":"fixed",
         "components": [
           "tutorial-xml-part1",
           "tutorial-xml-part2",
-          "reading-task-config-xml",
+          "reading-task-config-xml-1",
+          "post-task-question",
+          "reading-task-config-xml-2",
+          "post-task-question",
+          "reading-task-config-xml-3",
+          "post-task-question",
+          "reading-task-config-xml-4",
+          "post-task-question",
+          "reading-task-config-xml-5",
+          "post-task-question",
           "writing-task-config-xml",
+          "post-task-question",
           "modifying-task-config-xml-1",
+          "post-task-question",
           "modifying-task-config-xml-2",
+          "post-task-question",
           "modifying-task-config-xml-3",
-          "modifying-task-config-xml-4"
+          "post-task-question",
+          "modifying-task-config-xml-4",
+          "post-task-question"
           ]}
         ]},         
       {
