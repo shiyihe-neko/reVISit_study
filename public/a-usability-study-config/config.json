@@ -21,6 +21,9 @@
     "autoDownloadStudy": false,
     "sidebar": true
   },
+  "importedLibraries": [
+    "nasa-tlx"
+  ],
   "components": {
     "introduction": {
       "type": "markdown",
@@ -3504,151 +3507,7 @@
     },
     "post-task-survey":{
       "type": "questionnaire",
-      "response": [
-        {
-          "id": "q1",
-          "prompt": "1. How mentally demanding were those tasks? ",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "matrix-radio",
-          "answerOptions": [
-            "Very Low(1)",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "Very High(10)"
-          ],
-          "questionOptions": [
-            "Reading",
-            "Writing",
-            "Modifying"
-          ]
-        },
-        {
-          "id": "q2",
-          "prompt": "2. How physically demanding were those task? ",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "matrix-radio",
-          "answerOptions": [
-            "Very Low(1)",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "Very High(10)"
-          ],
-          "questionOptions": [
-            "Reading",
-            "Writing",
-            "Modifying"
-          ]
-        },
-        {
-          "id": "q3",
-          "prompt": "3. How hurried or rushed was the pace of those tasks? ",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "matrix-radio",
-          "answerOptions": [
-            "Very Low(1)",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "Very High(10)"
-          ],
-          "questionOptions": [
-            "Reading",
-            "Writing",
-            "Modifying"
-          ]
-        },
-        {
-          "id": "q4",
-          "prompt": "4. How successful were you in accomplishing what you were asked to do?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "matrix-radio",
-          "answerOptions": [
-            "Perfect(1)",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "Failure(10)"
-          ],
-          "questionOptions": [
-            "Reading",
-            "Writing",
-            "Modifying"
-          ]
-        },
-        {
-          "id": "q5",
-          "prompt": "5. How hard did you have to work to accomplish your level of performance?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "matrix-radio",
-          "answerOptions": [
-            "Very Low(1)",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "Very High(10)"
-          ],
-          "questionOptions": [
-            "Reading",
-            "Writing",
-            "Modifying"
-          ]
-        },
-        {
-          "id": "q6",
-          "prompt": "6. How insecure, discouraged, irritated, stressed, and annoyed were you?",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "matrix-radio",
-          "answerOptions": [
-            "Very Low(1)",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "Very High(10)"
-          ],
-          "questionOptions": [
-            "Reading",
-            "Writing",
-            "Modifying"
-          ]
-        },    
+      "response": [ 
         {
         "id": "q7",
         "prompt": "Do you want to explain your answers? If yes, please provide your explanation.",
@@ -3956,7 +3815,8 @@
           "modifying-task-config-xml-4",
           "post-task-question"
           ]}
-        ]},         
+        ]},
+      "$nasa-tlx.co.nasa-tlx",          
       {
         "components": [
             "post-task-survey"
