@@ -20,6 +20,8 @@ import 'ace-builds/src-noconflict/mode-yaml';
 import 'ace-builds/src-noconflict/mode-toml';
 import 'ace-builds/src-noconflict/mode-json5';
 import 'ace-builds/src-noconflict/ext-language_tools';
+
+import 'ace-builds/src-noconflict/ext-searchbox';
 import { StimulusParams } from '../../../store/types';
 import { PREFIX } from '../../../utils/Prefix';
 import { useIsDarkMode } from '../../../store/hooks/useIsDarkMode';
