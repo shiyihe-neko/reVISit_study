@@ -15,5 +15,5 @@ JSON doesn't support comments.
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in JSON?
-<img src="./assets/tutorial/json/json_quiz_2.png" width="900px" height="auto">
+<img src="./assets/tutorial/json/json_quiz_2.png" width="1200px" height="auto">
 

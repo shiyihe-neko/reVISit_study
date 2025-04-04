@@ -49,4 +49,4 @@ Key-value pairs are separated by an equals sign =; keys are on the left, and val
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in TOML?
-<img src="./assets/tutorial/toml/toml_quiz_1.png" width="900px" height="auto">
+<img src="./assets/tutorial/toml/toml_quiz_1.png" width="1200px" height="auto">

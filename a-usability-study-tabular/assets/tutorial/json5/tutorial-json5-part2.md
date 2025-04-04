@@ -19,4 +19,4 @@ JSON5 allows a trailing comma <strong style="color:green;">,</strong> after the 
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in JSON5?
-<img src="./assets/tutorial/json5/json5_quiz_2.png" width="900px" height="auto">
+<img src="./assets/tutorial/json5/json5_quiz_2.png" width="1200px" height="auto">
