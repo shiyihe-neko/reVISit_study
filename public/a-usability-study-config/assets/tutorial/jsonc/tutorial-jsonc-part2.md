@@ -20,5 +20,5 @@ JSONC allows **trailing commas** <strong style="color:green;">,</strong> after t
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in JSONC?
-<img src="./assets/tutorial/jsonc/jsonc_quiz_1.png" width="900px" height="auto">
+<img src="./assets/tutorial/jsonc/jsonc_quiz_1.png" width="1200px" height="auto">
 

@@ -14,4 +14,4 @@ In YAML, comments start with <strong style="color:green;">#</strong>.
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in YAML?
-<img src="./assets/tutorial/yaml/yaml_quiz_2.png" width="900px" height="auto">
+<img src="./assets/tutorial/yaml/yaml_quiz_2.png" width="1200px" height="auto">
