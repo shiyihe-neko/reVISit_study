@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.5/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Data Serialization Formats Study - Tabular Version",
+    "title": "Data Serialization Formats Study",
     "version": "pilot",
     "authors": [
       "Andrew Mcnutt, Shiyi He"
@@ -528,16 +528,16 @@
         "prompt": "How difficult was this question?",
         "type": "likert",
         "numItems":7,
-        "rightLabel": "Very difficult(7)",
-        "leftLabel": "Very easy(1)",          
+        "rightLabel": "Very difficult",
+        "leftLabel": "Very easy",          
         "required": true
       }, 
       {"id": "confidence",
-      "prompt": "How difficult was this question?",
+      "prompt": "How confident are you in your answer?",
       "type": "likert",
       "numItems":7,
-      "rightLabel": "Very difficult(7)",
-      "leftLabel": "Very easy(1)",          
+      "rightLabel": "Very confident",
+      "leftLabel": "Very unsure",          
       "required": true
      }]
     }, 

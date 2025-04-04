@@ -42,4 +42,4 @@ XML is fundamentally a plain text format, where all data is treated as a string 
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in XML?
-<img src="./assets/tutorial/xml/xml_quiz_1.png" width="900px" height="auto">
+<img src="./assets/tutorial/xml/xml_quiz_1.png" width="1200px" height="auto">

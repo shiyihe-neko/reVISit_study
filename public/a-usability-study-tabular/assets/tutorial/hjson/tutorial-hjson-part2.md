@@ -20,7 +20,7 @@ HJSON supports **single-line comments** (<strong style="color:green;">#</strong>
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in HJSON?
-<img src="./assets/tutorial/hjson/hjson_quiz_2.png" width="900px" height="auto">
+<img src="./assets/tutorial/hjson/hjson_quiz_2.png" width="1200px" height="auto">
 
 
 

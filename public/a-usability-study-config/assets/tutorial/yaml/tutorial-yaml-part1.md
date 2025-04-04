@@ -41,4 +41,4 @@ Null values are represented using <strong style="color:green;">null</strong> or 
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in YAML?
-<img src="./assets/tutorial/yaml/yaml_quiz_1.png" width="900px" height="auto">
+<img src="./assets/tutorial/yaml/yaml_quiz_1.png" width="1200px" height="auto">

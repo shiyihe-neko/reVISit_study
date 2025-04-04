@@ -44,5 +44,5 @@ JSONC supports nested objects and arrays, enabling the construction of complex d
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in JSONC?
-<img src="./assets/tutorial/json/json_quiz_1.png" width="900px" height="auto">
+<img src="./assets/tutorial/json/json_quiz_1.png" width="1200px" height="auto">
 
