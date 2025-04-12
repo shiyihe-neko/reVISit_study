@@ -2019,7 +2019,7 @@
         "taskName": "writing-task-config-json"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2029,10 +2029,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2066,7 +2066,7 @@
         "taskName": "writing-task-config-jsonc"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSONC format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSONC format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2076,10 +2076,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 19 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2113,7 +2113,7 @@
         "taskName": "writing-task-config-json5"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON5 format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON5 format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2123,10 +2123,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2160,20 +2160,20 @@
         "taskName": "writing-task-config-json5"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into HJSON format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into HJSON format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
-      "path": "a-usability-study-config/assets/Editor.tsx",
+      "path": "a-usability-study-config/assets/Editor.tsx", 
       "parameters": {
         "language": "hjson", "imagePath": "a-usability-study-config/assets/tasks/fig/config_write.png", "type": "writing", "tabular": false
       },
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2207,7 +2207,7 @@
         "taskName": "writing-task-config-json5"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into YAML format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into YAML format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2217,10 +2217,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2254,7 +2254,7 @@
         "taskName": "writing-task-config-json5"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into TOML format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into TOML format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2264,10 +2264,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2301,7 +2301,7 @@
         "taskName": "writing-task-config-json5"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into XML format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into XML format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2311,10 +2311,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -3477,10 +3477,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
