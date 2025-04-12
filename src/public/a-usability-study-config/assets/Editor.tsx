@@ -73,7 +73,7 @@ function CodeEditorTest({ setAnswer, parameters, provenanceState }: StimulusPara
   const editorOnChange = useCallback((rawCode: string) => {
     trrack.apply('Typing', actions.typeAction(rawCode));
     setAnswer({
-      status: true,
+      status: rawCode.length > 20,
       answers: {
         code: rawCode,
         error: rawCode,
