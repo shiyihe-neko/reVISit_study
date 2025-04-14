@@ -2019,7 +2019,7 @@
         "taskName": "writing-task-config-json"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2066,7 +2066,7 @@
         "taskName": "writing-task-config-jsonc"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSONC format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSONC format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2113,7 +2113,7 @@
         "taskName": "writing-task-config-json5"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON5 format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON5 format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2157,10 +2157,10 @@
     "writing-task-config-hjson": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-config-hjson"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into HJSON format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into HJSON format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx", 
@@ -2204,10 +2204,10 @@
     "writing-task-config-yaml": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-config-yaml"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into YAML format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into YAML format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2251,10 +2251,10 @@
     "writing-task-config-toml": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-config-toml"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into TOML format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into TOML format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -2298,10 +2298,10 @@
     "writing-task-config-xml": {
       "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
-        "taskName": "writing-task-config-json5"
+        "taskName": "writing-task-config-xml"
       },
       "description": "writing task with configuration data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into XML format. (If needed, click the top-right help button to review syntax rules.) Please type at least 20 characters to continue.",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into XML format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.).",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
@@ -3467,7 +3467,7 @@
         "taskName": "writing-task-NL"
       },
       "description": "writing task with natural language data",
-      "instruction": "Before learning the syntax rules of data serialization formats and completing the related tasks, please look at the image and type out the text as it appears.",
+      "instruction": "Before learning the syntax rules of data serialization formats and completing the related tasks, please look at the image and type out the text as it appears.(Please do not use any AI-assisted tools to complete the task. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-config/assets/Editor.tsx",
