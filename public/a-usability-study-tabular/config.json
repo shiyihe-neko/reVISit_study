@@ -40,7 +40,9 @@
           "type": "shortText",
           "placeholder": "Prolific ID",
           "paramCapture": "PROLIFIC_PID"
-        }]},
+        }
+      ]
+    },
     "qualifications": {
       "type": "questionnaire",
       "response": [
@@ -115,7 +117,8 @@
             "B",
             "C",
             "D"]
-          }],
+          }
+        ],
       "correctAnswer": [
         {
           "id": "quiz-json-part1",
@@ -145,7 +148,8 @@
             "B",
             "C",
             "D"]
-          }],
+          }
+        ],
       "correctAnswer": [
         {
           "id": "quiz-json-part2",
@@ -175,7 +179,8 @@
             "B",
             "C",
             "D"]
-          }],
+          }
+        ],
       "correctAnswer": [
         {
           "id": "quiz-jsonc-part1",
@@ -205,7 +210,8 @@
             "B",
             "C",
             "D"]
-          }],
+          }
+        ],
       "correctAnswer": [
         {
           "id": "quiz-jsonc-part2",
@@ -235,7 +241,8 @@
             "B",
             "C",
             "D"]
-          }],
+          }
+        ],
       "correctAnswer": [
         {
           "id": "quiz-json5-part1",
@@ -265,7 +272,8 @@
             "B",
             "C",
             "D"]
-          }],
+          }
+        ],
       "correctAnswer": [
         {
           "id": "quiz-json5-part2",
@@ -2010,7 +2018,7 @@
         "taskName": "writing-task-tabular-json"
       },
       "description": "writing task with tabular data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task.Please type your answer manually. Responses entered by copying and pasting into the code editor will not be considered complete and will not be eligible for compensation. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-tabular/assets/Editor.tsx",
@@ -2020,10 +2028,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2057,7 +2065,7 @@
         "taskName": "writing-task-tabular-jsonc"
       },
       "description": "writing task with tabular data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSONC format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSONC format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task.Please type your answer manually. Responses entered by copying and pasting into the code editor will not be considered complete and will not be eligible for compensation. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-tabular/assets/Editor.tsx",
@@ -2067,10 +2075,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2104,7 +2112,7 @@
         "taskName": "writing-task-tabular-json5"
       },
       "description": "writing task with tabular data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON5 format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into JSON5 format. If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task.Please type your answer manually. Responses entered by copying and pasting into the code editor will not be considered complete and will not be eligible for compensation. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-tabular/assets/Editor.tsx",
@@ -2114,10 +2122,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2151,7 +2159,7 @@
         "taskName": "writing-task-tabular-hjson"
       },
       "description": "writing task with tabular data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into HJSON format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into HJSON format.If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task.Please type your answer manually. Responses entered by copying and pasting into the code editor will not be considered complete and will not be eligible for compensation. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-tabular/assets/Editor.tsx",
@@ -2161,10 +2169,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2198,7 +2206,7 @@
         "taskName": "writing-task-tabular-yaml"
       },
       "description": "writing task with tabular data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into YAML format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into YAML format.If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task.Please type your answer manually. Responses entered by copying and pasting into the code editor will not be considered complete and will not be eligible for compensation. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-tabular/assets/Editor.tsx",
@@ -2208,10 +2216,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2245,7 +2253,7 @@
         "taskName": "writing-task-tabular-toml"
       },
       "description": "writing task with tabular data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into TOML format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into TOML format.If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task.Please type your answer manually. Responses entered by copying and pasting into the code editor will not be considered complete and will not be eligible for compensation. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-tabular/assets/Editor.tsx",
@@ -2255,10 +2263,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -2292,7 +2300,7 @@
         "taskName": "writing-task-tabular-xml"
       },
       "description": "writing task with tabular data",
-      "instruction": "Please refer to the data structure shown in the figure and convert it into XML format. (If needed, click the top-right help button to review syntax rules.)",
+      "instruction": "Please refer to the data structure shown in the figure and convert it into XML format.If needed, click the top-right help button to review syntax rules.(Please do not use any AI-assisted tools to complete the task.Please type your answer manually. Responses entered by copying and pasting into the code editor will not be considered complete and will not be eligible for compensation. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-tabular/assets/Editor.tsx",
@@ -2302,10 +2310,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
@@ -3458,7 +3466,7 @@
         "taskName": "writing-task-NL"
       },
       "description": "writing task with natural language data",
-      "instruction": "Before learning the syntax rules of data serialization formats and completing the related tasks, please look at the image and type out the text as it appears.",
+      "instruction": "Before learning the syntax rules of data serialization formats and completing the related tasks, please look at the image and type out the text as it appears.(Please do not use any AI-assisted tools to complete the task.Please type your answer manually. Responses entered by copying and pasting into the code editor will not be considered complete and will not be eligible for compensation. To prevent accidental submissions from being marked as incomplete, a minimum input requirement has been set.)",
       "type": "react-component",
       "nextButtonLocation": "sidebar",
       "path": "a-usability-study-tabular/assets/Editor.tsx",
@@ -3468,10 +3476,10 @@
       "response": [
         {
           "id": "code",
-          "prompt": "",
+          "prompt": "Please type at least 20 characters to pass the validation.",
           "hidden": true,
           "type": "reactive",
-          "required": false
+          "required": true
         },
         {
           "id": "error",
