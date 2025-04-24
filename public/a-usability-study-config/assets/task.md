@@ -7,7 +7,7 @@ You will now learn some basic syntax rules for a data serialization format and c
 ---
 
 ### ⚠️ **Before proceeding to the next section, please read the following carefully**:
-- Please read the task instructions carefully. Your attempts will be monitored and recorded. <b style="color:red;">Use of AI assistance is strictly prohibited</b> — this includes copying and pasting from generative AI tools or using AI assisted tools, such as browser extensions or other augmentations. For text-based tasks, you are expected to <b style="color:red;">type your responses manually</b> in the provided code editor.
+- Please read the task instructions carefully. Your attempts will be monitored and recorded. <b style="color:red;">Use of AI assistance is strictly prohibited</b> — this includes copying and pasting from generative AI tools or using AI assisted tools, such as browser extensions or other augmentations. For text-based tasks, you are expected to <b style="color:red;">type your responses manually</b> in the provided code editor. Submissions that do not follow this guideline <b style="color:red;">will be marked as incomplete and will not be compensated</b>.
 - Additionally, <b style="color:red;">any attempt that is clearly not serious</b> — such as clicking through without genuine engagement or submitting a blank response — <b style="color:red;">will be marked as incomplete and will not be compensated</b>.
 - One of our interests is understanding how long this study takes. We kindly ask that you <b style="color:red;">choose a time when you can focus</b> - your careful input will help us gather meaningful data. Thank you for your help!
 <br><br>
