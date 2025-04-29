@@ -246,7 +246,7 @@
       "correctAnswer": [
         {
           "id": "quiz-json5-part1",
-          "answer": ["C","D"]
+          "answer": ["D"]
         }
       ],
       "allowFailedTraining": true,
