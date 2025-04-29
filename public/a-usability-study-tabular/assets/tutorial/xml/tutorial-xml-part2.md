@@ -21,4 +21,4 @@ Comments in XML are enclosed in <strong style="color:green;">`<!-- comment -->`<
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in XML?
-<img src="./assets/tutorial/xml/xml_quiz_1.png" width="1200px" height="auto">
+<img src="./assets/tutorial/xml/xml_quiz_2.png" width="1200px" height="auto">
