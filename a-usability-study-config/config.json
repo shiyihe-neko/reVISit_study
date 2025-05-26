@@ -1824,7 +1824,7 @@
       },
       "response": [
         {
-          "id": "reading-task-config-xml",
+          "id": "reading-task-config-xml_q1",
           "prompt": "1. What is the value of the \"version\" key in the XML file?",
           "type": "dropdown",
           "placeholder": "Please choose the correct answer",
