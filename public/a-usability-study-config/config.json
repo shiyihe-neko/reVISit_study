@@ -206,9 +206,7 @@
           "location": "sidebar",
           "type": "checkbox",
           "options": [
-            "A",
             "B",
-            "C",
             "D"]
           }
         ],

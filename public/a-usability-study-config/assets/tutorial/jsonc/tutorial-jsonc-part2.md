@@ -1,11 +1,11 @@
 ### Format Requirements
-
+<!-- 
 **Support for Trailing Commas**
 JSONC allows **trailing commas** <strong style="color:green;">,</strong> after the last element in objects and arrays.
 
 ###### <u>Correct Example</u> 
    <img src="./assets/tutorial/jsonc/jsonc_commas.png" width="600px" height="auto">
-
+ -->
 
 **Support for Comments**
 
