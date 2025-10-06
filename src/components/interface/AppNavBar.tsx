@@ -11,9 +11,6 @@ import { studyComponentToIndividualComponent } from '../../utils/handleComponent
 import { useIsDarkMode } from '../../store/hooks/useIsDarkMode';
 
 export function AppNavBar() {
-  const trialHasSideBar = useStudyConfig()?.uiConfig.sidebar;
-  const trialHasSideBarResponses = true;
-
   // Get the config for the current step
   const studyConfig = useStudyConfig();
   const currentComponent = useCurrentComponent();
@@ -30,13 +27,19 @@ export function AppNavBar() {
   const isDarkMode = useIsDarkMode();
 
   const status = useStoredAnswer();
-  const instruction = currentConfig?.instruction || '';
+  const trialHasSideBar = currentConfig?.withSidebar ?? studyConfig.uiConfig.withSidebar;
+  const trialHasSideBarResponses = true;
 
-  const instructionInSideBar = currentConfig?.instructionLocation === 'sidebar'
-    || currentConfig?.instructionLocation === undefined;
+  const instruction = currentConfig?.instruction || '';
+  const instructionLocation = useMemo(() => currentConfig?.instructionLocation ?? studyConfig.uiConfig.instructionLocation ?? 'sidebar', [currentConfig, studyConfig]);
+  const instructionInSideBar = instructionLocation === 'sidebar';
 
   return trialHasSideBar && currentConfig ? (
+<<<<<<< HEAD
     <AppShell.Navbar bg={isDarkMode ? '' : 'gray.1'} display="block" style={{ zIndex: 0, overflowY: 'scroll' }}>
+=======
+    <AppShell.Navbar className="sidebar" bg="gray.1" display="block" style={{ zIndex: 0, overflowY: 'scroll' }}>
+>>>>>>> upstream/main
       {instructionInSideBar && instruction !== '' && (
         <AppShell.Section
           bg={isDarkMode ? '' : 'gray.3'}
