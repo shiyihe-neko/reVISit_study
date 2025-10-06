@@ -1,16 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.2.0/src/parser/GlobalConfigSchema.json",
   "configsList": [
-<<<<<<< HEAD
     "a-usability-study-config",
-    "a-usability-study-tabular",
-    "a-usability-study",
-    "example-mvnv",
-    "example-VLAT-full-randomized",
-    "example-VLAT-mini-randomized",
-=======
-    "tutorial",
->>>>>>> upstream/main
     "demo-html",
     "demo-html-input",
     "demo-screen-recording",
@@ -59,12 +50,6 @@
   "configs": {
     "a-usability-study-config": {
       "path": "a-usability-study-config/config.json"
-    },
-    "a-usability-study-tabular": {
-      "path": "a-usability-study-tabular/config.json"
-    },
-    "a-usability-study": {
-      "path": "a-usability-study/config.json"
     },
     "demo-video-slider": {
       "path": "demo-video-slider/config.json"

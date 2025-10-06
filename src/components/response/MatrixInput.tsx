@@ -6,7 +6,6 @@ import {
 } from 'react';
 import { MatrixResponse, StringOption } from '../../parser/types';
 import { useStoreDispatch, useStoreActions } from '../../store/store';
-import { useIsDarkMode } from '../../store/hooks/useIsDarkMode';
 import checkboxClasses from './css/Checkbox.module.css';
 import radioClasses from './css/Radio.module.css';
 import { useStoredAnswer } from '../../store/hooks/useStoredAnswer';
@@ -71,7 +70,6 @@ function RadioGroupComponent({
   disabled: boolean
 
 }) {
-  const isDarkMode = useIsDarkMode();
   return (
     <Radio.Group
       name={`radioInput${response.id}-${idx}`}
@@ -91,27 +89,14 @@ function RadioGroupComponent({
           justifyItems: 'center',
         }}
       >
-        {_choices.map((radio: StringOption) => (radio.separator ? (
-          <Group justify="space-between" key={radio.value} style={{ height: '80px', width: '100%' }}>
-            <Divider orientation="vertical" size="sm" color={isDarkMode ? 'gray.4' : 'black'} />
-            <Radio
-              disabled={disabled}
-              value={radio.value}
-              key={`${radio.label}-${idx}`}
-            />
-            <Box />
-          </Group>
-        ) : (
-          <Stack key={radio.value} justify="center" style={{ height: '80px', width: '100%' }}>
-            <Center>
-              <Radio
-                disabled={disabled}
-                value={radio.value}
-                key={`${radio.label}-${idx}`}
-              />
-            </Center>
-          </Stack>
-        )))}
+        {_choices.map((radio: StringOption) => (
+          <Radio
+            disabled={disabled}
+            value={radio.value}
+            key={`${radio.label}-${idx}`}
+            classNames={{ radio: radioClasses.fixDisabled, icon: radioClasses.fixDisabledIcon }}
+          />
+        ))}
       </div>
     </Radio.Group>
   );
@@ -175,8 +160,6 @@ export function MatrixInput({
     };
     storeDispatch(setMatrixAnswersCheckbox(payload));
   };
-
-  const isDarkMode = useIsDarkMode();
 
   const _n = _choices.length;
   const _m = orderedQuestions.length;
@@ -246,8 +229,8 @@ export function MatrixInput({
                 alignItems: 'safe center',
                 justifyContent: 'end',
                 borderRight: '1px solid var(--mantine-color-dark-0)',
-                backgroundColor: isDarkMode ? '' : `${(idx + 1) % 2 === 0 ? 'var(--mantine-color-gray-2)' : 'white'}`,
-                overflowY: 'hidden',
+                backgroundColor: `${(idx + 1) % 2 === 0 ? 'var(--mantine-color-gray-2)' : 'white'}`,
+                overflowY: 'auto',
               }}
               ta="right"
               p="sm"
@@ -273,7 +256,7 @@ export function MatrixInput({
                 flex: 1,
                 display: 'flex',
                 alignItems: 'center',
-                backgroundColor: isDarkMode ? `${(idx + 1) % 2 === 0 ? 'var(--mantine-color-gray-8)' : ''}` : `${(idx + 1) % 2 === 0 ? 'var(--mantine-color-gray-2)' : 'white'}`,
+                backgroundColor: `${(idx + 1) % 2 === 0 ? 'var(--mantine-color-gray-2)' : 'white'}`,
               }}
             >
               {response.type === 'matrix-radio'

@@ -199,11 +199,7 @@
           "tlxStyle": true,
           "withBar": false,
           "prompt": "Mental Demand",
-<<<<<<< HEAD
-          "secondaryText": "How much mental and perceptual effort did you spend for this study?",
-=======
           "secondaryText": "How much mental and perceptual effort did you spend?",
->>>>>>> upstream/main
           "options": [
             {
               "label": "Low",
@@ -300,11 +296,7 @@
           "tlxStyle": true,
           "withBar": false,
           "prompt": "Physical Demand",
-<<<<<<< HEAD
-          "secondaryText": "How much physical effort did you spend for this study?",
-=======
           "secondaryText": "How much physical effort did you spend?",
->>>>>>> upstream/main
           "options": [
             {
               "label": "Low",
@@ -401,12 +393,7 @@
           "tlxStyle": true,
           "withBar": false,
           "prompt": "Temporal Demand",
-<<<<<<< HEAD
-          "secondaryText": "How much time pressure did you feel in order to complete this study?",
-
-=======
           "secondaryText": "How much time pressure did you feel in order to complete this?",
->>>>>>> upstream/main
           "options": [
             {
               "label": "Low",
@@ -503,11 +490,7 @@
           "tlxStyle": true,
           "withBar": false,
           "prompt": "Performance",
-<<<<<<< HEAD
-          "secondaryText": "How successful do you think you were in accomplishing the goals of the study? (notice the direction of the scale)",
-=======
           "secondaryText": "How successful do you think you were in accomplishing what you were asked to do? (notice the direction of this scale)",
->>>>>>> upstream/main
           "options": [
             {
               "label": "Good",
@@ -701,11 +684,7 @@
           "tlxStyle": true,
           "withBar": false,
           "prompt": "Frustration",
-<<<<<<< HEAD
-          "secondaryText": "How insecure, discouraged, irritated, stressed, and annoyed were you during this study?",
-=======
           "secondaryText": "How irritated, stressed, discouraged, and annoyed were you?",
->>>>>>> upstream/main
           "options": [
             {
               "label": "Low",
