@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.5/src/parser/StudyConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.2.0/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
     "title": "Data Serialization Formats Study",
     "version": "pilot",
@@ -19,7 +19,7 @@
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
-    "sidebar": true,
+    "withSidebar": true,
     "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=COW91MV4](https://app.prolific.com/submissions/complete?cc=COW91MV4)",
     "urlParticipantIdParam": "PROLIFIC_PID",
     "participantNameField": "introduction.prolificId"
@@ -206,14 +206,16 @@
           "location": "sidebar",
           "type": "checkbox",
           "options": [
+            "A",
             "B",
+            "C",
             "D"]
           }
         ],
       "correctAnswer": [
         {
           "id": "quiz-jsonc-part2",
-          "answer": ["A","B","C","D"]
+          "answer": ["B","D"]
         }
       ],
       "allowFailedTraining": true,
@@ -548,7 +550,7 @@
      }]
     }, 
     "reading-task-config-json-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-config-json"
       },
@@ -590,7 +592,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-config-json"
       },
@@ -632,7 +634,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-config-json"
       },
@@ -674,7 +676,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-config-json"
       },
@@ -716,7 +718,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json-5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-config-json"
       },
@@ -758,7 +760,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-jsonc-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-config-jsonc"
       },
@@ -800,7 +802,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-jsonc-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-config-jsonc"
       },
@@ -842,7 +844,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-jsonc-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-config-jsonc"
       },
@@ -884,7 +886,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-jsonc-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-config-jsonc"
       },
@@ -926,7 +928,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-jsonc-5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-config-jsonc"
       },
@@ -968,7 +970,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json5-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-config-json5"
       },
@@ -1010,7 +1012,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json5-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-config-json5"
       },
@@ -1052,7 +1054,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json5-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-config-json5"
       },
@@ -1094,7 +1096,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json5-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-config-json5"
       },
@@ -1136,7 +1138,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-json5-5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-config-json5"
       },
@@ -1178,7 +1180,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-hjson-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-config-hjson"
       },
@@ -1220,7 +1222,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-hjson-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-config-hjson"
       },
@@ -1262,7 +1264,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-hjson-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-config-hjson"
       },
@@ -1304,7 +1306,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-hjson-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-config-hjson"
       },
@@ -1346,7 +1348,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-hjson-5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-config-hjson"
       },
@@ -1388,7 +1390,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-yaml-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-config-yaml"
       },
@@ -1430,7 +1432,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-yaml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-config-yaml"
       },
@@ -1472,7 +1474,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-yaml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-config-yaml"
       },
@@ -1514,7 +1516,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-yaml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-config-yaml"
       },
@@ -1556,7 +1558,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-yaml-5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-config-yaml"
       },
@@ -1598,7 +1600,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-toml-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-config-toml"
       },
@@ -1640,7 +1642,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-toml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-config-toml"
       },
@@ -1682,7 +1684,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-toml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-config-toml"
       },
@@ -1724,7 +1726,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-toml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-config-toml"
       },
@@ -1766,7 +1768,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-toml-5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-config-toml"
       },
@@ -1808,7 +1810,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-xml-1": { 
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-config-xml"
       },
@@ -1850,7 +1852,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-xml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-config-xml"
       },
@@ -1892,7 +1894,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-xml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-config-xml"
       },
@@ -1934,7 +1936,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-xml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-config-xml"
       },
@@ -1976,7 +1978,7 @@
       "allowFailedTraining": false
     },
     "reading-task-config-xml-5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-config-xml"
       },
@@ -2018,7 +2020,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-json": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "writing-task-config-json"
       },
@@ -2065,7 +2067,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-jsonc": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "writing-task-config-jsonc"
       },
@@ -2112,7 +2114,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-json5": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "writing-task-config-json5"
       },
@@ -2159,7 +2161,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-hjson": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "writing-task-config-hjson"
       },
@@ -2206,7 +2208,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-yaml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "writing-task-config-yaml"
       },
@@ -2253,7 +2255,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-toml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "writing-task-config-toml"
       },
@@ -2300,7 +2302,7 @@
       "allowFailedTraining": false
     },
     "writing-task-config-xml": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "writing-task-config-xml"
       },
@@ -2347,7 +2349,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-config-json"
       },
@@ -2387,7 +2389,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-config-json"
       },
@@ -2427,7 +2429,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-config-json"
       },
@@ -2467,7 +2469,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-config-json"
       },
@@ -2507,7 +2509,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-jsonc-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-config-jsonc"
       },
@@ -2547,7 +2549,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-jsonc-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-config-jsonc"
       },
@@ -2587,7 +2589,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-jsonc-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-config-jsonc"
       },
@@ -2627,7 +2629,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-jsonc-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-config-jsonc"
       },
@@ -2667,7 +2669,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json5-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-config-json5"
       },
@@ -2707,7 +2709,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json5-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-config-json5"
       },
@@ -2747,7 +2749,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json5-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-config-json5"
       },
@@ -2787,7 +2789,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-json5-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-config-json5"
       },
@@ -2827,7 +2829,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-hjson-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-config-hjson"
       },
@@ -2867,7 +2869,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-hjson-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-config-hjson"
       },
@@ -2907,7 +2909,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-hjson-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-config-hjson"
       },
@@ -2947,7 +2949,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-hjson-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-config-hjson"
       },
@@ -2987,7 +2989,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-toml-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-config-toml"
       },
@@ -3027,7 +3029,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-toml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-config-toml"
       },
@@ -3067,7 +3069,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-toml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-config-toml"
       },
@@ -3107,7 +3109,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-toml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-config-toml"
       },
@@ -3147,7 +3149,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-yaml-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-config-yaml"
       },
@@ -3187,7 +3189,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-yaml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-config-yaml"
       },
@@ -3227,7 +3229,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-yaml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-config-yaml"
       },
@@ -3267,7 +3269,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-yaml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-config-yaml"
       },
@@ -3307,7 +3309,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-xml-1": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-config-xml"
       },
@@ -3347,7 +3349,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-xml-2": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-config-xml"
       },
@@ -3387,7 +3389,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-xml-3": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-config-xml"
       },
@@ -3427,7 +3429,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-config-xml-4": {
-      "helpTextPathOverride": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-config/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-config-xml"
       },

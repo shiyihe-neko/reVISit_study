@@ -12,7 +12,7 @@ JSONC consists of **key-value** pairs and **data types**, and it primarily has t
 
 JSONC supports nested objects and arrays, enabling the construction of complex data structures.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_nested.png" width="600px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/json/json_nested.png" width="600px" height="auto">
 <br>
 
 **Key-Value Pairs**
@@ -20,25 +20,25 @@ JSONC supports nested objects and arrays, enabling the construction of complex d
 - Keys must be strings and must be enclosed in double quotes <strong style="color:green;">""</strong>.
 - Key-value pairs are separated by commas <strong style="color:green;">,</strong>.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_KVPair.png" width="600px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/json/json_KVPair.png" width="600px" height="auto">
 <br>
 
 **Data Types**
 **String**: Strings must be enclosed in double quotes <strong style="color:green;">""</strong>.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_string.png" width="600px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/json/json_string.png" width="600px" height="auto">
 
 **Number**: Includes **integers** and **floating-point numbers**, but leading zeros and hexadecimal formats are not supported.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_number.png" width="600px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/json/json_number.png" width="600px" height="auto">
 
 **Boolean**: The values can be <strong style="color:green;">true</strong> or <strong style="color:green;">false</strong>.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_boolean.png" width="600px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/json/json_boolean.png" width="600px" height="auto">
 
 **Null**: Represented by <strong style="color:green;">null</strong> for empty or unknown values.
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/json/json_null.png" width="600px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/json/json_null.png" width="600px" height="auto">
 
 
 ### Format Requirements
@@ -57,5 +57,7 @@ JSONC allows **trailing commas** <strong style="color:green;">,</strong> after t
 - **Multi-line comments**: Use <strong style="color:green;">/* */</strong> to wrap comments.
 
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/jsonc/jsonc_comments.png" width="600px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/jsonc/jsonc_comments.png" width="600px" height="auto">
 <br>
+
+###### <u></u> 

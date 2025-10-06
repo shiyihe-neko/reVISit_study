@@ -14,11 +14,19 @@ JSONC allows **trailing commas** <strong style="color:green;">,</strong> after t
 - **Multi-line comments**: Use <strong style="color:green;">/* */</strong> to wrap comments.
 
 ###### <u>Correct Example</u> 
-   <img src="./assets/tutorial/jsonc/jsonc_comments.png" width="600px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/jsonc/jsonc_comments.png" width="600px" height="auto">
 <br>
 
 -------------------------------
 ## Exercise
 Let's do a quick exercise: take a look at the following data. Which ones are correctly written in JSONC?
-<img src="./assets/tutorial/jsonc/jsonc_quiz_1.png" width="1200px" height="auto">
+   <img src="./a-usability-study-config/assets/tutorial/jsonc/jsonc_quiz_1.png" width="1200px" height="auto">
+<br>
+
+###### <u></u> 
+
+
+
+
+
 
