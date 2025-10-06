@@ -35,11 +35,7 @@ export function AppNavBar() {
   const instructionInSideBar = instructionLocation === 'sidebar';
 
   return trialHasSideBar && currentConfig ? (
-<<<<<<< HEAD
-    <AppShell.Navbar bg={isDarkMode ? '' : 'gray.1'} display="block" style={{ zIndex: 0, overflowY: 'scroll' }}>
-=======
     <AppShell.Navbar className="sidebar" bg="gray.1" display="block" style={{ zIndex: 0, overflowY: 'scroll' }}>
->>>>>>> upstream/main
       {instructionInSideBar && instruction !== '' && (
         <AppShell.Section
           bg={isDarkMode ? '' : 'gray.3'}

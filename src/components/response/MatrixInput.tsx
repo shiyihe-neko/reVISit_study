@@ -1,13 +1,5 @@
 import {
-<<<<<<< HEAD
-  Box, Flex, Radio, Text, Checkbox,
-  Divider,
-  Group,
-  Center,
-  Stack,
-=======
   Box, Radio, Text, Checkbox,
->>>>>>> upstream/main
 } from '@mantine/core';
 import {
   ChangeEvent, useMemo,
@@ -16,12 +8,9 @@ import { MatrixResponse, StringOption } from '../../parser/types';
 import { useStoreDispatch, useStoreActions } from '../../store/store';
 import { useIsDarkMode } from '../../store/hooks/useIsDarkMode';
 import checkboxClasses from './css/Checkbox.module.css';
-<<<<<<< HEAD
-=======
 import radioClasses from './css/Radio.module.css';
 import { useStoredAnswer } from '../../store/hooks/useStoredAnswer';
 import { InputLabel } from './InputLabel';
->>>>>>> upstream/main
 
 function CheckboxComponent({
   _choices,
