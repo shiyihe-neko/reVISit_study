@@ -13,7 +13,7 @@ import { NumericInput } from './NumericInput';
 import { RadioInput } from './RadioInput';
 import { SliderInput } from './SliderInput';
 import { StringInput } from './StringInput';
-import { ColorAreaInput } from './TextAreaInput';
+import { TextAreaInput } from './TextAreaInput';
 import { useStudyConfig } from '../../store/hooks/useStudyConfig';
 import { MatrixInput } from './MatrixInput';
 import { ButtonsInput } from './ButtonsInput';
@@ -141,17 +141,8 @@ export function ResponseSwitcher({
         enumerateQuestions={enumerateQuestions}
       />
       )}
-      {/* {response.type === 'colorText' && (
-      <ColorAreaInput
-        response={response}
-        disabled={isDisabled || dontKnowCheckbox?.checked}
-        answer={ans as { value: string }}
-        index={index}
-        enumerateQuestions={enumerateQuestions}
-      />
-      )} */}
       {response.type === 'longText' && (
-      <ColorAreaInput
+      <TextAreaInput
         response={response}
         disabled={isDisabled || dontKnowCheckbox?.checked}
         answer={ans as { value: string }}

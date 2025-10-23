@@ -106,7 +106,7 @@ import { InputLabel } from './InputLabel';
 
 const hexRegex = /^#([0-9A-Fa-f]{6})$/;
 
-export function ColorAreaInput({
+export function TextAreaInput({
   response,
   disabled,
   answer,
