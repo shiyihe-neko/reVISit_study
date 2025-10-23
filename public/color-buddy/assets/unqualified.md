@@ -1,0 +1,1 @@
+Unfortunately, you do not meet the qualifications for our study. Thank you for considering taking our study. Feel free to close this tab and return to prolific here: LINK

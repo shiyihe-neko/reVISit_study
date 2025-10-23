@@ -318,6 +318,12 @@ export interface ShortTextResponse extends BaseResponse {
   placeholder?: string;
 }
 
+export interface ColorTextResponse extends BaseResponse {
+  type: 'longText';
+  /** The placeholder text that is displayed in the input. */
+  placeholder?: string;
+}
+
 /**
  * The LongTextResponse interface is used to define the properties of a long text response.
  * LongTextResponses render as a text area that accepts any text and can optionally have a placeholder.
@@ -332,11 +338,11 @@ export interface ShortTextResponse extends BaseResponse {
 ```
  *
  */
-export interface LongTextResponse extends BaseResponse {
-  type: 'longText';
-  /** The placeholder text that is displayed in the input. */
-  placeholder?: string;
-}
+// export interface LongTextResponse extends BaseResponse {
+//   type: 'longText';
+//   /** The placeholder text that is displayed in the input. */
+//   placeholder?: string;
+// }
 
 /**
  * The LikertResponse interface is used to define the properties of a likert response.
@@ -646,7 +652,7 @@ export interface TextOnlyResponse extends Omit<BaseResponse, 'secondaryText' | '
   withDontKnow?: undefined;
 }
 
-export type Response = NumericalResponse | ShortTextResponse | LongTextResponse | LikertResponse | DropdownResponse | SliderResponse | RadioResponse | CheckboxResponse | ReactiveResponse | MatrixResponse | ButtonsResponse | TextOnlyResponse;
+export type Response = NumericalResponse | ShortTextResponse | ColorTextResponse | LikertResponse | DropdownResponse | SliderResponse | RadioResponse | CheckboxResponse | ReactiveResponse | MatrixResponse | ButtonsResponse | TextOnlyResponse;
 
 /**
  * The Answer interface is used to define the properties of an answer. Answers are used to define the correct answer for a task. These are generally used in training tasks or if skip logic is required based on the answer.

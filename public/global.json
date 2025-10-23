@@ -1,6 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.2.0/src/parser/GlobalConfigSchema.json",
   "configsList": [
+    "color-buddy",
     "a-usability-study-config",
     "demo-html",
     "demo-html-input",
@@ -48,6 +49,9 @@
     "test-step-logic"
   ],
   "configs": {
+    "color-buddy":{
+      "path": "color-buddy/config.json"
+    },
     "a-usability-study-config": {
       "path": "a-usability-study-config/config.json"
     },

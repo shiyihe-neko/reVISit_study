@@ -155,7 +155,18 @@ export function StepRenderer() {
           {isScreenRecordingUserRejected && <ScreenRecordingRejection />}
           <HelpModal />
           <AlertModal />
-          <AppShell.Main className="main" style={{ display: 'flex', flexDirection: 'column' }}>
+          <AppShell.Main
+            className="main"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              ...(componentConfig.type === 'website' && {
+                paddingTop: '70px', paddingLeft: '300px', paddingRight: '0', paddingBottom: '0',
+
+              }
+              ),
+            }}
+          >
             {!showTitleBar && !showStudyBrowser && studyNavigatorEnabled && (
             <Button
               variant="transparent"
