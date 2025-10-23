@@ -53,7 +53,7 @@ export async function studyStoreCreator(
           windowEvents: [],
           timedOut: false,
           helpButtonClickedCount: 0,
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
           parameters: Object.hasOwn(componentConfig, 'parameters') ? (componentConfig as any).parameters : {},
           correctAnswer: Object.hasOwn(componentConfig, 'correctAnswer') ? componentConfig.correctAnswer! : [],
           optionOrders: randomizeOptions(componentConfig),
@@ -142,7 +142,7 @@ export async function studyStoreCreator(
       setIsRecording(state, { payload }: PayloadAction<boolean>) {
         state.isRecording = payload;
       },
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
       pushToFuncSequence(state, { payload }: PayloadAction<{ component: string, funcName: string, index: number, funcIndex: number, parameters: Record<string, any> | undefined, correctAnswer: Answer[] | undefined }>) {
         if (!state.funcSequence[payload.funcName]) {
           state.funcSequence[payload.funcName] = [];
@@ -205,7 +205,7 @@ export async function studyStoreCreator(
       setReactiveAnswers: (state, action: PayloadAction<Record<string, ValueOf<StoredAnswer['answer']>>>) => {
         state.reactiveAnswers = action.payload;
       },
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
       saveAnalysisState(state, { payload }: PayloadAction<{ prov: any, location: ResponseBlockLocation }>) {
         state.analysisProvState[payload.location] = payload.prov;
       },

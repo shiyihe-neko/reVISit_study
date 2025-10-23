@@ -104,6 +104,8 @@ import { generateErrorMessage } from './utils';
 import classes from './css/Input.module.css';
 import { InputLabel } from './InputLabel';
 
+const hexRegex = /^#([0-9A-Fa-f]{6})$/;
+
 export function ColorAreaInput({
   response,
   disabled,
@@ -127,8 +129,6 @@ export function ColorAreaInput({
 
   const [colors, setColors] = useState<string[]>([]);
   const [errorMsg, setErrorMsg] = useState<string>('');
-
-  const hexRegex = /^#([0-9A-Fa-f]{6})$/;
 
   useEffect(() => {
     const validColors = colors.filter((c) => hexRegex.test(c.trim()));

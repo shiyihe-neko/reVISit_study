@@ -9,8 +9,8 @@ const path = require('path');
 const generateMd = (library, libraryConfig, forDocs) => `
 # ${library}
 
-${forDocs ?
-  `import StructuredLinks from '@site/src/components/StructuredLinks/StructuredLinks.tsx';
+${forDocs
+    ? `import StructuredLinks from '@site/src/components/StructuredLinks/StructuredLinks.tsx';
   
   <StructuredLinks
       demoLinks={[
@@ -20,13 +20,13 @@ ${forDocs ?
         {name: "${library} Code", url: "https://github.com/revisit-studies/study/tree/main/public/library-${library}"}
       ]}
       ${
-        (libraryConfig.doi || libraryConfig.externalLink)
-        ? `referenceLinks={[
+  (libraryConfig.doi || libraryConfig.externalLink)
+    ? `referenceLinks={[
         ${libraryConfig.doi ? `{name: "DOI", url: "https://dx.doi.org/${libraryConfig.doi}"}` : ''}${libraryConfig.doi && libraryConfig.externalLink ? ',' : ''}
         ${libraryConfig.externalLink ? `{name: "${library}", url: "${libraryConfig.externalLink}"}` : ''}
       ]}`
-      : ''}
-  />` :  ''}
+    : ''}
+  />` : ''}
 
 ${!forDocs ? `This is an example study of the library \`${library}\`.` : ''}
 
@@ -57,7 +57,7 @@ const librariesPath = path.join(__dirname, './public/libraries');
 const docsLibrariesPath = path.join(__dirname, './docsLibraries');
 
 const libraries = fs.readdirSync(librariesPath)
-  .filter(library => !library.startsWith('.') && !library.endsWith('.DS_Store'));
+  .filter((library) => !library.startsWith('.') && !library.endsWith('.DS_Store'));
 
 if (!fs.existsSync(docsLibrariesPath)) {
   fs.mkdirSync(docsLibrariesPath);

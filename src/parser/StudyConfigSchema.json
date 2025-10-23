@@ -436,6 +436,76 @@
       ],
       "type": "object"
     },
+    "ColorTextResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "hidden": {
+          "description": "Controls whether the response is hidden.",
+          "type": "boolean"
+        },
+        "id": {
+          "description": "The id of the response. This is used to identify the response in the data file.",
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/definitions/ConfigResponseBlockLocation",
+          "description": "Controls the response location. These might be the same for all responses, or differ across responses. Defaults to `belowStimulus`"
+        },
+        "paramCapture": {
+          "description": "Use to capture querystring parameters in answers such as participant_name. See the examples for how this is used, but prefer uiConfig.urlParticipantIdParam if you are capturing a participant ID.",
+          "type": "string"
+        },
+        "placeholder": {
+          "description": "The placeholder text that is displayed in the input.",
+          "type": "string"
+        },
+        "prompt": {
+          "description": "The prompt that is displayed to the participant. You can use markdown here to render images, links, etc.",
+          "type": "string"
+        },
+        "required": {
+          "description": "Controls whether the response is required to be answered. Defaults to true.",
+          "type": "boolean"
+        },
+        "requiredLabel": {
+          "description": "You can provide a required label, which makes it so a participant has to answer with a response that matches label.",
+          "type": "string"
+        },
+        "requiredValue": {
+          "description": "You can provide a required value, which makes it so a participant has to answer with that value."
+        },
+        "secondaryText": {
+          "description": "The secondary text that is displayed to the participant under the prompt. This does not accept markdown.",
+          "type": "string"
+        },
+        "style": {
+          "$ref": "#/definitions/Styles",
+          "description": "You can set styles here, using React CSSProperties, for example: {\"width\": 100} or {\"width\": \"50%\"}"
+        },
+        "stylesheetPath": {
+          "description": "The path to the external stylesheet file.",
+          "type": "string"
+        },
+        "type": {
+          "const": "longText",
+          "type": "string"
+        },
+        "withDivider": {
+          "description": "Renders the response with a trailing divider. If present, will override the divider setting in the components or uiConfig.",
+          "type": "boolean"
+        },
+        "withDontKnow": {
+          "description": "Renders the response with an option for \"I don't know\". This counts as a completed answer for the validation.",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "prompt",
+        "type"
+      ],
+      "type": "object"
+    },
     "ComponentBlock": {
       "additionalProperties": false,
       "description": "The ComponentBlock interface is used to define order properties within the sequence. This is used to define the order of components in a study and the skip logic. It supports random assignment of trials using a pure random assignment and a [latin square](https://en.wikipedia.org/wiki/Latin_square).\n\nThe pure random assignment is a random assignment with no guarantees. For example, one component _could_ show up in the first position 10 times in a row. However, this situation is unlikely.\n\nHere's a snippet that shows how to use the random order:\n\n```js { \"order\": \"random\", \"components\": [ \"component1\", \"component2\", \"component3\" ] } ``` This snippet would produce a random order of the components in the sequence array. For example, the resulting sequence array could be :\n\n```js [ [\"component2\", \"component3\", \"component1\"], [\"component1\", \"component3\", \"component2\"], [\"component3\", \"component1\", \"component2\"], ... ] ```\n\nThe latin square assignment is a random assignment with some guarantees. It ensures that each component is shown an equal number of times in each position. Here's a snippet that shows how to use the latin square order:\n\n```js { \"order\": \"latinSquare\", \"components\": [ \"component1\", \"component2\", \"component3\" ] } ```\n\nThis snippet would produce a latin square order of the components in the sequence array. Since the latin square guarantees that each component is shown an equal number of times in each position, the resulting sequence array could be:\n\n```js [ [\"component1\", \"component2\", \"component3\"], [\"component2\", \"component3\", \"component1\"], [\"component3\", \"component1\", \"component2\"], ... ] ```\n\nThe fixed assignment is a fixed assignment of components. This is used when you want to show the components in a specific order. Here's a snippet that shows how to use the fixed order:\n\n```js { \"order\": \"fixed\", \"components\": [ \"component1\", \"component2\", \"component3\" ] } ```\n\nThis snippet would produce a fixed order of the components in the sequence array. The resulting sequence array would be:\n\n```js [ [\"component1\", \"component2\", \"component3\"], [\"component1\", \"component2\", \"component3\"], [\"component1\", \"component2\", \"component3\"], ... ] ```\n\nIn addition to the order property, the ComponentBlock interface also includes the `\"numSamples\"` property. This is used to reduce the number of components shown to a participant. This property respects the order property and the guarantees provided by the order property. For example, if you have three components in the components array and you set `\"numSamples\"` to 2, you would randomize across the three components while only showing a participant two of them. Here's a snippet that shows how to use the numSamples property:\n\n```js { \"order\": \"latinSquare\", \"components\": [ \"component1\", \"component2\", \"component3\" ], \"numSamples\": 2 } ```\n\nThis snippet would produce a latin square order of the components in the sequence array. Since the latin square guarantees that each component is shown an equal number of times in each position, the resulting sequence array could be:\n\n```js [ [\"component1\", \"component2\"], [\"component2\", \"component3\"], [\"component3\", \"component1\"], ... ] ```\n\nThe interruptions property specifies an array of interruptions. These can be used for breaks or attention checks. Interruptions can be deterministic or random. Please see [InterruptionBlock](../../type-aliases/InterruptionBlock) for more specific information.\n\nThe skip property is used to define skip conditions. This is used to skip to a different component or block based on the response to a component or the number of correct or incorrect responses in a block. Please see [SkipConditions](../../type-aliases/SkipConditions) for more specific information.",
@@ -1235,77 +1305,6 @@
       "required": [
         "id",
         "numItems",
-        "prompt",
-        "type"
-      ],
-      "type": "object"
-    },
-    "LongTextResponse": {
-      "additionalProperties": false,
-      "description": "The LongTextResponse interface is used to define the properties of a long text response. LongTextResponses render as a text area that accepts any text and can optionally have a placeholder. ```js { \"id\": \"q-name\", \"prompt\": \"What is your first name?\", \"location\": \"aboveStimulus\", \"type\": \"longText\", \"placeholder\": \"Please enter your first name\" } ```",
-      "properties": {
-        "hidden": {
-          "description": "Controls whether the response is hidden.",
-          "type": "boolean"
-        },
-        "id": {
-          "description": "The id of the response. This is used to identify the response in the data file.",
-          "type": "string"
-        },
-        "location": {
-          "$ref": "#/definitions/ConfigResponseBlockLocation",
-          "description": "Controls the response location. These might be the same for all responses, or differ across responses. Defaults to `belowStimulus`"
-        },
-        "paramCapture": {
-          "description": "Use to capture querystring parameters in answers such as participant_name. See the examples for how this is used, but prefer uiConfig.urlParticipantIdParam if you are capturing a participant ID.",
-          "type": "string"
-        },
-        "placeholder": {
-          "description": "The placeholder text that is displayed in the input.",
-          "type": "string"
-        },
-        "prompt": {
-          "description": "The prompt that is displayed to the participant. You can use markdown here to render images, links, etc.",
-          "type": "string"
-        },
-        "required": {
-          "description": "Controls whether the response is required to be answered. Defaults to true.",
-          "type": "boolean"
-        },
-        "requiredLabel": {
-          "description": "You can provide a required label, which makes it so a participant has to answer with a response that matches label.",
-          "type": "string"
-        },
-        "requiredValue": {
-          "description": "You can provide a required value, which makes it so a participant has to answer with that value."
-        },
-        "secondaryText": {
-          "description": "The secondary text that is displayed to the participant under the prompt. This does not accept markdown.",
-          "type": "string"
-        },
-        "style": {
-          "$ref": "#/definitions/Styles",
-          "description": "You can set styles here, using React CSSProperties, for example: {\"width\": 100} or {\"width\": \"50%\"}"
-        },
-        "stylesheetPath": {
-          "description": "The path to the external stylesheet file.",
-          "type": "string"
-        },
-        "type": {
-          "const": "longText",
-          "type": "string"
-        },
-        "withDivider": {
-          "description": "Renders the response with a trailing divider. If present, will override the divider setting in the components or uiConfig.",
-          "type": "boolean"
-        },
-        "withDontKnow": {
-          "description": "Renders the response with an option for \"I don't know\". This counts as a completed answer for the validation.",
-          "type": "boolean"
-        }
-      },
-      "required": [
-        "id",
         "prompt",
         "type"
       ],
@@ -2232,7 +2231,7 @@
           "$ref": "#/definitions/ShortTextResponse"
         },
         {
-          "$ref": "#/definitions/LongTextResponse"
+          "$ref": "#/definitions/ColorTextResponse"
         },
         {
           "$ref": "#/definitions/LikertResponse"

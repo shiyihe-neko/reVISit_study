@@ -166,7 +166,6 @@ export function AudioProvenanceVis({ setTimeString }: { setTimeString: (time: st
 
     let tempNode = provGraph.stimulus.nodes[currentNode];
 
-    // eslint-disable-next-line no-constant-condition
     while (true) {
       if (playTime < tempNode.createdOn) {
         if (!isRootNode(tempNode)) {

@@ -42,7 +42,6 @@ export function useUpdateProvenance(location: ResponseBlockLocation, playTime: n
 
     let tempNode = provGraph.nodes[currentNode];
 
-    // eslint-disable-next-line no-constant-condition
     while (true) {
       if (playTime < tempNode.createdOn) {
         if (!isRootNode(tempNode)) {
