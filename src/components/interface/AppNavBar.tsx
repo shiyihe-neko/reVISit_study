@@ -1,6 +1,4 @@
-import {
-  AppShell, Text,
-} from '@mantine/core';
+import { Box, Text } from '@mantine/core';
 import { useMemo } from 'react';
 import { ReactMarkdownWrapper } from '../ReactMarkdownWrapper';
 import { useStudyConfig } from '../../store/hooks/useStudyConfig';
@@ -10,7 +8,7 @@ import { useCurrentComponent } from '../../routes/utils';
 import { studyComponentToIndividualComponent } from '../../utils/handleComponentInheritance';
 import { useIsDarkMode } from '../../store/hooks/useIsDarkMode';
 
-export function AppNavBar() {
+export function AppNavBar({ width, top, sidebarOpen }: { width: number, top: number, sidebarOpen: boolean }) {
   // Get the config for the current step
   const studyConfig = useStudyConfig();
   const currentComponent = useCurrentComponent();
@@ -24,50 +22,36 @@ export function AppNavBar() {
     return null;
   }, [stepConfig, studyConfig]);
 
-  const isDarkMode = useIsDarkMode();
+  const _isDarkMode = useIsDarkMode();
 
   const status = useStoredAnswer();
-  const trialHasSideBar = currentConfig?.withSidebar ?? studyConfig.uiConfig.withSidebar;
-  const trialHasSideBarResponses = true;
 
   const instruction = currentConfig?.instruction || '';
   const instructionLocation = useMemo(() => currentConfig?.instructionLocation ?? studyConfig.uiConfig.instructionLocation ?? 'sidebar', [currentConfig, studyConfig]);
   const instructionInSideBar = instructionLocation === 'sidebar';
 
-  return trialHasSideBar && currentConfig ? (
-    <AppShell.Navbar className="sidebar" bg="gray.1" display="block" style={{ zIndex: 0, overflowY: 'scroll' }}>
+  return currentConfig ? (
+    <Box className="sidebar" bg="gray.1" display={sidebarOpen ? 'block' : 'none'} style={{ zIndex: 0, marginTop: top, position: 'relative' }} w={width} miw={width}>
       {instructionInSideBar && instruction !== '' && (
-        <AppShell.Section
-          bg={isDarkMode ? '' : 'gray.3'}
+        <Box
+          bg="gray.3"
           p="md"
         >
           <Text span c="orange.8" fw={700} inherit>
             Task:
           </Text>
           <ReactMarkdownWrapper text={instruction} />
-        </AppShell.Section>
+        </Box>
       )}
 
-      {trialHasSideBarResponses && (
-        <AppShell.Section p="md">
-          <ResponseBlock
-            key={`${currentComponent}-sidebar-response-block`}
-            status={status}
-            config={currentConfig}
-            location="sidebar"
-          />
-        </AppShell.Section>
-      )}
-    </AppShell.Navbar>
-  ) : (
-    <AppShell.Navbar bg={isDarkMode ? '' : 'gray.1'} display="block" style={{ zIndex: 0, overflowY: 'scroll' }}>
-      <ResponseBlock
-        key={`${currentComponent}-sidebar-response-block`}
-        status={status}
-        config={currentConfig}
-        location="sidebar"
-        style={{ display: 'hidden' }}
-      />
-    </AppShell.Navbar>
-  );
+      <Box p="md">
+        <ResponseBlock
+          key={`${currentComponent}-sidebar-response-block`}
+          status={status}
+          config={currentConfig}
+          location="sidebar"
+        />
+      </Box>
+    </Box>
+  ) : null;
 }
