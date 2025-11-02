@@ -139,12 +139,12 @@
       "instruction": "Please use the tool provided on the screen to create a 6-color categorical palette for bar charts that work well in both light and dark modes, ensuring adequate contrast and readability across backgrounds. \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://color-buddy.netlify.app/",
+      "path": "https://color-buddy-user-study.netlify.app/",
       "response": [
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -164,7 +164,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -184,7 +184,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -204,7 +204,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -224,7 +224,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -239,12 +239,12 @@
       "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with color vision deficiency (CVD). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://color-buddy.netlify.app/",
+      "path": "https://color-buddy-user-study.netlify.app/",
       "response": [
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -264,7 +264,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -284,7 +284,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -304,7 +304,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -324,7 +324,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -339,12 +339,12 @@
       "instruction": "Imagine you are designing a color palette(could be categorical, sequentail, or diverging) for the charts or visual elements in your own visualization or design project. You can create it freely based on your personal preference, without specific requirements or constraints. \n\n  \n\n Please note that this is a <b>Think-Aloud</b> Study. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://color-buddy.netlify.app/",
+      "path": "https://color-buddy-user-study.netlify.app/",
       "response": [
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -364,7 +364,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -384,7 +384,7 @@
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "longText",
+          "type": "colorText",
           "location": "sidebar",
           "required": true
         }
@@ -405,7 +405,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "longText",
+          "type": "colorText",
           "required": true
         }
       ]
@@ -425,7 +425,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "longText",
+          "type": "colorText",
           "required": true
         }
       ]
@@ -439,13 +439,13 @@
       "instruction": "Imagine you are working for Uber and need to design a 6-color categorical palette for charts used in a team project. Your palette must include Uber's primary brand color #7356BF(Uber Purple) and the overall color palette should look harmonious. You are free to choose the remaining colors as long as they complement the brand identity. \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://color-buddy.netlify.app/",
+      "path": "https://color-buddy-user-study.netlify.app/",
       "response": [
         {
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "longText",
+          "type": "colorText",
           "required": true
         }
       ]
@@ -465,7 +465,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "longText",
+          "type": "colorText",
           "required": true
         }
       ]
@@ -485,7 +485,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "longText",
+          "type": "colorText",
           "required": true
         }
       ]
@@ -505,7 +505,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "longText",
+          "type": "colorText",
           "required": true
         }
       ]
@@ -525,7 +525,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "longText",
+          "type": "colorText",
           "required": true
         }
       ]
