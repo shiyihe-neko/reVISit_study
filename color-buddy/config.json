@@ -33,6 +33,7 @@
     "screen-recording",
     "color-blindness",
     "sus",
+    "umux",
     "quis"
   ],
   "components": {
@@ -1007,6 +1008,7 @@
       "post-verbal-q7",
       "$nasa-tlx.co.nasa-tlx",
       "$sus.co.sus",
+      "$umux.co.umux",
       "post-task-survey",
       "color-blind-test",
       "$color-blindness.se.short-test",          
