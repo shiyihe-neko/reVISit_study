@@ -32,9 +32,7 @@
     "mic-check",
     "screen-recording",
     "color-blindness",
-    "sus",
-    "umux",
-    "quis"
+    "umux"
   ],
   "components": {
     "introduction": {
@@ -70,6 +68,7 @@
     },
     "consent": {
       "type": "markdown",
+      "recordAudio": false,
       "path": "color-buddy/assets/consent.md",
       "nextButtonText": "Agree",
       "response": [
@@ -103,12 +102,14 @@
     },
     "tutorial-accessibility": {
       "type": "markdown",
+      "recordAudio": false,
       "path": "color-buddy/assets/tutorial/tutorial_accessibility.md",
       "response": []
     },
     "tour-colorbuddy": {
       "type": "video",
-      "instruction": "You are required to watch the entire video to proceed.",
+      "recordAudio": false,
+      "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
       "path": "color-buddy/assets/tutorial/color-buddy.mp4",
       "forceCompletion": true,
       "response": [
@@ -116,12 +117,14 @@
     },
     "notification": {
       "type": "markdown",
+      "recordAudio": false,
       "path": "color-buddy/assets/notification.md",
       "nextButtonText": "I understand",
       "response": []
     },
     "color-blind-test": {
       "type": "markdown",
+      "recordAudio": false,
       "path": "color-buddy/assets/color_blind_test.md",
       "nextButtonText": "Next",
       "response": []
@@ -237,7 +240,7 @@
       },
       "description": "cvd friendliness design task",
       "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with color vision deficiency (CVD). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
+      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with **deuteranopia**(red–green color vision deficiency). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://color-buddy-user-study.netlify.app/",
@@ -257,7 +260,7 @@
       },
       "description": "cvd friendliness design task",
       "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with color vision deficiency (CVD). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
+      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with **deuteranopia**(red–green color vision deficiency). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://qualpal.cc/",
@@ -277,7 +280,7 @@
       },
       "description": "cvd friendliness design task",
       "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with color vision deficiency (CVD). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
+      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with **deuteranopia**(red–green color vision deficiency). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://projects.susielu.com/viz-palette",
@@ -297,7 +300,7 @@
       },
       "description": "cvd friendliness design task",
       "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with color vision deficiency (CVD). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
+      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with **deuteranopia**(red–green color vision deficiency). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://colorexplorer.com/colorpicker.aspx",
@@ -317,7 +320,7 @@
       },
       "description": "cvd friendliness design task",
       "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with color vision deficiency (CVD). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
+      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with **deuteranopia**(red–green color vision deficiency). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "http://vrl-v2.cs.brown.edu/color",
@@ -536,6 +539,13 @@
       "recordAudio": false,
       "response": [
         {
+          "id":"q1",
+          "prompt": "Please describes your current occupation or field of work.",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "longText"
+        },
+        {
           "id":"q2",
           "prompt": "Do you have any known vision issues?",
           "required": true,
@@ -597,7 +607,7 @@
         },
         {
           "id": "q7",
-          "prompt": "How confident are you in creating a color palette that works well for different users?",
+          "prompt": "How confident are you in creating a color palette that works well across different needs?",
           "required": true,
           "location": "belowStimulus",
           "type": "likert",
@@ -607,36 +617,46 @@
         },
         {
           "id": "q8",
-          "prompt": "When the tool provided feedback or alerts, did you find them clear and helpful?",
+          "prompt": "Did the tool provide any feedback or alerts during your use?",
           "required": true,
           "location": "belowStimulus",
           "type": "likert",
-          "numItems":7,
-          "rightLabel": "Extremely clear and helpful",
-          "leftLabel": "Not clear or helpful at all"
+          "numItems": 7,
+          "rightLabel": "Provided very frequently",
+          "leftLabel": "Did not provide at all"
         },
         {
           "id": "q9",
-          "prompt": "When the tool provided feedback or alerts, did you find them annoying and interruptive?",
-          "required": true,
-          "location": "belowStimulus",
-          "type": "likert",
-          "numItems":7,
-          "rightLabel": "Extremely annoying and interruptive",
-          "leftLabel": "Not annoying or interruptive at all"
-        },
-        {
-          "id": "q10",
-          "prompt": "To what extent did the tool provide simpler operations or automated shortcuts, in addition to manual adjustments, that were helpful in completing the tasks (e.g., automatic fix suggestions)?",
+          "prompt": "When the tool provided feedback or alerts, how did you find them overall? (If none were provided, please select 'Extremely frustrating')",
           "required": true,
           "location": "belowStimulus",
           "type": "likert",
           "numItems":7,
           "rightLabel": "Extremely helpful",
-          "leftLabel": "Not helpful at all"
+          "leftLabel": "Extremely frustrating"
+        },
+        {
+          "id": "q10",
+          "prompt": "Did the tool provide any simpler operations or automated shortcuts, that helped you complete the tasks (e.g., automatic fix suggestions)?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Provided very frequently",
+          "leftLabel": "Did not provide at all"
         },
         {
           "id": "q11",
+          "prompt": "When the tool provided automated assistances, how did you find them overall? (If none were provided, please select 'Extremely frustrating')?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Extremely helpful",
+          "leftLabel": "Extremely frustrating"
+        },
+        {
+          "id": "q12",
           "prompt": "During the process, did you clearly know how far you were from the ideal state?",
           "required": true,
           "location": "belowStimulus",
@@ -646,7 +666,7 @@
           "leftLabel": "Not clear at all"
         }, 
         {
-          "id": "q12",
+          "id": "q13",
           "prompt": "How necessary did you find using external tools (e.g., Google Search, LLMs) to complete the task?",
           "required": true,
           "location": "belowStimulus",
@@ -656,7 +676,7 @@
           "leftLabel": "Not necessary at all"
         },
         {
-          "id":"q13",
+          "id":"q14",
           "prompt": "What are the three primary colors of light?",
           "required": true,
           "location": "aboveStimulus",
@@ -668,7 +688,7 @@
           ]
         },
         {
-          "id":"q14",
+          "id":"q15",
           "prompt": "Which two colors are complementary?",
           "required": true,
           "location": "aboveStimulus",
@@ -680,7 +700,7 @@
           ]
         },
         {
-          "id":"q15",
+          "id":"q16",
           "prompt": "Which two colors make yellow light when mixed?",
           "required": true,
           "location": "aboveStimulus",
@@ -699,7 +719,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "Did the tool' design take into account real-world contexts, such as teamwork, varying numbers of colors, design trade-offs across chart types, find a predefined or well-known color palettes, or customized color design rules? Please answer this question verbally. After you have answered, click Next below to proceed to the next question.",
+          "prompt": "**[Please answer this question verbally]** If a color palette tool could only include a few basic functions, please explain which ones you find most essential, drawing on your experience during or beyond the study.",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -722,7 +742,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "Can you describe a few features that you find especially useful and explain, with examples, how they help you complete the task? Please answer this question verbally. After you have answered, click Next below to proceed to the next question.",
+          "prompt": "**[Please answer this question verbally]** If a color palette tool could have any advanced features you wanted, please explain which ones you would most like to have, drawing on your experience during or beyond the study.",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -745,7 +765,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "Can you describe a few features that you find especially frustrating or interruptive and explain, with examples, how they help you complete the task? After you have answered, click Next below to proceed to the next question.",
+          "prompt": "**[Please answer this question verbally]** If you had a choice, would you prefer to use one tool for different tasks or different tools for different tasks?",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -768,76 +788,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "What additional features would you like this system to have? Describe how these features could improve your interaction experience and productivity? After you have answered, click Next below to proceed to the next question.",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "radio",
-          "options": [
-            "Finish"
-          ]
-        }   
-      ],
-      "correctAnswer": [
-        {
-          "id": "q1",
-          "answer": "Finish"
-        }
-      ],
-      "allowFailedTraining": false
-    },
-    "post-verbal-q5":{
-      "type": "questionnaire",
-      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
-      "response": [        
-        {
-          "id": "q1",
-          "prompt": "Are there any existing features of the system that you think could be optimized or improved to enhance your interaction experience and productivity? Please describe how they should be improved and how these changes could help you. After you have answered, click Next below to proceed to the next question.",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "radio",
-          "options": [
-            "Finish"
-          ]
-        }   
-      ],
-      "correctAnswer": [
-        {
-          "id": "q1",
-          "answer": "Finish"
-        }
-      ],
-      "allowFailedTraining": false
-    },
-    "post-verbal-q6":{
-      "type": "questionnaire",
-      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
-      "response": [        
-        {
-          "id": "q1",
-          "prompt": "Is there anything in particular you'd like to share about this tool? If so, please feel free to tell us verbally. If not, just click the Finish button to proceed.",
-          "required": true,
-          "location": "aboveStimulus",
-          "type": "radio",
-          "options": [
-            "Finish"
-          ]
-        }   
-      ],
-      "correctAnswer": [
-        {
-          "id": "q1",
-          "answer": "Finish"
-        }
-      ],
-      "allowFailedTraining": false
-    },
-    "post-verbal-q7":{
-      "type": "questionnaire",
-      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
-      "response": [        
-        {
-          "id": "q1",
-          "prompt": "Please describes your current occupation or field of work.",
+          "prompt": "**[Please answer this question verbally]** Is there anything else you would like to share about your experience using the color palette design tools during this study?",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -896,17 +847,10 @@
                 "order":"latinSquare",
                 "numSamples": 1,
                 "components": [
-                  {
-                    "order":"fixed",
-                    "components":[
-                    "cvd-task-color-buddy-cat",
-                  "contrast-task-color-buddy-cat"]},
-                  {
-                    "order":"fixed",
-                    "components":[
-                    "contrast-task-color-buddy-cat",
-                  "cvd-task-color-buddy-cat"]}
-                ]},
+                  "cvd-task-color-buddy-cat",
+                  "contrast-task-color-buddy-cat",
+                  "contrast-task-color-buddy-cat",
+                  "cvd-task-color-buddy-cat"]},
                 "theme-task-color-buddy",
                 "freestyle-task-color-buddy"]
           },
@@ -920,15 +864,10 @@
                 "order":"latinSquare",
                 "numSamples": 1,
                 "components": [
-                  {
-                    "order":"fixed",
-                    "components":[
-                    "cvd-task-qualpal-cat",
-                  "contrast-task-qualpal-cat"]},
-                  {
-                    "order":"fixed",
-                    "components":["contrast-task-qualpal-cat",
-                  "cvd-task-qualpal-cat"]}]},
+                  "cvd-task-qualpal-cat",
+                  "contrast-task-qualpal-cat",
+                  "contrast-task-qualpal-cat",
+                  "cvd-task-qualpal-cat"]},
                 "theme-task-qualpal",
                 "freestyle-task-qualpal"]
           },
@@ -942,15 +881,10 @@
                 "order":"latinSquare",
                 "numSamples": 1,
                 "components": [
-                  {
-                    "order":"fixed",
-                    "components":[
-                    "cvd-task-viz-palette-cat",
-                  "contrast-task-viz-palette-cat"]},
-                  {
-                    "order":"fixed",
-                    "components":["contrast-task-viz-palette-cat",
-                  "cvd-task-viz-palette-cat"]}]},
+                  "cvd-task-viz-palette-cat",
+                  "contrast-task-viz-palette-cat",
+                  "contrast-task-viz-palette-cat",
+                  "cvd-task-viz-palette-cat"]},
                  "theme-task-viz-palette",
                 "freestyle-task-viz-palette"]
           },
@@ -964,15 +898,10 @@
                 "order":"latinSquare",
                 "numSamples": 1,
                 "components": [
-                  {
-                    "order":"fixed",
-                    "components":[
-                    "cvd-task-colorpicker-cat",
-                  "contrast-task-colorpicker-cat"]},
-                  {
-                    "order":"fixed",
-                    "components":["contrast-task-colorpicker-cat",
-                  "cvd-task-colorpicker-cat"]}]},
+                  "cvd-task-colorpicker-cat",
+                  "contrast-task-colorpicker-cat",
+                  "contrast-task-colorpicker-cat",
+                  "cvd-task-colorpicker-cat"]},
                 "theme-task-colorpicker",
                 "freestyle-task-colorpicker"]
           },
@@ -981,19 +910,15 @@
             "components": 
             [
                "tutorial-accessibility",
+               "tour-colorbuddy",
               {
                 "order":"latinSquare",
                 "numSamples": 1,
                 "components": [
-                  {
-                    "order":"fixed",
-                    "components":[
-                    "cvd-task-colorgorical-cat",
-                  "contrast-task-colorgorical-cat"]},
-                  {
-                    "order":"fixed",
-                    "components":["contrast-task-colorgorical-cat",
-                  "cvd-task-colorgorical-cat"]}]},
+                  "cvd-task-colorgorical-cat",
+                  "contrast-task-colorgorical-cat",
+                  "contrast-task-colorgorical-cat",
+                  "cvd-task-colorgorical-cat"]},
                  "theme-task-colorgorical",
                 "freestyle-task-colorgorical"]
           }       
@@ -1003,11 +928,7 @@
       "post-verbal-q2",
       "post-verbal-q3",
       "post-verbal-q4",
-      "post-verbal-q5",
-      "post-verbal-q6",
-      "post-verbal-q7",
       "$nasa-tlx.co.nasa-tlx",
-      "$sus.co.sus",
       "$umux.co.umux",
       "post-task-survey",
       "color-blind-test",
