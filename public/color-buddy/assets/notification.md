@@ -20,4 +20,4 @@
 
 ---
 
-After reviewing the notes above, click "I understand" when you’re ready to continue. Please be careful not to click Next until you're truly ready to proceed(**this is a one-way study**). Thanks for helping us do real, human-centered research!
+After reviewing the notes above, click "I understand" when you’re ready to continue. Please be careful not to click Next until you're truly ready to proceed, as you will not be able to go back once you advance. Thanks for helping us do real, human-centered research!
