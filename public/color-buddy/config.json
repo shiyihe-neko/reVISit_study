@@ -851,68 +851,7 @@
                   "contrast-task-color-buddy-cat"]},
                 "theme-task-color-buddy",
                 "freestyle-task-color-buddy"]
-          }
-          // {
-          //   "order":"fixed",
-          //   "components": 
-          //   [ 
-          //     "tutorial-accessibility",
-          //     "tour-colorbuddy",
-          //     {
-          //       "order":"latinSquare",
-          //       "numSamples": 1,
-          //       "components": [
-          //         "cvd-task-qualpal-cat",
-          //         "contrast-task-qualpal-cat"]},
-          //       "theme-task-qualpal",
-          //       "freestyle-task-qualpal"]
-          // },
-          // {
-          //   "order":"fixed",
-          //   "components": 
-          //   [
-          //      "tutorial-accessibility",
-          //      "tour-colorbuddy",
-          //     {
-          //       "order":"latinSquare",
-          //       "numSamples": 1,
-          //       "components": [
-          //         "cvd-task-viz-palette-cat",
-          //         "contrast-task-viz-palette-cat"]},
-          //        "theme-task-viz-palette",
-          //       "freestyle-task-viz-palette"]
-          // },
-          // {
-          //   "order":"fixed",
-          //   "components": 
-          //   [
-          //      "tutorial-accessibility",
-          //      "tour-colorbuddy",
-          //     {
-          //       "order":"latinSquare",
-          //       "numSamples": 1,
-          //       "components": [
-          //         "cvd-task-colorpicker-cat",
-          //         "contrast-task-colorpicker-cat"]},
-          //       "theme-task-colorpicker",
-          //       "freestyle-task-colorpicker"]
-          // },
-          // {
-          //   "order":"fixed",
-          //   "components": 
-          //   [
-          //      "tutorial-accessibility",
-          //      "tour-colorbuddy",
-          //     {
-          //       "order":"latinSquare",
-          //       "numSamples": 1,
-          //       "components": [
-          //         "cvd-task-colorgorical-cat",
-          //         "contrast-task-colorgorical-cat"]},
-          //        "theme-task-colorgorical",
-          //       "freestyle-task-colorgorical"]
-          // }       
-        ]
+          }]
       },
       "post-verbal-q1",
       "post-verbal-q2",
