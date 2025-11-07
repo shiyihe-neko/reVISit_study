@@ -833,26 +833,16 @@
       "consent",
       "$screen-recording.co.screenRecordingPermission",
       "notification",
+      "tutorial-accessibility",
+      "tour-colorbuddy",
       {
         "order":"latinSquare",
         "numSamples": 1,
         "components": [
-          {
-            "order":"fixed",
-            "components": 
-            [
-               "tutorial-accessibility",
-               "tour-colorbuddy",
-              {
-                "order":"latinSquare",
-                "numSamples": 1,
-                "components": [
-                  "cvd-task-color-buddy-cat",
-                  "contrast-task-color-buddy-cat"]},
-                "theme-task-color-buddy",
-                "freestyle-task-color-buddy"]
-          }]
-      },
+          "cvd-task-color-buddy-cat",
+          "contrast-task-color-buddy-cat"]},
+      "theme-task-color-buddy",
+      "freestyle-task-color-buddy",
       "post-verbal-q1",
       "post-verbal-q2",
       "post-verbal-q3",
