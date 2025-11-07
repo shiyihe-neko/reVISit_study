@@ -627,7 +627,7 @@
         },
         {
           "id": "q9",
-          "prompt": "When the tool provided feedback or alerts, how did you find them overall? (If none were provided, please select 'Extremely frustrating')",
+          "prompt": "If the tool provided feedback or alerts, how did you find them overall? (If none were provided, please select 'Extremely frustrating')",
           "required": true,
           "location": "belowStimulus",
           "type": "likert",
@@ -647,7 +647,7 @@
         },
         {
           "id": "q11",
-          "prompt": "When the tool provided automated assistances, how did you find them overall? (If none were provided, please select 'Extremely frustrating')?",
+          "prompt": "If the tool provided automated assistances, how did you find them overall? (If none were provided, please select 'Extremely frustrating')?",
           "required": true,
           "location": "belowStimulus",
           "type": "likert",
@@ -657,7 +657,7 @@
         },
         {
           "id": "q12",
-          "prompt": "During the process, did you clearly know how far you were from the ideal state?",
+          "prompt": "During the process, did you have a clear sense of how close or far you were from the ideal result?",
           "required": true,
           "location": "belowStimulus",
           "type": "likert",
@@ -719,7 +719,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** If a color palette tool could only include a few basic functions, please explain which ones you find most essential, drawing on your experience during or beyond the study.",
+          "prompt": "**[Please answer this question verbally]** Based on your experience during or outside this study, what do you think are the most essential features a general color palette tool should have? Please use concrete examples from your own experience to explain your perspective.",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -742,7 +742,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** If a color palette tool could have any advanced features you wanted, please explain which ones you would most like to have, drawing on your experience during or beyond the study.",
+          "prompt": "**[Please answer this question verbally]** Based on your experience during or outside this study, if a color palette tool could include any advanced features you wanted, which ones would you most like to have? Please draw on your own experience to explain your answer.",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -765,7 +765,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** If you had the option during this study, would you prefer to use a single tool for all the tasks, or different tools for different tasks?",
+          "prompt": "**[Please answer this question verbally]** Thinking about the tasks you just completed with different requirements, if you had the option during this study, would you prefer to use the single tool provided for all the tasks, or different tools for different tasks? Please explain your answer based on your experience.",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
