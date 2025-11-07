@@ -7,7 +7,7 @@ import { generateErrorMessage } from './utils';
 import classes from './css/Input.module.css';
 import { InputLabel } from './InputLabel';
 
-const hexRegex = /^#([0-9A-Fa-f]{6})$/;
+const hexRegex = /^#(?:[0-9A-Fa-f]{3,4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$/;
 
 export function ColorAreaInput({
   response,

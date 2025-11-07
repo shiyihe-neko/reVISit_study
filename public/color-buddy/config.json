@@ -340,7 +340,7 @@
       },
       "description": "freestyle design task",
       "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Imagine you are designing a color palette(could be categorical, sequentail, or diverging) for the charts or visual elements in your own visualization or design project. You can create it freely based on your personal preference, without specific requirements or constraints. \n\n  \n\n Please note that this is a <b>Think-Aloud</b> Study. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
+      "instruction": "Imagine you're creating a 6-color palette, which can be categorical, sequential, or diverging, for the charts or visual elements in your own visualization or design project. You can create it freely based on your personal preference, without specific requirements or constraints.\n\n  \n\n Please note that this is a <b>Think-Aloud</b> Study. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://color-buddy-user-study.netlify.app/",
