@@ -139,7 +139,7 @@ export function StepRenderer() {
     <WindowEventsContext.Provider value={windowEvents}>
       <ScreenRecordingContext.Provider value={screenRecording}>
         <AppShell
-          padding="md"
+          padding={componentConfig.type === 'website' ? 0 : 'md'}
           header={{ height: showTitleBar ? 70 : 0 }}
           aside={{ width: 360, breakpoint: 'xs', collapsed: { desktop: !asideOpen, mobile: !asideOpen } }}
           footer={{ height: isAnalysis ? 125 + (hasAudio ? 55 : 0) : 0 }}
@@ -152,10 +152,23 @@ export function StepRenderer() {
           {isScreenRecordingUserRejected && <ScreenRecordingRejection />}
           <HelpModal />
           <AlertModal />
-          <Flex direction="row" gap="xs">
+          <Flex direction="row" gap={componentConfig.type === 'website' ? 0 : 'xs'}>
             <AppNavBar width={sidebarWidth} top={showTitleBar ? 70 : 0} sidebarOpen={sidebarOpen} />
             {/* 10px is the gap between the sidebar and the main content */}
-            <AppShell.Main className="main" style={{ display: 'flex', flexDirection: 'column' }} w={sidebarOpen ? `calc(100% - ${sidebarWidth}px - 10px)` : '100%'}>
+            <AppShell.Main
+              className="main"
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                ...(componentConfig.type === 'website' && {
+                  paddingTop: '70px',
+                  paddingLeft: '0',
+                  paddingRight: '0',
+                  paddingBottom: '0',
+                }),
+              }}
+              w={sidebarOpen ? (componentConfig.type === 'website' ? `calc(100% - ${sidebarWidth}px)` : `calc(100% - ${sidebarWidth}px - 10px)`) : '100%'}
+            >
               {!showTitleBar && !showStudyBrowser && studyNavigatorEnabled && (
               <Button
                 variant="subtle"
