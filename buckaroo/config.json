@@ -66,6 +66,11 @@
         }
       ]
     },
+    "unqualified": {
+      "type": "markdown",
+      "path": "buckaroo/assets/unqualified.md",
+      "response": []
+    },
     "consent": {
       "type": "markdown",
       "recordAudio": false,
@@ -114,11 +119,6 @@
       "recordAudio": false,
       "path": "buckaroo/assets/notification.md",
       "nextButtonText": "I understand",
-      "response": []
-    },
-    "unqualified": {
-      "type": "markdown",
-      "path": "buckaroo/assets/unqualified.md",
       "response": []
     },
     "task-intro-1":{
@@ -400,7 +400,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** Is there anything else you would like to share about your experience using the color palette design tools during this study?",
+          "prompt": "**[Please answer this question verbally]** Is there anything else you would like to share about your experience using this tool during this study?",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -427,11 +427,7 @@
             "qualifications"
         ],
         "order": "fixed",
-        "skip": [{
-          "name": "qualifications",
-          "check": "responses",
-          "to": "unqualified"
-        },
+        "skip": [
         {
           "name": "qualifications",
           "check": "response",
