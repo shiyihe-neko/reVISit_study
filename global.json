@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.3.1/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "color-buddy",
+    "buckaroo",
     "a-usability-study-config",
     "demo-html",
     "demo-html-input",
@@ -53,6 +54,9 @@
   "configs": {
     "color-buddy":{
       "path": "color-buddy/config.json"
+    },
+    "buckaroo": {
+      "path": "buckaroo/config.json"
     },
     "a-usability-study-config": {
       "path": "a-usability-study-config/config.json"
