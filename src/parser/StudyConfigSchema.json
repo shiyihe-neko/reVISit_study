@@ -444,7 +444,7 @@
       ],
       "type": "object"
     },
-    "LongTextResponse": {
+    "ColorTextResponse": {
       "additionalProperties": false,
       "properties": {
         "hidden": {
@@ -453,6 +453,10 @@
         },
         "id": {
           "description": "The id of the response. This is used to identify the response in the data file.",
+          "type": "string"
+        },
+        "infoText": {
+          "description": "The description that is displayed when the participant hovers over the response. This does not accept markdown.",
           "type": "string"
         },
         "location": {
@@ -488,14 +492,14 @@
         },
         "style": {
           "$ref": "#/definitions/Styles",
-          "description": "You can set styles here, using React CSSProperties, for example: {\"width\": 100} or {\"width\": \"50%\"}"
+          "description": "You can set styles here, using React CSSProperties, for example: `{\"width\": 100}` or `{\"width\": \"50%\"}`"
         },
         "stylesheetPath": {
           "description": "The path to the external stylesheet file.",
           "type": "string"
         },
         "type": {
-          "const": "longText",
+          "const": "colorText",
           "type": "string"
         },
         "withDivider": {
@@ -514,7 +518,7 @@
       ],
       "type": "object"
     },
-    "ColorTextResponse": {
+    "ColorTextResponseD": {
       "additionalProperties": false,
       "properties": {
         "hidden": {
@@ -523,6 +527,10 @@
         },
         "id": {
           "description": "The id of the response. This is used to identify the response in the data file.",
+          "type": "string"
+        },
+        "infoText": {
+          "description": "The description that is displayed when the participant hovers over the response. This does not accept markdown.",
           "type": "string"
         },
         "location": {
@@ -558,14 +566,14 @@
         },
         "style": {
           "$ref": "#/definitions/Styles",
-          "description": "You can set styles here, using React CSSProperties, for example: {\"width\": 100} or {\"width\": \"50%\"}"
+          "description": "You can set styles here, using React CSSProperties, for example: `{\"width\": 100}` or `{\"width\": \"50%\"}`"
         },
         "stylesheetPath": {
           "description": "The path to the external stylesheet file.",
           "type": "string"
         },
         "type": {
-          "const": "colorText",
+          "const": "colorTextD",
           "type": "string"
         },
         "withDivider": {
@@ -730,11 +738,11 @@
           "description": "Controls the response location. These might be the same for all responses, or differ across responses. Defaults to `belowStimulus`"
         },
         "maxSelections": {
-          "description": "The maximum number of selections that are required.",
+          "description": "The maximum number of selections that are required. This will make the dropdown a multiselect dropdown.",
           "type": "number"
         },
         "minSelections": {
-          "description": "The minimum number of selections that are required.",
+          "description": "The minimum number of selections that are required. This will make the dropdown a multiselect dropdown.",
           "type": "number"
         },
         "options": {
@@ -1406,7 +1414,6 @@
     },
     "LongTextResponse": {
       "additionalProperties": false,
-      "description": "The LongTextResponse interface is used to define the properties of a long text response. LongTextResponses render as a text area that accepts any text and can optionally have a placeholder. ```js { \"id\": \"q-name\", \"prompt\": \"What is your first name?\", \"location\": \"aboveStimulus\", \"type\": \"longText\", \"placeholder\": \"Please enter your first name\" } ```",
       "properties": {
         "hidden": {
           "description": "Controls whether the response is hidden.",
@@ -2514,6 +2521,9 @@
         },
         {
           "$ref": "#/definitions/ColorTextResponse"
+        },
+        {
+          "$ref": "#/definitions/ColorTextResponseD"
         },
         {
           "$ref": "#/definitions/LikertResponse"

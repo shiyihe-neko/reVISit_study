@@ -2,21 +2,23 @@ import {
   ColorSwatch, Group, Stack, Textarea, Text,
 } from '@mantine/core';
 import { useState, useEffect } from 'react';
-import { ColorTextResponse } from '../../parser/types';
+import { ColorTextResponseD } from '../../parser/types';
 import { generateErrorMessage } from './utils';
 import classes from './css/Input.module.css';
 import { InputLabel } from './InputLabel';
 
 const hexRegex = /^#(?:[0-9A-Fa-f]{3,4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$/;
 
-export function ColorAreaInput({
+const REQUIRED_HEX_VALUES = ['#00A67E', '#7356BF'];
+
+export function ColorAreaInputD({
   response,
   disabled,
   answer,
   index,
   enumerateQuestions,
 }: {
-  response: ColorTextResponse;
+  response: ColorTextResponseD;
   disabled: boolean;
   answer: { value?: string };
   index: number;
@@ -34,18 +36,41 @@ export function ColorAreaInput({
   const [errorMsg, setErrorMsg] = useState<string>('');
 
   useEffect(() => {
-    const validColors = colors.filter((c) => hexRegex.test(c.trim()));
     if (colors.length === 0) {
       setErrorMsg('');
-    } else if (validColors.length < colors.length) {
-      setErrorMsg('please enter a valid hex');
-    } else if (validColors.length < 6) {
-      setErrorMsg(`please enter ${6 - validColors.length} more hex`);
-    } else if (validColors.length > 6) {
-      setErrorMsg(`please remove ${validColors.length - 6} hex (only 6 allowed)`);
-    } else {
-      setErrorMsg('');
+      return;
     }
+
+    const validColors = colors.filter((c) => hexRegex.test(c.trim()));
+    if (validColors.length < colors.length) {
+      setErrorMsg('please enter valid hex values only');
+      return;
+    }
+
+    if (colors.length < 6) {
+      setErrorMsg(`please enter ${6 - colors.length} more hex`);
+      return;
+    }
+
+    if (colors.length > 6) {
+      setErrorMsg(`please remove ${colors.length - 6} hex (only 6 allowed)`);
+      return;
+    }
+
+    const normalizedColors = colors.map((c) => c.trim().toUpperCase());
+    const normalizedRequired = REQUIRED_HEX_VALUES.map((h) => h.toUpperCase());
+    const missingRequired = normalizedRequired.filter(
+      (reqHex) => !normalizedColors.includes(reqHex),
+    );
+
+    if (missingRequired.length > 0) {
+      setErrorMsg(
+        `missing required colors: ${missingRequired.join(', ')}`,
+      );
+      return;
+    }
+
+    setErrorMsg('');
   }, [colors]);
 
   return (

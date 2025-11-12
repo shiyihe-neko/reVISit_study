@@ -308,7 +308,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** During the two tasks you completed, how well do you think the tool supported you in each task? Please give specific examples to explain whether the tool handled both tasks effectively or not.",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how well the tool supported you in the tasks you completed? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -331,7 +331,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** What aspects of this tool did you find most satisfying or helpful? Please describe specific moments or features that made your experience enjoyable or productive.",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most helpful or satisfying? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -354,7 +354,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** What aspects of this tool did you find most frustrating or discouraging? Please share concrete examples of when or why you felt confused, stuck, or dissatisfied.",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most frustrating or discouraging? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -377,7 +377,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** To what extent did you feel you needed external help (such as web searches, reference materials) to complete the tasks using this tool? Please give examples to explain when you relied on external assistance or not.",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe to what extent you felt you needed external help(such as web searches or reference materials) to complete the tasks using this tool? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -400,7 +400,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** Is there anything else you would like to share about your experience using this tool during this study?",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Is there anything else you would like to share about your experience using this tool during this study?</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -427,7 +427,11 @@
             "qualifications"
         ],
         "order": "fixed",
-        "skip": [
+        "skip": [{
+          "name": "qualifications",
+          "check": "responses",
+          "to": "unqualified"
+        },
         {
           "name": "qualifications",
           "check": "response",
@@ -436,7 +440,7 @@
           "comparison": "equal",
           "value": "Yes, I am an AI"
         }]
-    },
+      },
       "$mic-check.co.audioTest",
       "consent",
       "$screen-recording.co.screenRecordingPermission",
@@ -456,7 +460,20 @@
       "$nasa-tlx.co.nasa-tlx",
       "$umux.co.umux",
       "$scs.co.scs",
-      "post-task-survey",
+      {
+        "components": [
+            "post-task-survey"
+        ],
+        "order": "fixed",
+        "skip": [        {
+          "name": "post-task-survey",
+          "check": "response",
+          "responseId": "q1",
+          "to": "end",
+          "comparison": "notEqual",
+          "value": "___impossibleAnswer"
+        }]
+      },
       {
         "components": [
             "unqualified"

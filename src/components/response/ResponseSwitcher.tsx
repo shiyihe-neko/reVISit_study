@@ -16,6 +16,7 @@ import { SliderInput } from './SliderInput';
 import { StringInput } from './StringInput';
 import { TextAreaInput } from './TextAreaInput';
 import { ColorAreaInput } from './ColorAreaInput';
+import { ColorAreaInputD } from './ColorAreaInputD';
 import { useStudyConfig } from '../../store/hooks/useStudyConfig';
 import { MatrixInput } from './MatrixInput';
 import { ButtonsInput } from './ButtonsInput';
@@ -161,6 +162,15 @@ export function ResponseSwitcher({
       )}
       {response.type === 'colorText' && (
       <ColorAreaInput
+        response={response}
+        disabled={isDisabled || dontKnowCheckbox?.checked}
+        answer={ans as { value: string }}
+        index={index}
+        enumerateQuestions={enumerateQuestions}
+      />
+      )}
+      {response.type === 'colorTextD' && (
+      <ColorAreaInputD
         response={response}
         disabled={isDisabled || dontKnowCheckbox?.checked}
         answer={ans as { value: string }}
