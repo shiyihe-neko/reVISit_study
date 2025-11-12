@@ -124,6 +124,7 @@
     "task-intro-1":{
       "type": "markdown",
       "recordAudio": false,
+      "withSidebar": false,
       "path": "buckaroo/assets/task-1-intro.md",
       "nextButtonText": "I understand",
       "response": []
@@ -131,6 +132,7 @@
     "task-intro-2":{
       "type": "markdown",
       "recordAudio": false,
+      "withSidebar": false,
       "path": "buckaroo/assets/task-2-intro.md",
       "nextButtonText": "I understand",
       "response": []

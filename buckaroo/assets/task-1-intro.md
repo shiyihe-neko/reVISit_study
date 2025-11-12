@@ -1,20 +1,15 @@
-# ☕️ Task 1 — Detect and Fix Abnormal Cupper Points
+# Task 1: Detect and Fix Abnormal Cupper Points
 
-## 🧭 Background
-In this task, you will work with a dataset containing coffee ratings. Each row represents a coffee sample from a specific country and owner, evaluated by professional graders ("cuppers") across various sensory attributes such as aroma, flavor, acidity, and sweetness, etc,. 
+In this task, you will work with a dataset containing coffee ratings. In the dataset, each row represents a coffee sample from a specific country and owner, evaluated by professional graders ("cuppers") across various sensory attributes such as aroma, flavor, acidity, and sweetness, etc,. 
 
-The column **'Cupper.Points'** records the grade's **overall score** for each coffee sample — a key indicator of coffee quality.  
+## Task Instructions
+The column **'Cupper.Points'** records the **overall score** for each coffee sample — a key indicator of coffee quality.  
 However, this column contains several issues introduced during data entry or aggregation:
 - **Type mismatches**
 - **Outliers**
 - **Missing values** 
 
-Your task is to **detect and repair these anomalies**.
-
----
-
-## 🧩 Task Instructions
-Please focus on the column **'Cupper.Points'** and complete the following steps:
+Your task is to **detect and repair any anomalies** in the column **'Cupper.Points'** and complete the following steps:
 
 **1. Detect Type Mismatches**  
    - Identify values that are not numeric.  
@@ -29,17 +24,17 @@ Please focus on the column **'Cupper.Points'** and complete the following steps:
 
 ---
 
-## ⏱️ Estimated Time
+## Estimated Time
 Please try to complete this task **within 10 minutes**. Do your best, but avoid spending more than 10 minutes on it. 
 
 ---
 
-## ✅ Success Criteria
+## Success Criteria
 | Criterion | Description |
 |------------|--------------|
 | **Type Consistency** | All entries in **'Cupper.Points'** should be numeric. |
 | **Outlier Repair** | Values beyond mean ± 2σ replaced correctly |
-| **Missing Value Repair** | No `NaN` or extreme values should remain. All `NaN`s filled with the mean |
+| **Missing Value Repair** | All `NaN`s filled with the mean |
 
 
 Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the Help button in the upper-right corner after leaving this page. Once you enter the next page, the timing begins. (Note: there is no built-in timer, so please keep track of your own start time and try not to spend more than 10 minutes on this task.)
