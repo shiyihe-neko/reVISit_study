@@ -76,12 +76,16 @@ export const generateInitFields = (responses: Response[], storedAnswer: StoredAn
     const otherAnswer = storedAnswer && storedAnswer[`${response.id}-other`] !== undefined ? storedAnswer[`${response.id}-other`] : '';
     const otherObj = (response as RadioResponse | CheckboxResponse).withOther ? { [`${response.id}-other`]: otherAnswer } : {};
 
+    const conditionalAnswer = storedAnswer && storedAnswer[`${response.id}-conditional`] !== undefined ? storedAnswer[`${response.id}-conditional`] : '';
+    const conditionalObj = (response as RadioResponse).conditionalInput ? { [`${response.id}-conditional`]: conditionalAnswer } : {};
+
     if (answer) {
       initObj = {
         ...initObj,
         [response.id]: answer,
         ...dontKnowObj,
         ...otherObj,
+        ...conditionalObj,
       };
     } else {
       let initField: string | string[] | number | object | null = '';
@@ -102,6 +106,7 @@ export const generateInitFields = (responses: Response[], storedAnswer: StoredAn
         [response.id]: initField,
         ...dontKnowObj,
         ...otherObj,
+        ...conditionalObj,
       };
     }
   });
@@ -161,6 +166,20 @@ const generateValidation = (responses: Response[]) => {
           }
 
           return value === null ? 'Empty input' : null;
+        },
+      };
+    }
+    if (response.type === 'radio' && (response as RadioResponse).conditionalInput?.required) {
+      const radioResponse = response as RadioResponse;
+      validateObj = {
+        ...validateObj,
+        [`${response.id}-conditional`]: (value: string, values: StoredAnswer['answer']) => {
+          if (values[response.id] === radioResponse.conditionalInput!.triggerOption) {
+            if (!value || value.trim() === '') {
+              return 'This field is required';
+            }
+          }
+          return null;
         },
       };
     }

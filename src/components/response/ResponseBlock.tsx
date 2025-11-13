@@ -358,6 +358,9 @@ export function ResponseBlock({
                       otherInput={{
                         ...answerValidator.getInputProps(`${response.id}-other`),
                       }}
+                      conditionalInput={{
+                        ...answerValidator.getInputProps(`${response.id}-conditional`),
+                      }}
                       response={response}
                       index={index}
                       config={config}

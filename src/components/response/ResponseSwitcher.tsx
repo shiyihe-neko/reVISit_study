@@ -36,6 +36,7 @@ export function ResponseSwitcher({
   config,
   dontKnowCheckbox,
   otherInput,
+  conditionalInput,
   disabled,
 }: {
   response: Response;
@@ -45,6 +46,7 @@ export function ResponseSwitcher({
   config: IndividualComponent;
   dontKnowCheckbox?: GetInputPropsReturnType;
   otherInput?: GetInputPropsReturnType;
+  conditionalInput?: GetInputPropsReturnType;
   disabled?: boolean;
 }) {
   const studyConfig = useStudyConfig();
@@ -206,14 +208,16 @@ export function ResponseSwitcher({
       />
       )}
       {response.type === 'radio' && (
-      <RadioInput
-        response={response}
-        disabled={isDisabled || dontKnowCheckbox?.checked}
-        answer={ans as { value: string }}
-        index={index}
-        enumerateQuestions={enumerateQuestions}
-        otherValue={otherValue}
-      />
+        <RadioInput
+          response={response}
+          disabled={isDisabled || dontKnowCheckbox?.checked}
+          answer={ans as { value: string }}
+          index={index}
+          enumerateQuestions={enumerateQuestions}
+          otherValue={otherValue}
+          conditionalInputValue={conditionalInput}
+          conditionalInputError={conditionalInput?.error}
+        />
       )}
       {response.type === 'checkbox' && (
       <CheckBoxInput

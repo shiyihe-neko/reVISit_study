@@ -2014,6 +2014,35 @@
       "additionalProperties": false,
       "description": "The RadioResponse interface is used to define the properties of a radio response. Radios have only one allowable selection. RadioResponses render as a radio input with user specified options, and optionally left and right labels.\n\nExample: ```js { \"id\": \"q-radio\", \"prompt\": \"Radio button example\", \"location\": \"aboveStimulus\", \"type\": \"radio\", \"options\": [\"Option 1\", \"Option 2\"] } ```",
       "properties": {
+        "conditionalInput": {
+          "additionalProperties": false,
+          "properties": {
+            "placeholder": {
+              "description": "Placeholder text for the conditional input",
+              "type": "string"
+            },
+            "prompt": {
+              "description": "The prompt/label for the conditional input",
+              "type": "string"
+            },
+            "required": {
+              "description": "Whether the conditional input is required",
+              "type": "boolean"
+            },
+            "secondaryText": {
+              "description": "Secondary text/description for the conditional input",
+              "type": "string"
+            },
+            "triggerOption": {
+              "description": "The option value that triggers the conditional input to appear",
+              "type": "string"
+            }
+          },
+          "required": [
+            "triggerOption"
+          ],
+          "type": "object"
+        },
         "hidden": {
           "description": "Controls whether the response is hidden.",
           "type": "boolean"

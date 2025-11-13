@@ -558,6 +558,18 @@ export interface RadioResponse extends BaseResponse {
   horizontal?: boolean;
   /** Whether to render the radios with an "other" option. */
   withOther?: boolean;
+    conditionalInput?: {
+    /** The option value that triggers the conditional input to appear */
+    triggerOption: string;
+    /** The prompt/label for the conditional input */
+    prompt?: string;
+    /** Placeholder text for the conditional input */
+    placeholder?: string;
+    /** Whether the conditional input is required */
+    required?: boolean;
+    /** Secondary text/description for the conditional input */
+    secondaryText?: string;
+  };
 }
 
 /**

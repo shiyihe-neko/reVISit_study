@@ -111,7 +111,7 @@
       "recordAudio": false,
       "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
       "path": "color-buddy/assets/tutorial/color-buddy.mp4",
-      "forceCompletion": true,
+      "forceCompletion": false,
       "response": [
       ]
     },
@@ -567,14 +567,18 @@
           "prompt": "Have you used any color palette design tools before? (e.g., Adobe Color, Canva ColorWheel)",
           "required": true,
           "location": "aboveStimulus",
-          "type": "checkbox",
+          "type": "radio",
           "options": [
-            "yes, I have used these kind of tools before (please specify which ones in 'Other')",
+            "yes, I have used these kind of tools before.",
             "I'm not sure",
             "no, I have never used these kind of tools"
           ],
-          "withOther": true
-        },
+          "conditionalInput": {
+            "triggerOption": "yes, I have used these kind of tools before.",
+            "placeholder": "Please specify which ones you have used here",
+            "required": true
+          }
+        }, 
         {
           "id": "q4",
           "prompt": "Rate your familiarity with accessibility guidelines (e.g., WCAG contrast standards)",
@@ -719,7 +723,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** Based on your experience during or outside this study, what do you think are the most essential features a general color palette tool should have? Please use concrete examples from your own experience to explain your perspective.",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe what you believe are the most basic features a general color palette tool should have? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -742,7 +746,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** Based on your experience during or outside this study, if a color palette tool could include any advanced features you wanted, which ones would you most like to have? Please draw on your own experience to explain your answer.",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe what advanced features you would like a color palette tool to have? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -765,7 +769,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** Thinking about the tasks you just completed with different requirements, if you had the option during this study, would you prefer to use the single tool provided for all the tasks, or different tools for different tasks? Please explain your answer based on your experience.",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how much the tool helped you when working on those color design tasks with different requirements? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -850,7 +854,8 @@
       "$nasa-tlx.co.nasa-tlx",
       "$umux.co.umux",
       "color-blind-test",
-      "$color-blindness.se.short-test",          
+      "$color-blindness.se.short-test",   
+      "post-task-survey",       
       {
         "components": [
             "post-task-survey"
