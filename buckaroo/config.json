@@ -379,7 +379,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe to what extent you felt you needed external help(such as web searches or reference materials) to complete the tasks using this tool? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe to what extent you felt you needed external help(such as web sources) to complete the tasks using this tool? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
