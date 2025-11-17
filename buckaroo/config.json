@@ -402,6 +402,29 @@
       "response": [        
         {
           "id": "q1",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you clearly explain the steps you or the tool took to clean the data? Please be as specific as possible.</span></div></div>",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Finish"
+          ]
+        }   
+      ],
+      "correctAnswer": [
+        {
+          "id": "q1",
+          "answer": "Finish"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "post-verbal-q6":{
+      "type": "questionnaire",
+      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
+      "response": [        
+        {
+          "id": "q1",
           "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Is there anything else you would like to share about your experience using this tool during this study?</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
@@ -459,6 +482,7 @@
       "post-verbal-q3",
       "post-verbal-q4",
       "post-verbal-q5",
+      "post-verbal-q6",
       "$nasa-tlx.co.nasa-tlx",
       "$umux.co.umux",
       "$scs.co.scs",
