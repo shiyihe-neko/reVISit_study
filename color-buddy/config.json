@@ -739,7 +739,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "**[Please answer this question verbally]** Is there anything else you would like to share about your experience using the color palette design tools during this study?",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Is there anything else you would like to share about your experience using the color palette design tools during this study?</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
