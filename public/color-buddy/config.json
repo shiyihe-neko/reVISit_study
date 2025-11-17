@@ -110,7 +110,34 @@
       "type": "video",
       "recordAudio": false,
       "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
-      "path": "color-buddy/assets/tutorial/color-buddy.mp4",
+      "path": "color-buddy/assets/tutorial/colorbuddy.MP4",
+      "forceCompletion": false,
+      "response": [
+      ]
+    },
+    "tour-colorexplorer": {
+      "type": "video",
+      "recordAudio": false,
+      "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
+      "path": "color-buddy/assets/tutorial/colorexplorer.MP4",
+      "forceCompletion": false,
+      "response": [
+      ]
+    },
+    "tour-vizpalette": {
+      "type": "video",
+      "recordAudio": false,
+      "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
+      "path": "color-buddy/assets/tutorial/vizpalette.MP4",
+      "forceCompletion": false,
+      "response": [
+      ]
+    },
+    "tour-qualpal": {
+      "type": "video",
+      "recordAudio": false,
+      "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
+      "path": "color-buddy/assets/tutorial/qualpal.MP4",
       "forceCompletion": false,
       "response": [
       ]
@@ -194,7 +221,7 @@
         }
       ]
     },
-    "contrast-task-colorpicker-cat":{
+    "contrast-task-colorexplorer-cat":{
       "meta": {
         "taskName": "contrast-task-colorpicker"
       },
@@ -204,26 +231,6 @@
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://colorexplorer.com/colorpicker.aspx",
-      "response": [
-        {
-          "id": "hex_values",
-          "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "colorText",
-          "location": "sidebar",
-          "required": true
-        }
-      ]
-    },
-    "contrast-task-colorgorical-cat":{
-      "meta": {
-        "taskName": "contrast-task-colorgorical"
-      },
-      "description": "contrast adequacy design task",
-      "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Please use the tool provided on the screen to create a 6-color categorical palette for bar charts that work well in both light and dark modes, ensuring adequate contrast and readability across backgrounds. \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
-      "type": "website",
-      "nextButtonLocation": "sidebar",
-      "path": "http://vrl-v2.cs.brown.edu/color",
       "response": [
         {
           "id": "hex_values",
@@ -294,7 +301,7 @@
         }
       ]
     },
-    "cvd-task-colorpicker-cat":{
+    "cvd-task-colorexplorer-cat":{
       "meta": {
         "taskName": "cvd-task-colorpicker-cat"
       },
@@ -304,26 +311,6 @@
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://colorexplorer.com/colorpicker.aspx",
-      "response": [
-        {
-          "id": "hex_values",
-          "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "type": "colorText",
-          "location": "sidebar",
-          "required": true
-        }
-      ]
-    },
-    "cvd-task-colorgorical-cat":{
-      "meta": {
-        "taskName": "cvd-task-colorgorical-cat"
-      },
-      "description": "cvd friendliness design task",
-      "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Please use the tool provided on the screen to design a 6-color categorical palette for maps that is as accessible as possible for people with **deuteranopia**(red–green color vision deficiency). \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
-      "type": "website",
-      "nextButtonLocation": "sidebar",
-      "path": "http://vrl-v2.cs.brown.edu/color",
       "response": [
         {
           "id": "hex_values",
@@ -394,7 +381,7 @@
         }
       ]
     },
-    "freestyle-task-colorpicker":{
+    "freestyle-task-colorexplorer":{
       "meta": {
         "taskName": "freestyle-task-colorpicker"
       },
@@ -404,26 +391,6 @@
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://colorexplorer.com/colorpicker.aspx",
-      "response": [
-        {
-          "id": "hex_values",
-          "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "location": "sidebar",
-          "type": "colorText",
-          "required": true
-        }
-      ]
-    },
-    "freestyle-task-colorgorical":{
-      "meta": {
-        "taskName": "freestyle-task-colorgorical"
-      },
-      "description": "freestyle design task",
-      "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Imagine you're creating a 6-color palette, which can be categorical, sequential, or diverging, for the charts or visual elements in your own visualization or design project. You can create it freely based on your personal preference, without specific requirements or constraints. \n\n  \n\n Please note that this is a <b>Think-Aloud</b> Study. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
-      "type": "website",
-      "nextButtonLocation": "sidebar",
-      "path": "http://vrl-v2.cs.brown.edu/color",
       "response": [
         {
           "id": "hex_values",
@@ -494,7 +461,7 @@
         }
       ]
     },
-    "theme-task-colorpicker":{
+    "theme-task-colorexplorer":{
       "meta": {
         "taskName": "theme-task-colorpicker"
       },
@@ -504,26 +471,6 @@
       "type": "website",
       "nextButtonLocation": "sidebar",
       "path": "https://colorexplorer.com/colorpicker.aspx",
-      "response": [
-        {
-          "id": "hex_values",
-          "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
-          "location": "sidebar",
-          "type": "colorText",
-          "required": true
-        }
-      ]
-    },
-    "theme-task-colorgorical":{
-      "meta": {
-        "taskName": "theme-task-colorgorical"
-      },
-      "description": "theme design task",
-      "helpTextPath": "color-buddy/assets/tutorial/tutorial_accessibility.md",
-      "instruction": "Imagine you are designing a 6-color categorical palette for a NekoTech team project. The palette must include the brand colors #7356BF (Neko Purple) and #00A67E (Neko Teal), and the rest should complement them to create a harmonious look. \n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
-      "type": "website",
-      "nextButtonLocation": "sidebar",
-      "path": "http://vrl-v2.cs.brown.edu/color",
       "response": [
         {
           "id": "hex_values",
@@ -838,15 +785,64 @@
       "$screen-recording.co.screenRecordingPermission",
       "notification",
       "tutorial-accessibility",
-      "tour-colorbuddy",
       {
         "order":"latinSquare",
         "numSamples": 1,
         "components": [
-          "cvd-task-color-buddy-cat",
-          "contrast-task-color-buddy-cat"]},
-      "theme-task-color-buddy",
-      "freestyle-task-color-buddy",
+          {
+            "order":"fixed",
+            "components": [
+            "tour-colorbuddy",
+            {
+              "order":"latinSquare",
+                "numSamples": 1,
+                "components": [
+                  "cvd-task-color-buddy-cat",
+                  "contrast-task-color-buddy-cat"]},
+                  "theme-task-color-buddy",
+                  "freestyle-task-color-buddy"]
+          },
+          {
+            "order":"fixed",
+            "components": [
+            "tour-colorexplorer",
+            {
+              "order":"latinSquare",
+              "numSamples": 1,
+              "components": [
+                "cvd-task-colorexplorer-cat",
+                "contrast-task-colorexplorer-cat"]},
+                "theme-task-colorexplorer",
+                "freestyle-task-colorexplorer"]
+          },
+          {
+            "order":"fixed",
+            "components": [
+            "tour-vizpalette",
+            {
+              "order":"latinSquare",
+              "numSamples": 1,
+              "components": [
+                "cvd-task-viz-palette-cat",
+                "contrast-task-viz-palette-cat"]},
+                "theme-task-viz-palette",
+                "freestyle-task-viz-palette"]
+          },
+          {
+            "order":"fixed",
+            "components": [
+            "tour-qualpal",
+            {
+              "order":"latinSquare",
+              "numSamples": 1,
+              "components": [
+                "cvd-task-qualpal-cat",
+                "contrast-task-qualpal-cat"]},
+                "theme-task-qualpal",
+                "freestyle-task-qualpal"]
+          }
+        ]
+      },
       "post-verbal-q1",
       "post-verbal-q2",
       "post-verbal-q3",
@@ -854,8 +850,7 @@
       "$nasa-tlx.co.nasa-tlx",
       "$umux.co.umux",
       "color-blind-test",
-      "$color-blindness.se.short-test",   
-      "post-task-survey",       
+      "$color-blindness.se.short-test",      
       {
         "components": [
             "post-task-survey"
