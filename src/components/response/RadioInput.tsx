@@ -71,57 +71,27 @@ export function RadioInput({
         {leftLabel ? <Text>{leftLabel}</Text> : null}
         <HorizontalHandler horizontal={!!horizontal} style={{ flexGrow: 1 }}>
           {orderedOptions.map((radio) => (
-            <div key={`${radio.value}-${response.id}`}>
-              <div
-                style={{
-                  display: 'flex',
-                  flexDirection: horizontal ? 'column' : 'row',
-                  gap: horizontal ? 'unset' : rem(12),
-                  flex: stretch ? 1 : 'unset',
-                  alignItems: 'center',
+            <div
+              key={`${radio.value}`}
+              style={{
+                display: 'flex',
+                flexDirection: horizontal ? 'column' : 'row',
+                gap: horizontal ? 'unset' : rem(12),
+                flex: stretch ? 1 : 'unset',
+                alignItems: 'center',
+              }}
+            >
+              {horizontal && <ReactMarkdownWrapper text={radio.label} />}
+              <Radio
+                disabled={disabled}
+                value={radio.value}
+                label={radio.label}
+                styles={{
+                  label: { display: !horizontal ? 'initial' : 'none' },
                 }}
-              >
-                {horizontal && <ReactMarkdownWrapper text={radio.label} />}
-                <Radio
-                  disabled={disabled}
-                  value={radio.value}
-                  label={radio.label}
-                  styles={{
-                    label: { display: !horizontal ? 'initial' : 'none' },
-                  }}
-                  onChange={() => setOtherSelected(false)}
-                  classNames={{ radio: classes.fixDisabled, label: classes.fixDisabledLabel, icon: classes.fixDisabledIcon }}
-                />
-              </div>
-              {conditionalInput && currentValue === radio.value && radio.value === conditionalInput.triggerOption && (
-                <Box mt="sm" ml={32}>
-                  {conditionalInput.prompt && (
-                    <Text size="sm" fw={500} mb={4}>
-                      {conditionalInput.prompt}
-                      {conditionalInput.required && <span style={{ color: 'red' }}> *</span>}
-                    </Text>
-                  )}
-                  <Group gap="xs" align="center">
-                    <Input
-                      placeholder={conditionalInput.placeholder}
-                      disabled={disabled}
-                      {...conditionalInputValue}
-                      value={conditionalInputValue?.value || ''}
-                      error={!!conditionalInputError}
-                      classNames={{ input: inputClasses.fixDisabled }}
-                      style={{ flex: 1 }}
-                    />
-                    {!conditionalInput.prompt && conditionalInput.required && (
-                      <Text c="red" size="lg">*</Text>
-                    )}
-                  </Group>
-                  {conditionalInputError && (
-                    <Text size="sm" c="red" mt={4}>
-                      {conditionalInputError}
-                    </Text>
-                  )}
-                </Box>
-              )}
+                onChange={() => setOtherSelected(false)}
+                classNames={{ radio: classes.fixDisabled, label: classes.fixDisabledLabel, icon: classes.fixDisabledIcon }}
+              />
             </div>
           ))}
           {withOther && (
@@ -157,6 +127,37 @@ export function RadioInput({
         </HorizontalHandler>
         <Text>{rightLabel}</Text>
       </Group>
+      {conditionalInput && orderedOptions.map((radio) => (
+        currentValue === radio.value && radio.value === conditionalInput.triggerOption && (
+          <Box key={`conditional-${radio.value}`} mt="sm" ml={32}>
+            {conditionalInput.prompt && (
+              <Text size="sm" fw={500} mb={4}>
+                {conditionalInput.prompt}
+                {conditionalInput.required && <span style={{ color: 'red' }}> *</span>}
+              </Text>
+            )}
+            <Group gap="xs" align="center">
+              <Input
+                placeholder={conditionalInput.placeholder}
+                disabled={disabled}
+                {...conditionalInputValue}
+                value={conditionalInputValue?.value || ''}
+                error={!!conditionalInputError}
+                classNames={{ input: inputClasses.fixDisabled }}
+                style={{ flex: 1 }}
+              />
+              {!conditionalInput.prompt && conditionalInput.required && (
+                <Text c="red" size="lg">*</Text>
+              )}
+            </Group>
+            {conditionalInputError && (
+              <Text size="sm" c="red" mt={4}>
+                {conditionalInputError}
+              </Text>
+            )}
+          </Box>
+        )
+      ))}
       {horizontal && withOther && (
         <Input
           mt="sm"
