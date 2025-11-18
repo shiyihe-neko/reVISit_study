@@ -670,7 +670,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe what you believe are the most basic features a general color palette tool should have? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong>Can you describe what you believe are the most <strong style='color: #e74c3c;'>Basic Features</strong> a general color palette tool should have? Please give examples.<span></span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -693,7 +693,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe what advanced features you would like a color palette tool to have? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong>Can you describe what <strong style='color: #e74c3c;'>Advanced Features</strong> you would like a color palette tool to have? Please give examples.<span></span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -716,7 +716,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how much the tool helped you when working on those color design tasks with different requirements? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong>Can you describe <strong style='color: #e74c3c;'>how much the tool helped</strong> you when working on those color design tasks with <strong style='color: #e74c3c;'>different requirements</strong>? Please give examples.<span></span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
