@@ -107,39 +107,79 @@
       "response": []
     },
     "tour-colorbuddy": {
-      "type": "video",
+      "type": "website",
       "recordAudio": false,
       "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
-      "path": "color-buddy/assets/tutorial/colorbuddy.MP4",
-      "forceCompletion": false,
+      "path": "https://drive.google.com/file/d/1ELv7L8_jHpADeeeqejSsmhr7drr0_x8S/preview",
+      "nextButtonLocation": "sidebar",
       "response": [
+        {
+          "id": "watch_confirmation",
+          "prompt": "",
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Finish"
+          ],
+          "required": true
+        }
       ]
     },
     "tour-colorexplorer": {
-      "type": "video",
+      "type": "website",
       "recordAudio": false,
       "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
-      "path": "color-buddy/assets/tutorial/colorexplorer.MP4",
-      "forceCompletion": false,
+      "path": "https://drive.google.com/file/d/139h6LuHpiLilpgaw-0gHIkkCtbsin4Fj/preview",
+      "nextButtonLocation": "sidebar",
       "response": [
+        {
+          "id": "watch_confirmation",
+          "prompt": "",
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Finish"
+          ],
+          "required": true
+        }
       ]
     },
     "tour-vizpalette": {
-      "type": "video",
+      "type": "website",
       "recordAudio": false,
       "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
-      "path": "color-buddy/assets/tutorial/vizpalette.MP4",
-      "forceCompletion": false,
+      "path": "https://drive.google.com/file/d/14kraf1CM1ebXqcsl4BzgFQ_hVP9D9JRM/preview",
+      "nextButtonLocation": "sidebar",
       "response": [
+        {
+          "id": "watch_confirmation",
+          "prompt": "",
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Finish"
+          ],
+          "required": true
+        }
       ]
     },
     "tour-qualpal": {
-      "type": "video",
+      "type": "website",
       "recordAudio": false,
       "instruction": "You are required to watch the entire video to proceed. Please note that the video may take a short time to load, we appreciate your patience.",
-      "path": "color-buddy/assets/tutorial/qualpal.MP4",
-      "forceCompletion": false,
+      "path": "https://drive.google.com/file/d/1JfR4Y3i0lYQgcqYlF_Bq6rlq6YJaoXt_/preview",
+      "nextButtonLocation": "sidebar",
       "response": [
+        {
+          "id": "watch_confirmation",
+          "prompt": "",
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            "Finish"
+          ],
+          "required": true
+        }
       ]
     },
     "notification": {
