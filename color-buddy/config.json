@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.2.0/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
-    "title": "Color Buddy User Study",
+    "title": "Color Palettes User Study",
     "version": "pilot",
     "authors": [
       "Andrew Mcnutt, Shiyi He"
@@ -20,7 +20,7 @@
     "withProgressBar": true,
     "autoDownloadStudy": false,
     "withSidebar": true,
-    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=COW91MV4](https://app.prolific.com/submissions/complete?cc=COW91MV4)",
+    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/](https://app.prolific.com/)",
     "urlParticipantIdParam": "PROLIFIC_PID",
     "participantNameField": "introduction.prolificId",
     "recordScreen": true,
@@ -628,6 +628,16 @@
         },
         {
           "id": "q10",
+          "prompt": "How necessary do you think feedback or alerts would have been when using the color-palette tool?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Extremely necessary",
+          "leftLabel": "Not necessary at all"
+        },
+        {
+          "id": "q11",
           "prompt": "Did the tool provide any simpler operations or automated shortcuts, that helped you complete the tasks (e.g., automatic fix suggestions)?",
           "required": true,
           "location": "belowStimulus",
@@ -637,7 +647,7 @@
           "leftLabel": "Did not provide at all"
         },
         {
-          "id": "q11",
+          "id": "q12",
           "prompt": "If the tool provided automated assistances, how did you find them overall? (If none were provided, please select 'Extremely frustrating')?",
           "required": true,
           "location": "belowStimulus",
@@ -647,7 +657,17 @@
           "leftLabel": "Extremely frustrating"
         },
         {
-          "id": "q12",
+          "id": "q13",
+          "prompt": "How necessary do you think automated assistances would have been when using the color-palette tool?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Extremely necessary",
+          "leftLabel": "Not necessary at all"
+        },
+        {
+          "id": "q14",
           "prompt": "During the process, did you have a clear sense of how close or far you were from the ideal result?",
           "required": true,
           "location": "belowStimulus",
@@ -657,7 +677,17 @@
           "leftLabel": "Not clear at all"
         }, 
         {
-          "id": "q13",
+          "id": "q15",
+          "prompt": "When you submitted your color palette, how much did you feel that your decision to submit was because you didn't know what else you could do to improve it?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Very much",
+          "leftLabel": "Not clear at all"
+        }, 
+        {
+          "id": "q16",
           "prompt": "How necessary did you find using external tools (e.g., Google Search, LLMs) to complete the task?",
           "required": true,
           "location": "belowStimulus",
@@ -667,7 +697,7 @@
           "leftLabel": "Not necessary at all"
         },
         {
-          "id":"q14",
+          "id":"q17",
           "prompt": "What are the three primary colors of light?",
           "required": true,
           "location": "aboveStimulus",
@@ -675,11 +705,12 @@
           "options": [
             "Red, Green, Blue",
             "Red, Yellow, Blue",
-            "Yellow, Cyan, Magenta"
+            "Yellow, Cyan, Magenta",
+            "I'm not sure"
           ]
         },
         {
-          "id":"q15",
+          "id":"q18",
           "prompt": "Which two colors are complementary?",
           "required": true,
           "location": "aboveStimulus",
@@ -687,11 +718,12 @@
           "options": [
             "Red and Green",
             "Blue and Purple",
-            "Yellow and Green"
+            "Yellow and Green",
+            "I'm not sure"
           ]
         },
         {
-          "id":"q16",
+          "id":"q19",
           "prompt": "Which two colors make yellow light when mixed?",
           "required": true,
           "location": "aboveStimulus",
@@ -699,14 +731,15 @@
           "options": [
             "Blue and Red",
             "Blue and Green",
-            "Red and Green"
+            "Red and Green",
+            "I'm not sure"
           ]
         }
       ]
     },
     "post-verbal-q1":{
       "type": "questionnaire",
-      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
+      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. <b>Do not skip any questions or remain silent</b>.",
       "response": [        
         {
           "id": "q1",
@@ -729,7 +762,7 @@
     },
     "post-verbal-q2":{
       "type": "questionnaire",
-      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
+      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. <b>Do not skip any questions or remain silent</b>",
       "response": [        
         {
           "id": "q1",
@@ -775,7 +808,30 @@
     },
     "post-verbal-q4":{
       "type": "questionnaire",
-      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
+      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. <b>Do not skip any questions or remain silent</b>.",
+      "response": [        
+        {
+          "id": "q1",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong>Can you describe <strong style='color: #e74c3c;'>how much the tool frustrated</strong> you when working on those color design tasks with <strong style='color: #e74c3c;'>different requirements</strong>? Please give examples.<span></span></div></div>",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Finish"
+          ]
+        }   
+      ],
+      "correctAnswer": [
+        {
+          "id": "q1",
+          "answer": "Finish"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "post-verbal-q5":{
+      "type": "questionnaire",
+      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one.",
       "response": [        
         {
           "id": "q1",
@@ -887,6 +943,7 @@
       "post-verbal-q2",
       "post-verbal-q3",
       "post-verbal-q4",
+      "post-verbal-q5",
       "$nasa-tlx.co.nasa-tlx",
       "$umux.co.umux",
       "color-blind-test",
