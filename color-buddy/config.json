@@ -476,7 +476,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "colorText",
+          "type": "colorTextD",
           "required": true
         }
       ]
@@ -496,7 +496,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "colorText",
+          "type": "colorTextD",
           "required": true
         }
       ]
@@ -516,7 +516,7 @@
           "id": "hex_values",
           "prompt": "Please return the six HEX values you generated here, separated separated by <b>comma</b>. Each value should start with <b>#</b>. For example:  \n\n#111111,#222222\n\nAfter you enter valid HEX values, you should see the corresponding colors displayed below the text box. Please make sure that each value is valid and that the displayed colors correctly match the ones you intended to generate.",
           "location": "sidebar",
-          "type": "colorText",
+          "type": "colorTextD",
           "required": true
         }
       ]
