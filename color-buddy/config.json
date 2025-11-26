@@ -20,7 +20,7 @@
     "withProgressBar": true,
     "autoDownloadStudy": false,
     "withSidebar": true,
-    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/](https://app.prolific.com/)",
+    "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C1NDN4H8](https://app.prolific.com/submissions/complete?cc=C1NDN4H8)",
     "urlParticipantIdParam": "PROLIFIC_PID",
     "participantNameField": "introduction.prolificId",
     "recordScreen": true,
@@ -37,6 +37,7 @@
   "components": {
     "introduction": {
       "type": "markdown",
+      "recordAudio": false,
       "path": "color-buddy/assets/introduction.md",
       "response": [
         {
@@ -52,6 +53,7 @@
     },
     "qualifications": {
       "type": "questionnaire",
+      "recordAudio": false,
       "response": [
         {
           "id": "concentrationCheck",
@@ -198,6 +200,7 @@
     },
     "unqualified": {
       "type": "markdown",
+      "recordAudio": false,
       "path": "color-buddy/assets/unqualified.md",
       "response": []
     },
