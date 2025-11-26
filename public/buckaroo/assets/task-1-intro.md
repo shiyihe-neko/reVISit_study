@@ -5,12 +5,17 @@ You are a data analyst at a gaming media outlet, and you need to analyze how Use
 In this task, you will clean the provided dataset using the assigned tool. Your goal is to prepare a dataset in which all fields relevant to the analysis are clean, consistent, and ready for computing annual average scores. Please select appropriate cleaning strategies and correct abnormal values where necessary.
 
 ## Your Goal:
+
 **Filter**: You are only interested in the modern era. Please exclude any records released prior to 2000.
+
 **Standardize**: Ensure **'User_Score'** is numeric and ready for aggregation.
+
 **Quality Control**: We need a high-quality dataset. Trends will be invisible if the data contains nulls, type errors, or significant outliers. So please choose reasonable strategies to deal with those abnormals.
 
 ## Notification:
+
 **Be Conservative**: Do not aggressively delete rows. If data is messy, try to save the record by imputing values based on reasonable logic. Only delete rows if the data is unrecoverable.
+
 **Context Matters**: Be careful when flagging outliers. A value that looks strange globally might be normal within its specific subgroup. Think of housing prices as an example: a price that is an outlier for the whole country might be normal for a city like New York. Verifying anomalies within their groups before removing them is valuable.
 
 
