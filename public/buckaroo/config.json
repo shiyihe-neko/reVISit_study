@@ -206,7 +206,7 @@
       "instruction": "Please use the tool shown on the screen to complete the task you just saw. If you forget the task instructions, you can click the Help button in the upper right corner to review them. Please complete this task within <b>10 minutes</b>, starting from the moment you open this page. If you are unable to finish it despite your best effort, you may still proceed to the next task. \n\n  \n\n  Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://altered-consult-smoke-objectives.trycloudflare.com/vnc.html",
+      "path": "https://theories-cottages-tops-thinking.trycloudflare.com/vnc.html",
       "response": [
         {
           "id": "completion",
@@ -236,7 +236,7 @@
       "instruction": "Please use the tool shown on the screen to complete the task you just saw. If you forget the task instructions, you can click the Help button in the upper right corner to review them. \n\n  \n\n There is no time limit for this task. Please do your best, and proceed to the next task once you feel you have finished.\n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://altered-consult-smoke-objectives.trycloudflare.com/vnc.html",
+      "path": "https://theories-cottages-tops-thinking.trycloudflare.com/vnc.html",
       "response": [
         {
           "id": "completion",
