@@ -1,40 +1,20 @@
-# Task 1: Detect and Fix Abnormal Cupper Points
+# Task 1: Cleaning Game Rating Dataset
 
-In this task, you will work with a dataset containing coffee ratings. In the dataset, each row represents a coffee sample from a specific country and owner, evaluated by professional graders ("cuppers") across various sensory attributes such as aroma, flavor, acidity, and sweetness, etc,. 
+You are a data analyst at a gaming media outlet, and you need to analyze how User Scores have trended by Genre since the year 2000. The raw data is currently too messy for the pipeline. Please clean it using the assigned tool.
 
-## Task Instructions
-The column **'Cupper.Points'** records the **overall score** for each coffee sample — a key indicator of coffee quality.  
-However, this column contains several issues introduced during data entry or aggregation:
-- **Type mismatches**
-- **Outliers**
-- **Missing values** 
+In this task, you will clean the provided dataset using the assigned tool. Your goal is to prepare a dataset in which all fields relevant to the analysis are clean, consistent, and ready for computing annual average scores. Please select appropriate cleaning strategies and correct abnormal values where necessary.
 
-Your task is to **detect and repair any anomalies** in the column **'Cupper.Points'** and complete the following steps:
+## Your Goal:
+**Filter**: You are only interested in the modern era. Please exclude any records released prior to 2000.
+**Standardize**: Ensure **'User_Score'** is numeric and ready for aggregation.
+**Quality Control**: We need a high-quality dataset. Trends will be invisible if the data contains nulls, type errors, or significant outliers. So please choose reasonable strategies to deal with those abnormals.
 
-**1. Detect Type Mismatches**  
-   - Identify values that are not numeric.  
-   - Convert them into numeric values consistent with other entries (e.g., `"12k"` → `12.0`).  
+## Notification:
+**Be Conservative**: Do not aggressively delete rows. If data is messy, try to save the record by imputing values based on reasonable logic. Only delete rows if the data is unrecoverable.
+**Context Matters**: Be careful when flagging outliers. A value that looks strange globally might be normal within its specific subgroup. Think of housing prices as an example: a price that is an outlier for the whole country might be normal for a city like New York. Verifying anomalies within their groups before removing them is valuable.
 
-**2. Detect Outliers**  
-   - Define outliers as values outside the range of **mean ± 2 × standard deviation**.  
-   - Replace these outlier values with the **mean of all valid (non-outlier) values**.
-
-**3. Detect Missing Values**  
-   - If there are missing values (`NaN`), fill them using the **mean of all valid (non-missing) values** in the same column.
-
----
 
 ## Estimated Time
 Please try to complete this task **within 10 minutes**. Do your best, but avoid spending more than 10 minutes on it. 
 
----
-
-## Success Criteria
-| Criterion | Description |
-|------------|--------------|
-| **Type Consistency** | All entries in **'Cupper.Points'** should be numeric. |
-| **Outlier Repair** | Values beyond mean ± 2σ replaced correctly |
-| **Missing Value Repair** | All `NaN`s filled with the mean |
-
-
-Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the Help button in the upper-right corner after leaving this page. Once you enter the next page, the timing begins. (Note: there is no built-in timer, so please keep track of your own start time and try not to spend more than 10 minutes on this task.)
+Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the Help button in the upper-right corner after leaving this page. Once you enter the next page, the timing begins. (Note: there is no built-in timer, so please keep track of your own start time and try not to spend more than 10 minutes on this task.) Please remember that this is a **Think-Aloud** study. You are required to verbalize your thoughts, including any questions, confusions while using the tool, or decisions you make while completing the task.

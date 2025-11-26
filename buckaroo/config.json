@@ -206,7 +206,7 @@
       "instruction": "Please use the tool shown on the screen to complete the task you just saw. If you forget the task instructions, you can click the Help button in the upper right corner to review them. Please complete this task within <b>10 minutes</b>, starting from the moment you open this page. If you are unable to finish it despite your best effort, you may still proceed to the next task. \n\n  \n\n  Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://altered-consult-smoke-objectives.trycloudflare.com/vnc.html",
+      "path": "https://theories-cottages-tops-thinking.trycloudflare.com/vnc.html",
       "response": [
         {
           "id": "completion",
@@ -236,7 +236,7 @@
       "instruction": "Please use the tool shown on the screen to complete the task you just saw. If you forget the task instructions, you can click the Help button in the upper right corner to review them. \n\n  \n\n There is no time limit for this task. Please do your best, and proceed to the next task once you feel you have finished.\n\n  \n\n Please note that this is a <b>Think-Aloud Study</b>. Make sure to verbalize any thoughts or feelings you have while interacting with the tool and completing your tasks. For example, try to explain what you are doing, how you feel, which attempts were frustrating or helpful, and any confusion or difficulties you encounter.",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://altered-consult-smoke-objectives.trycloudflare.com/vnc.html",
+      "path": "https://theories-cottages-tops-thinking.trycloudflare.com/vnc.html",
       "response": [
         {
           "id": "completion",
@@ -301,7 +301,17 @@
           "numItems":7,
           "rightLabel": "Extremely confident",
           "leftLabel": "Not confident at all"
-        }
+        },
+        {
+          "id": "q6",
+          "prompt": "When you submitted your color palette, to what extent was your decision driven by not knowing what else you could do to improve it, rather than by feeling that it was already good enough?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Very much",
+          "leftLabel": "Not clear at all"
+        } 
       ]
     },
     "post-verbal-q1":{
@@ -310,7 +320,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how well the tool supported you in the tasks you completed? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you clearly recall and describe how many abnormal values you identified and how you addressed them using the tool in Task 2? Please be as specific as possible.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -333,7 +343,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most helpful or satisfying? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how well the tool supported you in the tasks you completed? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -356,7 +366,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most frustrating or discouraging? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most helpful or satisfying? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -379,7 +389,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe to what extent you felt you needed external help(such as web sources) to complete the tasks using this tool? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most frustrating or discouraging? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -402,7 +412,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you clearly explain the steps you or the tool took to clean the data? Please be as specific as possible.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe to what extent you felt you needed external help(such as web sources) to complete the tasks using this tool? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
