@@ -1,4 +1,4 @@
-# Task 2： Cleaning Used Cars Dataset
+# Task 2：Cleaning Used Cars Dataset
 
 You are a data analyst at a used car trading platform, and you need to prepare a dataset to train a "Car Value Retention Model" for various manufacturers. The raw data is currently too messy for the pipeline. Please clean it using the assigned tool.
 
@@ -6,12 +6,14 @@ In this task, you will clean the provided dataset using the assigned tool. Your 
 
 
 ## Your Goal:
+
 **Standardize Data Types**: Identify the columns valuable for building the model and ensure they are assigned the correct data types. For instance, ensure numerical values are consistently numeric and descriptive labels are categorical.
 
 **Clean Anomalies**: Identify and resolve data quality issues such as null values, type mismatches, and outliers. Please apply reasonable strategies to correct these anomalies.
 
 
 ## Notifications:
+
 **Be Conservative**: Avoid aggressive data deletion. Crucially, ensure that no manufacturer is completely removed from the dataset. If the data is messy, try to salvage the record by imputing values based on reasonable logic. Only delete rows if the data is unrecoverable or irrelevant.
 
 **Context Matters**: Exercise caution when flagging outliers. A value that appears to be a global outlier may be normal within its specific subgroup. For example, a price of $250,000 might be an error for a "Ford," but perfectly valid for a "Ferrari."
