@@ -891,45 +891,6 @@
           {
             "order":"fixed",
             "components": [
-            "tour-colorbuddy",
-            {
-              "order":"latinSquare",
-                "numSamples": 1,
-                "components": [
-                  "cvd-task-color-buddy-cat",
-                  "contrast-task-color-buddy-cat"]},
-                  "theme-task-color-buddy",
-                  "freestyle-task-color-buddy"]
-          },
-          {
-            "order":"fixed",
-            "components": [
-            "tour-colorexplorer",
-            {
-              "order":"latinSquare",
-              "numSamples": 1,
-              "components": [
-                "cvd-task-colorexplorer-cat",
-                "contrast-task-colorexplorer-cat"]},
-                "theme-task-colorexplorer",
-                "freestyle-task-colorexplorer"]
-          },
-          {
-            "order":"fixed",
-            "components": [
-            "tour-vizpalette",
-            {
-              "order":"latinSquare",
-              "numSamples": 1,
-              "components": [
-                "cvd-task-viz-palette-cat",
-                "contrast-task-viz-palette-cat"]},
-                "theme-task-viz-palette",
-                "freestyle-task-viz-palette"]
-          },
-          {
-            "order":"fixed",
-            "components": [
             "tour-qualpal",
             {
               "order":"latinSquare",
