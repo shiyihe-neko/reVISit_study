@@ -10,7 +10,7 @@ In this task, you will clean the provided dataset using the assigned tool. Your 
 
 **Standardize**: Ensure **'User_Score'** is numeric and ready for aggregation.
 
-**Quality Control**: We need a high-quality dataset. Trends will be invisible if the data contains nulls, type errors, or significant outliers. So please choose reasonable strategies to deal with those abnormals.
+**Quality Control**: We need a high-quality dataset. Trends will be invisible if the data contains abnormalities such as missing values, type errors, unreasonable outliers, or any other inconsistencies. So please choose reasonable strategies to deal with those abnormalities.
 
 ## Notification:
 

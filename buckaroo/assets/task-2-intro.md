@@ -9,7 +9,7 @@ In this task, you will clean the provided dataset using the assigned tool. Your 
 
 **Standardize Data Types**: Identify the columns valuable for building the model and ensure they are assigned the correct data types. For instance, ensure numerical values are consistently numeric and descriptive labels are categorical.
 
-**Clean Anomalies**: Identify and resolve data quality issues such as null values, type mismatches, and outliers. Please apply reasonable strategies to correct these anomalies.
+**Clean Anomalies**: Identify and resolve data quality issues such as null values, type mismatches, outliers, or any other inconsistencies. Please apply reasonable strategies to correct these abnormalities. 
 
 
 ## Notifications:
