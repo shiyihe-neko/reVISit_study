@@ -24,4 +24,13 @@ In this task, you will clean the provided dataset using the assigned tool. Your 
 Approximately 15 – 25 minutes. But there is no time limit for this task—do your best and submit it once you feel it is complete.
 
 
+## Tutorial of Submission (Same as the one in Task 1)
+<iframe 
+    src="https://drive.google.com/file/d/1S85c6PrM49p9NOhfSOXgdy-hXa56Eb9E/preview" 
+    width="640" 
+    height="480" 
+    allow="autoplay">
+</iframe>
+
+<br><br>
 Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the Help button in the upper-right corner after leaving this page. Please remember that this is a **Think-Aloud** study. You are required to verbalize your thoughts, including any questions, confusions while using the tool, or decisions you make while completing the task.
