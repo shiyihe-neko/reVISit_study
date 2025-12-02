@@ -22,7 +22,7 @@ In this task, you will clean the provided dataset using the assigned tool. Your 
 Please try to complete this task **within 10 minutes**. Do your best, but avoid spending more than 10 minutes on it. 
 
 
-## Tutorial of Submission
+## Tutorial of Submission <b style="color:Red;">(Please make sure you watch this video carefully)</b>
 <iframe 
     src="https://drive.google.com/file/d/1S85c6PrM49p9NOhfSOXgdy-hXa56Eb9E/preview" 
     width="640" 

@@ -43,6 +43,8 @@
 - *You only click “Next” when you are truly ready to proceed, as you will not be able to go back once you advance.*
 - *Your screen and audio recording are continuously running, especially during the required Think-Aloud portions.*
 
+<br>
 
-## ✅ Final Confirmation
-> **I have read and understood the rules, and I agree to complete the study without interrupting the recording or using automated tools.**
+## Final Confirmation
+
+**I have read and understood the rules, and I agree to complete the study without interrupting the recording or using automated tools.**
