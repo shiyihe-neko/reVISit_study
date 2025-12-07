@@ -489,7 +489,7 @@
       "notification",
       {
         "order": "latinSquare",
-        "numSamples": 2,
+        "numSamples": 1,
         "components": [
           {
             "order": "fixed",
