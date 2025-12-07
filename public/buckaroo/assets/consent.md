@@ -2,9 +2,9 @@
 
 Before we begin, please read the following consent form carefully and thereafter complete the section below.
 
-**Goal:** To understand how data-wrangling tools can support the data cleaning process.
+**Goal:** To understand how data-wrangling tools can support the data wrangling process.
 
-**Procedure:** In this experiment, you will first complete a tutorial, followed by a series of tasks related to data cleaning. Afterward, you will answer several post-task questions. You will be asked to think aloud during the task section and one post-survey section, and both your screen and audio will be recorded during these parts.
+**Procedure:** In this experiment, you will first complete a tutorial, followed by a series of tasks related to data wrangling. Afterward, you will answer several post-task questions. You will be asked to think aloud during the task section and one post-survey section, and both your screen and audio will be recorded during these parts.
 
 **Duration:** The estimated completion time for the experiment is about 1 hour.
 

@@ -5,7 +5,7 @@ Welcome to our study!
 The purpose of this study is to better understand **how color palette tools assist designers**.  
 This is a <b style="color:Orange;">Think-Aloud Study</b>, which means you are required to **verbalize your thoughts, feelings, satisfactions, or any difficulties you encounter** during the process.
 
-We will **record your screen** (only the experiment page) and **your voice**. Therefore, please make sure that your microphone access is enabled. If you cannot meet these requirements, please **[click here]** to return to the Prolific page.  
+We will **record your screen** (only the experiment page) and **your voice**. Therefore, please make sure that your microphone access is enabled. If you cannot meet these requirements, please **[click here](https://app.prolific.com/)** to return to the Prolific page.  
 
 ---
 
