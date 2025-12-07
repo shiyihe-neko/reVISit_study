@@ -26,7 +26,7 @@ You CAN use outside resources for inspiration or clarification. For example, usi
 
 ## Tutorial of Submission <b style="color:Red;">(Please make sure you watch this video carefully)</b>
 <iframe 
-    src="https://drive.google.com/file/d/1S85c6PrM49p9NOhfSOXgdy-hXa56Eb9E/preview" 
+    src="https://drive.google.com/file/d/16GBWSdP_XoUO4HSkpyklhC8y1unDytQT/preview" 
     width="1200" 
     height="700" 
     allow="autoplay">
