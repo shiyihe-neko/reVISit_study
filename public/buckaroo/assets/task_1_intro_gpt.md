@@ -31,4 +31,4 @@ Please try to complete this task **within 10 minutes**. Do your best, but avoid 
 </iframe>
 
 <br><br>
-Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the Help button in the upper-right corner after leaving this page. Once you enter the next page, the timing begins. Please remember that this is a **Think-Aloud** study. You are required to verbalize your thoughts, including any questions, confusion while using the tool, or decisions you make while completing the task.
+Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the blue "Help" button in the upper-right corner after leaving this page. Once you enter the next page, the timing begins. Please remember that this is a **Think-Aloud** study. You are required to verbalize your thoughts, including any questions, confusion while using the tool, or decisions you make while completing the task.
