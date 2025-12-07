@@ -2,7 +2,7 @@
 
 Welcome to our study!
 
-The purpose of this study is to better understand **how data-wrangling tools can support the data cleaning process**.  
+The purpose of this study is to better understand **how data-wrangling tools can support the data wrangling process**.  
 This is a <b style="color:Orange;">Think-Aloud Study</b>, which means you are required to **verbalize your thoughts, feelings, satisfactions, or any difficulties you encounter** during the process.
 
 We will **record your screen** (only the experiment page) and **your voice**. Therefore, please make sure that your microphone access is enabled. If you cannot meet these requirements, please **[click here]** to return to the Prolific page.  
@@ -14,7 +14,7 @@ We will **record your screen** (only the experiment page) and **your voice**. Th
 Before you begin, please make sure you meet the following requirements:
 - You are comfortable speaking aloud in English.
 - You have a stable internet connection.
-- You have some prior experience with ChatGPT, Jupyter Notebook, or data cleaning tools (e.g., Excel).
+- You have some prior experience with ChatGPT, Jupyter Notebook, or data wrangling tools (e.g., Excel).
 
 If any of the above do not apply to you, please <b style="color:Red;">do not participate</b> in this study, as your participation may be considered invalid or incomplete. Thank you for your understanding!
 
@@ -26,7 +26,7 @@ If any of the above do not apply to you, please <b style="color:Red;">do not par
    You will start with a short tutorial video that introduces the basic features of the tool, including how to use it, interact with the dataset, and save your results.
 
 **2. Main Tasks**  
-   After the tutorial, you will complete ***2 data cleaning tasks***. Each task will involve identifying and fixing data issues such as missing values, outliers, inconsistent data types, or group-level inconsistencies across categories.
+   After the tutorial, you will complete ***2 data wrangling tasks***. Each task will involve identifying and fixing data issues such as missing values, outliers, inconsistent data types, or group-level inconsistencies across categories.
 
 **3. Post-Task Survey**  
    After completing all tasks, you will complete **post-task surveys**  that collect information about your demographics, perceived workload, and overall experience with the tool.

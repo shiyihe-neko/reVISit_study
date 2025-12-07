@@ -10,7 +10,7 @@
    - Random or careless editing without trying to detect or fix data issues.  
    - Staying silent during the parts we ask you to Think-Aloud.
    - Stopping midway without saving or submitting results.  
-   Please follow the full task workflow demonstrated in the tutorial, including data cleaning steps and result submission.  
+   Please follow the full task workflow demonstrated in the tutorial, including data wrangling steps and result submission.  
    ***<b style="color:Orange;">We understand you might not fully complete every task, that’s fine, but we need to see genuine effort and a full attempt following the required process.</b> All submissions will be reviewed via recorded playback to ensure completeness.***
 
 **2. Respect task-specific time instructions.**  
@@ -23,7 +23,7 @@
 
    *Any recording interruption = **automatically invalid**.*
 
-**3. Do NOT use fully automated programs or bots that complete the entire task on your behalf.**  
+**3. <span style="color: red">Do NOT use fully automated programs or bots</span> that complete the entire task on your behalf.**  
 
    *The study is about **human interaction**, not automated completion.*
 
@@ -33,7 +33,7 @@
 
 **1. You CAN use outside resources for inspiration or clarification.**
 
-   *For example, using Google or LLMs for data cleaning suggestions.* 
+   *For example, using Google or LLMs for data wrangling suggestions.* 
 
 **2. Choose a quiet time when you can focus and finish in one sitting.**  
 

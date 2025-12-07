@@ -1,8 +1,8 @@
-# Task 2：Cleaning Used Cars Dataset
+# Task 2：Wrangling Used Cars Dataset
 
 You are a data analyst at a used car trading platform, and you need to prepare a dataset to train a "Car Value Retention Model" for various manufacturers. The raw data is currently too messy for the pipeline. Please clean it using the assigned tool.
 
-In this task, you will clean the provided dataset using the assigned tool. Your goal is to prepare a dataset in which all fields relevant to the analysis are clean, consistent, and ready for modeling. Please select appropriate cleaning strategies and correct abnormal values where necessary.
+In this task, you will clean the provided dataset using the assigned tool. Your goal is to prepare a dataset in which all fields relevant to the analysis are clean, consistent, and ready for modeling. Please select appropriate wrangling strategies and correct abnormal values where necessary.
 
 
 ## Your Goal:
@@ -20,15 +20,16 @@ In this task, you will clean the provided dataset using the assigned tool. Your 
 
 
 ## Estimated Time
-
 Approximately 15 – 25 minutes. But there is no time limit for this task—do your best and submit it once you feel it is complete.
 
+## External Help
+You CAN use outside resources for inspiration or clarification. For example, using Google or LLMs for any data wrangling suggestions.
 
 ## Tutorial of Submission (Same as the one in Task 1)
 <iframe 
     src="https://drive.google.com/file/d/1S85c6PrM49p9NOhfSOXgdy-hXa56Eb9E/preview" 
-    width="640" 
-    height="480" 
+    width="1200" 
+    height="700" 
     allow="autoplay">
 </iframe>
 
