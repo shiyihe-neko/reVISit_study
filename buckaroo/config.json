@@ -327,7 +327,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you clearly recall and describe how many abnormal values you identified and how you addressed them using the tool in Task 2? Please be as specific as possible.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you reacll and describe those anomalies you identified in Task 2 and explain how you addressed each one using the tool provided? Please be as specific as possible.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -350,7 +350,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how well the tool supported you in the tasks you completed? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how well the tool supported you in each task you have completed? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
