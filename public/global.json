@@ -1,6 +1,8 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.3.1/src/parser/GlobalConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.3.2/src/parser/GlobalConfigSchema.json",
   "configsList": [
+    "tutorial",
+    "tutorial-replication",
     "color-buddy",
     "buckaroo",
     "a-usability-study-config",
@@ -52,6 +54,12 @@
     "test-step-logic"
   ],
   "configs": {
+    "tutorial": {
+      "path": "tutorial/config.json"
+    },
+    "tutorial-replication": {
+      "path": "tutorial/replication-config.json"
+    },
     "color-buddy":{
       "path": "color-buddy/config.json"
     },
