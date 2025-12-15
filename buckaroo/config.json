@@ -116,6 +116,7 @@
       "type": "markdown",
       "recordAudio": false,
       "withSidebar": false,
+      "helpTextPath": "buckaroo/assets/task_1_intro_noteboook.md",
       "path": "buckaroo/assets/task_1_intro_noteboook.md",
       "nextButtonText": "I understand",
       "response": []
@@ -124,6 +125,7 @@
       "type": "markdown",
       "recordAudio": false,
       "withSidebar": false,
+      "helpTextPath": "buckaroo/assets/task_2_intro_noteboook.md",
       "path": "buckaroo/assets/task_2_intro_noteboook.md",
       "nextButtonText": "I understand",
       "response": []
@@ -311,7 +313,7 @@
         },
         {
           "id": "q6",
-          "prompt": "When you submitted your color palette, to what extent was your decision driven by not knowing what else you could do to improve it, rather than by feeling that it was already good enough?",
+          "prompt": "When you submitted your work, to what extent was your decision driven by not knowing what else you could do to improve it, rather than by feeling that it was already good enough?",
           "required": true,
           "location": "belowStimulus",
           "type": "likert",
@@ -498,15 +500,6 @@
                 "jupyterlite-task-1",
                 "task-intro-2-notebook",
                 "jupyterlite-task-2"
-            ]
-          },          
-          {
-            "order": "fixed",
-            "components": [
-                "task-intro-1-gpt",
-                "gpt-task-1",
-                "task-intro-2-gpt",
-                "gpt-task-2"
             ]
           }
         ]

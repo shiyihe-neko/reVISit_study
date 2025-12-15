@@ -4,6 +4,7 @@
     "tutorial",
     "tutorial-replication",
     "color-buddy",
+    "colorexplorer",
     "buckaroo",
     "a-usability-study-config",
     "demo-html",
@@ -62,6 +63,9 @@
     },
     "color-buddy":{
       "path": "color-buddy/config.json"
+    },
+    "colorexplorer":{
+      "path": "colorexplorer/config.json"
     },
     "buckaroo": {
       "path": "buckaroo/config.json"
