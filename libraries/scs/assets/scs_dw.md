@@ -1,0 +1,3 @@
+In this questionnaire, terms such as “data,” “explanations,” “reasons,” “level of detail,” and “consistency” refer broadly to the information and feedback made available by the system you used for data wrangling to help you understand how your data-wrangling steps were carried out. This includes any cues about what the system was doing, why it was doing it, and how transparent or interpretable its actions were. Please answer based on how clearly and effectively the system’s information supported your understanding of the task and the reasoning behind the operations performed.
+
+<br>

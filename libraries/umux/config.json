@@ -5,13 +5,14 @@
   "doi": "10.1016/j.intcom.2010.04.004", 
   "components": {
     "umux": {
-      "type": "questionnaire",
+      "type": "markdown",
+      "path": "libraries/umux/assets/umux_dw.md",
       "response": [
         {
           "id": "effectiveness",
           "prompt": "This system's capabilities meet my **requirements**",
           "required": true,
-          "location": "aboveStimulus",
+          "location": "belowStimulus",
           "type": "likert",
           "numItems": 7,
           "rightLabel": "Strongly Agree",
@@ -21,7 +22,7 @@
           "id": "satisfaction",
           "prompt": "Using this system is a **frustrating** experience",
           "required": true,
-          "location": "aboveStimulus",
+          "location": "belowStimulus",
           "type": "likert",
           "numItems": 7,
           "rightLabel": "Strongly Agree",
@@ -31,7 +32,7 @@
           "id": "easy-to-use",
           "prompt": "This system is **easy to use**",
           "required": true,
-          "location": "aboveStimulus",
+          "location": "belowStimulus",
           "type": "likert",
           "numItems": 7,
           "rightLabel": "Strongly Agree",
@@ -41,7 +42,7 @@
           "id": "time-consuming",
           "prompt": "I have to spend too much time learning how to use this system",
           "required": true,
-          "location": "aboveStimulus",
+          "location": "belowStimulus",
           "type": "likert",
           "numItems": 7,
           "rightLabel": "Strongly Agree",
