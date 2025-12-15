@@ -1,9 +1,7 @@
 # Task 2：Wrangling Used Cars Dataset
+You are a data analyst at a used-car trading platform, and your task is to prepare a dataset for training a "Car Price Model" across various manufacturers. The raw data is currently too messy for the modeling pipeline, so you must clean and refine it using the assigned tool.
 
-You are a data analyst at a used car trading platform, and you need to prepare a dataset to train a "Car Value Retention Model" for various manufacturers. The raw data is currently too messy for the pipeline. Please clean it using the assigned tool.
-
-In this task, you will clean the provided dataset using the assigned tool. Your goal is to prepare a dataset in which all fields relevant to the analysis are clean, consistent, and ready for modeling. Please select appropriate wrangling strategies and correct abnormal values where necessary.
-
+In this task, you will clean the provided dataset using <b>Jupyter Notebook</b>. Your goal is to produce a dataset in which all fields relevant to the analysis are clean, consistent, and ready for modeling. Apply appropriate data-wrangling strategies, select reasonable features for predicting the target variable <b>price</b>, and correct anomalies, inconsistent values, etc., when necessary to ensure the dataset is suitable for modeling.
 
 ## Your Goal:
 
@@ -11,13 +9,9 @@ In this task, you will clean the provided dataset using the assigned tool. Your 
 
 **Clean Anomalies**: Identify and resolve data quality issues such as null values, type mismatches, outliers, or any other inconsistencies. Please apply reasonable strategies to correct these abnormalities. 
 
-**Remove irrelevant columns**: To ensure that the cleaned dataset is suitable for modeling, you should remove any columns that are not informative or appropriate for the predictive task. For example, long free-text descriptive fields or identifiers that do not contribute meaningful features are generally not useful for modeling and should be excluded.
+**Be Conservative**: Avoid aggressively deleting rows. When data is messy, prioritize preserving records by imputing missing values using reasonable, defensible logic to improve data completeness. Only remove rows when doing so is clearly necessary.
 
-## Notifications:
-
-**Be Conservative**: Avoid aggressive data records deletion. Crucially, ensure that no manufacturer is completely removed from the dataset. If the data is messy, try to salvage the record by imputing values based on reasonable logic. Only delete rows if the data is unrecoverable or irrelevant.
-
-**Context Matters**: Exercise caution when flagging outliers. A value that appears to be a global outlier may be normal within its specific subgroup. For example, a price of $250,000 might be an error for a "Ford," but perfectly valid for a "Ferrari."
+**Context Matters**: Be careful when flagging outliers. A value that appears to be a global outlier may be normal within its specific subgroup. For example, a price of $250,000 might be an error for a "Ford," but perfectly valid for a "Ferrari."
 
 
 ## Estimated Time
@@ -35,4 +29,4 @@ You CAN use outside resources for inspiration or clarification. For example, usi
 </iframe>
 
 <br><br>
-Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the blue "Help" button in the upper-right corner after leaving this page. Please remember that this is a **Think-Aloud** study. You are required to verbalize your thoughts, including any questions, confusions while using the tool, or decisions you make while completing the task.
+Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the blue <b style='color:#1E90FF;'>“Help”</b> button in the upper-right corner after leaving this page. Once you enter the next page, the timing begins. Please remember that this is a **Think-Aloud** study. You are required to verbalize your thoughts, including any questions, confusion while using the tool, or decisions you make while completing the task.
