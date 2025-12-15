@@ -329,7 +329,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you reacll and describe those anomalies you identified in Task 2 and explain how you addressed each one using the tool provided? Please be as specific as possible.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how you identified and addressed the anomalies during the tasks? Please be as specific as possible.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -352,7 +352,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how well the tool supported you in each task you have completed? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Could you explain the steps you took to ensure dataset completeness during the tasks? Please be as specific as possible.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -375,7 +375,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most helpful or satisfying? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe how well the tool supported you in dealing with anomalies and enhancing the completeness of the dataset during the tasks have completed? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -398,7 +398,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most frustrating or discouraging? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most helpful or satisfying? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -421,7 +421,7 @@
       "response": [        
         {
           "id": "q1",
-          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe to what extent you felt you needed external help(such as web sources) to complete the tasks using this tool? Please give examples.</span></div></div>",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe which aspects of the tool you found most frustrating or discouraging? Please give examples.</span></div></div>",
           "required": true,
           "location": "aboveStimulus",
           "type": "radio",
@@ -439,6 +439,29 @@
       "allowFailedTraining": false
     },
     "post-verbal-q6":{
+      "type": "questionnaire",
+      "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
+      "response": [        
+        {
+          "id": "q1",
+          "prompt": "<div style='display: flex; justify-content: center; text-align: center; font-size: 20px; line-height: 1.6;'><div><strong style='display: block; margin-bottom: 15px; font-size: 24px;'>[Please answer this question verbally]</strong><span>Can you describe to what extent you felt you needed external help(such as web sources) to complete the tasks using this tool? Please give examples.</span></div></div>",
+          "required": true,
+          "location": "aboveStimulus",
+          "type": "radio",
+          "options": [
+            "Finish"
+          ]
+        }   
+      ],
+      "correctAnswer": [
+        {
+          "id": "q1",
+          "answer": "Finish"
+        }
+      ],
+      "allowFailedTraining": false
+    },
+    "post-verbal-q7":{
       "type": "questionnaire",
       "instruction": "Please answer each question verbally. After responding, click the Finish button below the question to indicate that your answer is complete, then proceed to the next one. Do not skip any questions or remain silent.",
       "response": [        
@@ -510,6 +533,7 @@
       "post-verbal-q4",
       "post-verbal-q5",
       "post-verbal-q6",
+      "post-verbal-q7",
       "$nasa-tlx.co.nasa-tlx",
       "$umux.co.umux",
       "$scs.co.scs",
