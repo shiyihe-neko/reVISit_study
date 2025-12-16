@@ -14,7 +14,7 @@ We will **record your screen** (only the experiment page) and **your voice**. Th
 Before you begin, please make sure you meet the following requirements:
 - You are comfortable speaking aloud in English.
 - You have a stable internet connection.
-- You have some prior experience with ChatGPT, Jupyter Notebook, or data wrangling tools (e.g., Excel).
+- You should have <b>basic data-wrangling skills</b> with <b>Python</b> or <b>Jupyter Notebook</b>.
 
 If any of the above do not apply to you, please <b style="color:Red;">do not participate</b> in this study, as your participation may be considered invalid or incomplete. Thank you for your understanding!
 
