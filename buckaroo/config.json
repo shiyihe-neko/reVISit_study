@@ -31,8 +31,7 @@
     "nasa-tlx",
     "mic-check",
     "screen-recording",
-    "umux",
-    "scs"
+    "umux"
   ],
   "components": {
     "introduction": {
@@ -313,6 +312,76 @@
         },
         {
           "id": "q6",
+          "prompt": "How confident did you feel when using the assigned tool to complete the task?",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Extremely confident",
+          "leftLabel": "Not confident at all"
+        },
+        {
+          "id": "q7",
+          "prompt": "The tool provided sufficient information to help you understand the data processing steps that were performed.",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Strongly Agree",
+          "leftLabel": "Strongly Disagree"
+        },
+        {
+          "id": "q8",
+          "prompt": "When you needed more or less detail, the tool allowed you to access different levels of information.",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Strongly Agree",
+          "leftLabel": "Strongly Disagree"
+        },
+        {
+          "id": "q9",
+          "prompt": "The tool was helpful in completing the task",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Strongly Agree",
+          "leftLabel": "Strongly Disagree"
+        },
+        {
+          "id": "q10",
+          "prompt": "You could understand the information/feedback in the tool without needing additional help or consulting external resources.",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Strongly Agree",
+          "leftLabel": "Strongly Disagree"
+        },
+        {
+          "id": "q11",
+          "prompt": "The tool's feedback and prompts were consistent throughout the task.",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Strongly Agree",
+          "leftLabel": "Strongly Disagree"
+        },
+        {
+          "id": "q12",
+          "prompt": "The tool provided the necessary information and feedback in a timely and efficient manner.",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "likert",
+          "numItems":7,
+          "rightLabel": "Strongly Agree",
+          "leftLabel": "Strongly Disagree"
+        },
+        {
+          "id": "q13",
           "prompt": "When you submitted your work, to what extent was your decision driven by not knowing what else you could do to improve it, rather than by feeling that it was already good enough?",
           "required": true,
           "location": "belowStimulus",
@@ -536,7 +605,6 @@
       "post-verbal-q7",
       "$nasa-tlx.co.nasa-tlx",
       "$umux.co.umux",
-      "$scs.co.scs",
       {
         "components": [
             "post-task-survey"
