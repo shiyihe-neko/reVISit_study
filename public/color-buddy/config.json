@@ -785,41 +785,10 @@
       "$screen-recording.co.screenRecordingPermission",
       "notification",
       "tutorial-accessibility",
-      {
-        "order":"latinSquare",
-        "numSamples": 1,
-        "components": [
-          {
-            "order":"fixed",
-            "components": [
-            "tour-qualpal",
-            "contrast-task-qualpal-cat",
-            "theme-task-qualpal",
-            "freestyle-task-qualpal"]
-          },
-          {
-            "order":"fixed",
-            "components": [
-            "tour-colorbuddy",
-            {
-              "order":"latinSquare",
-              "numSamples": 1,
-              "components": [
-                "cvd-task-colorbuddy-cat",
-                "contrast-task-colorbuddy-cat"]},
-                "theme-task-colorbuddy",
-                "freestyle-task-colorbuddy"]
-          },
-          {
-            "order":"fixed",
-            "components": [
-            "tour-vizpalette",
-            "contrast-task-vizpalette-cat",
-            "theme-task-vizpalette",
-            "freestyle-task-vizpalette"]
-          }
-        ]
-      },
+      "tour-vizpalette",
+      "contrast-task-vizpalette-cat",
+      "theme-task-vizpalette",
+      "freestyle-task-vizpalette",
       "post-verbal-q1",
       "post-verbal-q2",
       "post-verbal-q3",
