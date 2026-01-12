@@ -588,14 +588,7 @@
       "notification",
       "tutorial-accessibility",
       "tour-colorexplorer",
-      {
-        "order":"latinSquare",
-        "numSamples": 1,
-        "components": [
-          "cvd-task-colorexplorer-cat",
-          "contrast-task-colorexplorer-cat"
-        ]
-      },
+      "contrast-task-colorexplorer-cat",
       "theme-task-colorexplorer",
       "freestyle-task-colorexplorer",
       "post-verbal-q1",
