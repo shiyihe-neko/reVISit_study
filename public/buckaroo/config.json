@@ -588,10 +588,10 @@
           {
             "order": "fixed",
             "components": [
-                "task-intro-1-notebook",
-                "jupyterlite-task-1",
-                "task-intro-2-notebook",
-                "jupyterlite-task-2"
+                "task-intro-1-gpt",
+                "gpt-task-1",
+                "task-intro-2-gpt",
+                "gpt-task-2"
             ]
           }
         ]
