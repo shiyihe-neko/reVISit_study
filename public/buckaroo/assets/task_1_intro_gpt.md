@@ -24,11 +24,39 @@ Please try to complete this task **within 10 minutes**. Do your best, but avoid 
 
 ## Tutorial of Submission <b style="color:Red;">(Please make sure you watch this video carefully)</b>
 <iframe 
-    src="https://drive.google.com/file/d/1t_0VUU-BxuSLt8Ntc57nnkUp950IAPCJ/preview" 
+    src="https://drive.google.com/file/d/1O-2O-s6ywZTk1XpLpQt7Qe99PMtYN3Ku/preview" 
     width="1200" 
     height="700" 
     allow="autoplay">
 </iframe>
+
+
+<br><br>
+
+## Important Tips Before You Proceed
+
+### Connect to the VNC Server
+
+1.Click "Connect" and enter the VNC Passcode(You can find it in the sidebar)
+
+<img src="./colorexplorer/assets/tutorial/novnc.png" width="60%">
+<br>
+
+2.Click the toolbar, then click the button labeled A. Select the last option to send "Ctrl + Alt + Del", and then enter the Server PIN (which can also be found in the sidebar).
+
+<img src="./colorexplorer/assets/tutorial/vnc.png" width="30%">
+<br>
+
+3.Please do not attempt to access any other applications on the server we provided. You may only use the ChatGPT window available on this server. If you need external resources (such as Google searches), please use your own web browser.
+
+4.Please ensure that you save the cleaned dataset from ChatGPT correctly as demonstrated. For example, once you are satisfied with the results provided by ChatGPT, you may use a prompt such as: “Please return the cleaned version of this CSV file for downloading.”
+
+5.Please make sure you open the correct file as required. For Task 1, use "game.csv", and for Task 2, use "car.cs"v".
+
+6.Please open a new chat to demonstrate Task 2, and do not delete any chat history created during the study.
+
+<b style="color:Red;">Any violation of the above instructions, or failure to complete the study as required, will result in the study being considered incomplete, and NO COMPENSATION will be provided.</b>
+
 
 <br><br>
 Click **"I understand"** to proceed to the task page. You can review these task instructions at any time by clicking the blue "Help" button in the upper-right corner after leaving this page. Once you enter the next page, the timing begins. Please remember that this is a **Think-Aloud** study. You are required to verbalize your thoughts, including any questions, confusion while using the tool, or decisions you make while completing the task.
