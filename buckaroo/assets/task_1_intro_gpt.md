@@ -51,7 +51,7 @@ Please try to complete this task **within 10 minutes**. Do your best, but avoid 
 
 4.Please ensure that you save the cleaned dataset from ChatGPT correctly as demonstrated. For example, once you are satisfied with the results provided by ChatGPT, you may use a prompt such as: “Please return the cleaned version of this CSV file for downloading.”
 
-5.Please make sure you open the correct file as required. For Task 1, use "game.csv", and for Task 2, use "car.cs"v".
+5.Please make sure you open the correct file as required. For Task 1, use "game.csv", and for Task 2, use "car.csv".
 
 6.Please open a new chat to demonstrate Task 2, and do not delete any chat history created during the study.
 
