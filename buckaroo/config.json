@@ -214,7 +214,7 @@
       "instruction": "<iframe src='assets/timer.html' style='width: 100%; height: 60px; border: none; display: block; margin-bottom: 15px;' scrolling='no'></iframe><b>Task Setup:</b> Connect to the VNC machine as shown in the tutorial video. In this task, you will be working with the dataset <b style='color:red'>'games.csv'</b>. Please use the following credentials:<br>• <b>VNC Passcode:</b> <span style='font-family: monospace; background-color: #eee; padding: 2px 4px;'>study2026</span><br>• <b>Server Pin:</b> <span style='font-family: monospace; background-color: #eee; padding: 2px 4px;'>USERstudy202601</span><br><br><b>Main Task:</b> Implement the data wrangling process as required.<br><br><b>Time Limit:</b> 10 minutes (Countdown above).<br><br><b><span style='color:red'>Submission: Don't forget to submit your work as required!!!</b></span><br><br><b>Requirement:</b> This is a <b>Think-Aloud Study</b>. Please verbalize any thoughts or feelings you have while interacting with the tool, such as:<br>• Explain what you are doing<br>• How you feel <br>• Any difficulties encountered<br><br><i><b>Forgot the instructions?</b> Click the blue <b style='color:#1E90FF;'>“Help”</b> button in the top-right to view the full task description and submission guidelines.</i>",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://geographical-waiting-important-journey.trycloudflare.com/vnc.html",
+      "path": "https://device-mary-baptist-contamination.trycloudflare.com/vnc.html",
       "response": [
         {
           "id": "completion",
@@ -244,7 +244,7 @@
       "instruction": "<b>Task Setup:</b> Connect to the VNC machine as shown in the tutorial video. In this task, you will be working with the dataset <b style='color:red'>'cars.csv'</b>. Please use the following credentials:<br>• <b>VNC Passcode:</b> <span style='font-family: monospace; background-color: #eee; padding: 2px 4px;'>study2026</span><br>• <b>Server Pin:</b> <span style='font-family: monospace; background-color: #eee; padding: 2px 4px;'>USERstudy202601</span><br><br><b>Main Task:</b> Implement the data wrangling process as required.<br><br><b>Time Limit:</b> There is no time limits for this task.<br><br><b><span style='color:red'>Submission: Don't forget to submit your work as required!!!</b></span><br><br><b>Requirement:</b> This is a <b>Think-Aloud Study</b>. Please verbalize any thoughts or feelings you have while interacting with the tool, such as:<br>• Explain what you are doing<br>• How you feel <br>• Any difficulties encountered<br><br><i><b>Forgot the instructions?</b> Click the blue <b style='color:#1E90FF;'>“Help”</b> button in the top-right to view the full task description and submission guidelines.</i>",
       "type": "website",
       "nextButtonLocation": "sidebar",
-      "path": "https://geographical-waiting-important-journey.trycloudflare.com/vnc.html",
+      "path": "https://device-mary-baptist-contamination.trycloudflare.com/vnc.html",
       "response": [
         {
           "id": "completion",
