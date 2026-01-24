@@ -6,6 +6,7 @@
     "color-buddy",
     "colorexplorer",
     "buckaroo",
+    "a-notebook",
     "a-usability-study-config",
     "demo-html",
     "demo-html-input",
@@ -69,6 +70,9 @@
     },
     "buckaroo": {
       "path": "buckaroo/config.json"
+    },
+    "a-notebook": {
+      "path": "a-notebook/config.json"
     },
     "a-usability-study-config": {
       "path": "a-usability-study-config/config.json"
