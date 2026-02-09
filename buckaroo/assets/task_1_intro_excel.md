@@ -47,13 +47,11 @@ Please try to complete this task **within 10 minutes**. Do your best, but avoid 
 <img src="./colorexplorer/assets/tutorial/vnc.png" width="30%">
 <br>
 
-3.Please do not attempt to access any other applications on the server we provided. You may only use the ChatGPT window available on this server. If you need external resources (such as Google searches), please use your own web browser.
+3.Please do not attempt to access any other applications on the server we provided. You may only use the Excel window available on this server. If you need external resources (such as Google searches), please use your own web browser.
 
-4.Please ensure that you save the cleaned dataset from ChatGPT correctly as demonstrated. For example, once you are satisfied with the results provided by ChatGPT, you may use a prompt such as: “Please return the cleaned version of this CSV file for downloading.”
+4.Please make sure you save the cleaned dataset from Excel exactly as demonstrated. If the cleaned file is not saved in the required way, your submission will be considered incomplete.
 
-5.Please make sure you open the correct file as required. For Task 1, use "game.csv", and for Task 2, use "car.csv".
-
-6.Please open a new chat to demonstrate Task 2, and do not delete any chat history created during the study.
+5.Please ensure that you are working on the correct dataset. Use game.csv for Task 1 and car.csv for Task 2. If you work on the wrong file, your submission will be considered incomplete.
 
 <b style="color:Red;">Any violation of the above instructions, or failure to complete the study as required, will result in the study being considered incomplete, and NO COMPENSATION will be provided.</b>
 
