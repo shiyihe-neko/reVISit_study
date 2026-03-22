@@ -24,7 +24,7 @@ Please try to complete this task **within 10 minutes**. Do your best, but avoid 
 
 ## Tutorial of Submission <b style="color:Red;">(Please make sure you watch this video carefully)</b>
 <iframe 
-    src="https://drive.google.com/file/d/1cIcfu1JNy6Pl6lfjURFUh4umEQnffoj7/preview" 
+    src="https://drive.google.com/file/d/17ufpZ__tZockf3I3MUEPuILSsO_yi_Ik/preview" 
     width="1200" 
     height="700" 
     allow="autoplay">
