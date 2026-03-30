@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.5/src/parser/StudyConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.2.0/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
     "title": "Data Serialization Formats Study",
     "version": "pilot",
@@ -19,7 +19,7 @@
     "logoPath": "revisitAssets/revisitLogoSquare.svg",
     "withProgressBar": true,
     "autoDownloadStudy": false,
-    "sidebar": true,
+    "withSidebar": true,
     "studyEndMsg": "**Thank you for completing the study. You may click this link and return to Prolific**: [https://app.prolific.com/submissions/complete?cc=C1MXB7XQ](https://app.prolific.com/submissions/complete?cc=C1MXB7XQ)",
     "urlParticipantIdParam": "PROLIFIC_PID",
     "participantNameField": "introduction.prolificId"
@@ -550,7 +550,7 @@
      }]
     }, 
     "reading-task-tabular-json-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-tabular-json"
       },
@@ -592,7 +592,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-tabular-json"
       },
@@ -634,7 +634,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-tabular-json"
       },
@@ -676,7 +676,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-tabular-json"
       },
@@ -718,7 +718,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json-5": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "reading-task-tabular-json"
       },
@@ -759,7 +759,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-jsonc-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-tabular-jsonc"
       },
@@ -801,7 +801,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-jsonc-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-tabular-jsonc"
       },
@@ -843,7 +843,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-jsonc-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-tabular-jsonc"
       },
@@ -885,7 +885,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-jsonc-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-tabular-jsonc"
       },
@@ -927,7 +927,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-jsonc-5": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "reading-task-tabular-jsonc"
       },
@@ -968,7 +968,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json5-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-tabular-json5"
       },
@@ -1010,7 +1010,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json5-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-tabular-json5"
       },
@@ -1052,7 +1052,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json5-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-tabular-json5"
       },
@@ -1094,7 +1094,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json5-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-tabular-json5"
       },
@@ -1136,7 +1136,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-json5-5": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "reading-task-tabular-json5"
       },
@@ -1177,7 +1177,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-hjson-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-tabular-hjson"
       },
@@ -1219,7 +1219,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-hjson-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-tabular-hjson"
       },
@@ -1261,7 +1261,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-hjson-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-tabular-hjson"
       },
@@ -1303,7 +1303,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-hjson-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-tabular-hjson"
       },
@@ -1345,7 +1345,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-hjson-5": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "reading-task-tabular-hjson"
       },
@@ -1386,7 +1386,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-yaml-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-tabular-yaml"
       },
@@ -1428,7 +1428,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-yaml-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-tabular-yaml"
       },
@@ -1470,7 +1470,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-yaml-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-tabular-yaml"
       },
@@ -1512,7 +1512,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-yaml-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-tabular-yaml"
       },
@@ -1554,7 +1554,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-yaml-5": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "reading-task-tabular-yaml"
       },
@@ -1595,7 +1595,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-toml-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-tabular-toml"
       },
@@ -1637,7 +1637,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-toml-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-tabular-toml"
       },
@@ -1679,7 +1679,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-toml-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-tabular-toml"
       },
@@ -1721,7 +1721,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-toml-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-tabular-toml"
       },
@@ -1763,7 +1763,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-toml-5": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "reading-task-tabular-toml"
       },
@@ -1804,7 +1804,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-xml-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-tabular-xml"
       },
@@ -1846,7 +1846,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-xml-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-tabular-xml"
       },
@@ -1888,7 +1888,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-xml-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-tabular-xml"
       },
@@ -1930,7 +1930,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-xml-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-tabular-xml"
       },
@@ -1972,7 +1972,7 @@
       "allowFailedTraining": false
     },
     "reading-task-tabular-xml-5": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "reading-task-tabular-xml"
       },
@@ -2013,7 +2013,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-json": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "writing-task-tabular-json"
       },
@@ -2060,7 +2060,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-jsonc": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "writing-task-tabular-jsonc"
       },
@@ -2107,7 +2107,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-json5": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "writing-task-tabular-json5"
       },
@@ -2154,7 +2154,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-hjson": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "writing-task-tabular-hjson"
       },
@@ -2201,7 +2201,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-yaml": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "writing-task-tabular-yaml"
       },
@@ -2248,7 +2248,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-toml": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "writing-task-tabular-toml"
       },
@@ -2295,7 +2295,7 @@
       "allowFailedTraining": false
     },
     "writing-task-tabular-xml": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "writing-task-tabular-xml"
       },
@@ -2342,7 +2342,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json-1": { 
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-tabular-json"
       },
@@ -2382,7 +2382,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-tabular-json"
       },
@@ -2422,7 +2422,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-tabular-json"
       },
@@ -2462,7 +2462,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json/tutorial-json.md",
       "meta": {
         "taskName": "modifying-task-tabular-json"
       },
@@ -2502,7 +2502,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-jsonc-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -2542,7 +2542,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-jsonc-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -2582,7 +2582,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-jsonc-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -2622,7 +2622,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-jsonc-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/jsonc/tutorial-jsonc.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -2662,7 +2662,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json5-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-tabular-json5"
       },
@@ -2702,7 +2702,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json5-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -2742,7 +2742,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json5-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-tabular-json5"
       },
@@ -2782,7 +2782,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-json5-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/json5/tutorial-json5.md",
       "meta": {
         "taskName": "modifying-task-tabular-json5"
       },
@@ -2822,7 +2822,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-hjson-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-tabular-hjson"
       },
@@ -2862,7 +2862,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-hjson-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -2902,7 +2902,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-hjson-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-tabular-hjson"
       },
@@ -2942,7 +2942,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-hjson-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/hjson/tutorial-hjson.md",
       "meta": {
         "taskName": "modifying-task-tabular-hjson"
       },
@@ -2982,7 +2982,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-toml-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-tabular-toml"
       },
@@ -3022,7 +3022,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-toml-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -3062,7 +3062,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-toml-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-tabular-toml"
       },
@@ -3102,7 +3102,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-toml-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/toml/tutorial-toml.md",
       "meta": {
         "taskName": "modifying-task-tabular-toml"
       },
@@ -3142,7 +3142,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-yaml-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-tabular-yaml"
       },
@@ -3182,7 +3182,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-yaml-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -3222,7 +3222,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-yaml-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-tabular-yaml"
       },
@@ -3262,7 +3262,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-yaml-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/yaml/tutorial-yaml.md",
       "meta": {
         "taskName": "modifying-task-tabular-yaml"
       },
@@ -3302,7 +3302,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-xml-1": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-tabular-xml"
       },
@@ -3342,7 +3342,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-xml-2": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-tabular-jsonc"
       },
@@ -3382,7 +3382,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-xml-3": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-tabular-xml"
       },
@@ -3422,7 +3422,7 @@
       "allowFailedTraining": false
     },
     "modifying-task-tabular-xml-4": {
-      "helpTextPathOverride": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
+      "helpTextPath": "a-usability-study-tabular/assets/tutorial/xml/tutorial-xml.md",
       "meta": {
         "taskName": "modifying-task-tabular-xml"
       },
@@ -3665,56 +3665,6 @@
           "modifying-task-tabular-jsonc-3",
           "post-task-question",
           "modifying-task-tabular-jsonc-4",
-          "post-task-question"
-          ]},
-        {"order":"fixed",
-        "components": [
-          "tutorial-hjson-part1",
-          "tutorial-hjson-part2",
-          "reading-task-tabular-hjson-1",
-          "post-task-question",
-          "reading-task-tabular-hjson-2",
-          "post-task-question",
-          "reading-task-tabular-hjson-3",
-          "post-task-question",
-          "reading-task-tabular-hjson-4",
-          "post-task-question",
-          "reading-task-tabular-hjson-5",
-          "post-task-question",
-          "writing-task-tabular-hjson",
-          "post-task-question",
-          "modifying-task-tabular-hjson-1",
-          "post-task-question",
-          "modifying-task-tabular-hjson-2",
-          "post-task-question",
-          "modifying-task-tabular-hjson-3",
-          "post-task-question",
-          "modifying-task-tabular-hjson-4",
-          "post-task-question"
-          ]},
-        {"order":"fixed",
-        "components": [
-          "tutorial-toml-part1",
-          "tutorial-toml-part2",
-          "reading-task-tabular-toml-1",
-          "post-task-question",
-          "reading-task-tabular-toml-2",
-          "post-task-question",
-          "reading-task-tabular-toml-3",
-          "post-task-question",
-          "reading-task-tabular-toml-4",
-          "post-task-question",
-          "reading-task-tabular-toml-5",
-          "post-task-question",
-          "writing-task-tabular-toml",
-          "post-task-question",
-          "modifying-task-tabular-toml-1",
-          "post-task-question",
-          "modifying-task-tabular-toml-2",
-          "post-task-question",
-          "modifying-task-tabular-toml-3",
-          "post-task-question",
-          "modifying-task-tabular-toml-4",
           "post-task-question"
           ]}
         ]},  
